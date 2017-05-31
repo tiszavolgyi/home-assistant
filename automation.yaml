@@ -1,0 +1,53 @@
+  - alias: "Living room lights after sunset"
+    trigger:
+      - platform: sun
+        event: sunset
+        offset: "00:15:00"
+    condition:
+      - condition: state
+        entity_id: group.all_devices
+        state: home
+    action:
+      service: light.turn_on
+      entity_id: scene.living_room_night
+
+  - alias: "Bedroom lights after sunset"
+    trigger:
+      - platform: sun
+        event: sunset
+        offset: "00:15:00"
+    condition:
+      - condition: state
+        entity_id: group.all_devices
+        state: home
+    action:
+      service: light.turn_on
+      entity_id: scene.bedroom_night
+
+  - alias: "Media player paused/stopped"
+    trigger:
+      - platform: state
+        entity_id: media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
+        from: 'playing'
+        to: 'idle'
+    condition:
+      - condition: state
+        entity_id: sun.sun
+        state: 'below_horizon'
+    action:
+        service: scene.turn_on
+        entity_id: scene.living_room_normal
+
+  - alias: "Media player playing"
+    trigger:
+      - platform: state
+        entity_id: media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
+        to: 'playing'
+        from: 'idle'
+    condition:
+      - condition: state
+        entity_id: sun.sun
+        state: 'below_horizon'
+    action:
+        service: scene.turn_on
+        entity_id: scene.living_room_movie

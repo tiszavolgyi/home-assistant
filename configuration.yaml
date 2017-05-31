@@ -1,0 +1,135 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Alto Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret latitude
+  longitude: !secret longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: !secret elevation
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: !secret timezone
+  # Customize the name of the devices
+  customize: !include custom_names.yaml
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret http_password
+  # Uncomment this if you are using SSL or running in Docker etc
+  base_url: !secret hass_base_url
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+# Weather Prediction
+sensor:
+  - platform: yr
+  - platform: nest
+    monitored_conditions:
+      - 'weather_temperature'
+      - 'weather_humidity'
+      - 'weather_condition'
+      - 'wind_speed'
+      - 'wind_direction'
+
+# Nest config
+nest:
+  client_id: !secret nestclientid
+  client_secret: !secret nestclientsecret
+
+light:
+  platform: hue
+  host: !secret hueip
+
+#Media players config
+media_player:
+    - platform: plex
+      entity_namespace: 'plex'
+      include_non_clients: true
+      scan_interval: 1
+      show_all_controls: true
+      use_custom_entity_ids: true
+      use_episode_art: true
+
+
+#Presence detection
+mqtt:
+  broker: !secret mqttip
+  port: !secret mqttport
+  client_id: home-assistant
+  keepalive: 60
+  username: tiszavolgyi
+  password: !secret mqttpassword
+  protocol: 3.1
+
+device_tracker:
+  - platform: owntracks
+    max_gps_accuracy: 50
+    waypoints: true
+  - platform: nmap_tracker
+    hosts: !secret mqtthosts
+    home_interval: 10
+
+zone:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  radius: 100
+  icon: mdi:home
+
+zone 2:
+  name: Chopra
+  latitude: !secret worklatitude
+  longitude: !secret worklongitude
+  radius: 200
+  icon: mdi:auto-fix
+
+zone 3:
+  name: Dog Park
+  latitude: !secret dogparklatitude
+  longitude: !secret dogparklongitude
+  radius: 200
+  icon: mdi:bone
+
+# Monitor the proximity of devices to a particular zone and the direction of travel.
+
+proximity:
+  home:
+    devices:
+      - device_tracker.vivi_pixel
+      - device_tracker.tiszavolgyi_tisza_pixel
+    tolerance: 50
+    unit_of_measurement: mi
+
+# Text to speech
+tts:
+  platform: google
+
+group: !include groups.yaml
+scene: !include scenes.yaml
+automation: !include automation.yaml

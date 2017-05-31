@@ -1,0 +1,52 @@
+#scene:
+  - name: Living Room Normal
+    entities:
+      light.hue_bloom_1:
+        state: on
+        transition: 2
+        brightness: 150
+        xy_color: [ 0.4448, 0.4066 ]
+      light.floor_lamp:
+        state: on
+        transition: 2
+        brightness: 150
+        xy_color: [ 0.4448, 0.4066 ]
+
+  - name: Living Room Movie
+    entities:
+      light.hue_bloom_1:
+        state: on
+        transition: 2
+        brightness: 15
+        xy_color: [ 0.5926, 0.3814 ]
+      light.floor_lamp:
+        state: on
+        transition: 2
+        brightness: 15
+        xy_color: [ 0.5926, 0.3814 ]
+
+  - name: Living Room Night
+    entities:
+      light.hue_bloom_1:
+        state: on
+        transition: 2
+        brightness: 150
+        xy_color: [ 0.2216, 0.6907 ]
+      light.floor_lamp:
+        state: on
+        transition: 2
+        brightness: 150
+        xy_color: [ 0.4548, 0.2014 ]
+
+  - name: Bedroom Night
+    entities:
+      light.bedroom_1:
+        state: on
+        transition: 2
+        brightness: 75
+        xy_color: [ 0.156, 0.1583 ]
+      light.bedroom_2:
+        state: on
+        transition: 2
+        brightness: 90
+        xy_color: [ 0.3247, 0.1522 ]

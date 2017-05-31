@@ -1,0 +1,20 @@
+zone:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  radius: 100
+  icon: mdi:home
+
+zone 2:
+  name: Chopra
+  latitude: !secret worklatitude
+  longitude: !secret worklongitude
+  radius: 200
+  icon: mdi:auto-fix
+
+zone 3:
+  name: Dog Park
+  latitude: !secret dogparklatitude
+  longitude: !secret dogparklongitude
+  radius: 200
+  icon: mdi:bone

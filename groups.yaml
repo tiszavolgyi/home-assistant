@@ -1,0 +1,49 @@
+#VIEWS
+
+living_room:
+    view: yes
+    name: Living Room
+    #control: hidden
+    entities:
+      - light.hue_bloom_1
+      - light.floor_lamp
+      - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
+      - climate.living_room
+
+upstaires_master:
+  view: no
+  name: Upstairs Master
+  entities:
+    - media_player.plex_13a54f98a5523bde_com_plexapp_android
+
+kitchen:
+  view: yes
+  name: Kitchen
+  entities:
+    - light.counter_top_1
+    - light.counter_top_2
+
+bedroom:
+  view: yes
+  name: Bedroom
+  entities:
+    - light.bedroom_1
+    - light.bedroom_2
+
+
+# Groups
+counter_top_lights:
+  view: no
+  name: Counter Top Lights
+  entities:
+    - light.counter_top_1
+    - light.counter_top_2
+
+light:
+  name: Light
+  entities:
+    - group.counter_top_lights
+    - light.bedroom_1
+    - light.bedroom_2
+    - light.hue_bloom_1
+    - light.floor_lamp
