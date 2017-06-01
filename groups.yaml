@@ -47,3 +47,9 @@ light:
     - light.bedroom_2
     - light.hue_bloom_1
     - light.floor_lamp
+
+family:
+  name: Family Members
+  entities:
+    - !secret peterdevice
+    - !secret vividevice

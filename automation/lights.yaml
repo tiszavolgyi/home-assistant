@@ -1,0 +1,50 @@
+###################################################
+### Turn on bedroom lights only if a family member
+### is at home and turn on living room lights if
+### anyone is at home after sunset.
+### If nobody at home after sunset turn on the lights
+### when we are close to home.
+###################################################
+
+  - alias: "Turn on living room lights after sunset"
+    trigger:
+      - platform: sun
+        event: sunset
+        offset: "-00:10:00"
+    condition:
+      - condition: state
+        entity_id: group.all_devices
+        state: 'home'
+    action:
+      service: scene.turn_on
+      entity_id: scene.living_room_night
+
+  - alias: "Turn on bedroom lights after sunset"
+    trigger:
+      - platform: sun
+        event: sunset
+        offset: "-00:10:00"
+    condition:
+      - condition: state
+        entity_id: group.family
+        state: 'home'
+    action:
+      service: scene.turn_on
+      entity_id: scene.bedroom_night
+
+  - alias: "Turn on lights when arriving home at night"
+    trigger:
+      - platform: state
+        entity_id: group.family
+        from: 'not_home'
+        to: 'home'
+    condition:
+      - condition: numeric_state
+        entity_id: sun.sun
+        value_template: '{{ state.attributes.elevation }}'
+        below: 0
+    action:
+      service: scene.turn_on
+      entity_id:
+        - scene.living_room_night
+        - scene.bedroom_night
