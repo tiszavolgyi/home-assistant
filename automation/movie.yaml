@@ -1,0 +1,38 @@
+  - alias: "Media player paused"
+    trigger:
+      - platform: state
+        entity_id: media_player.tiszaserver
+        to: 'paused'
+    condition:
+      - condition: state
+        entity_id: sun.sun
+        state: 'below_horizon'
+    action:
+        service: scene.turn_on
+        entity_id: scene.living_room_night
+
+  - alias: "Media player playing"
+    trigger:
+      - platform: state
+        entity_id: media_player.tiszaserver
+        to: 'playing'
+    condition:
+      - condition: state
+        entity_id: sun.sun
+        state: 'below_horizon'
+    action:
+        service: scene.turn_on
+        entity_id: scene.living_room_movie
+
+  - alias: "Media player stoped"
+    trigger:
+      - platform: state
+        entity_id: media_player.tiszaserver
+        to: 'idle'
+    condition:
+      - condition: state
+        entity_id: sun.sun
+        state: 'below_horizon'
+    action:
+        service: scene.turn_on
+        entity_id: scene.living_room_night

@@ -1,0 +1,25 @@
+  - alias: "Living room lights after sunset"
+    trigger:
+      - platform: sun
+        event: sunset
+        offset: "00:15:00"
+    condition:
+      - condition: state
+        entity_id: group.all_devices
+        state: home
+    action:
+      service: scene.turn_on
+      entity_id: scene.living_room_night
+
+  - alias: "Bedroom lights after sunset"
+    trigger:
+      - platform: sun
+        event: sunset
+        offset: "00:15:00"
+    condition:
+      - condition: state
+        entity_id: group.all_devices
+        state: home
+    action:
+      service: scene.turn_on
+      entity_id: scene.bedroom_night

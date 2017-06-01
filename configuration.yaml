@@ -83,7 +83,7 @@ mqtt:
   port: !secret mqttport
   client_id: home-assistant
   keepalive: 60
-  username: tiszavolgyi
+  username: !secret mqttusername
   password: !secret mqttpassword
   protocol: 3.1
 
@@ -99,21 +99,21 @@ zone:
   name: Home
   latitude: !secret latitude
   longitude: !secret longitude
-  radius: 100
+  radius: 300
   icon: mdi:home
 
 zone 2:
   name: Chopra
   latitude: !secret worklatitude
   longitude: !secret worklongitude
-  radius: 200
+  radius: 500
   icon: mdi:auto-fix
 
 zone 3:
   name: Dog Park
   latitude: !secret dogparklatitude
   longitude: !secret dogparklongitude
-  radius: 200
+  radius: 500
   icon: mdi:bone
 
 # Monitor the proximity of devices to a particular zone and the direction of travel.
@@ -129,7 +129,10 @@ proximity:
 # Text to speech
 tts:
   platform: google
+  cache: true
+  cache_dir: !secret tts_cache_dir
+  time_memory: 43200
 
 group: !include groups.yaml
 scene: !include scenes.yaml
-automation: !include automation.yaml
+automation: !include_dir_merge_list automation
