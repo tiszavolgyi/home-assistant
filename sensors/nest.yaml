@@ -1,0 +1,7 @@
+- platform: nest
+  monitored_conditions:
+    - 'weather_temperature'
+    - 'weather_humidity'
+    - 'weather_condition'
+    - 'wind_speed'
+    - 'wind_direction'

@@ -1,0 +1,10 @@
+- platform: template
+  sensors:
+    peter_phone_battery:
+      value_template: '{{states.device_tracker.tiszavolgyi_tisza_pixel.attributes.battery}}'
+      unit_of_measurement: '%'
+      friendly_name: 'Peter Phone Battery'
+    vivi_phone_battery:
+      value_template: '{{states.device_tracker.tiszavolgyi_vivi_pixel.attributes.battery}}'
+      unit_of_measurement: '%'
+      friendly_name: 'Vivi Phone Battery'

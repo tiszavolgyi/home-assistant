@@ -46,17 +46,6 @@ logbook:
 # Track the sun
 sun:
 
-# Weather Prediction
-sensor:
-  - platform: yr
-  - platform: nest
-    monitored_conditions:
-      - 'weather_temperature'
-      - 'weather_humidity'
-      - 'weather_condition'
-      - 'wind_speed'
-      - 'wind_direction'
-
 # Nest config
 nest:
   client_id: !secret nestclientid
@@ -136,3 +125,4 @@ tts:
 group: !include groups.yaml
 scene: !include scenes.yaml
 automation: !include_dir_merge_list automation
+sensor: !include_dir_merge_list sensors
