@@ -46,6 +46,12 @@ logbook:
 # Track the sun
 sun:
 
+#Wemo config
+wemo:
+  static:
+    - !secret wemo_mini_ip
+
+
 # Nest config
 nest:
   client_id: !secret nestclientid

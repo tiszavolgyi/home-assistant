@@ -1,7 +1,9 @@
   - alias: "Media player paused"
     trigger:
       - platform: state
-        entity_id: media_player.tiszaserver
+        entity_id:
+          - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
+          - media_player.tiszaserver
         to: 'paused'
     condition:
       - condition: state
@@ -14,7 +16,9 @@
   - alias: "Media player playing"
     trigger:
       - platform: state
-        entity_id: media_player.tiszaserver
+        entity_id:
+          - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
+          - media_player.tiszaserver
         to: 'playing'
     condition:
       - condition: state
@@ -27,7 +31,9 @@
   - alias: "Media player stoped"
     trigger:
       - platform: state
-        entity_id: media_player.tiszaserver
+        entity_id:
+          - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
+          - media_player.tiszaserver
         to: 'idle'
     condition:
       - condition: state

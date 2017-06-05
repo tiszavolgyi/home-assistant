@@ -17,13 +17,15 @@
       light.hue_bloom_1:
         state: on
         transition: 2
-        brightness: 15
+        brightness: 5
         xy_color: [ 0.5926, 0.3814 ]
       light.floor_lamp:
         state: on
         transition: 2
-        brightness: 15
+        brightness: 5
         xy_color: [ 0.5926, 0.3814 ]
+      switch.wemo_mini:
+        state: off
 
   - name: Living Room Night
     entities:
@@ -37,6 +39,8 @@
         transition: 2
         brightness: 150
         xy_color: [ 0.4548, 0.2014 ]
+      switch.wemo_mini:
+        state: on
 
   - name: Bedroom Night
     entities:
