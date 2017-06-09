@@ -1,3 +1,7 @@
+###########################
+### Phone battery statuses
+##########################
+
 - platform: template
   sensors:
     peter_phone_battery:

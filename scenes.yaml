@@ -1,4 +1,7 @@
-#scene:
+###################
+### All the scenes
+###################
+
   - name: Living Room Normal
     entities:
       light.hue_bloom_1:
@@ -27,6 +30,21 @@
       switch.wemo_mini:
         state: off
 
+  - name: Living Room Late Night
+    entities:
+      light.hue_bloom_1:
+        state: on
+        transition: 2
+        brightness: 150
+        xy_color: [ 0.2216, 0.6907 ]
+      light.floor_lamp:
+        state: on
+        transition: 2
+        brightness: 150
+        xy_color: [ 0.4548, 0.2014 ]
+      switch.wemo_mini:
+        state: off
+
   - name: Living Room Night
     entities:
       light.hue_bloom_1:
@@ -41,6 +59,17 @@
         xy_color: [ 0.4548, 0.2014 ]
       switch.wemo_mini:
         state: on
+
+  - name: Living Room OFF
+    entities:
+      light.hue_bloom_1:
+        state: off
+        transition: 10
+      light.floor_lamp:
+        state: off
+        transition: 10
+      switch.wemo_mini:
+        state: off
 
   - name: Bedroom Night
     entities:
