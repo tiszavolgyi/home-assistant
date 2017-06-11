@@ -1,0 +1,22 @@
+###########################################################
+### Wall Panel for Android
+###https://github.com/WallPanel-Project/wallpanel-android
+###########################################################
+
+- platform: mqtt
+  state_topic: "wallpanel/mywallpanel/sensor/battery"
+  name: "wallpanel battery"
+  unit_of_measurement: "%"
+  value_template: '{{ value_json.value }}'
+
+- platform: mqtt
+  state_topic: "wallpanel/mywallpanel/sensor/brightness"
+  name: "wallpanel brightness"
+  unit_of_measurement: "lx"
+  value_template: '{{ value_json.value }}'
+
+- platform: mqtt
+  state_topic: "wallpanel/mywallpanel/sensor/pressure"
+  name: "wallpanel pressure"
+  unit_of_measurement: "mb"
+  value_template: '{{ value_json.value }}'

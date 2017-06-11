@@ -47,7 +47,7 @@ sensor 2:
   platform: forecastio
 ```
 
-### When to use `!env_var`
+### When to use `!secret`
 
 * Private data.
 * Constants.

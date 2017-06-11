@@ -132,3 +132,4 @@ group: !include groups.yaml
 scene: !include scenes.yaml
 automation: !include_dir_merge_list automation
 sensor: !include_dir_merge_list sensors
+binary_sensor: !include_dir_merge_list binary_sensors
