@@ -19,6 +19,11 @@
     friendly_name: Kitchen
   light.bedroom:
     friendly_name: Bedroom
+#Switches
+  switch.living_room_lamp: #Wemo mini in the living room
+    friendly_name: Living Room Lamp
+    icon: mdi:lightbulb
+    device_class: light
 #NEST related names
   binary_sensor.living_room_thermostat_fan:
     friendly_name: Nest Fan

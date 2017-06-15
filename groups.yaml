@@ -9,6 +9,7 @@ living_room:
       - light.floor_lamp
       - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
       - climate.living_room
+      - switch.living_room_lamp
 
 upstaires_master:
   view: no
@@ -47,6 +48,7 @@ light:
     - light.bedroom_2
     - light.hue_bloom_1
     - light.floor_lamp
+    - switch.living_room_lamp
 
 family:
   name: Family Members

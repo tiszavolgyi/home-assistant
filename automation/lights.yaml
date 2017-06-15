@@ -4,6 +4,7 @@
 ### anyone is at home after sunset.
 ### If nobody at home after sunset turn on the lights
 ### when we are close to home.
+### Turn off the floor lamp at 9PM Sun-Thur (Wemo)
 ###################################################
 
   - alias: "Turn on living room lights after sunset"
@@ -48,3 +49,19 @@
       entity_id:
         - scene.living_room_night
         - scene.bedroom_night
+
+  - alias: "Turn off Floor lamp at 9PM Sun-Thur"
+    trigger:
+      - platform: time
+        at: '21:00:00'
+    condition:
+      condition: time
+      weekday:
+        - sun
+        - mon
+        - tue
+        - wed
+        - thu
+    action:
+      service: switch.turn_off
+      entity_id: switch.living_room_lamp
