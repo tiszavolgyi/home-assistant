@@ -27,7 +27,7 @@
         transition: 2
         brightness: 5
         xy_color: [ 0.5926, 0.3814 ]
-      switch.wemo_mini:
+      switch.living_room_lamp:
         state: off
 
   - name: Living Room Late Night
@@ -42,7 +42,7 @@
         transition: 2
         brightness: 150
         xy_color: [ 0.4548, 0.2014 ]
-      switch.wemo_mini:
+      switch.living_room_lamp:
         state: off
 
   - name: Living Room Night
@@ -57,7 +57,7 @@
         transition: 2
         brightness: 150
         xy_color: [ 0.4548, 0.2014 ]
-      switch.wemo_mini:
+      switch.living_room_lamp:
         state: on
 
   - name: Living Room OFF
@@ -68,7 +68,7 @@
       light.floor_lamp:
         state: off
         transition: 10
-      switch.wemo_mini:
+      switch.living_room_lamp:
         state: off
 
   - name: Bedroom Night

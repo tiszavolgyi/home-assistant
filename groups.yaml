@@ -1,5 +1,10 @@
 #VIEWS
 
+#default_view:
+#  view: yes
+#  entities:
+#    - group.light
+
 living_room:
     view: yes
     name: Living Room
