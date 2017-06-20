@@ -1,10 +1,7 @@
 - platform: nest
   monitored_conditions:
-    - 'battery_level'
     - 'weather_condition'
     - 'weather_temperature'
     - 'weather_humidity'
     - 'wind_speed'
     - 'wind_direction'
-    - 'co_status'
-    - 'smoke_status'
