@@ -51,6 +51,10 @@ wemo:
   static:
     - !secret wemo_mini_ip
 
+# Home Assistant log
+logger:
+  default: warning
+
 
 # Nest config
 nest:

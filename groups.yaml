@@ -67,3 +67,36 @@ battery:
     - sensor.peter_phone_battery
     - sensor.vivi_phone_battery
     - sensor.wallpanel_battery
+
+internet_speed:
+  name: Internet Speed
+  entities:
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+
+stock:
+  name: Stock Market
+  entities:
+    - sensor.ko
+    - sensor.hqcl
+
+thermostate:
+  name: Thermostate
+  entities:
+    - climate.living_room
+    - sensor.living_room_thermostat_humidity
+    - sensor.living_room_thermostat_hvac_state
+    - sensor.living_room_thermostat_operation_mode
+    - sensor.living_room_thermostat_target
+    - sensor.living_room_thermostat_temperature
+    - binary_sensor.living_room_thermostat_fan
+    - binary_sensor.living_room_thermostat_has_leaf
+    - binary_sensor.living_room_thermostat_is_locked
+    - binary_sensor.living_room_thermostat_is_using_emergency_heat
+    - binary_sensor.living_room_thermostat_online
+
+crimes:
+  name: Crime Reports
+  entities:
+    - sensor.neighborhood_incidents
