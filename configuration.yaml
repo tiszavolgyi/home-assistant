@@ -86,6 +86,15 @@ mqtt:
   password: !secret mqttpassword
   protocol: 3.1
 
+#Alexa integration
+emulated_hue:
+  host_ip: !secret hass_ip
+  type: alexa
+  expose_by_default: false
+  off_maps_to_on_domains:
+    - script
+
+
 device_tracker:
   - platform: owntracks
     max_gps_accuracy: 50

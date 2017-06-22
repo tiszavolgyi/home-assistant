@@ -5,25 +5,38 @@
     friendly_name: Night Stand - V
   light.counter_top_1:
     friendly_name: Counter top right
-    #hidden: true
+    hidden: true
   light.counter_top_2:
     friendly_name: Counter top left
-    #hidden: true
+    hidden: true
   light.hue_bloom_1:
     friendly_name: Hue Bloom
+    emulated_hue: true
+    emulated_hue_name: Livingroom hue bloom
   light.floor_lamp:
     friendly_name: Floor Lamp
+    emulated_hue: true
+    emulated_hue_name: Livingroom floor lamp
   light.recreation_room:
     friendly_name: Living Room
   light.kitchen:
     friendly_name: Kitchen
   light.bedroom:
     friendly_name: Bedroom
+
 #Switches
   switch.living_room_lamp: #Wemo mini in the living room
     friendly_name: Living Room Lamp
     icon: mdi:lightbulb
     device_class: light
+
+#Scenes
+
+  scene.living_room_movie:
+    friendly_name: Living Room Movie
+    emulated_hue: true
+    emulated_hue_name: Livingroom movie scene
+
 #NEST related names
   binary_sensor.living_room_thermostat_fan:
     friendly_name: Nest Fan
@@ -55,6 +68,7 @@
     friendly_name: Thermostat Target
   sensor.living_room_thermostat_temperature:
     friendly_name: Thermostat Temperature
+
 #Other things
   sensor.yr_symbol:
     friendly_name: Weather

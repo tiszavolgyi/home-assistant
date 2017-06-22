@@ -51,25 +51,25 @@
       unit_of_measurement: '%'
       friendly_name: 'Vivi Phone Battery'
 
-    samsung_wallpanel_battery:
-      value_template: '{{sensor.wallpanel_battery}}'
-      icon_template: >-
-        {% if states('sensor.wallpanel_battery') != "unknown" %}
-          {% set battery_level = states('sensor.wallpanel_battery')|int (-1)%}
-          {% if battery_level == -1 %}
-            mdi:battery-unknown
-          {% else %}
-            {% set battery_round = (battery_level|int / 10)|int * 10 %}
-            {% if battery_round >= 100 %}
-              mdi:battery
-            {% elif battery_round > 0 %}
-              mdi:battery-{{ battery_round }}
-            {% else %}
-              mdi:battery-alert
-            {% endif %}
-          {% endif %}
-        {% else %}
-          mdi:battery-alert
-        {% endif %}
-      unit_of_measurement: '%'
-      friendly_name: 'WallPanel Battery'
+#    samsung_wallpanel_battery:
+#      value_template: '{{sensor.wallpanel_battery}}'
+#      icon_template: >-
+#        {% if states('sensor.wallpanel_battery') != "unknown" %}
+#          {% set battery_level = states('sensor.wallpanel_battery')|int (-1)%}
+#          {% if battery_level == -1 %}
+#            mdi:battery-unknown
+#          {% else %}
+#            {% set battery_round = (battery_level|int / 10)|int * 10 %}
+#            {% if battery_round >= 100 %}
+#              mdi:battery
+#            {% elif battery_round > 0 %}
+#              mdi:battery-{{ battery_round }}
+#            {% else %}
+#              mdi:battery-alert
+#            {% endif %}
+#          {% endif %}
+#        {% else %}
+#          mdi:battery-alert
+#        {% endif %}
+#      unit_of_measurement: '%'
+#      friendly_name: 'WallPanel Battery'

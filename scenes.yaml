@@ -29,7 +29,7 @@
         xy_color: [ 0.5926, 0.3814 ]
       switch.living_room_lamp:
         state: off
-
+    
   - name: Living Room Late Night
     entities:
       light.hue_bloom_1:
