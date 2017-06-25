@@ -141,7 +141,7 @@ tts:
   cache_dir: !secret tts_cache_dir
   time_memory: 43200
 
-group: !include groups.yaml
+group: !include_dir_merge_named  groups
 scene: !include scenes.yaml
 automation: !include_dir_merge_list automation
 sensor: !include_dir_merge_list sensors

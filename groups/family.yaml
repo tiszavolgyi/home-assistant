@@ -1,0 +1,5 @@
+family:
+  name: Family Members
+  entities:
+    - !secret peterdevice
+    - !secret vividevice
