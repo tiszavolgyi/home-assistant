@@ -5,10 +5,10 @@
     friendly_name: Night Stand - V
   light.counter_top_1:
     friendly_name: Counter top right
-    hidden: true
+    #hidden: true
   light.counter_top_2:
     friendly_name: Counter top left
-    hidden: true
+    #hidden: true
   light.hue_bloom_1:
     friendly_name: Hue Bloom
     emulated_hue: true
@@ -74,3 +74,7 @@
     friendly_name: Weather
   sun.sun:
     friendly_name: Sun
+  sensor.home_to_chopra_center:
+    icon: mdi:car
+  sensor.chopra_center_to_home:
+    icon: mdi:car

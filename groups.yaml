@@ -5,6 +5,17 @@
 #  entities:
 #    - group.light
 
+all_lights_control:
+    view: yes
+    icon: mdi:lightbulb
+    #control: hidden
+    entities:
+      - group.counter_top_lights
+      - group.bedroom_lights
+      - light.hue_bloom_1
+      - light.floor_lamp
+      - switch.living_room_lamp
+
 living_room:
     view: yes
     name: Living Room
@@ -41,16 +52,23 @@ bedroom:
 counter_top_lights:
   view: no
   name: Counter Top Lights
+  icon: mdi:lightbulb
   entities:
     - light.counter_top_1
     - light.counter_top_2
 
-light:
-  name: Light
+bedroom_lights:
+  name: Bedroom Lights
+  icon: mdi:lightbulb
   entities:
-    - group.counter_top_lights
     - light.bedroom_1
     - light.bedroom_2
+
+light:
+  name: Lights
+  entities:
+    - group.counter_top_lights
+    - group.bedroom_lights
     - light.hue_bloom_1
     - light.floor_lamp
     - switch.living_room_lamp
@@ -100,3 +118,9 @@ crimes:
   name: Crime Reports
   entities:
     - sensor.neighborhood_incidents
+
+traveltime:
+  name: Travel Time
+  entities:
+    - sensor.home_to_chopra_center
+    - sensor.chopra_center_to_home
