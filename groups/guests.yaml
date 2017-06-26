@@ -1,0 +1,4 @@
+guests:
+  name: Guests
+  entities:
+    - device_tracker.orsi_phone

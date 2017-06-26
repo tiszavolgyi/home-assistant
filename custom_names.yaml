@@ -78,3 +78,23 @@
     icon: mdi:car
   sensor.chopra_center_to_home:
     icon: mdi:car
+
+#Groups order
+  group.family:
+    order: 0
+  group.guests:
+    order: 1
+  group.battery:
+    order: 2
+  group.traveltime:
+    order: 3
+  group.cameras:
+    order: 4
+  group.crimes:
+    order: 5
+  group.internet_speed:
+    order: 6
+  group.stock:
+    order: 7
+  group.light:
+    order: 8

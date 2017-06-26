@@ -1,6 +1,6 @@
-###################
+######################
 ### All the scenes
-###################
+######################
 
   - name: Living Room Normal
     entities:
@@ -29,7 +29,10 @@
         xy_color: [ 0.5926, 0.3814 ]
       switch.living_room_lamp:
         state: off
-    
+      light.projector_screen:
+        state: off
+        transition: 5
+
   - name: Living Room Late Night
     entities:
       light.hue_bloom_1:
@@ -44,6 +47,11 @@
         xy_color: [ 0.4548, 0.2014 ]
       switch.living_room_lamp:
         state: off
+      light.projector_screen:
+        state: on
+        transition: 5
+        brightness: 90
+        xy_color: [ 0.1756, 0.2167 ]
 
   - name: Living Room Night
     entities:
@@ -59,6 +67,11 @@
         xy_color: [ 0.4548, 0.2014 ]
       switch.living_room_lamp:
         state: on
+      light.projector_screen:
+        state: on
+        transition: 5
+        brightness: 120
+        xy_color: [ 0.1756, 0.2167 ]
 
   - name: Living Room OFF
     entities:
@@ -70,6 +83,10 @@
         transition: 10
       switch.living_room_lamp:
         state: off
+      light.projector_screen:
+        state: off
+        transition: 10
+
 
   - name: Bedroom Night
     entities:

@@ -2,10 +2,18 @@
 ### VIEWS
 ##############
 
-#default_view:
-#  view: yes
-#  entities:
-#    - group.light
+default_view:
+  view: yes
+  entities:
+    - group.battery
+    - group.family
+    - group.guests
+    - group.traveltime
+     - camera.patio
+    - group.crimes
+    - group.stock
+    - group.internet_speed
+    - group.light
 
 all_lights_control:
     view: yes
@@ -13,7 +21,20 @@ all_lights_control:
     #control: hidden
     entities:
       - group.light
+      - group.all_visible_scenes
 
+cameras:
+    view: yes
+    icon: mdi:video
+    entities:
+      - camera.patio
+      - group.patio_camera
+
+thermostate_view:
+    view: yes
+    icon: mdi:thermometer
+    entities:
+      - group.thermostate
 
 living_room:
     view: yes
