@@ -2,6 +2,24 @@
 ### All the scenes
 ######################
 
+
+######################
+### Living Room
+######################
+
+  - name: Living Room Reading
+    entities:
+      light.floor_lamp:
+        state: on
+        transition: 2
+        brightness: 254
+        xy_color: [ 0.4452, 0.4068 ]
+      light.projector_screen:
+        state: on
+        transition: 2
+        brightness: 254
+        xy_color: [ 0.1756, 0.2167 ]
+
   - name: Living Room Normal
     entities:
       light.hue_bloom_1:
@@ -87,6 +105,9 @@
         state: off
         transition: 10
 
+######################
+### Bedroom
+######################
 
   - name: Bedroom Night
     entities:
@@ -100,3 +121,37 @@
         transition: 2
         brightness: 90
         xy_color: [ 0.3247, 0.1522 ]
+
+  - name: Bedroom - Vivi Reading
+    entities:
+      light.bedroom_2:
+        state: on
+        transition: 2
+        brightness: 254
+        xy_color: [ 0.4452, 0.4068 ]
+
+  - name: Bedroom - Peter Reading
+    entities:
+      light.bedroom_1:
+        state: on
+        transition: 2
+        brightness: 254
+        xy_color: [ 0.4452, 0.4068 ]
+
+  - name: Bedroom - Romantic
+    entities:
+      light.bedroom_1:
+        state: on
+        transition: 8
+        brightness:
+        xy_color: [ 0.6823, 0.3039 ]
+      light.bedroom_2:
+        state: on
+        transition: 2
+        brightness: 8
+        xy_color: [ 0.6823, 0.3039 ]
+
+
+######################
+### Kitchen
+######################

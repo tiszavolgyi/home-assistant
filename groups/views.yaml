@@ -9,7 +9,7 @@ default_view:
     - group.family
     - group.guests
     - group.traveltime
-     - camera.patio
+    - camera.patio
     - group.crimes
     - group.stock
     - group.internet_speed
@@ -21,7 +21,8 @@ all_lights_control:
     #control: hidden
     entities:
       - group.light
-      - group.all_visible_scenes
+      - group.livingroom_scenes
+      - group.bedroom_scenes
 
 cameras:
     view: yes
@@ -36,33 +37,41 @@ thermostate_view:
     entities:
       - group.thermostate
 
-living_room:
+automations_view:
     view: yes
-    name: Living Room
-    #control: hidden
+    icon: mdi:home-automation
     entities:
-      - light.hue_bloom_1
-      - light.floor_lamp
-      - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
-      - climate.living_room
-      - switch.living_room_lamp
+      - group.sunset_automations
+      - group.media_automations
 
-upstaires_master:
-  view: no
-  name: Upstairs Master
-  entities:
-    - media_player.plex_13a54f98a5523bde_com_plexapp_android
 
-kitchen:
-  view: yes
-  name: Kitchen
-  entities:
-    - light.counter_top_1
-    - light.counter_top_2
-
-bedroom:
-  view: yes
-  name: Bedroom
-  entities:
-    - light.bedroom_1
-    - light.bedroom_2
+# living_room:
+#     view: yes
+#     name: Living Room
+#     #control: hidden
+#     entities:
+#       - light.hue_bloom_1
+#       - light.floor_lamp
+#       - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
+#       - climate.living_room
+#       - switch.living_room_lamp
+#
+# upstaires_master:
+#   view: no
+#   name: Upstairs Master
+#   entities:
+#     - media_player.plex_13a54f98a5523bde_com_plexapp_android
+#
+# kitchen:
+#   view: yes
+#   name: Kitchen
+#   entities:
+#     - light.counter_top_1
+#     - light.counter_top_2
+#
+# bedroom:
+#   view: yes
+#   name: Bedroom
+#   entities:
+#     - light.bedroom_1
+#     - light.bedroom_2
