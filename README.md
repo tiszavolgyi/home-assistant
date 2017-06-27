@@ -18,6 +18,7 @@ And thanks to *all* the devs that create the Home Assistant magic
 - Philips Hue Bridge
 - Philips Hue Bloom
 - Philips Hue Color Ambiance Bulbs
+- Philips Hue LightStrip
 - Plex Media Server
 - Nest Thermostat
 - Nest Protect
