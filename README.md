@@ -26,7 +26,7 @@ And thanks to *all* the devs that create the Home Assistant magic
 - Wemo Switch
 
 
-##Configuration Best Pratices
+## Configuration Best Pratices
 
 ### More than one entity
 
