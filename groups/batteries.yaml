@@ -3,4 +3,4 @@ battery:
   entities:
     - sensor.peter_phone_battery
     - sensor.vivi_phone_battery
-#    - sensor.wallpanel_battery
+    - sensor.livingroom_wallpanel_battery
