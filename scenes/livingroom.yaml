@@ -28,6 +28,11 @@
         transition: 2
         brightness: 150
         xy_color: [ 0.4448, 0.4066 ]
+      light.stair_lights:
+        state: on
+        transition: 10
+        brightness: 35
+        xy_color: [ 0.1713, 0.3511 ]
 
   - name: Living Room Movie
     entities:
@@ -46,6 +51,11 @@
       light.projector_screen:
         state: off
         transition: 5
+      light.stair_lights:
+        state: on
+        transition: 10
+        brightness: 3
+        xy_color: [ 0.1713, 0.3511 ]
 
   - name: Living Room Late Night
     entities:
@@ -66,6 +76,11 @@
         transition: 5
         brightness: 90
         xy_color: [ 0.1756, 0.2167 ]
+      light.stair_lights:
+        state: on
+        transition: 10
+        brightness: 10
+        xy_color: [ 0.1713, 0.3511 ]
 
   - name: Living Room Night
     entities:
@@ -86,6 +101,11 @@
         transition: 5
         brightness: 120
         xy_color: [ 0.1756, 0.2167 ]
+      light.stair_lights:
+        state: on
+        transition: 10
+        brightness: 35
+        xy_color: [ 0.1713, 0.3511 ]
 
   - name: Living Room OFF
     entities:
@@ -100,3 +120,6 @@
       light.projector_screen:
         state: off
         transition: 10
+      light.stair_lights:
+        state: off
+        transition: 100

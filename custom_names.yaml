@@ -23,6 +23,9 @@
     friendly_name: Kitchen
   light.bedroom:
     friendly_name: Bedroom
+  light.stair_lights:
+    friendly_name: Stairs
+
 
 #Switches
   switch.living_room_lamp: #Wemo mini in the living room
@@ -35,7 +38,12 @@
   scene.living_room_movie:
     friendly_name: Living Room Movie
     emulated_hue: true
-    emulated_hue_name: Livingroom movie scene
+    emulated_hue_name: Livingroom movie
+
+  scene.living_room_off:
+    friendly_name: Living Room OFF
+    emulated_hue: true
+    emulated_hue_name: Go to sleep
 
 #NEST related names
   binary_sensor.living_room_thermostat_fan:

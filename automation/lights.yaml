@@ -14,7 +14,7 @@
         offset: "-00:10:00"
     condition:
       - condition: state
-        entity_id: group.all_devices
+        entity_id: group.family
         state: 'home'
     action:
       service: scene.turn_on
