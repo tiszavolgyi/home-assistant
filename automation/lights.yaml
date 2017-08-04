@@ -65,3 +65,12 @@
     action:
       service: switch.turn_off
       entity_id: switch.living_room_lamp
+
+  - alias: "Turn off all lights at 10pm"
+    initial_state: 'off'
+    trigger:
+      - platform: time
+        at: '22:00:00'
+    action:
+      service: scene.turn_off
+      entity_id: scene.living_room_off

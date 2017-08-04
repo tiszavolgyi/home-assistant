@@ -86,6 +86,10 @@
     icon: mdi:car
   sensor.chopra_center_to_home:
     icon: mdi:car
+  sensor.exchange_rate:
+    icon: mdi:currency-usd
+  sensor.ethereum:
+    icon: mdi:currency-eth
 
 #Groups order
   group.family:
@@ -102,7 +106,7 @@
     order: 5
   group.internet_speed:
     order: 6
-  group.stock:
+  group.finance:
     order: 7
   group.light:
     order: 8

@@ -1,0 +1,5 @@
+- platform: fixer
+  target: HUF
+
+- platform: coinmarketcap
+  currency: ethereum

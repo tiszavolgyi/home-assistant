@@ -1,5 +1,0 @@
-stock:
-  name: Stock Market
-  entities:
-    - sensor.ko
-    - sensor.hqcl

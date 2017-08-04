@@ -1,0 +1,7 @@
+finance:
+  name: Finance
+  entities:
+    - sensor.exchange_rate
+    - sensor.ethereum
+    - sensor.ko
+    - sensor.hqcl

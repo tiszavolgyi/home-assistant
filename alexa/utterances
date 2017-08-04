@@ -1,0 +1,7 @@
+LocateIntent Where is {User}
+LocateIntent Where's {User}
+LocateIntent Where {User} is
+LocateIntent Where did {User} go
+WhereAreWeIntent where we are
+ActivateSceneIntent activate {Scene}
+GoodNightSceneIntent good night

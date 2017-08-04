@@ -11,7 +11,7 @@ default_view:
     - group.traveltime
     - camera.patio
     - group.crimes
-    - group.stock
+    - group.finance
     - group.internet_speed
     - group.light
 

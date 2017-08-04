@@ -1,0 +1,8 @@
+  GoodNightSceneIntent:
+    action:
+      service: scene.turn_on
+      data_template:
+        entity_id: scene.living_room_off
+    speech:
+      type: plain
+      text: !include goodnightconfirm.yaml
