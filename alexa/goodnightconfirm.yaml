@@ -1,9 +1,16 @@
           >
           {% set responses = [
-          "Good night guys! I am going to activate night mode. Marvin out.",
-          "Sweet dreams love birds! I will turn off everything upstairs.",
-          "Good for you, I never sleep! Nevermind, sleep well and leave the rest on me!",
-          "Good night, sleep tight and let the rest for me.",
+          "Good Night. I am sorry that you have to sleep alone. No worries, I am always here to help.",
+          "Wait, I have a message for you from Peter. Miss you baby, cannot wait to see you!",
+          "Godd night. No worries just a few more days and believe me Peter miss you as much as you miss him.",
+          "Good night girl! Are you counting back the days? I am sure Peter does.",
           ] %}
           {% set rindex =  (range(0, (responses | length - 1) )|random) -%}
           {{responses[rindex]}}
+
+
+
+          #"Good night guys! I am going to activate night mode. Marvin out.",
+          #"Sweet dreams love birds! I will turn off everything upstairs.",
+          #"Good for you, I never sleep! Nevermind, sleep well and leave the rest on me!",
+          #"Good night, sleep tight and let the rest for me.",
