@@ -1,0 +1,48 @@
+avr_turn_off:
+  sequence:
+    - service: !secret broadlinkpacket
+      data:
+        packet:
+          - "JgBYAAABKJIUERMRFBEUERMRFBEUERM2ExEUERQRExEUNhM2FDUUERM2FDUUNRQ2EzYUERMRFDUUERQRExEUERQREzYUNRQREwAFwwABKUgUAAxKAAEoSRQADQU="
+
+avr_turn_on:
+  sequence:
+    - service: !secret broadlinkpacket
+      data:
+        packet:
+          - "JgBUAAABKI8XEBQRFBEUEBQRFBETERQ1FBEUERQQFBEUNRQ1FDYUEBQRFBETERQRFBAUERQ1FDUUNhQ1FDUUNRQ2FDUUERQQEwAC8AoAAsoAAShJEgANBQAAAAA="
+
+avr_turn_on_radio:
+  sequence:
+    - service: !secret broadlinkpacket
+      data:
+        packet:
+          - "JgBYAAABKZEUERQRExEUERQQFBEUERQ1FBETERQRFBAUNhQ1FDUUERQ1FBEUEBQRFBEUEBQRFDUUERQ1FDUUNRQ2FDUUNRQREgAFxQABKEgUAAxKAAEpSBQADQU="
+
+avr_turn_on_computer:
+  sequence:
+    - service: !secret broadlinkpacket
+      data:
+        packet:
+          - "JgBYAAABKJIUEBQRFBEUEBQRFBETERQ1FBEUERQQFBEUNRQ1FDYUEBQ2EzYUEBQRFDUUNhMRFDUUERQRFDUUNRQRFBETNhQQEwAFxAABKUgSAAxMAAEoSRMADQU="
+
+avr_turn_on_netradio:
+  sequence:
+    - service: !secret broadlinkpacket
+      data:
+        packet:
+          - "JgBYAAABKJIUERQQFBEUEBQRFBEUEBQ1FRAUERQQFBEUNRQ2FDUUEBQ2FBAUNRUQFDUUNhQQFDYUEBQ1FBEUNRQRFBEUNRQREgAFxAABKUgTAAxLAAEoSRIADQU="
+
+avr_turn_vulome_up:
+  sequence:
+    - service: !secret broadlinkpacket
+      data:
+        packet:
+          - "JgBQAAABKJIUERQRExEUERQQFBEUERQ1FBETERQRFBAUNRU1FDUUERQ1FDUUNRQRFBEUEBQ1FTUUERMRFBEUNRQ1FDUUERQREgAFxAABKUgTAA0FAAAAAAAAAAA="
+
+avr_turn_vulome_down:
+  sequence:
+    - service: !secret broadlinkpacket
+      data:
+        packet:
+          - "JgBQAAABKZIUEBQRFBETERQRFBETERQ1FBEUERMRFBEUNRQ1FDYUEBQRFBETERQ1FBEUERQ1FDUUNRQ2FDUUERM2FDUUERQQEwAFxAABKEkRAA0FAAAAAAAAAAA="

@@ -77,7 +77,6 @@ media_player:
       use_custom_entity_ids: true
       use_episode_art: true
 
-
 #Presence detection
 mqtt:
   broker: !secret mqttip
@@ -143,6 +142,8 @@ tts:
   cache_dir: !secret tts_cache_dir
   time_memory: 43200
 
+
+switch: !include_dir_merge_list  switches
 group: !include_dir_merge_named  groups
 scene: !include_dir_merge_list  scenes
 automation: !include_dir_merge_list automation
@@ -150,3 +151,4 @@ sensor: !include_dir_merge_list sensors
 binary_sensor: !include_dir_merge_list binary_sensors
 alexa: !include alexa/alexa.yaml
 intent_script: !include alexa/intent_scripts.yaml
+script: !include_dir_merge_named scripts

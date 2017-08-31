@@ -43,6 +43,19 @@ automations_view:
     entities:
       - group.sunset_automations
       - group.media_automations
+      - group.all_scripts
+      - script.avr_turn_on
+      - script.avr_turn_off
+      - script.avr_turn_vulome_up
+      - script.avr_turn_vulome_down
+      - script.avr_turn_on_computer
+      - script.avr_turn_on_radio
+      - script.avr_turn_on_netradio
+      - script.projector_turn_on
+      - script.projector_turn_off
+      - script.projector_screen_up
+      - script.projector_screen_down
+      - switch.harman_kardon_avr
 
 
 # living_room:

@@ -1,61 +1,61 @@
-##############################################################
-### Alexa intents
-###
-### AfTER UPDATE 0.50.1 ALL THE INTENTS HAVE TO BE MOVED TO
-### INTENT_SCRIPT.YAML OTHERWISE THE COMPONENT DOES NOT WORK
-### AND IN CONFIG NEED TO INCLUDE THE INTENT_SCRIPT.YAML!!!
-###
-##############################################################
-#
-#   intents:
-#     WhereAreWeIntent:
-#       speech:
-#         type: plaintext
-#         text: >
-#           {%- if is_state('device_tracker.paulus', 'home') and
-#                  is_state('device_tracker.anne_therese', 'home') -%}
-#             You are both home, you silly
-#           {%- else -%}
-#             Anne Therese is at {{ states("device_tracker.anne_therese") }}
-#             and Paulus is at {{ states("device_tracker.paulus") }}
-#           {% endif %}
-#
-#     LocateIntent:
-#       action:
-#         service: notify.notify
-#         data_template:
-#           message: The location of {{ User }} has been queried via Alexa.
-#       speech:
-#         type: plaintext
-#         text: >
-#           {%- for state in states.device_tracker -%}
-#             {%- if state.name.lower() == User.lower() -%}
-#               {{ state.name }} is at {{ state.state }}
-#             {%- elif loop.last -%}
-#               I am sorry, I do not know where {{ User }} is.
-#             {%- endif -%}
-#           {%- else -%}
-#             Sorry, I don't have any trackers registered.
-#           {%- endfor -%}
-#       card:
-#         type: simple
-#         title: Sample title
-#         content: Some more content
-#
-#     ActivateSceneIntent:
-#       action:
-#         service: scene.turn_on
-#         data_template:
-#           entity_id: scene.{{ Scene | replace(" ", "_") }}
-#       speech:
-#         type: plaintext
-#         text: All right Peter
-#
-#     GoodNightSceneIntent:
-#       action:
-#         service: scene.turn_on
-#         data_template:
-#           entity_id: scene.living_room_off
-#       speech:
-#         type: plaintext
-#         text: !include goodnightconfirm.yaml
+#############################################################
+## Alexa intents
+##
+## AfTER UPDATE 0.50.1 ALL THE INTENTS HAVE TO BE MOVED TO
+## INTENT_SCRIPT.YAML OTHERWISE THE COMPONENT DOES NOT WORK
+## AND IN CONFIG NEED TO INCLUDE THE INTENT_SCRIPT.YAML!!!
+##
+#############################################################
+
+  intents:
+    WhereAreWeIntent:
+      speech:
+        type: plaintext
+        text: >
+          {%- if is_state('device_tracker.paulus', 'home') and
+                 is_state('device_tracker.anne_therese', 'home') -%}
+            You are both home, you silly
+          {%- else -%}
+            Anne Therese is at {{ states("device_tracker.anne_therese") }}
+            and Paulus is at {{ states("device_tracker.paulus") }}
+          {% endif %}
+
+    LocateIntent:
+      action:
+        service: notify.notify
+        data_template:
+          message: The location of {{ User }} has been queried via Alexa.
+      speech:
+        type: plaintext
+        text: >
+          {%- for state in states.device_tracker -%}
+            {%- if state.name.lower() == User.lower() -%}
+              {{ state.name }} is at {{ state.state }}
+            {%- elif loop.last -%}
+              I am sorry, I do not know where {{ User }} is.
+            {%- endif -%}
+          {%- else -%}
+            Sorry, I don't have any trackers registered.
+          {%- endfor -%}
+      card:
+        type: simple
+        title: Sample title
+        content: Some more content
+
+    ActivateSceneIntent:
+      action:
+        service: scene.turn_on
+        data_template:
+          entity_id: scene.{{ Scene | replace(" ", "_") }}
+      speech:
+        type: plaintext
+        text: All right Peter
+
+    GoodNightSceneIntent:
+      action:
+        service: scene.turn_on
+        data_template:
+          entity_id: scene.living_room_off
+      speech:
+        type: plaintext
+        text: !include goodnightconfirm.yaml
