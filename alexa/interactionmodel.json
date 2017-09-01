@@ -29,6 +29,24 @@
         }
       ],
       "intent": "GoodNightSceneIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Night",
+          "type": "Scenes"
+        }
+      ],
+      "intent": "TurnOnTVIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Night",
+          "type": "Scenes"
+        }
+      ],
+      "intent": "TurnOffTVIntent"
     }
   ]
 }

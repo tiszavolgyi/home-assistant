@@ -5,3 +5,7 @@ LocateIntent Where did {User} go
 WhereAreWeIntent where we are
 ActivateSceneIntent activate {Scene}
 GoodNightSceneIntent good night
+TurnOnTVIntent turn on tv
+TurnOnTVIntent turn on projector
+TurnOffTVIntent turn off tv
+TurnOffTVIntent turn off projector

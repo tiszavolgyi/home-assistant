@@ -1,0 +1,34 @@
+livingroom_off:
+  sequence:
+    - service: scene.turn_on
+      entity_id: scene.living_room_off
+    - service: script.turn_on
+      entity_id:
+        - script.avr_turn_off
+        - script.projector_turn_off
+        - script.projector_screen_up
+
+turn_on_tv:
+  sequence:
+    - service: script.turn_on
+      entity_id:
+        - script.avr_turn_on_computer
+        - script.projector_turn_on
+        - script.projector_screen_down
+    - delay:
+        seconds: 30
+    - service: switch.turn_off
+      entity_id: switch.living_room_lamp
+
+
+turn_off_tv:
+  sequence:
+    - service: switch.turn_on
+      entity_id: switch.living_room_lamp
+    - delay:
+        seconds: 30
+    - service: script.turn_on
+      entity_id:
+        - script.avr_turn_off
+        - script.projector_turn_off
+        - script.projector_screen_up

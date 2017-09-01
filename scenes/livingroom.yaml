@@ -111,10 +111,10 @@
     entities:
       light.hue_bloom_1:
         state: off
-        transition: 10
+        transition: 30
       light.floor_lamp:
         state: off
-        transition: 10
+        transition: 30
       switch.living_room_lamp:
         state: off
       light.projector_screen:
@@ -122,4 +122,4 @@
         transition: 10
       light.stair_lights:
         state: off
-        transition: 100
+        transition: 150
