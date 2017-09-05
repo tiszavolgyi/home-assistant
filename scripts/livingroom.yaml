@@ -5,7 +5,15 @@ livingroom_off:
     - service: script.turn_on
       entity_id:
         - script.avr_turn_off
+    - delay:
+        milliseconds: 200
+    - service: script.turn_on
+      entity_id:
         - script.projector_turn_off
+    - delay:
+        milliseconds: 200
+    - service: script.turn_on
+      entity_id:
         - script.projector_screen_up
 
 turn_on_tv:
@@ -13,10 +21,18 @@ turn_on_tv:
     - service: script.turn_on
       entity_id:
         - script.avr_turn_on_computer
+    - delay:
+        milliseconds: 200
+    - service: script.turn_on
+      entity_id:
         - script.projector_turn_on
+    - delay:
+        milliseconds: 200
+    - service: script.turn_on
+      entity_id:
         - script.projector_screen_down
     - delay:
-        seconds: 30
+        seconds: 15
     - service: switch.turn_off
       entity_id: switch.living_room_lamp
 
@@ -26,9 +42,17 @@ turn_off_tv:
     - service: switch.turn_on
       entity_id: switch.living_room_lamp
     - delay:
-        seconds: 30
+        seconds: 3
     - service: script.turn_on
       entity_id:
         - script.avr_turn_off
+    - delay:
+        milliseconds: 200
+    - service: script.turn_on
+      entity_id:
         - script.projector_turn_off
+    - delay:
+        milliseconds: 200
+    - service: script.turn_on
+      entity_id:
         - script.projector_screen_up
