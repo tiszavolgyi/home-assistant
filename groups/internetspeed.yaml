@@ -1,3 +1,7 @@
+####################################
+### Group for the internetspeed view
+####################################
+
 internet_speed:
   name: Internet Speed
   entities:

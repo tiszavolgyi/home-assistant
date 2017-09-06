@@ -32,15 +32,20 @@ turn_on_tv:
       entity_id:
         - script.projector_screen_down
     - delay:
-        seconds: 15
+        seconds: 25
     - service: switch.turn_off
       entity_id: switch.living_room_lamp
 
 
 turn_off_tv:
   sequence:
-    - service: switch.turn_on
-      entity_id: switch.living_room_lamp
+#    # - service_template: >
+    #     {% if is_state('sun.sun', 'below_horizon') %}
+    #       switch.turn_on
+    #     {% else %}
+    #       switch.turn_off
+    #     {% end if %}
+    #   entity_id: switch.living_room_lamp
     - delay:
         seconds: 3
     - service: script.turn_on

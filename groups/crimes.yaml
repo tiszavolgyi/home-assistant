@@ -1,3 +1,7 @@
+####################################
+### Group for the crime report
+####################################
+
 crimes:
   name: Crime Reports
   entities:

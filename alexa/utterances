@@ -1,11 +1,9 @@
-LocateIntent Where is {User}
-LocateIntent Where's {User}
-LocateIntent Where {User} is
-LocateIntent Where did {User} go
-WhereAreWeIntent where we are
-ActivateSceneIntent activate {Scene}
 GoodNightSceneIntent good night
 TurnOnTVIntent turn on tv
+TurnOnTVIntent turn on the tv
 TurnOnTVIntent turn on projector
+TurnOnTVIntent turn on the projector
 TurnOffTVIntent turn off tv
+TurnOffTVIntent turn off the tv
 TurnOffTVIntent turn off projector
+TurnOffTVIntent turn off the projector

@@ -1,9 +1,13 @@
+##############################################
+### Alexa "good night" command confirmations
+##############################################
+
           >
           {% set responses = [
           "Good night guys! I am going to activate night mode. Marvin out.",
           "Sweet dreams love birds! I will turn off everything upstairs.",
           "Good for you, I never sleep! Nevermind, sleep well and leave the rest on me!",
-          "Good night, sleep tight and leave the rest for me.",          
+          "Good night, sleep tight and leave the rest for me.",
           ] %}
           {% set rindex =  (range(0, (responses | length - 1) )|random) -%}
           {{responses[rindex]}}

@@ -1,3 +1,7 @@
+####################################
+### Alexa command confirmations
+####################################
+
           >
           {% set responses = [
           "All right",

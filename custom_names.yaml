@@ -87,9 +87,16 @@
   sensor.chopra_center_to_home:
     icon: mdi:car
   sensor.exchange_rate:
+    friendly_name: USD Exchange Rate
     icon: mdi:currency-usd
   sensor.ethereum:
     icon: mdi:currency-eth
+  sensor.bitcoin:
+    icon: mdi:currency-btc
+  sensor.litecoin:
+    icon: mdi:coin
+  sensor.ripple:
+    icon: mdi:coin
 
 #Groups order
   group.family:

@@ -1,3 +1,7 @@
+####################################
+### Group for the Batteries
+####################################
+
 battery:
   name: Batteries
   entities:

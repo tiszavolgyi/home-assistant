@@ -15,6 +15,7 @@ And thanks to *all* the devs that create the Home Assistant magic
 
 ## Devices
 
+- Broadlink RM Pro
 - Philips Hue Bridge
 - Philips Hue Bloom
 - Philips Hue Color Ambiance Bulbs

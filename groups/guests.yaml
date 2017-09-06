@@ -1,3 +1,7 @@
+####################################
+### Group for the Guests view
+####################################
+
 guests:
   name: Guests
   entities:
