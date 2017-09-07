@@ -43,3 +43,12 @@
         transition: 2
         brightness: 8
         xy_color: [ 0.6823, 0.3039 ]
+
+  - name: Bedroom OFF
+    entities:
+      light.bedroom_1:
+        state: off
+        transition: 15
+      light.bedroom_2:
+        state: off
+        transition: 15

@@ -13,6 +13,7 @@ sunset_automations:
     - automation.turn_on_lights_when_arriving_home_at_night
     - automation.turn_on_living_room_lights_after_sunset
     - automation.turn_off_all_lights_at_10pm
+    - automation.turn_off_lights_when_nobody_at_home
 
 media_automations:
   view: no

@@ -7,3 +7,10 @@ family:
   entities:
     - !secret peterdevice
     - !secret vividevice
+
+household:
+  name: Household
+  entities:
+    - !secret peterdevice
+    - !secret vividevice
+    - device_tracker.orsi_phone

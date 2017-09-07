@@ -72,5 +72,17 @@
       - platform: time
         at: '22:00:00'
     action:
-      service: scene.turn_off
+      service: scene.turn_on
       entity_id: scene.living_room_off
+
+  - alias: "Turn off lights when nobody at home"
+    trigger:
+      - platform: state
+        entity_id: group.household
+        from: 'home'
+        to: 'not_home'
+    action:
+      service: scene.turn_on
+      entity_id:
+        - scene.living_room_off
+        - scene.bedroom_off
