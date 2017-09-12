@@ -13,6 +13,15 @@ avr_turn_on:
         packet:
           - "JgBUAAABKI8XEBQRFBEUEBQRFBETERQ1FBEUERQQFBEUNRQ1FDYUEBQRFBETERQRFBAUERQ1FDUUNhQ1FDUUNRQ2FDUUERQQEwAC8AoAAsoAAShJEgANBQAAAAA="
 
+
+avr_avr_button:
+  sequence:
+    - service: !secret broadlinkpacket
+      data:
+        packet:
+          - "JgBYAAABKZITERQRFBETERQRExITERQ2ExEUERMRFBETNxM2EzYTERQRFBETERQRExITERQ1FDYTNhM2FDUUNhM2FDYTEhISEwAFwwABKEkUAAxKAAEoSRQADQU="
+
+
 avr_turn_on_radio:
   sequence:
     - service: !secret broadlinkpacket
