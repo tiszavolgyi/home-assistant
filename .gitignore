@@ -1,0 +1,14 @@
+secrets.yaml
+deps/*
+www/*
+tts/*
+.HA_VERSION
+.uuid
+backup_nest.conf
+home-assistant.db
+home-assistant_v2.db
+home-assistant.log
+known_devices.yaml
+nest.conf
+phue.conf
+plex.conf
