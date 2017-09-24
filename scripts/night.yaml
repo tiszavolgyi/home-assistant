@@ -1,0 +1,27 @@
+#######################################
+### Scripts for night time automations
+#######################################
+
+good_night_off:
+  sequence:
+    - service: script.turn_on
+      entity_id:
+        - script.avr_turn_off
+    - delay:
+        milliseconds: 200
+    - service: script.turn_on
+      entity_id:
+        - script.projector_turn_off
+    - delay:
+        milliseconds: 200
+    - service: script.turn_on
+      entity_id:
+        - script.projector_screen_up
+    - delay:
+        milliseconds: 200
+    - service: scene.turn_on
+      entity_id: scene.living_room_off
+    - service: scene.turn_on
+      entity_id: scene.patio_off
+    - service: scene.turn_on
+      entity_id: scene.kitchen_off

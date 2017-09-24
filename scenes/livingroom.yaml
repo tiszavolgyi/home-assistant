@@ -107,7 +107,7 @@
         brightness: 35
         xy_color: [ 0.1713, 0.3511 ]
 
-  - name: Living Room OFF
+  - name: Living Room Off
     entities:
       light.hue_bloom_1:
         state: off

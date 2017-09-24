@@ -44,7 +44,7 @@
         brightness: 8
         xy_color: [ 0.6823, 0.3039 ]
 
-  - name: Bedroom OFF
+  - name: Bedroom Off
     entities:
       light.bedroom_1:
         state: off

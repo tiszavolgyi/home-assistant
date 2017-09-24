@@ -1,3 +1,7 @@
+#######################################
+### Scripts for Living Room automations
+#######################################
+
 livingroom_off:
   sequence:
     - service: scene.turn_on

@@ -1,0 +1,85 @@
+######################
+### Kitchen Scenes
+######################
+
+
+### COOKING
+
+  - name: Kitchen - Cooking
+    entities:
+      light.kitchen_1:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]
+      light.kitchen_2:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]
+      light.kitchen_3:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]
+      light.kitchen_4:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]
+      light.kitchen_5:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]
+      light.counter_top_1:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]
+      light.counter_top_2:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]
+
+
+### OFF
+
+  - name: Kitchen Off
+    entities:
+      light.kitchen_1:
+        state: off
+        transition: 10
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]
+      light.kitchen_2:
+        state: off
+        transition: 10
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]
+      light.kitchen_3:
+        state: off
+        transition: 10
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]
+      light.kitchen_4:
+        state: off
+        transition: 10
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]
+      light.kitchen_5:
+        state: off
+        transition: 10
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]
+      light.counter_top_1:
+        state: off
+        transition: 10
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]
+      light.counter_top_2:
+        state: off
+        transition: 10
+        brightness: 254
+        xy_color: [ 0.3682, 0.3715 ]

@@ -1,3 +1,8 @@
+#######################################
+### Controlling the Projector
+### with Broadlink universal remote
+#######################################
+
 projector_turn_on:
   sequence:
     - service: !secret broadlinkpacket

@@ -1,3 +1,7 @@
+#######################################
+### Controlling the Projector Screen
+### with Broadlink universal remote
+#######################################
 
 projector_screen_down:
   sequence:

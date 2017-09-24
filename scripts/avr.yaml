@@ -1,3 +1,8 @@
+#######################################
+### Controlling the Harman Kardon AVR
+### with Broadlink universal remote
+#######################################
+
 avr_turn_off:
   sequence:
     - service: !secret broadlinkpacket
