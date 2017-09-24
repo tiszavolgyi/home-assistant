@@ -4,14 +4,13 @@
 
 ### Night light
 
-  - name: Patio at Night
+  - name: Patio Night
     entities:
       light.patio_2:
         state: on
         transition: 1
         brightness: 254
         xy_color: [ 0.4452, 0.4068 ]
-
 
 ### OFF
 
@@ -20,5 +19,3 @@
       light.patio_2:
         state: off
         transition: 5
-        brightness: 254
-        xy_color: [ 0.4452, 0.4068 ]

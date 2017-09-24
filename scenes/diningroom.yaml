@@ -4,7 +4,7 @@
 
 ### Night light
 
-  - name: Stairs Night
+  - name: Dining Room Night
     entities:
       light.hue_bloom_1:
         state: on
@@ -12,10 +12,9 @@
         brightness: 150
         xy_color: [ 0.4448, 0.4066 ]
 
-
 ### OFF
 
-  - name: Stairs Off
+  - name: Dining Room Off
     entities:
       light.hue_bloom_1:
         state: off

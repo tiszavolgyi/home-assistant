@@ -6,7 +6,6 @@ livingroom_scenes:
   name: Living Room Scenes
   entities:
     - scene.living_room_reading
-    - scene.living_room_normal
     - scene.living_room_night
     - scene.living_room_late_night
     - scene.living_room_movie

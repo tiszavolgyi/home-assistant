@@ -3,6 +3,8 @@
 ### Living Room Scenes
 ######################
 
+### Reading Light
+
   - name: Living Room Reading
     entities:
       light.floor_lamp:
@@ -16,23 +18,7 @@
         brightness: 254
         xy_color: [ 0.1756, 0.2167 ]
 
-  - name: Living Room Normal
-    entities:
-      light.hue_bloom_1:
-        state: on
-        transition: 2
-        brightness: 150
-        xy_color: [ 0.4448, 0.4066 ]
-      light.floor_lamp:
-        state: on
-        transition: 2
-        brightness: 150
-        xy_color: [ 0.4448, 0.4066 ]
-      light.stair_lights:
-        state: on
-        transition: 10
-        brightness: 35
-        xy_color: [ 0.1713, 0.3511 ]
+### Lights when Movie Playing
 
   - name: Living Room Movie
     entities:
@@ -56,6 +42,8 @@
         transition: 10
         brightness: 3
         xy_color: [ 0.1713, 0.3511 ]
+
+### Late Night Light
 
   - name: Living Room Late Night
     entities:
@@ -82,6 +70,8 @@
         brightness: 10
         xy_color: [ 0.1713, 0.3511 ]
 
+### Night Light
+
   - name: Living Room Night
     entities:
       light.hue_bloom_1:
@@ -106,6 +96,8 @@
         transition: 10
         brightness: 35
         xy_color: [ 0.1713, 0.3511 ]
+
+### OFF
 
   - name: Living Room Off
     entities:
