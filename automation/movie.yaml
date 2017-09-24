@@ -10,7 +10,6 @@
         entity_id:
           - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
           - media_player.tiszaserver
-          - media_player.plex_0hcmq3joy1to5op7er34ayk3xr
           - media_player.plex_rp7m7uxu17ezmzvpuhnlfuet
         to: 'playing'
     condition:
@@ -27,7 +26,6 @@
         entity_id:
           - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
           - media_player.tiszaserver
-          - media_player.plex_0hcmq3joy1to5op7er34ayk3xr
           - media_player.plex_rp7m7uxu17ezmzvpuhnlfuet
         to: 'paused'
     condition:
@@ -46,7 +44,6 @@
         entity_id:
           - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
           - media_player.tiszaserver
-          - media_player.plex_0hcmq3joy1to5op7er34ayk3xr
           - media_player.plex_rp7m7uxu17ezmzvpuhnlfuet
         to: 'idle'
     condition:
@@ -66,7 +63,6 @@
         entity_id:
           - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
           - media_player.tiszaserver
-          - media_player.plex_0hcmq3joy1to5op7er34ayk3xr
           - media_player.plex_rp7m7uxu17ezmzvpuhnlfuet
         to: 'paused'
     condition:
@@ -85,7 +81,6 @@
         entity_id:
           - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
           - media_player.tiszaserver
-          - media_player.plex_0hcmq3joy1to5op7er34ayk3xr
           - media_player.plex_rp7m7uxu17ezmzvpuhnlfuet
         to: 'idle'
     condition:
