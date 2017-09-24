@@ -1,0 +1,22 @@
+###############################
+### Dining Room Scenes
+###############################
+
+### Night light
+
+  - name: Stairs Night
+    entities:
+      light.hue_bloom_1:
+        state: on
+        transition: 2
+        brightness: 150
+        xy_color: [ 0.4448, 0.4066 ]
+
+
+### OFF
+
+  - name: Stairs Off
+    entities:
+      light.hue_bloom_1:
+        state: off
+        transition: 30

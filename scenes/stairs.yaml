@@ -1,0 +1,23 @@
+###############################
+### Stairs and Hallways Scenes
+###############################
+
+
+### Night light
+
+  - name: Stairs Night
+    entities:
+      light.stair_lights:
+        state: on
+        transition: 10
+        brightness: 35
+        xy_color: [ 0.1713, 0.3511 ]
+
+
+### OFF
+
+  - name: Stairs Off
+    entities:
+      light.stair_lights:
+        state: off
+        transition: 150
