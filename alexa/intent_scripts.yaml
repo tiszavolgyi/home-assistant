@@ -6,7 +6,7 @@
     action:
       service: script.turn_on
       data_template:
-        entity_id: script.livingroom_off
+        entity_id: script.good_night_off
     speech:
       type: plain
       text: !include goodnightconfirm.yaml
