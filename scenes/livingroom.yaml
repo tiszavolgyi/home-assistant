@@ -22,11 +22,6 @@
 
   - name: Living Room Movie
     entities:
-      light.hue_bloom_1:
-        state: on
-        transition: 2
-        brightness: 5
-        xy_color: [ 0.5926, 0.3814 ]
       light.floor_lamp:
         state: on
         transition: 2
@@ -37,21 +32,12 @@
       light.projector_screen:
         state: off
         transition: 5
-      light.stair_lights:
-        state: on
-        transition: 10
-        brightness: 3
-        xy_color: [ 0.1713, 0.3511 ]
+
 
 ### Late Night Light
 
   - name: Living Room Late Night
     entities:
-      light.hue_bloom_1:
-        state: on
-        transition: 2
-        brightness: 150
-        xy_color: [ 0.2216, 0.6907 ]
       light.floor_lamp:
         state: on
         transition: 2
@@ -64,21 +50,12 @@
         transition: 5
         brightness: 90
         xy_color: [ 0.1756, 0.2167 ]
-      light.stair_lights:
-        state: on
-        transition: 10
-        brightness: 10
-        xy_color: [ 0.1713, 0.3511 ]
+
 
 ### Night Light
 
   - name: Living Room Night
     entities:
-      light.hue_bloom_1:
-        state: on
-        transition: 2
-        brightness: 150
-        xy_color: [ 0.2216, 0.6907 ]
       light.floor_lamp:
         state: on
         transition: 2
@@ -91,19 +68,12 @@
         transition: 5
         brightness: 120
         xy_color: [ 0.1756, 0.2167 ]
-      light.stair_lights:
-        state: on
-        transition: 10
-        brightness: 35
-        xy_color: [ 0.1713, 0.3511 ]
+
 
 ### OFF
 
   - name: Living Room Off
     entities:
-      light.hue_bloom_1:
-        state: off
-        transition: 30
       light.floor_lamp:
         state: off
         transition: 30
@@ -112,6 +82,3 @@
       light.projector_screen:
         state: off
         transition: 10
-      light.stair_lights:
-        state: off
-        transition: 150

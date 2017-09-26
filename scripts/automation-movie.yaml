@@ -1,0 +1,25 @@
+##########################################
+### Scripts for Media Player Automations
+##########################################
+
+### Lights while watching a movie
+
+media_player_playing:
+  sequence:
+    - service: scene.turn_on
+      entity_id: scene.living_room_movie
+    - delay:
+        milliseconds: 100
+    - service: scene.turn_on
+      entity_id: scene.stairs_movie
+
+### Lights when stop watching a movie
+
+media_player_stoped:
+  sequence:
+    - service: scene.turn_on
+      entity_id: scene.living_room_late_night
+    - delay:
+        milliseconds: 100
+    - service: scene.turn_on
+      entity_id: scene.stairs_night

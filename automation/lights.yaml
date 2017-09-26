@@ -7,33 +7,52 @@
 ### Turn off the floor lamp at 9PM Sun-Thur (Wemo)
 ###################################################
 
-  - alias: "Turn on living room lights after sunset"
+### Turn on lights after sunset
+
+  - alias: "Turn on lights after sunset"
     trigger:
       - platform: sun
         event: sunset
         offset: "-00:10:00"
     condition:
       - condition: state
-        entity_id: group.family
+        entity_id: group.household
         state: 'home'
     action:
-      service: scene.turn_on
-      entity_id: scene.living_room_night
+      service: script.turn_on
+      entity_id: script.night_light
 
-  - alias: "Turn on bedroom lights after sunset"
+### Turn on patio light for the dog
+
+  - alias: "Turn on patio light for the dog"
     trigger:
       - platform: sun
         event: sunset
         offset: "-00:10:00"
-    condition:
-      - condition: state
-        entity_id: group.family
-        state: 'home'
     action:
       service: scene.turn_on
-      entity_id: scene.bedroom_night
+      entity_id: scene.patio_night
 
-  - alias: "Turn on lights when arriving home at night"
+### Turn on lights when anyone arriving home at night
+
+  - alias: "Turn on lights when anyone arriving home at night"
+    trigger:
+      - platform: state
+        entity_id: group.household
+        from: 'not_home'
+        to: 'home'
+    condition:
+      - condition: numeric_state
+        entity_id: sun.sun
+        value_template: '{{ state.attributes.elevation }}'
+        below: 0
+    action:
+      service: script.turn_on
+      entity_id: script.night_light
+
+### Turn on bedroom lights when family arriving home at night
+
+  - alias: "Turn on bedroom lights when family arriving home at night"
     trigger:
       - platform: state
         entity_id: group.family
@@ -46,9 +65,9 @@
         below: 0
     action:
       service: scene.turn_on
-      entity_id:
-        - scene.living_room_night
-        - scene.bedroom_night
+      entity_id: scene.bedroom_night
+
+### Turn OFF Living Room Floor Lamp after 9PM Sun-Thur
 
   - alias: "Turn off Floor lamp at 9PM Sun-Thur"
     trigger:
@@ -66,6 +85,8 @@
       service: switch.turn_off
       entity_id: switch.living_room_lamp
 
+### Turn off all lights at 10pm
+
   - alias: "Turn off all lights at 10pm"
     initial_state: 'off'
     trigger:
@@ -75,6 +96,8 @@
       service: scene.turn_on
       entity_id: scene.living_room_off
 
+### Turn off lights when nobody at home
+
   - alias: "Turn off lights when nobody at home"
     trigger:
       - platform: state
@@ -82,7 +105,5 @@
         from: 'home'
         to: 'not_home'
     action:
-      service: scene.turn_on
-      entity_id:
-        - scene.living_room_off
-        - scene.bedroom_off
+      service: script.turn_on
+      entity_id: script.lights_off

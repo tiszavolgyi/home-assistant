@@ -19,3 +19,13 @@
       light.stair_lights:
         state: off
         transition: 150
+
+### Lights when Movie Playing
+
+  - name: Stairs Movie
+    entities:
+      light.stair_lights:
+        state: on
+        transition: 10
+        brightness: 20
+        xy_color: [ 0.1713, 0.3511 ]

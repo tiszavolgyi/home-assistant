@@ -55,7 +55,6 @@ automations_view:
       - script.projector_turn_off
       - script.projector_screen_up
       - script.projector_screen_down
-      - script.livingroom_off
       - script.turn_on_tv
       - script.turn_off_tv
       - switch.harman_kardon_avr

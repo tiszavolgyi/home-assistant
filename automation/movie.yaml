@@ -1,7 +1,6 @@
 #########################################################
 ### Turn off livingroom lights if start playing a movie.
 ### Turn on livingroom lights if stop or pause the movie.
-### After 9:30 PM fewer lights tutn on if stop/pause.
 #########################################################
 
   - alias: "Media player playing"
@@ -17,8 +16,8 @@
         entity_id: sun.sun
         state: 'below_horizon'
     action:
-        service: scene.turn_on
-        entity_id: scene.living_room_movie
+        service: script.turn_on
+        entity_id: script.media_player_playing
 
   - alias: "Media player paused"
     trigger:
@@ -32,11 +31,9 @@
       - condition: state
         entity_id: sun.sun
         state: 'below_horizon'
-      - condition: time
-        before: '21:00:00'
     action:
-        service: scene.turn_on
-        entity_id: scene.living_room_night
+        service: script.turn_on
+        entity_id: script.media_player_stoped
 
   - alias: "Media player stoped"
     trigger:
@@ -50,45 +47,6 @@
       - condition: state
         entity_id: sun.sun
         state: 'below_horizon'
-      - condition: time
-        before: '21:00:00'
     action:
-        service: scene.turn_on
-        entity_id: scene.living_room_night
-
-
-  - alias: "Media player paused late night"
-    trigger:
-      - platform: state
-        entity_id:
-          - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
-          - media_player.tiszaserver
-          - media_player.plex_rp7m7uxu17ezmzvpuhnlfuet
-        to: 'paused'
-    condition:
-      - condition: state
-        entity_id: sun.sun
-        state: 'below_horizon'
-      - condition: time
-        after: '21:00:00'
-    action:
-        service: scene.turn_on
-        entity_id: scene.living_room_late_night
-
-  - alias: "Media player stoped late night"
-    trigger:
-      - platform: state
-        entity_id:
-          - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
-          - media_player.tiszaserver
-          - media_player.plex_rp7m7uxu17ezmzvpuhnlfuet
-        to: 'idle'
-    condition:
-      - condition: state
-        entity_id: sun.sun
-        state: 'below_horizon'
-      - condition: time
-        after: '21:00:00'
-    action:
-        service: scene.turn_on
-        entity_id: scene.living_room_late_night
+        service: script.turn_on
+        entity_id: script.media_player_stoped

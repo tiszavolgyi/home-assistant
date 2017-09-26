@@ -1,24 +1,8 @@
 #######################################
-### Scripts for Living Room automations
+### Scripts for Living Room devices
 #######################################
 
-livingroom_off:
-  sequence:
-    - service: scene.turn_on
-      entity_id: scene.living_room_off
-    - service: script.turn_on
-      entity_id:
-        - script.avr_turn_off
-    - delay:
-        milliseconds: 200
-    - service: script.turn_on
-      entity_id:
-        - script.projector_turn_off
-    - delay:
-        milliseconds: 200
-    - service: script.turn_on
-      entity_id:
-        - script.projector_screen_up
+### Turn on AVR, Projector, Projector Screen Down
 
 turn_on_tv:
   sequence:
@@ -40,6 +24,7 @@ turn_on_tv:
     - service: switch.turn_off
       entity_id: switch.living_room_lamp
 
+### Turn off AVR, Projector, Projector Screen Up
 
 turn_off_tv:
   sequence:
