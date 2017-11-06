@@ -1,7 +1,0 @@
-patio_camera:
-  name: Patio Camera
-  entities:
-    - binary_sensor.patio_camera_motion_detected
-    - binary_sensor.patio_camera_online
-    - binary_sensor.patio_camera_person_detected
-    - binary_sensor.patio_camera_sound_detected

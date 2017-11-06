@@ -9,7 +9,7 @@
         entity_id:
           - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
           - media_player.tiszaserver
-          - media_player.plex_rp7m7uxu17ezmzvpuhnlfuet
+          - media_player.plex_etkt73gmk4ibm7zz6sxl0lfv
         to: 'playing'
     condition:
       - condition: state
@@ -25,7 +25,7 @@
         entity_id:
           - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
           - media_player.tiszaserver
-          - media_player.plex_rp7m7uxu17ezmzvpuhnlfuet
+          - media_player.plex_etkt73gmk4ibm7zz6sxl0lfv
         to: 'paused'
     condition:
       - condition: state
@@ -41,7 +41,7 @@
         entity_id:
           - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
           - media_player.tiszaserver
-          - media_player.plex_rp7m7uxu17ezmzvpuhnlfuet
+          - media_player.plex_etkt73gmk4ibm7zz6sxl0lfv
         to: 'idle'
     condition:
       - condition: state
