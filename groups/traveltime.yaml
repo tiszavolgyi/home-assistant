@@ -1,0 +1,5 @@
+traveltime:
+  name: Travel Time
+  entities:
+    - sensor.home_to_chopra_center
+    - sensor.chopra_center_to_home

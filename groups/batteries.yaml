@@ -1,0 +1,10 @@
+####################################
+### Group for the Batteries
+####################################
+
+battery:
+  name: Batteries
+  entities:
+    - sensor.peter_phone_battery
+    - sensor.vivi_phone_battery
+    - sensor.livingroom_wallpanel_battery

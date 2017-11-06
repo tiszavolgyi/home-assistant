@@ -1,0 +1,20 @@
+#####################
+### Visible Scenes
+#####################
+
+livingroom_scenes:
+  name: Living Room Scenes
+  entities:
+    - scene.living_room_reading
+    - scene.living_room_night
+    - scene.living_room_late_night
+    - scene.living_room_movie
+    - scene.living_room_off
+
+bedroom_scenes:
+  name: Bedroom Scenes
+  entities:
+    - scene.bedroom_night
+    - scene.bedroom__vivi_reading
+    - scene.bedroom__peter_reading
+    - scene.bedroom__romantic

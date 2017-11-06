@@ -1,0 +1,14 @@
+thermostate:
+  name: Thermostate
+  entities:
+    - climate.living_room
+    - sensor.living_room_thermostat_humidity
+    - sensor.living_room_thermostat_hvac_state
+    - sensor.living_room_thermostat_operation_mode
+    - sensor.living_room_thermostat_target
+    - sensor.living_room_thermostat_temperature
+    - binary_sensor.living_room_thermostat_fan
+    - binary_sensor.living_room_thermostat_has_leaf
+    - binary_sensor.living_room_thermostat_is_locked
+    - binary_sensor.living_room_thermostat_is_using_emergency_heat
+    - binary_sensor.living_room_thermostat_online

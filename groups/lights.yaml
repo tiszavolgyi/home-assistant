@@ -1,0 +1,29 @@
+#####################
+### Light Groups
+#####################
+
+counter_top_lights:
+  view: no
+  name: Counter Top Lights
+  icon: mdi:lightbulb
+  entities:
+    - light.counter_top_1
+    - light.counter_top_2
+
+bedroom_lights:
+  name: Bedroom Lights
+  icon: mdi:lightbulb
+  entities:
+    - light.bedroom_1
+    - light.bedroom_2
+
+light:
+  name: Lights
+  entities:
+    - group.counter_top_lights
+    - group.bedroom_lights
+    - light.hue_bloom_1
+    - light.floor_lamp
+    - switch.living_room_lamp
+    - light.projector_screen
+    - light.stair_lights
