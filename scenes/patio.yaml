@@ -6,7 +6,7 @@
 
   - name: Patio Night
     entities:
-      light.patio_2:
+      light.patio:
         state: on
         transition: 1
         brightness: 254
@@ -16,6 +16,6 @@
 
   - name: Patio Off
     entities:
-      light.patio_2:
+      light.patio:
         state: off
         transition: 5

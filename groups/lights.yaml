@@ -27,3 +27,4 @@ light:
     - switch.living_room_lamp
     - light.projector_screen
     - light.stair_lights
+    - light.patio

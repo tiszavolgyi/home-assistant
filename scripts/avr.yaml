@@ -26,6 +26,12 @@ avr_avr_button:
         packet:
           - "JgBYAAABKZITERQRFBETERQRExITERQ2ExEUERMRFBETNxM2EzYTERQRFBETERQRExITERQ1FDYTNhM2FDUUNhM2FDYTEhISEwAFwwABKEkUAAxKAAEoSRQADQU="
 
+avr_turn_on_cable:
+  sequence:
+    - service: !secret broadlinkpacket
+      data:
+        packet:
+          - "JgBYAAABKJIUERQQFBEUERQQFBEUERQ1FBAUERQRFBAUNRU1FDUUERQQFBEUERQQFDUVNBUQFDUVNRQ1FDUUNRUQFBEUNRQREgAFxAABKUgTAAxLAAEpSBMADQU="
 
 avr_turn_on_radio:
   sequence:

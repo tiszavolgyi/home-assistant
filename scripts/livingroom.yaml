@@ -8,7 +8,7 @@ turn_on_tv:
   sequence:
     - service: script.turn_on
       entity_id:
-        - script.avr_turn_on_computer
+        - script.avr_turn_on_cable
     - delay:
         milliseconds: 200
     - service: script.turn_on
