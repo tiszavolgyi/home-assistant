@@ -1,4 +1,4 @@
-#########################################################
+########################################################
 ### Turn off livingroom lights if start playing a movie.
 ### Turn on livingroom lights if stop or pause the movie.
 #########################################################
@@ -10,6 +10,8 @@
           - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
           - media_player.tiszaserver
           - media_player.plex_etkt73gmk4ibm7zz6sxl0lfv
+          - media_player.plex_mr7j1bs6osbvbmvt8vrp5j64
+
         to: 'playing'
     condition:
       - condition: state
@@ -26,6 +28,7 @@
           - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
           - media_player.tiszaserver
           - media_player.plex_etkt73gmk4ibm7zz6sxl0lfv
+          - media_player.plex_mr7j1bs6osbvbmvt8vrp5j64
         to: 'paused'
     condition:
       - condition: state
@@ -42,6 +45,7 @@
           - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
           - media_player.tiszaserver
           - media_player.plex_etkt73gmk4ibm7zz6sxl0lfv
+          - media_player.plex_mr7j1bs6osbvbmvt8vrp5j64  
         to: 'idle'
     condition:
       - condition: state
