@@ -28,3 +28,13 @@ light:
     - light.projector_screen
     - light.stair_lights
     - light.patio
+
+livingroom_lights:
+  name: Livingroom Lights
+  icon: mdi:lightbulb
+  entities:
+    - group.livingroom_scenes
+    - light.floor_lamp
+    - switch.living_room_lamp
+    - light.projector_screen
+    - light.stair_lights

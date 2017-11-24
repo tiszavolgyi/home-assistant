@@ -15,6 +15,13 @@ default_view:
     - group.internet_speed
     - group.light
 
+Livingroom:
+    view: yes
+    #control: hidden
+    entities:
+      - group.livingroom_lights
+      
+
 all_lights_control:
     view: yes
     icon: mdi:lightbulb
