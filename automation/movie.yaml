@@ -11,6 +11,8 @@
           - media_player.tiszaserver
           - media_player.plex_etkt73gmk4ibm7zz6sxl0lfv
           - media_player.plex_mr7j1bs6osbvbmvt8vrp5j64
+          - media_player.plex_web_chrome
+          - media_player.plex_web_chrome_2  
 
         to: 'playing'
     condition:
@@ -29,6 +31,9 @@
           - media_player.tiszaserver
           - media_player.plex_etkt73gmk4ibm7zz6sxl0lfv
           - media_player.plex_mr7j1bs6osbvbmvt8vrp5j64
+          - media_player.plex_web_chrome
+          - media_player.plex_web_chrome_2
+
         to: 'paused'
     condition:
       - condition: state
@@ -45,7 +50,10 @@
           - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
           - media_player.tiszaserver
           - media_player.plex_etkt73gmk4ibm7zz6sxl0lfv
-          - media_player.plex_mr7j1bs6osbvbmvt8vrp5j64  
+          - media_player.plex_mr7j1bs6osbvbmvt8vrp5j64
+          - media_player.plex_web_chrome
+          - media_player.plex_web_chrome_2
+
         to: 'idle'
     condition:
       - condition: state
