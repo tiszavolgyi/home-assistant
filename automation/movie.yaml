@@ -7,12 +7,8 @@
     trigger:
       - platform: state
         entity_id:
-          - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
-          - media_player.tiszaserver
-          - media_player.plex_etkt73gmk4ibm7zz6sxl0lfv
-          - media_player.plex_mr7j1bs6osbvbmvt8vrp5j64
-          - media_player.plex_web_chrome
-          - media_player.plex_web_chrome_2  
+          - media_player.plex_ho4q0rhsrvbmneams9ec7hqp
+
 
         to: 'playing'
     condition:
@@ -27,12 +23,8 @@
     trigger:
       - platform: state
         entity_id:
-          - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
-          - media_player.tiszaserver
-          - media_player.plex_etkt73gmk4ibm7zz6sxl0lfv
-          - media_player.plex_mr7j1bs6osbvbmvt8vrp5j64
-          - media_player.plex_web_chrome
-          - media_player.plex_web_chrome_2
+          - media_player.plex_ho4q0rhsrvbmneams9ec7hqp
+
 
         to: 'paused'
     condition:
@@ -47,12 +39,8 @@
     trigger:
       - platform: state
         entity_id:
-          - media_player.plex_3f1060a9_b41a_4802_8b60_f510932bd749
-          - media_player.tiszaserver
-          - media_player.plex_etkt73gmk4ibm7zz6sxl0lfv
-          - media_player.plex_mr7j1bs6osbvbmvt8vrp5j64
-          - media_player.plex_web_chrome
-          - media_player.plex_web_chrome_2
+          - media_player.plex_ho4q0rhsrvbmneams9ec7hqp
+
 
         to: 'idle'
     condition:
