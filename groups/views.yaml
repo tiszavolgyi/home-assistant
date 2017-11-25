@@ -15,13 +15,20 @@ default_view:
     - group.internet_speed
     - group.light
 
-Livingroom:
+Living Room:
     view: yes
     #control: hidden
     entities:
       - group.livingroom_avr
       - group.livingroom_scenes
       - group.livingroom_lights
+
+Bedroom:
+    view: yes
+    #control: hidden
+    entities:
+      - group.bedroom_scenes
+      - group.bedroom_lights
 
 
 all_lights_control:
