@@ -43,7 +43,7 @@
   script.turn_on_tv: #Turn on Projector, AVR, Projector Screen
     friendly_name: Turn On TV
     icon: mdi:television
-  script.turn_on_tv: #Turn off Projector, AVR, Projector Screen
+  script.turn_off_tv: #Turn off Projector, AVR, Projector Screen
     friendly_name: Turn Off TV
     icon: mdi:television-off
   switch.harman_kardon_avr: #Turn on-off Harman Kardon AVR
@@ -51,10 +51,10 @@
     icon: mdi:music
   switch.projector: #Turn on-off Projector
     friendly_name: Projector
-    icon: mdi:music
+    icon: mdi:projector
   switch.projector_screen: #Turn on-off Projector screen
     friendly_name: Projector screen
-    icon: mdi:music
+    icon: mdi: projector-screen
   switch.radio: #Turn on-off Radio
     friendly_name: Radio
     icon: mdi:radio
