@@ -47,7 +47,7 @@
   script.turn_off_tv: #Turn off Projector, AVR, Projector Screen
     friendly_name: Turn Off TV
     can_cancel: false
-    icon: mdi:tv-off
+    icon: mdi:television-classic-off
   switch.harman_kardon: #Turn on-off Harman Kardon AVR
     friendly_name: Harman Kardon AVR
     icon: mdi:music

@@ -10,7 +10,7 @@
         state: on
         transition: 2
         brightness: 50
-        xy_color: [ 0.3978, 0.4566 ]
+        xy_color: [ 0.6812, 0.3138 ]
 
 ### OFF
 

@@ -19,9 +19,9 @@ Livingroom:
     view: yes
     #control: hidden
     entities:
-      - group.livingroom_lights
-      - group.livingroom_scenes
       - group.livingroom_avr
+      - group.livingroom_scenes
+      - group.livingroom_lights
 
 
 all_lights_control:
