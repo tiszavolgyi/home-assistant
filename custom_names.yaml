@@ -42,10 +42,12 @@
     icon: mdi:volume-minus
   script.turn_on_tv: #Turn on Projector, AVR, Projector Screen
     friendly_name: Turn On TV
+    can_cancel: false
     icon: mdi:television
   script.turn_off_tv: #Turn off Projector, AVR, Projector Screen
     friendly_name: Turn Off TV
-    icon: mdi:television-off
+    can_cancel: false
+    icon: mdi:tv-off
   switch.harman_kardon: #Turn on-off Harman Kardon AVR
     friendly_name: Harman Kardon AVR
     icon: mdi:music
@@ -67,13 +69,19 @@
 
   scene.living_room_movie:
     friendly_name: Living Room Movie
-    emulated_hue: true
-    emulated_hue_name: Livingroom movie
-
+    icon: mdi:presentation-play
+  scene.living_room_reading:
+    friendly_name: Reading in Livingroom
+    icon: mdi:book-open-page-variant
+  scene.living_room_night:
+    friendly_name: Night light in Livingroom
+    icon: mdi:theme-light-dark
+  scene.living_room_late_night:
+    friendly_name: Late Night light in Livingroom
+    icon: mdi:weather-night
   scene.living_room_off:
     friendly_name: Living Room OFF
-    emulated_hue: true
-    emulated_hue_name: Go to sleep
+    icon: mdi:flashlight-off
 
 #NEST related names
   binary_sensor.living_room_thermostat_fan:
