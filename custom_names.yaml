@@ -66,21 +66,37 @@
 
 
 #Scenes
-
+  #Livingroom scenes
   scene.living_room_movie:
     friendly_name: Living Room Movie
     icon: mdi:presentation-play
   scene.living_room_reading:
-    friendly_name: Reading in Livingroom
+    friendly_name: Reading in Living Room
     icon: mdi:book-open-page-variant
   scene.living_room_night:
-    friendly_name: Night light in Livingroom
+    friendly_name: Night Light in Living Room
     icon: mdi:theme-light-dark
   scene.living_room_late_night:
-    friendly_name: Late Night light in Livingroom
+    friendly_name: Late Night Light in Living Room
     icon: mdi:weather-night
   scene.living_room_off:
     friendly_name: Living Room OFF
+    icon: mdi:flashlight-off
+  # Bedroom Scenes
+  scene.bedroom_night:
+    friendly_name: Bedroom Night
+    icon: mdi:weather-night
+  scene.bedroom__vivi_reading:
+    friendly_name: Vivi Reading in Bedroom
+    icon: mdi:book-open-page-variant
+  scene.bedroom__peter_reading:
+    friendly_name: Peter Reading in Bedroom
+    icon: mdi:book-open-page-variant
+  scene.bedroom__romantic:
+    friendly_name: Romantic Light in Bedroom
+    icon: mdi:hotel
+  scene.bedroom_off:
+    friendly_name: Bedroom OFF
     icon: mdi:flashlight-off
 
 #NEST related names
