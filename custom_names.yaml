@@ -54,7 +54,7 @@
     icon: mdi:projector
   switch.projector_screen: #Turn on-off Projector screen
     friendly_name: Projector screen
-    icon: mdi: projector-screen
+    icon: mdi:projector-screen
   switch.radio: #Turn on-off Radio
     friendly_name: Radio
     icon: mdi:radio
