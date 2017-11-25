@@ -20,7 +20,7 @@ turn_on_tv:
       entity_id:
         - script.projector_screen_down
     - delay:
-        seconds: 25
+        seconds: 30
     - service: switch.turn_off
       entity_id: switch.living_room_lamp
 

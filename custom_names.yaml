@@ -37,7 +37,7 @@
   script.avr_turn_vulome_up: #harman Kardon Volume up
     friendly_name: Volume Up
     icon: mdi:volume-plus
-  script.avr_turn_vulome_up: #harman Kardon Volume down
+  script.avr_turn_vulome_down: #harman Kardon Volume down
     friendly_name: Volume Down
     icon: mdi:volume-minus
   script.turn_on_tv: #Turn on Projector, AVR, Projector Screen
