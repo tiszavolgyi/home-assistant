@@ -64,6 +64,11 @@
     friendly_name: Internet Radio
     icon: mdi:radio-tower
 
+#Switches
+  switch.tank: #Wake on LAN for Tank PC
+    friendly_name: Tank Wake on LAN
+    icon: mdi:desktop-classic
+
 
 #Scenes
   #Livingroom scenes

@@ -16,3 +16,4 @@ livingroom_avr:
       - switch.projector_screen
       - switch.radio
       - switch.internet_radio
+      - switch.tank
