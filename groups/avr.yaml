@@ -17,3 +17,4 @@ livingroom_avr:
       - switch.radio
       - switch.internet_radio
       - switch.tank
+      - switch.tv_intel_stick

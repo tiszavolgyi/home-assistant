@@ -68,6 +68,10 @@
   switch.tank: #Wake on LAN for Tank PC
     friendly_name: Tank Wake on LAN
     icon: mdi:desktop-classic
+  switch.tv_intel_stick: #Wake on LAN for Intel Stick in Living Room
+    friendly_name: TV Intel Stick Wake on LAN
+    icon: mdi:desktop-classic
+
 
 
 #Scenes
