@@ -5,5 +5,11 @@
   - platform: wake_on_lan
     mac_address: !secret tankmac
     name: Tank
-    host: !secret tankip
+    #host: !secret tankip
     broadcast_address: !secret tankip
+
+  - platform: wake_on_lan
+    mac_address: !secret stickmac
+    name: TV Intel Stick
+    #host: !secret tankip
+    broadcast_address: !secret stickip
