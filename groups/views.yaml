@@ -5,6 +5,7 @@
 default_view:
   view: yes
   entities:
+    - group.mainswitch
     - group.battery
     - group.family
     - group.guests

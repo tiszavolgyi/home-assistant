@@ -14,13 +14,14 @@
       - platform: sun
         event: sunset
         offset: "-00:10:00"
-    condition:
-      - condition: state
-        entity_id: group.household
-        state: 'home'
+#    condition:
+#      - condition: state
+#        entity_id: group.household
+#        state: 'home'
     action:
       service: script.turn_on
       entity_id: script.night_light
+
 
 ### Turn on patio light for the dog
 
@@ -87,11 +88,11 @@
 
 ### Turn off all lights at 10pm
 
-  - alias: "Turn off all lights at 10pm"
+  - alias: "Turn off all lights at 10:30pm"
     initial_state: 'off'
     trigger:
       - platform: time
-        at: '22:00:00'
+        at: '22:30:00'
     action:
       service: scene.turn_on
       entity_id: scene.living_room_off
