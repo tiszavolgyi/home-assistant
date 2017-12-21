@@ -11,7 +11,8 @@ livingroom_avr:
       - script.avr_turn_vulome_down
       - script.turn_on_tv
       - script.turn_off_tv
-      - switch.harman_kardon
+      - switch.harman_kardon_intelstick
+      - switch.harman_kardon_computer
       - switch.projector
       - switch.projector_screen
       - switch.radio

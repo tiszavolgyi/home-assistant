@@ -48,9 +48,12 @@
     friendly_name: Turn Off TV
     can_cancel: false
     icon: mdi:television-off
-  switch.harman_kardon: #Turn on-off Harman Kardon AVR
-    friendly_name: Harman Kardon AVR
+  switch.harman_kardon_intelstick: #Turn on-off Harman Kardon AVR
+    friendly_name: Harman Kardon Movie
     icon: mdi:music
+  switch.harman_kardon_computer: #Turn on-off Harman Kardon AVR
+    friendly_name: Harman Kardon Server
+    icon: mdi:music    
   switch.projector: #Turn on-off Projector
     friendly_name: Projector
     icon: mdi:projector

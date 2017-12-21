@@ -6,9 +6,13 @@
     host: !secret broadlinkip
     mac: !secret broadlinkmac
     switches:
-      harman_kardon:
-        #friendly_name: "Harman Kardon AVR" //// moved to custom names
+      harman_kardon_intelstick:
+        #friendly_name: "Harman Kardon Movie" //// moved to custom names
         command_on: 'JgBYAAABKJIUERQQFBEUERQQFBEUERQ1FBAUERQRFBAUNRU1FDUUERQQFBEUERQQFDUVNBUQFDUVNRQ1FDUUNRUQFBEUNRQREgAFxAABKUgTAAxLAAEpSBMADQU='
+        command_off: 'JgBYAAABKJIUERMRFBEUERMRFBEUERM2ExEUERQRExEUNhM2FDUUERM2FDUUNRQ2EzYUERMRFDUUERQRExEUERQREzYUNRQREwAFwwABKUgUAAxKAAEoSRQADQU='
+      harman_kardon_computer:
+        #friendly_name: "Harman Kardon Server" //// moved to custom names
+        command_on: 'JgBYAAABKJIUEBQRFBEUEBQRFBETERQ1FBEUERQQFBEUNRQ1FDYUEBQ2EzYUEBQRFDUUNhMRFDUUERQRFDUUNRQRFBETNhQQEwAFxAABKUgSAAxMAAEoSRMADQU='
         command_off: 'JgBYAAABKJIUERMRFBEUERMRFBEUERM2ExEUERQRExEUNhM2FDUUERM2FDUUNRQ2EzYUERMRFDUUERQRExEUERQREzYUNRQREwAFwwABKUgUAAxKAAEoSRQADQU='
       projector:
         #friendly_name: "Projector" //// moved to custom names
