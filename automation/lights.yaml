@@ -14,10 +14,10 @@
       - platform: sun
         event: sunset
         offset: "-00:10:00"
-#    condition:
-#      - condition: state
-#        entity_id: group.household
-#        state: 'home'
+    condition:
+      - condition: state
+        entity_id: group.household
+        state: 'home'
     action:
       service: script.turn_on
       entity_id: script.night_light
