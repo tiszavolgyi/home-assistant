@@ -11,12 +11,8 @@
     #hidden: true
   light.hue_bloom_1:
     friendly_name: Hue Bloom
-    emulated_hue: true
-    emulated_hue_name: Livingroom hue bloom
   light.floor_lamp:
     friendly_name: Floor Lamp
-    emulated_hue: true
-    emulated_hue_name: Livingroom floor lamp
   light.recreation_room:
     friendly_name: Living Room
   light.kitchen:
@@ -53,7 +49,7 @@
     icon: mdi:music
   switch.harman_kardon_computer: #Turn on-off Harman Kardon AVR
     friendly_name: Harman Kardon Server
-    icon: mdi:music    
+    icon: mdi:music
   switch.projector: #Turn on-off Projector
     friendly_name: Projector
     icon: mdi:projector
