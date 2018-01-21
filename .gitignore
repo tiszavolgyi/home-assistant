@@ -15,3 +15,4 @@ plex.conf
 home-assistant_v2.db-shm
 home-assistant_v2.db-wal
 phue-001788468cbf.conf
+.cloud/*
