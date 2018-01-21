@@ -8,7 +8,6 @@ default_view:
     - group.mainswitch
     - group.battery
     - group.family
-    - group.guests
     - group.traveltime
     - camera.patio
     - group.crimes

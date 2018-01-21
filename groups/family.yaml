@@ -13,4 +13,3 @@ household:
   entities:
     - !secret peterdevice
     - !secret vividevice
-    - device_tracker.orsi_phone
