@@ -125,8 +125,8 @@ zone 3:
 proximity:
   home:
     devices:
-      - device_tracker.vivi_pixel
-      - device_tracker.tiszavolgyi_tisza_pixel
+      - device_tracker.viviphone
+      - device_tracker.tiszaphone
     tolerance: 50
     unit_of_measurement: mi
 

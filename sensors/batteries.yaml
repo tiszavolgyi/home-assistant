@@ -6,8 +6,8 @@
   sensors:
     peter_phone_battery:
       unit_of_measurement: '%'
-      entity_id: device_tracker.tiszavolgyi_tisza_pixel
-      value_template: '{{states.device_tracker.tiszavolgyi_tisza_pixel.attributes.battery}}'
+      entity_id: device_tracker.tiszaphone
+      value_template: '{{states.device_tracker.tiszaphone.attributes.battery}}'
       icon_template: >-
         {% if states('sensor.peter_phone_battery') != "unknown" %}
           {% set battery_level = states('sensor.peter_phone_battery')|int (-1)%}
@@ -29,8 +29,8 @@
       friendly_name: 'Peter Phone Battery'
 
     vivi_phone_battery:
-      entity_id: device_tracker.tiszavolgyi_vivi_pixel
-      value_template: '{{states.device_tracker.tiszavolgyi_vivi_pixel.attributes.battery}}'
+      entity_id: device_tracker.viviphone
+      value_template: '{{states.device_tracker.viviphone.attributes.battery}}'
       icon_template: >-
         {% if states('sensor.vivi_phone_battery') != "unknown" %}
           {% set battery_level = states('sensor.vivi_phone_battery')|int (-1)%}
