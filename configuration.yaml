@@ -99,13 +99,6 @@ device_tracker:
     devices:
       TiszaPhone: zanzito/TiszaPhone/location
 
-#  - platform: owntracks
-#    max_gps_accuracy: 50
-#    waypoints: true
-  - platform: nmap_tracker
-    hosts: !secret mqtthosts
-    home_interval: 10
-
 zone:
   name: Home
   latitude: !secret latitude
