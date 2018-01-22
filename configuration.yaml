@@ -90,6 +90,7 @@ mqtt:
 
 #Cloud Integration
 cloud:
+  !include alexa/alexa_cloud.yaml
 
 
 #Device Tracker
@@ -136,6 +137,10 @@ tts:
   cache: true
   cache_dir: !secret tts_cache_dir
   time_memory: 43200
+
+input_boolean:
+  toggle_switch:
+   name: tv
 
 
 switch: !include_dir_merge_list  switches

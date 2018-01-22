@@ -1,0 +1,9 @@
+
+  - platform: template
+    switches:
+      tv_onoff:
+        value_template: "{{ is_state('input_booelan.toggle_switch', 'on') }}"
+        turn_on:
+          service: script.turn_on_tv
+        turn_off:
+          service: script.turn_off_tv
