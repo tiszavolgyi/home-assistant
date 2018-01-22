@@ -100,7 +100,7 @@ device_tracker:
       TiszaPhone: zanzito/TiszaPhone/location
   - platform: mqtt_json
     devices:
-      TiszaPhone: zanzito/ViviPhone/location
+      ViviPhone: zanzito/ViviPhone/location
 
 
 zone:
