@@ -98,6 +98,10 @@ device_tracker:
   - platform: mqtt_json
     devices:
       TiszaPhone: zanzito/TiszaPhone/location
+  - platform: mqtt_json
+    devices:
+      TiszaPhone: zanzito/ViviPhone/location
+
 
 zone:
   name: Home
