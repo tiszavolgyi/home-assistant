@@ -2,7 +2,7 @@
 ### Scripts for Light Automations
 #####################################
 
-### Lights after Sunset
+### Turn ON Lights after Sunset
 
 night_light:
   sequence:

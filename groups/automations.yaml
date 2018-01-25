@@ -26,3 +26,13 @@ media_automations:
     - automation.media_player_playing
     - automation.media_player_stoped
     - automation.media_player_stoped_late_night
+
+alexa_routines:
+  view: no
+  name: Alexa Routine Switches
+  icon: mdi:home-automation
+  entities:
+    - input_boolean.projector_on
+    - input_boolean.projector_turn_off
+    - input_boolean.good_night
+    - input_boolean.good_morning
