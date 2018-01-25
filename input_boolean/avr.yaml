@@ -1,0 +1,9 @@
+  projector_on:
+    name: Living Room Movie On
+    initial: off
+    icon: mdi:television
+
+  projector_off:
+    name: Living Room Movie Off
+    initial: off
+    icon: mdi:television-off
