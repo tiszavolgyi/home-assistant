@@ -139,8 +139,10 @@ tts:
   time_memory: 43200
 
 input_boolean:
-  toggle_switch:
-   name: tv
+    projector_on_off:
+      name: Living Room Movie
+      initial: off
+      icon: mdi:television
 
 
 switch: !include_dir_merge_list  switches

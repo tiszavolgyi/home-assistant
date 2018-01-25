@@ -1,6 +1,0 @@
-
-  input_boolean:
-    projector_on_off:
-      name: Projector
-      initial: off
-      icon: mdi:television
