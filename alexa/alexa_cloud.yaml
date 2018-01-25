@@ -4,6 +4,7 @@
         - light.hallway
       include_domains:
         - switch
+        - input_boolean
 
 #      exclude_entities:
 #        - switch.outside
