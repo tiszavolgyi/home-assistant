@@ -28,6 +28,15 @@
     friendly_name: Living Room Lamp
     icon: mdi:lightbulb
     device_class: light
+  switch.tank: #Wake on LAN for Tank PC
+    friendly_name: Tank Wake on LAN
+    icon: mdi:desktop-classic
+  # switch.tv_intel_stick: #Wake on LAN for Intel Stick in Living Room / NOT SUPPORTED
+  #   friendly_name: TV Intel Stick Wake on LAN
+  #   icon: mdi:desktop-classic
+  switch.tv_onoff:
+    friendly_name: Projector
+    icon: mdi:television
 
 #Audio video
   script.avr_turn_vulome_up: #harman Kardon Volume up
@@ -62,15 +71,6 @@
   switch.internet_radio: #Turn on-off Internet Radio
     friendly_name: Internet Radio
     icon: mdi:radio-tower
-
-#Switches
-  switch.tank: #Wake on LAN for Tank PC
-    friendly_name: Tank Wake on LAN
-    icon: mdi:desktop-classic
-  # switch.tv_intel_stick: #Wake on LAN for Intel Stick in Living Room / NOT SUPPORTED
-  #   friendly_name: TV Intel Stick Wake on LAN
-  #   icon: mdi:desktop-classic
-
 
 
 #Scenes

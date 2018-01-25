@@ -1,10 +1,10 @@
   alexa:
-    filter:
-      include_entities:
-        - light.hallway
-      include_domains:
-        - switch
-        - input_boolean
+    # filter:
+    #   include_entities:
+    #     - light.hallway
+    #   include_domains:
+    #     - switch
+    #
 #      exclude_entities:
 #        - switch.outside
     # entity_config:
