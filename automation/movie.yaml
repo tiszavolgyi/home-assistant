@@ -11,8 +11,7 @@
     action:
         service: script.turn_on
         entity_id: script.turn_on_tv
-        service: input_boolean.turn_off
-        entity_id: input_boolean.projector_on
+
 
   - alias: "Turn OFF Livingroom Projector"
     trigger:
@@ -22,8 +21,7 @@
     action:
         service: script.turn_on
         entity_id: script.turn_off_tv
-        service: input_boolean.turn_off
-        entity_id: input_boolean.projector_off        
+    
 
   - alias: "Media player playing"
     trigger:

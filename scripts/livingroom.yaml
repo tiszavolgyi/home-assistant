@@ -23,6 +23,9 @@ turn_on_tv:
         seconds: 30
     - service: switch.turn_off
       entity_id: switch.living_room_lamp
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.projector_on
+
 
 ### Turn off AVR, Projector, Projector Screen Up
 
@@ -55,3 +58,5 @@ turn_off_tv:
     - service: script.turn_on
       entity_id:
         - script.projector_screen_up
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.projector_off  
