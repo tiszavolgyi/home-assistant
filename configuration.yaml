@@ -138,7 +138,7 @@ tts:
   cache_dir: !secret tts_cache_dir
   time_memory: 43200
 
-input_boolean: !include_dir_merge_list  input_boolean
+input_boolean: !include_dir_merge_named input_boolean
 switch: !include_dir_merge_list  switches
 group: !include_dir_merge_named  groups
 scene: !include_dir_merge_list  scenes

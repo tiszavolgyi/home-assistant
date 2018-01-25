@@ -18,5 +18,4 @@ livingroom_avr:
       - switch.radio
       - switch.internet_radio
       - switch.tank
-      - input_boolean.projector_on_off
 #      - switch.tv_intel_stick / NOT SUPPORTED
