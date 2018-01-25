@@ -1,4 +1,5 @@
 ########################################################
+### Turn On/OFF Projector and AVR devices
 ### Turn off livingroom lights if start playing a movie.
 ### Turn on livingroom lights if stop or pause the movie.
 #########################################################
@@ -21,7 +22,7 @@
     action:
         service: script.turn_on
         entity_id: script.turn_off_tv
-    
+
 
   - alias: "Media player playing"
     trigger:

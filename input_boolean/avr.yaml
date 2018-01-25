@@ -7,3 +7,8 @@
     name: Living Room Movie Off
     initial: off
     icon: mdi:television-off
+
+  good_night:
+    name: Good Night Everything Off
+    initial: off
+    icon: mdi:weather-night

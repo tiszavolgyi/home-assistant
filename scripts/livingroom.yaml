@@ -6,6 +6,8 @@
 
 turn_on_tv:
   sequence:
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.projector_on
     - service: script.turn_on
       entity_id:
         - script.avr_turn_on_cable
@@ -23,14 +25,15 @@ turn_on_tv:
         seconds: 30
     - service: switch.turn_off
       entity_id: switch.living_room_lamp
-    - service: input_boolean.turn_off
-      entity_id: input_boolean.projector_on
+
 
 
 ### Turn off AVR, Projector, Projector Screen Up
 
 turn_off_tv:
   sequence:
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.projector_off
     - service_template: >
         {% if is_state('sun.sun', 'below_horizon') %}
           switch.turn_on
@@ -58,5 +61,3 @@ turn_off_tv:
     - service: script.turn_on
       entity_id:
         - script.projector_screen_up
-    - service: input_boolean.turn_off
-      entity_id: input_boolean.projector_off  
