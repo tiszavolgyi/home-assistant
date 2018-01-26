@@ -1,0 +1,24 @@
+################################################
+### Input Booleans Switches
+### Start automations, built for Alexa Routines
+################################################
+
+  projector_on:
+    name: Living Room Movie On
+    initial: off
+    icon: mdi:television
+
+  projector_off:
+    name: Living Room Movie Off
+    initial: off
+    icon: mdi:television-off
+
+  good_night:
+    name: Good Night Everything Off
+    initial: off
+    icon: mdi:weather-night
+
+  good_morning:
+    name: Good Morning Automation
+    initial: off
+    icon: mdi:weather-sunset-up

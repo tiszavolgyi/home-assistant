@@ -1,0 +1,13 @@
+########################################################
+### Morning automations, such as Alexa Good morning
+### which turn on computer.
+#########################################################
+
+  - alias: "Good Morning Automation"
+    trigger:
+      - platform: state
+        entity_id: input_boolean.good_morning
+        to: 'on'
+    action:
+        service: script.turn_on
+        entity_id: script.good_morning_routine
