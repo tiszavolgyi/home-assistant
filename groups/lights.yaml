@@ -2,16 +2,6 @@
 ### Light Groups
 #####################
 
-
-mainswitch:
-  view: no
-  name: Turn On-OFF everything
-  icon: mdi:lightbulb
-  entities:
-    - script.night_light
-    - script.good_night_off
-
-
 counter_top_lights:
   view: no
   name: Counter Top Lights

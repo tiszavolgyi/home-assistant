@@ -13,7 +13,7 @@
     trigger:
       - platform: sun
         event: sunset
-        offset: "-00:10:00"
+        offset: "-00:1:00"
     condition:
       - condition: state
         entity_id: group.household
@@ -29,7 +29,7 @@
     trigger:
       - platform: sun
         event: sunset
-        offset: "-00:10:00"
+        offset: "-00:1:00"
     action:
       service: scene.turn_on
       entity_id: scene.patio_night
