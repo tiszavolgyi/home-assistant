@@ -1,0 +1,14 @@
+###########################
+### Broadlink E=Air Sensor
+###########################
+
+  - platform: broadlink
+    update_interval: 60
+    host: !secret broadlinkeairip
+    mac: !secret broadlinkeairmac
+    monitored_conditions:
+      - temperature
+      - humidity
+      - air_quality
+      - light
+      - noise

@@ -3,8 +3,8 @@
 ################################
 
   - platform: broadlink
-    host: !secret broadlinkip
-    mac: !secret broadlinkmac
+    host: !secret broadlink_rm_livingroom_ip
+    mac: !secret broadlink_rm_livingroom_mac
     switches:
       harman_kardon_intelstick:
         #friendly_name: "Harman Kardon Movie" //// moved to custom names
@@ -30,3 +30,8 @@
         #friendly_name: "Harman Kardon Internet Radio" //// moved to custom names
         command_on: 'JgBYAAABKJIUERQQFBEUEBQRFBEUEBQ1FRAUERQQFBEUNRQ2FDUUEBQ2FBAUNRUQFDUUNhQQFDYUEBQ1FBEUNRQRFBEUNRQREgAFxAABKUgTAAxLAAEoSRIADQU='
         command_off: 'JgBYAAABKJIUERMRFBEUERMRFBEUERM2ExEUERQRExEUNhM2FDUUERM2FDUUNRQ2EzYUERMRFDUUERQRExEUERQREzYUNRQREwAFwwABKUgUAAxKAAEoSRQADQU='
+
+
+  - platform: broadlink
+    host: !secret broadlink_rm_master_ip
+    mac: !secret broadlink_rm_master_mac
