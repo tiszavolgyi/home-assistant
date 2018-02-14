@@ -74,9 +74,9 @@ light:
 
 # Eight Smart Mattress
 eight_sleep:
-    username: !secret eightuser
-    password: !secret eightpass
-    partner: true
+  username: !secret eightuser
+  password: !secret eightpass
+  partner: true
 
 #Media players config
 media_player:
