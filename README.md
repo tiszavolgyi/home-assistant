@@ -16,15 +16,20 @@ And thanks to *all* the devs that create the Home Assistant magic
 ## Devices
 
 - Broadlink RM Pro
+- Broadlink RM Pro +
+- Broadlink E-Air Sensor
+- Eight Sleep Smart Mattress
 - Philips Hue Bridge
 - Philips Hue Bloom
 - Philips Hue Color Ambiance Bulbs
 - Philips Hue LightStrip
 - Plex Media Server
+- Rachio Smart Sprinkler Controller
 - Nest Thermostat
 - Nest Protect
 - Ubiquiti Unifi Controller
 - Wemo Switch
+- Zanzito Device Tracker
 
 
 ## Configuration Best Pratices
