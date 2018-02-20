@@ -33,6 +33,6 @@ alexa_routines:
   icon: mdi:home-automation
   entities:
     - input_boolean.projector_on
-    - input_boolean.projector_turn_off
+    - input_boolean.projector_off
     - input_boolean.good_night
     - input_boolean.good_morning
