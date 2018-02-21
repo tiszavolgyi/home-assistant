@@ -36,3 +36,4 @@ alexa_routines:
     - input_boolean.projector_off
     - input_boolean.good_night
     - input_boolean.good_morning
+    - input_boolean.bedtime_soon
