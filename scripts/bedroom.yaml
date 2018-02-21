@@ -9,11 +9,11 @@ bedtime_soon:
     sequence:
       - service: input_boolean.turn_off
         entity_id: input_boolean.bedtime_soon
-      # - service: eight_sleep.heat_set
-      #   data:
-      #   entity_id: sensor.eight_left_bed_state
-      #     target: 99
-      #     duration: 3600
+      - service: eight_sleep.heat_set
+        data:
+        entity_id: sensor.eight_left_bed_state
+          target: 99
+          duration: 3600
       # - service: eight_sleep.heat_set
       #   data:
       #   entity_id: sensor.eight_right_bed_state
