@@ -3,6 +3,9 @@
 ### turn everything off.
 #########################################################
 
+
+# Turn off various things when we are going to sleep
+
   - alias: "Good Night Turn Off Everything"
     trigger:
       - platform: state
@@ -11,3 +14,13 @@
     action:
         service: script.turn_on
         entity_id: script.good_night_off
+
+
+  - alias: "Bedtime soon"
+    trigger:
+      - platform: state
+        entity_id: input_boolean.bedtime_soon
+        to: 'on'
+    action:
+        service: script.turn_on
+        entity_id: script.bedtime_soon

@@ -22,3 +22,8 @@
     name: Good Morning Automation
     initial: off
     icon: mdi:weather-sunset-up
+
+  bedtime_soon:
+    name: Bedtime soon
+    initial: off
+    icon: mdi:hotel
