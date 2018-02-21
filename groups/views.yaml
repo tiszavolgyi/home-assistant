@@ -37,7 +37,6 @@ Garden:
     - group.zones_front
     - group.zones_grass
     - group.zones_plants
-    
 
 
 all_lights_control:

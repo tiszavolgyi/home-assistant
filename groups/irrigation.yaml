@@ -6,7 +6,7 @@ irrigation:
   name: Irrigation
   icon: mdi:water-pump
   entities:
-  - group.zones_front_yard
+  - group.zones_front
   - group.zones_grass
   - group.zones_plants
 
