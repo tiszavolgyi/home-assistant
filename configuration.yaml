@@ -146,6 +146,15 @@ proximity:
     tolerance: 50
     unit_of_measurement: mi
 
+
+# Rachio iFrame Module
+
+panel_iframe:
+  rachio:
+    title: Rachio
+    url: "https://app.rach.io"
+    icon: mdi:water-pump
+
 # Text to speech
 tts:
   platform: google

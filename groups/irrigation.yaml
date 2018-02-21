@@ -1,0 +1,33 @@
+####################################
+### Group for the irrigation system
+####################################
+
+irrigation:
+  name: Irrigation
+  icon: mdi:water-pump
+  entities:
+  - group.zones_front_yard
+  - group.zones_grass
+  - group.zones_plants
+
+zones_front:
+  name: Front Yard
+  entities:
+  - switch.zone_6
+  - switch.zone_7
+  - switch.zone_8
+
+zones_grass:
+  name: Grass
+  entities:
+  - switch.zone_2
+  - switch.zone_3
+  - switch.zone_5
+  - switch.zone_11
+
+zones_plants:
+  name: Plants - Dripping
+  entities:
+  - switch.zone_1
+  - switch.zone_4
+  - switch.zone_9

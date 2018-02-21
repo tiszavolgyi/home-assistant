@@ -30,6 +30,15 @@ Bedroom:
       - group.bedroom_scenes
       - group.bedroom_lights
 
+Garden:
+  view: yes
+  entities:
+    - group.irrigation
+    - group.zones_front
+    - group.zones_grass
+    - group.zones_plants
+    
+
 
 all_lights_control:
     view: yes
