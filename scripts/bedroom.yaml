@@ -6,7 +6,6 @@
 # Heat up the mattress before we go to sleep
 
 bedtime_soon:
-  bed_set_heat:
     sequence:
       - service: input_boolean.turn_off
           entity_id: input_boolean.bedtime_soon
@@ -15,8 +14,6 @@ bedtime_soon:
           entity_id: "sensor.eight_left_bed_state"
           target: 100
           duration: 3600
-  bed_set_heat:
-    sequence:
       - service: eight_sleep.heat_set
         data:
           entity_id: "sensor.eight_right_bed_state"
