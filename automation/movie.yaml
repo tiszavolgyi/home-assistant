@@ -28,7 +28,7 @@
     trigger:
       - platform: state
         entity_id:
-          - media_player.plex_ho4q0rhsrvbmneams9ec7hqp
+          - media_player.plex_web_chrome
         to: 'playing'
     condition:
       - condition: state
@@ -42,7 +42,7 @@
     trigger:
       - platform: state
         entity_id:
-          - media_player.plex_ho4q0rhsrvbmneams9ec7hqp
+          - media_player.plex_web_chrome
         to: 'paused'
     condition:
       - condition: state
@@ -56,7 +56,7 @@
     trigger:
       - platform: state
         entity_id:
-          - media_player.plex_ho4q0rhsrvbmneams9ec7hqp
+          - media_player.plex_web_chrome
         to: 'idle'
     condition:
       - condition: state
