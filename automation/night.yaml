@@ -16,6 +16,9 @@
         entity_id: script.good_night_off
 
 
+# Usually run through Alexa, we run it 30 min before we decide to go to sleep
+# to heat up the bed and do some other automations.
+
   - alias: "Bedtime soon"
     trigger:
       - platform: state

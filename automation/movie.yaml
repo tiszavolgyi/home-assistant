@@ -18,7 +18,7 @@
     trigger:
       - platform: state
         entity_id: input_boolean.projector_off
-        to: 'off'
+        to: 'on'
     action:
         service: script.turn_on
         entity_id: script.turn_off_tv
@@ -43,8 +43,6 @@
       - platform: state
         entity_id:
           - media_player.plex_ho4q0rhsrvbmneams9ec7hqp
-
-
         to: 'paused'
     condition:
       - condition: state
@@ -59,8 +57,6 @@
       - platform: state
         entity_id:
           - media_player.plex_ho4q0rhsrvbmneams9ec7hqp
-
-
         to: 'idle'
     condition:
       - condition: state
