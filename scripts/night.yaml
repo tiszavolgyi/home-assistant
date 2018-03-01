@@ -52,6 +52,6 @@ good_night_off:
         target: 100
         duration: 1800
     - service: climate.set_temperature
+      data:
         entity_id: climate.living_room
-        data_template:
-        temperature: 20
+        temperature: '20'
