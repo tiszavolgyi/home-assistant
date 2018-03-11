@@ -1,5 +1,5 @@
 thermostate:
-  name: Thermostate
+  name: Living Room Thermostate
   entities:
     - climate.living_room
     - sensor.living_room_thermostat_humidity

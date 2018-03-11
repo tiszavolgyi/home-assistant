@@ -2,18 +2,18 @@
 ### VIEWS
 ##############
 
-default_view:
-  view: yes
-  icon: mdi:home-assistant
-  entities:
-    - group.battery
-    - group.family
-    - group.traveltime
-    - camera.patio
-    - group.crimes
-    - group.finance
-    - group.internet_speed
-    - group.light
+# default_view:
+#   view: yes
+#   icon: mdi:home-assistant
+#   entities:
+#     - group.battery
+#     - group.family
+#     - group.traveltime
+#     - camera.patio
+#     - group.crimes
+#     - group.finance
+#     - group.internet_speed
+#     - group.light
 
 Living Room:
   view: yes
@@ -29,10 +29,6 @@ Bedroom:
   entities:
     - group.bedroom_scenes
     - group.bedroom_lights
-    - group.bedroom_air_sensors
-    - group.vivi_bed_sensors
-    - group.peter_bed_sensors
-
 
 Garden:
   view: yes
@@ -64,6 +60,10 @@ thermostate_view:
     icon: mdi:thermometer
     entities:
       - group.thermostate
+      - group.bedroom_air_sensors
+      - group.vivi_bed_sensors
+      - group.peter_bed_sensors
+
 
 automations_view:
     view: yes
