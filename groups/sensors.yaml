@@ -1,0 +1,41 @@
+# ####################################
+# ### Groups for the sensors
+# ####################################
+
+
+bedroom_air_sensors:
+  view: no
+  name: Bedroom Air Sensors
+  icon: mdi:weather-snowy-rainy
+  entities:
+    - sensor.broadlink_sensor_air_quality
+    - sensor.broadlink_sensor_humidity
+    - sensor.broadlink_sensor_light
+    - sensor.broadlink_sensor_noise
+    - sensor.broadlink_sensor_temperature
+
+
+vivi_bed_sensors:
+  view: no
+  name: Vivi Bed Sensors
+  icon: mdi:hotel
+  entities:
+    - sensor.eight_right_bed_state
+    - sensor.eight_right_bed_temperature
+    - sensor.eight_right_sleep_session
+    - sensor.eight_right_previous_sleep_session
+    - sensor.eight_right_sleep_stage
+    - binary_sensor.eight_right_bed_presence
+
+
+peter_bed_sensors:
+  view: no
+  name: Peter Bed Sensors
+  icon: mdi:hotel
+  entities:
+    - sensor.eight_left_bed_state
+    - sensor.eight_left_bed_temperature
+    - sensor.eight_left_sleep_session
+    - sensor.eight_left_previous_sleep_session
+    - sensor.eight_left_sleep_stage
+    - binary_sensor.eight_left_bed_presence

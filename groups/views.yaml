@@ -37,6 +37,9 @@ Garden:
     - group.zones_front
     - group.zones_grass
     - group.zones_plants
+    - group.bedroom_air_sensors
+    - group.vivi_bed_sensors
+    - group.peter_bed_sensors
 
 
 all_lights_control:
