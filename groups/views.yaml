@@ -16,19 +16,23 @@ default_view:
     - group.light
 
 Living Room:
-    view: yes
-    #control: hidden
-    entities:
-      - group.livingroom_avr
-      - group.livingroom_scenes
-      - group.livingroom_lights
+  view: yes
+  #control: hidden
+  entities:
+    - group.livingroom_avr
+    - group.livingroom_scenes
+    - group.livingroom_lights
 
 Bedroom:
-    view: yes
-    #control: hidden
-    entities:
-      - group.bedroom_scenes
-      - group.bedroom_lights
+  view: yes
+  #control: hidden
+  entities:
+    - group.bedroom_scenes
+    - group.bedroom_lights
+    - group.bedroom_air_sensors
+    - group.vivi_bed_sensors
+    - group.peter_bed_sensors
+
 
 Garden:
   view: yes
@@ -37,9 +41,6 @@ Garden:
     - group.zones_front
     - group.zones_grass
     - group.zones_plants
-    - group.bedroom_air_sensors
-    - group.vivi_bed_sensors
-    - group.peter_bed_sensors
 
 
 all_lights_control:
