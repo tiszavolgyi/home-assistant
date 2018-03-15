@@ -1,0 +1,7 @@
+#################################
+### Rachio Sprinkler Controller
+#################################
+
+  - platform: rachio
+    access_token: !secret rachio-token
+    manual_run_mins: 5
