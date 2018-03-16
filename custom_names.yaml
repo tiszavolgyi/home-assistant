@@ -44,6 +44,38 @@
     icon: mdi:hotel
 
 
+#Sensors
+  sensor.eight_right_bed_temperature: #Eight Mattress Sensor
+    friendly_name: Vivi Bed Temperature
+
+  sensor.eight_left_bed_temperature: #Eight Mattress Sensor
+    friendly_name: Peter Bed Temperature
+
+  sensor.eight_right_sleep_session: #Eight Mattress Sensor
+    friendly_name: Vivi Sleep Score
+
+  sensor.eight_left_sleep_session: #Eight Mattress Sensor
+    friendly_name: Peter Sleep Score
+
+  sensor.eight_right_previous_sleep_session: #Eight Mattress Sensor
+    friendly_name: Vivi Previous Sleep Score
+
+  sensor.eight_left_previous_sleep_session: #Eight Mattress Sensor
+    friendly_name: Peter Previous Sleep Score
+
+  sensor.eight_right_sleep_stage: #Eight Mattress Sensor
+    friendly_name: Vivi Sleep Status
+
+  sensor.eight_left_sleep_stage: #Eight Mattress Sensor
+    friendly_name: Peter Sleep Status
+
+  binary_sensor.eight_right_bed_presence: #Eight Mattress Sensor
+    friendly_name: Vivi Bed Presence
+
+  binary_sensor.eight_left_bed_presence: #Eight Mattress Sensor
+    friendly_name: Peter Bed Presence
+
+
 
 #Audio video
   script.avr_turn_vulome_up: #harman Kardon Volume up
@@ -177,12 +209,12 @@
   group.traveltime:
     order: 3
   group.cameras:
-    order: 4
-  group.crimes:
     order: 5
-  group.internet_speed:
+  group.crimes:
     order: 6
-  group.finance:
+  group.internet_speed:
     order: 7
-  group.light:
+  group.finance:
     order: 8
+  group.light:
+    order: 9

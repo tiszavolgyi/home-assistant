@@ -2,6 +2,7 @@
 # ### Groups for the sensors
 # ####################################
 
+#Bedroom sensors
 
 bedroom_air_sensors:
   view: no
@@ -47,4 +48,12 @@ masterbedroom_bed:
   entities:
     - script.heat_bed_for_1_hour
     - sensor.eight_left_bed_state
-    - sensor.eight_right_bed_state    
+    - sensor.eight_right_bed_temperature
+    - sensor.eight_left_bed_temperature
+    - sensor.eight_right_sleep_session
+    - sensor.eight_left_sleep_session
+    - sensor.eight_right_previous_sleep_session
+    - sensor.eight_left_previous_sleep_session
+    - sensor.eight_right_sleep_stage
+    - sensor.eight_left_sleep_stage
+    - binary_sensor.eight_left_bed_presence

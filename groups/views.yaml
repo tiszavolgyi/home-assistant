@@ -30,8 +30,7 @@ Bedroom:
     - group.bedroom_scenes
     - group.bedroom_lights
     - group.masterbedroom_bed
-    - group.vivi_bed_sensors
-    - group.peter_bed_sensors
+    - group.bedroom_air_sensors
 
 Garden:
   view: yes
