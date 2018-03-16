@@ -53,27 +53,35 @@
 
   sensor.eight_right_sleep_session: #Eight Mattress Sensor
     friendly_name: Vivi Sleep Score
+    icon: mdi:sleep
 
   sensor.eight_left_sleep_session: #Eight Mattress Sensor
     friendly_name: Peter Sleep Score
+    icon: mdi:sleep
 
   sensor.eight_right_previous_sleep_session: #Eight Mattress Sensor
     friendly_name: Vivi Previous Sleep Score
+    icon: mdi:sleep
 
   sensor.eight_left_previous_sleep_session: #Eight Mattress Sensor
     friendly_name: Peter Previous Sleep Score
+    icon: mdi:sleep
 
   sensor.eight_right_sleep_stage: #Eight Mattress Sensor
     friendly_name: Vivi Sleep Status
+    icon: mdi:sleep
 
   sensor.eight_left_sleep_stage: #Eight Mattress Sensor
     friendly_name: Peter Sleep Status
+    icon: mdi:sleep
 
   binary_sensor.eight_right_bed_presence: #Eight Mattress Sensor
     friendly_name: Vivi Bed Presence
+    icon: mdi:sleep
 
   binary_sensor.eight_left_bed_presence: #Eight Mattress Sensor
     friendly_name: Peter Bed Presence
+    icon: mdi:sleep
 
 
 

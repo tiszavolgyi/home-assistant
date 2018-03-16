@@ -47,7 +47,6 @@ masterbedroom_bed:
   icon: mdi:hotel
   entities:
     - script.heat_bed_for_1_hour
-    - sensor.eight_left_bed_state
     - sensor.eight_right_bed_temperature
     - sensor.eight_left_bed_temperature
     - sensor.eight_right_sleep_session
