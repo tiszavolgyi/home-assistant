@@ -26,4 +26,4 @@
         to: 'on'
     action:
         service: script.turn_on
-        entity_id: script.bedtime_soon
+        entity_id: script.heat_bed_for_1_hour

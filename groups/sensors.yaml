@@ -39,3 +39,12 @@ peter_bed_sensors:
     - sensor.eight_left_previous_sleep_session
     - sensor.eight_left_sleep_stage
     - binary_sensor.eight_left_bed_presence
+
+masterbedroom_bed:
+  view: no
+  name: Bed
+  icon: mdi:hotel
+  entities:
+    - script.heat_bed_for_1_hour
+    - sensor.eight_left_bed_state
+    - sensor.eight_right_bed_state    

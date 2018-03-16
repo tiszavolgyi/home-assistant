@@ -38,6 +38,13 @@
     friendly_name: Projector
     icon: mdi:television
 
+#Scripts
+  script.heat_bed_for_1_hour: #Eight Mattress Heating
+    friendly_name: Heat Bed for 1 Hour
+    icon: mdi:hotel
+
+
+
 #Audio video
   script.avr_turn_vulome_up: #harman Kardon Volume up
     friendly_name: Volume Up

@@ -5,7 +5,7 @@
 
 # Heat up the mattress before we go to sleep
 
-bedtime_soon:
+heat_bed_for_1_hour:
   sequence:
     - service: input_boolean.turn_off
       entity_id: input_boolean.bedtime_soon
