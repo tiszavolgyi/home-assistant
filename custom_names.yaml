@@ -45,6 +45,9 @@
 
 
 #Sensors
+
+ #Bedroom Sensors
+
   sensor.eight_right_bed_temperature: #Eight Mattress Sensor
     friendly_name: Vivi Bed Temperature
 
@@ -82,6 +85,17 @@
   binary_sensor.eight_left_bed_presence: #Eight Mattress Sensor
     friendly_name: Peter Bed Presence
     icon: mdi:sleep
+
+  sensor.broadlink_sensor_air_quality: #Broadlink E-Air Sensor
+    friendly_name: Bedroom Air Quality
+    icon: mdi:fan
+
+  sensor.broadlink_sensor_humidity: #Broadlink E-Air Sensor
+    friendly_name: Bedroom Humidity
+    icon: mdi:water-percent
+
+  sensor.broadlink_sensor_temperature: #Broadlink E-Air Sensor
+    friendly_name: Bedroom Temperature
 
 
 

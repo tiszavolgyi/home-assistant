@@ -11,8 +11,8 @@ bedroom_air_sensors:
   entities:
     - sensor.broadlink_sensor_air_quality
     - sensor.broadlink_sensor_humidity
-    - sensor.broadlink_sensor_light
-    - sensor.broadlink_sensor_noise
+#    - sensor.broadlink_sensor_light
+#    - sensor.broadlink_sensor_noise
     - sensor.broadlink_sensor_temperature
 
 
@@ -50,9 +50,10 @@ masterbedroom_bed:
     - sensor.eight_right_bed_temperature
     - sensor.eight_left_bed_temperature
     - sensor.eight_right_sleep_session
-    - sensor.eight_left_sleep_session
     - sensor.eight_right_previous_sleep_session
+    - sensor.eight_left_sleep_session
     - sensor.eight_left_previous_sleep_session
     - sensor.eight_right_sleep_stage
     - sensor.eight_left_sleep_stage
+    - binary_sensor.eight_right_bed_presence
     - binary_sensor.eight_left_bed_presence
