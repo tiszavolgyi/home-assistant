@@ -7,7 +7,7 @@ good_night_off:
     - service: input_boolean.turn_off
       entity_id: input_boolean.good_night
     - delay:
-        milliseconds: 50      
+        milliseconds: 50
     - service: script.turn_on
       entity_id:
         - script.avr_turn_off
@@ -57,3 +57,5 @@ good_night_off:
       data:
         entity_id: climate.living_room
         temperature: '20'
+    - service: switch.turn_off
+        entity_id: switch.air_humidifier

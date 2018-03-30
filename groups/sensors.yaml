@@ -14,6 +14,7 @@ bedroom_air_sensors:
 #    - sensor.broadlink_sensor_light
 #    - sensor.broadlink_sensor_noise
     - sensor.broadlink_sensor_temperature
+    - switch.air_humidifier
 
 
 vivi_bed_sensors:
