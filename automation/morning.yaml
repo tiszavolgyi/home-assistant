@@ -6,8 +6,8 @@
   - alias: "Good Morning Automation"
     trigger:
       - platform: state
-      - service: input_boolean.turn_off
-        entity_id: input_boolean.sleeping
+        entity_id: input_boolean.good_morning
+        to: 'on'
     action:
         service: script.turn_on
         entity_id: script.good_morning_routine
@@ -18,5 +18,5 @@
       - platform: time
         at: '6:00:00'
     action:
-      - service: input_boolean.turn_off
+        service: input_boolean.turn_off
         entity_id: input_boolean.sleeping
