@@ -11,3 +11,12 @@
     action:
         service: script.turn_on
         entity_id: script.good_morning_routine
+
+
+  - alias: "Sleeping Input Boolean"
+    trigger:
+      - platform: time
+        at: '6:00:00'
+    action:
+        service: input_boolean.sleeping
+        to: 'off'

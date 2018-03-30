@@ -1,7 +1,7 @@
-################################################
+##########################################################
 ### Input Booleans Switches
-### Start automations, built for Alexa Routines
-################################################
+### Start automations, mostly built for Alexa Routines
+##########################################################
 
   projector_on:
     name: Living Room Movie On
@@ -27,3 +27,8 @@
     name: Bedtime soon
     initial: off
     icon: mdi:hotel
+
+  sleeping:
+    name: Sleeping
+    initial: off
+    icon: mdi:sleep
