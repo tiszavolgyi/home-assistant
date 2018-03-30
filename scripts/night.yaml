@@ -58,4 +58,4 @@ good_night_off:
         entity_id: climate.living_room
         temperature: '20'
     - service: switch.turn_off
-        entity_id: switch.air_humidifier
+      entity_id: switch.air_humidifier
