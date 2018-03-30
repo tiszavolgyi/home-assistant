@@ -29,7 +29,7 @@
         state: 'home'
       - condition: state
         entity_id: switch.air_humidifier
-        state: on
+        state: 'on'
     action:
         service: switch.turn_off
         entity_id: switch.air_humidifier
