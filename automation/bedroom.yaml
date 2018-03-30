@@ -27,9 +27,9 @@
       - condition: state
         entity_id: group.household
         state: 'home'
-      - condition: time
-        after: '20:00:00'
-        before: '22:00:00'
+      - condition: state
+        entity_id: switch.air_humidifier
+        state: on
     action:
         service: switch.turn_off
         entity_id: switch.air_humidifier
