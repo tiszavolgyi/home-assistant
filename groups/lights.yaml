@@ -37,3 +37,10 @@ livingroom_lights:
     - switch.living_room_lamp
     - light.projector_screen
     - light.stair_lights
+
+garden_lights:
+  name: Garden Lights
+  icon: mdi:lightbulb
+  entities:
+    - switch.garden1
+    - switch.garden2

@@ -1,0 +1,17 @@
+################################
+### Sonoff Switches
+################################
+
+  - platform: mqtt
+    name: garden1
+    state_topic: "cmnd/gardenlight/power1"
+    command_topic: "cmnd/gardenlight/power1"
+    payload_on: "ON"
+    payload_off: "OFF"
+
+  - platform: mqtt
+    name: garden2
+    state_topic: "cmnd/gardenlight/power2"
+    command_topic: "cmnd/gardenlight/power2"
+    payload_on: "ON"
+    payload_off: "OFF"
