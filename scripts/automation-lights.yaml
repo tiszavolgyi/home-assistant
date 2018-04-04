@@ -22,6 +22,10 @@ night_light:
       entity_id: scene.patio_night
     - delay:
         milliseconds: 100
+    - service: scene.turn_on
+      entity_id: scene.garden_night
+    - delay:
+        milliseconds: 100
     - service_template: >
         {% if is_state('group.family', 'home') %}
           scene.turn_on
@@ -52,3 +56,7 @@ lights_off:
         milliseconds: 100
     - service: scene.turn_on
       entity_id: scene.bedroom_off
+    - delay:
+        milliseconds: 100
+    - service: scene.turn_on
+      entity_id: scene.garden_off      

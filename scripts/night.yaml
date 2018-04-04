@@ -30,6 +30,10 @@ good_night_off:
     - service: scene.turn_on
       entity_id: scene.patio_off
     - delay:
+        milliseconds: 100
+    - service: scene.turn_on
+      entity_id: scene.garden_off
+    - delay:
         milliseconds: 200
     - service: scene.turn_on
       entity_id: scene.stairs_off

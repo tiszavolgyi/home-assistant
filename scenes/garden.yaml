@@ -1,0 +1,22 @@
+######################
+### Garden Scenes
+######################
+
+### Night light
+
+  - name: Garden Night
+    entities:
+      switch.garden1:
+        state: on
+      switch.garden2:
+        state: on
+
+
+### OFF
+
+  - name: Garden Off
+    entities:
+      switch.garden1:
+        state: off
+      switch.garden2:
+        state: off
