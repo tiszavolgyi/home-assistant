@@ -68,9 +68,12 @@ nest:
   client_id: !secret nestclientid
   client_secret: !secret nestclientsecret
 
-light:
-  platform: hue
-  host: !secret hueip
+# Philips Hue Lights
+hue:
+  bridges:
+    - host: !secret hueip
+      allow_unreachable: true
+      allow_hue_groups: true
 
 # Eight Smart Mattress
 eight_sleep:
