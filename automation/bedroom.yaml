@@ -46,7 +46,7 @@
     trigger:
       - platform: numeric_state
         entity_id: sensor.eight_left_bed_temperature
-        below: 30
+        below: 28
     condition:
       - condition: state
         entity_id: binary_sensor.eight_left_bed_presence
@@ -60,7 +60,7 @@
     trigger:
       - platform: numeric_state
         entity_id: sensor.eight_right_bed_temperature
-        below: 30
+        below: 28
     condition:
       - condition: state
         entity_id: binary_sensor.eight_right_bed_presence
