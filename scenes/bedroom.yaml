@@ -20,7 +20,7 @@
       light.bedroom_2:
         state: on
         transition: 2
-        brightness: 254
+        brightness: 180
         xy_color: [ 0.4452, 0.4068 ]
 
   - name: Bedroom - Peter Reading
@@ -28,7 +28,7 @@
       light.bedroom_1:
         state: on
         transition: 2
-        brightness: 254
+        brightness: 180
         xy_color: [ 0.4452, 0.4068 ]
 
   - name: Bedroom - Romantic

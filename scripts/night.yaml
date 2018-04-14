@@ -47,6 +47,19 @@ good_night_off:
       entity_id: scene.kitchen_off
     - delay:
         milliseconds: 200
+    # - service_template: >
+    #     {% if sensor.eight_right_bed_temperature < 32 %}
+    #     data:
+    #       entity_id: "sensor.eight_left_bed_state"
+    #       target: 100
+    #       duration: 1800
+    #     {% elif sensor.eight_right_bed_temperature < 34 %}
+    #     data:
+    #       entity_id: "sensor.eight_left_bed_state"
+    #       target: 50
+    #       duration: 1800
+    #     {% endif %}
+    #   entity_id: eight_sleep.heat_set
     - service: eight_sleep.heat_set
       data:
         entity_id: "sensor.eight_left_bed_state"

@@ -39,8 +39,9 @@ livingroom_lights:
     - light.stair_lights
 
 garden_lights:
-  name: Garden Lights
+  name: Outdoor Lights
   icon: mdi:lightbulb
   entities:
+    - light.patio
     - switch.garden1
     - switch.garden2

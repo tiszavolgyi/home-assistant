@@ -32,7 +32,7 @@ Bedroom:
     - group.masterbedroom_bed
     - group.bedroom_air_sensors
 
-Garden:
+Outdoor:
   view: yes
   entities:
     - group.irrigation
