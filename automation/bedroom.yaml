@@ -2,6 +2,8 @@
 ### Automations in the bedroom
 #########################################################
 
+
+# Turn on air humidifier if air humidity is low
   - alias: "Bedroom Air Humidity Low"
     trigger:
       - platform: numeric_state
@@ -21,6 +23,8 @@
         service: switch.turn_on
         entity_id: switch.air_humidifier
 
+
+# Turn off air humidifier if air humidity is high
   - alias: "Bedroom Air Humidity High"
     trigger:
       - platform: numeric_state
@@ -37,6 +41,7 @@
         service: switch.turn_off
         entity_id: switch.air_humidifier
 
+# Heat left bed side if occupied and below 30
   - alias: "Peter Bed Heating at Night"
     trigger:
       - platform: numeric_state
@@ -47,8 +52,19 @@
         entity_id: binary_sensor.eight_left_bed_presence
         state: 'on'
     action:
-        service: eight_sleep.heat_set
-          data:
-            entity_id: "sensor.eight_left_bed_state"
-            target: 100
-            duration: 1800
+      service: script.turn_on
+      entity_id: script.heat_peter_bed_for_30_min
+
+# Heat right bed side if occupied and below 30
+  - alias: "Vivi Bed Heating at Night"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.eight_right_bed_temperature
+        below: 30
+    condition:
+      - condition: state
+        entity_id: binary_sensor.eight_right_bed_presence
+        state: 'on'
+    action:
+      service: script.turn_on
+      entity_id: script.heat_vivi_bed_for_30_min
