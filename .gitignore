@@ -12,6 +12,7 @@ known_devices.yaml
 nest.conf
 phue.conf
 plex.conf
+.config_entries.json
 home-assistant_v2.db-shm
 home-assistant_v2.db-wal
 phue-001788468cbf.conf
