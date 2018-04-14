@@ -20,7 +20,7 @@ heat_bed_for_1_hour:
         duration: 3600
 
 
-# Used for automation to heat the bed if it is too cold
+# Used for automation to heat the bed (left side) if it is too cold
 heat_peter_bed_for_30_min:
   sequence:
     - service: eight_sleep.heat_set
@@ -29,7 +29,7 @@ heat_peter_bed_for_30_min:
         target: 100
         duration: 1800
 
-# Used for automation to heat the bed if it is too cold
+# Used for automation to heat the bed (right side) if it is too cold
 heat_vivi_bed_for_30_min:
   sequence:
     - service: eight_sleep.heat_set
