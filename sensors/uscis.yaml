@@ -1,0 +1,17 @@
+
+###################################
+### Get updates on your USCIS case
+### using your case/receipt number
+###################################
+
+- platform: uscis
+  case_id: LIN1790592998
+  name: I-485 Peter
+
+- platform: uscis
+  case_id: LIN1790592994
+  name: I-485 Vivi
+
+- platform: uscis
+  case_id: LIN1790592997
+  name: I-140 Peter
