@@ -5,13 +5,13 @@
 ###################################
 
 - platform: uscis
-  case_id: LIN1790592998
+  case_id: !secret peter-I-485
   name: I-485 Peter
 
 - platform: uscis
-  case_id: LIN1790592994
+  case_id: !secret vivi-I-485
   name: I-485 Vivi
 
 - platform: uscis
-  case_id: LIN1790592997
+  case_id: !secret peter-I-140
   name: I-140 Peter
