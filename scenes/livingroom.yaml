@@ -76,7 +76,7 @@
     entities:
       light.floor_lamp:
         state: off
-        transition: 30
+        transition: 10
       switch.living_room_lamp:
         state: off
       light.projector_screen:

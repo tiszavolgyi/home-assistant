@@ -18,4 +18,4 @@
     entities:
       light.hue_bloom_1:
         state: off
-        transition: 30
+        transition: 5
