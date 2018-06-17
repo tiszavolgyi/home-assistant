@@ -29,6 +29,7 @@
       - platform: state
         entity_id:
           - media_player.plex_web_chrome
+          - media_player.plex_plex_8d7zd5x5gejd5uj4i2z53ssa
         to: 'playing'
     condition:
       - condition: state
@@ -43,6 +44,7 @@
       - platform: state
         entity_id:
           - media_player.plex_web_chrome
+          - media_player.plex_plex_8d7zd5x5gejd5uj4i2z53ssa
         to: 'paused'
     condition:
       - condition: state
@@ -57,6 +59,7 @@
       - platform: state
         entity_id:
           - media_player.plex_web_chrome
+          - media_player.plex_plex_8d7zd5x5gejd5uj4i2z53ssa
         to: 'idle'
     condition:
       - condition: state
