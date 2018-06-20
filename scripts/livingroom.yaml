@@ -42,22 +42,19 @@ turn_off_tv:
         {% endif %}
       entity_id: switch.living_room_lamp
     - delay:
-        seconds: 3
-    - service: script.turn_on
-      entity_id:
-        - script.avr_avr_button
-    - delay:
-        milliseconds: 100
-    - service: script.turn_on
-      entity_id:
-        - script.avr_turn_off
-    - delay:
-        milliseconds: 200
-    - service: script.turn_on
-      entity_id:
-        - script.projector_turn_off
+        seconds: 1
+#    - service: script.turn_on
+#      entity_id:
+#        - script.avr_avr_button
+#    - delay:
+#        milliseconds: 100
+    - service: switch.turn_off
+      entity_id: switch.harman_kardon_intelstick
     - delay:
         milliseconds: 200
-    - service: script.turn_on
-      entity_id:
-        - script.projector_screen_up
+    - service: switch.turn_off
+      entity_id: switch.projector
+    - delay:
+        milliseconds: 200
+    - service: switch.turn_off
+      entity_id: switch.projector_screen
