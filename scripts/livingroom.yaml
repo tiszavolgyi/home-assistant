@@ -55,6 +55,10 @@ turn_off_tv:
     - service: switch.turn_off
       entity_id: switch.projector
     - delay:
+        milliseconds: 100
+    - service: switch.turn_off
+      entity_id: switch.projector
+    - delay:
         milliseconds: 200
     - service: switch.turn_off
       entity_id: switch.projector_screen
