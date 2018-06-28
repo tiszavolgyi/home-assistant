@@ -23,11 +23,19 @@ heat_bed_for_1_hour:
 # Used for automation to heat the bed (left side) if it is too cold
 heat_peter_bed_for_30_min:
   sequence:
+    - condition:
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: binary_sensor.eight_left_bed_presence
+          state: 'on'
+        - condition: template
+          value_template: '{% if (states.sensor.eight_left_bed_temperature.state|float) < (states.input_number.eight_left_bed_temperature_threshold.state|float)%}true{%endif%}'
     - service: eight_sleep.heat_set
-      data:
-        entity_id: "sensor.eight_left_bed_state"
-        target: 100
-        duration: 1800
+      data_template:
+        entity_id: sensor.eight_left_bed_state
+        target: '{{ states.input_number.eight_left_heat_run_temp.state | int }}'
+        duration: '{{ states.input_number.eight_left_heat_run_minutes.state | int * 60}}'
 
 # Used for automation to heat the bed (right side) if it is too cold
 heat_vivi_bed_for_30_min:

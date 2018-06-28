@@ -1,0 +1,55 @@
+##############################################################
+### Input Number Controllers for Bed Temperature Automations
+##############################################################
+
+#Left Bed Temperature Controllers
+
+  eight_left_bed_temperature_threshold:
+    name: Eight Left Temp Threshold
+    icon: mdi:hotel
+    unit_of_measurement: '°C'
+    min: 27
+    max: 40
+    step: 1
+
+
+  eight_left_heat_run_temp:
+    icon: mdi:thermometer
+    unit_of_measurement: '%'
+    min: 10
+    max: 100
+    step: 10
+
+
+  eight_left_heat_run_minutes:
+    icon: mdi:clock
+    unit_of_measurement: 'mins'
+    min: 5
+    max: 60
+    step: 5
+
+#Right Bed Temperature Controllers
+
+  eight_right_bed_temperature_threshold:
+    name: Eight Right Temp Threshold
+    icon: mdi:hotel
+    unit_of_measurement: '°C'
+    min: 27
+    max: 40
+    step: 1
+
+
+  eight_right_heat_run_temp:
+    icon: mdi:thermometer
+    unit_of_measurement: '%'
+    min: 10
+    max: 100
+    step: 10
+
+
+  eight_right_heat_run_minutes:
+    icon: mdi:clock
+    unit_of_measurement: 'mins'
+    min: 5
+    max: 60
+    step: 5
