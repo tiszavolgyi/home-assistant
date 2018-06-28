@@ -18,3 +18,4 @@ home-assistant_v2.db-wal
 phue-001788468cbf.conf
 entity_registry.yaml
 .cloud/*
+.idea/*
