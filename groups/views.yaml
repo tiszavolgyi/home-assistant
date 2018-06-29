@@ -31,6 +31,7 @@ Bedroom:
     - group.bedroom_scenes
     - group.bedroom_lights
     - group.masterbedroom_bed
+    - group.night_eight_settings
     - group.bedroom_air_sensors
 
 Outdoor:
