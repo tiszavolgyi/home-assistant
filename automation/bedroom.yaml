@@ -41,7 +41,7 @@
         service: switch.turn_off
         entity_id: switch.air_humidifier
 
-# Heat left bed side if occupied and below 30
+# Heat left bed side if occupied and bed becomes cold
   - alias: "Peter Bed Heating at Night"
     trigger:
       - platform: numeric_state
@@ -55,7 +55,7 @@
       service: script.turn_on
       entity_id: script.heat_peter_bed_for_30_min
 
-# Heat right bed side if occupied and below 30
+# Heat right bed side if occupied and bed becomes cold
   - alias: "Vivi Bed Heating at Night"
     trigger:
       - platform: numeric_state

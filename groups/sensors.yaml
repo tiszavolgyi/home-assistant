@@ -71,12 +71,23 @@ masterbedroom_bed:
     - binary_sensor.eight_right_bed_presence
     - binary_sensor.eight_left_bed_presence
 
-night_eight_settings:
+peter_eight_settings:
   view: no
-  name: "Eight Sleep Settings"
+  name: "Peter Bed Settings"
   entities:
     - binary_sensor.eight_left_bed_presence
     - sensor.eight_left_bed_temperature
     - input_number.eight_left_bed_temperature_threshold
     - input_number.eight_left_heat_run_temp
     - input_number.eight_left_heat_run_minutes
+
+
+vivi_eight_settings:
+  view: no
+  name: "Vivi Bed Settings"
+  entities:
+    - binary_sensor.eight_right_bed_presence
+    - sensor.eight_right_bed_temperature
+    - input_number.eight_right_bed_temperature_threshold
+    - input_number.eight_right_heat_run_temp
+    - input_number.eight_right_heat_run_minutes

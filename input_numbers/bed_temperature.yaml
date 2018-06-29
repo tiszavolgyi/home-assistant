@@ -5,51 +5,57 @@
 #Left Bed Temperature Controllers
 
   eight_left_bed_temperature_threshold:
-    name: Eight Left Temp Threshold
+    name: Peter Temp Threshold
     icon: mdi:hotel
     unit_of_measurement: '°C'
-    min: 27
+    initial: 27
+    min: 25
     max: 40
     step: 1
 
-
   eight_left_heat_run_temp:
+    name: Peter Heating Temp
     icon: mdi:thermometer
     unit_of_measurement: '%'
+    initial: 100
     min: 10
     max: 100
     step: 10
 
-
   eight_left_heat_run_minutes:
+    name: Peter Heating Time
     icon: mdi:clock
     unit_of_measurement: 'mins'
+    initial: 30
     min: 5
     max: 60
-    step: 5
+    step: 10
 
 #Right Bed Temperature Controllers
 
   eight_right_bed_temperature_threshold:
-    name: Eight Right Temp Threshold
+    name: Vivi Temp Threshold
     icon: mdi:hotel
     unit_of_measurement: '°C'
-    min: 27
+    initial: 27
+    min: 25
     max: 40
     step: 1
 
-
   eight_right_heat_run_temp:
+    name: Vivi Heating Temp
     icon: mdi:thermometer
     unit_of_measurement: '%'
+    initial: 100
     min: 10
     max: 100
     step: 10
 
-
   eight_right_heat_run_minutes:
+    name: Vivi Heating Time
     icon: mdi:clock
     unit_of_measurement: 'mins'
+    initial: 30
     min: 5
     max: 60
-    step: 5
+    step: 10

@@ -49,11 +49,8 @@ good_night_off:
         milliseconds: 200
     - service: script.turn_on
       entity_id: script.heat_peter_bed_for_30_min
-    - service: eight_sleep.heat_set
-      data:
-        entity_id: "sensor.eight_right_bed_state"
-        target: 100
-        duration: 1800
+    - service: script.turn_on
+      entity_id: script.heat_vivi_bed_for_30_min
     - service: climate.set_temperature
       data:
         entity_id: climate.living_room
