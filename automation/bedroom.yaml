@@ -44,9 +44,8 @@
 # Heat left bed side if occupied and bed becomes cold
   - alias: "Peter Bed Heating at Night"
     trigger:
-      - platform: numeric_state
-        entity_id: sensor.eight_left_bed_temperature
-        below: 28
+      - platform: template
+        value_template: '{% if (states.sensor.eight_left_bed_temperature.state|float) < (states.input_number.eight_left_bed_temperature_threshold.state|float)%}true{%endif%}'
     condition:
       - condition: state
         entity_id: binary_sensor.eight_left_bed_presence
@@ -58,9 +57,8 @@
 # Heat right bed side if occupied and bed becomes cold
   - alias: "Vivi Bed Heating at Night"
     trigger:
-      - platform: numeric_state
-        entity_id: sensor.eight_right_bed_temperature
-        below: 28
+      - platform: template
+        value_template: '{% if (states.sensor.eight_left_bed_temperature.state|float) < (states.input_number.eight_left_bed_temperature_threshold.state|float)%}true{%endif%}'
     condition:
       - condition: state
         entity_id: binary_sensor.eight_right_bed_presence
