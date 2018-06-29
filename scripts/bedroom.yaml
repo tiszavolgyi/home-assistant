@@ -23,14 +23,8 @@ heat_bed_for_1_hour:
 # Used for automation to heat the bed (left side) if it is too cold
 heat_peter_bed_for_30_min:
   sequence:
-    - condition:
-      condition: and
-      conditions:
-        - condition: state
-          entity_id: binary_sensor.eight_left_bed_presence
-          state: 'on'
-        - condition: template
-          value_template: '{% if (states.sensor.eight_left_bed_temperature.state|float) < (states.input_number.eight_left_bed_temperature_threshold.state|float)%}true{%endif%}'
+    - condition: template
+      value_template: '{% if (states.sensor.eight_left_bed_temperature.state|float) < (states.input_number.eight_left_bed_temperature_threshold.state|float)%}true{%endif%}'
     - service: eight_sleep.heat_set
       data_template:
         entity_id: sensor.eight_left_bed_state
@@ -40,14 +34,8 @@ heat_peter_bed_for_30_min:
 # Used for automation to heat the bed (right side) if it is too cold
 heat_vivi_bed_for_30_min:
   sequence:
-    - condition:
-      condition: and
-      conditions:
-        - condition: state
-          entity_id: binary_sensor.eight_right_bed_presence
-          state: 'on'
-        - condition: template
-          value_template: '{% if (states.sensor.eight_right_bed_temperature.state|float) < (states.input_number.eight_right_bed_temperature_threshold.state|float)%}true{%endif%}'
+    - condition: template
+      value_template: '{% if (states.sensor.eight_right_bed_temperature.state|float) < (states.input_number.eight_right_bed_temperature_threshold.state|float)%}true{%endif%}'
     - service: eight_sleep.heat_set
       data_template:
         entity_id: sensor.eight_right_bed_state
