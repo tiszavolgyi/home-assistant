@@ -28,7 +28,6 @@ Bedroom:
   view: yes
   #control: hidden
   entities:
-    - group.bedroom_scenes
     - group.bedroom_lights
     - group.masterbedroom_bed
     - group.peter_eight_settings
@@ -52,7 +51,7 @@ all_lights_control:
     entities:
       - group.light
       - group.livingroom_scenes
-      - group.bedroom_scenes
+      - group.bedroom_lights
 
 cameras:
     view: yes
