@@ -22,7 +22,7 @@ good_night_off:
       entity_id:
         - script.projector_screen_up
     - delay:
-        milliseconds: 200
+        milliseconds: 100
     - service: scene.turn_on
       entity_id: scene.living_room_off
     - delay:
@@ -30,7 +30,11 @@ good_night_off:
     - service: scene.turn_on
       entity_id: scene.patio_off
     - delay:
-        milliseconds: 100
+        milliseconds: 200
+    - service: scene.turn_on
+      entity_id: scene.kitchen_off
+    - delay:
+        milliseconds: 200
     - service: scene.turn_on
       entity_id: scene.garden_off
     - delay:
