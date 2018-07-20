@@ -24,7 +24,6 @@ bedroom_lights:
     - scene.bedroom__vivi_reading
     - scene.bedroom__peter_reading
     - scene.bedroom__romantic
-    - scene.bedroom_off    
 
 light:
   name: Lights
