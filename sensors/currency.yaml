@@ -1,4 +1,5 @@
 - platform: fixer
+  api_key: secret! fixer_api_key
   target: HUF
 
 - platform: coinmarketcap
