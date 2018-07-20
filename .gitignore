@@ -19,3 +19,4 @@ phue-001788468cbf.conf
 entity_registry.yaml
 .cloud/*
 .idea/*
+.storage/*
