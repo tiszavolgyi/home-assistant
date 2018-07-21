@@ -149,9 +149,11 @@ proximity:
     tolerance: 50
     unit_of_measurement: mi
 
+#Rachio Controller
+rachio:
+  api_key: !secret rachio-token
 
 # Rachio iFrame Module
-
 panel_iframe:
   rachio:
     title: Rachio
