@@ -3,3 +3,4 @@
 #################################
 
   - platform: rachio
+    manual_run_mins: 5
