@@ -37,3 +37,15 @@ alexa_routines:
     - input_boolean.good_night
     - input_boolean.good_morning
     - input_boolean.bedtime_soon
+
+
+bedroom_automations:
+  view: no
+  name: Bedroom Automations
+  icon: mdi:hotel
+  entities:
+    - automation.bedroom_air_humidity_high
+    - automation.bedroom_air_humidity_low
+    - automation.peter_bed_heating_at_night
+    - automation.vivi_bed_heating_at_night
+    

@@ -32,6 +32,6 @@
         command_off: 'JgBYAAABKJIUERMRFBEUERMRFBEUERM2ExEUERQRExEUNhM2FDUUERM2FDUUNRQ2EzYUERMRFDUUERQRExEUERQREzYUNRQREwAFwwABKUgUAAxKAAEoSRQADQU='
 
 
-  - platform: broadlink
-    host: !secret broadlink_rm_master_ip
-    mac: !secret broadlink_rm_master_mac
+  # - platform: broadlink
+  #   host: !secret broadlink_rm_master_ip
+  #   mac: !secret broadlink_rm_master_mac
