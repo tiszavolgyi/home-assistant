@@ -94,8 +94,8 @@
       - platform: time
         at: '22:30:00'
     action:
-      service: scene.turn_on
-      entity_id: scene.living_room_off
+        service: script.turn_on
+        entity_id: script.good_night_off
 
 ### Turn off lights when nobody at home
 
