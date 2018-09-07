@@ -6,7 +6,7 @@ default_view:
   view: yes
   icon: mdi:home-assistant
   entities:
-    - group.uscis_status
+    #- group.uscis_status
     - group.battery
     - group.family
     - group.traveltime
