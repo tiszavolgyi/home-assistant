@@ -4,15 +4,15 @@
 #################
 
 
-midnight:
+dark:
   # Main colors
-  primary-color: '#5294E2'                                                        # Header
+  primary-color: '#0D54A7'                                                        # Header
   accent-color: '#E45E65'                                                         # Accent color
   dark-primary-color: 'var(--accent-color)'                                       # Hyperlinks
   light-primary-color: 'var(--accent-color)'                                      # Horizontal line in about
 
   # Text colors
-  primary-text-color: '#FFFFFF'                                                   # Primary text colour, here is referencing dark-primary-color
+  primary-text-color: '#C0B8B8'                                                   # Primary text colour, here is referencing dark-primary-color
   text-primary-color: 'var(--primary-text-color)'                                 # Primary text colour
   secondary-text-color: '#5294E2'                                                 # For secondary titles in more info boxes etc.
   disabled-text-color: '#7F848E'                                                  # Disabled text colour
