@@ -7,7 +7,7 @@
 dark:
   # Main colors
   primary-color: '#0D54A7'                                                        # Header
-  accent-color: '#E45E65'                                                         # Accent color
+  accent-color: '#3eafcd'                                                         # Accent color
   dark-primary-color: 'var(--accent-color)'                                       # Hyperlinks
   light-primary-color: 'var(--accent-color)'                                      # Horizontal line in about
 
@@ -28,7 +28,7 @@ dark:
   table-row-alternative-background-color: '#3E424B'                               # Table row alternative
 
   # Nav Menu
-  paper-listbox-color: 'var(--primary-color)'                                     # Navigation menu selection hoover
+  paper-listbox-color: '#a7971c'                                                  # Navigation menu selection hoover
   paper-listbox-background-color: '#2E333A'                                       # Navigation menu background
   paper-grey-50: 'var(--primary-text-color)'
   paper-grey-200: '#414A59'                                                       # Navigation menu selection
