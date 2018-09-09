@@ -3,4 +3,15 @@
 ###########################
 
   - platform: yweather
-  - name: Weather
+    name: Weather
+    forecast: 1
+    monitored_conditions:
+      - weather
+      - weather_current
+      - temp_min
+      - temp_max
+      - wind_speed
+      - pressure
+      - visibility
+      - humidity
+      - temperature
