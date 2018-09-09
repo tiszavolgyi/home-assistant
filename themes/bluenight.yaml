@@ -24,7 +24,7 @@ BlueNight:
   dark-secondary-opacity: '1'
   # Text colors
   primary-text-color: 'hsl(var(--huesat) 60%)'
-  text-primary-color: 'hsl(var(--huesat) 60%)'
+  text-primary-color: 'hsl(var(--huesat) 80%)'
   secondary-text-color: 'hsl(var(--huesat) 80%)'
   disabled-text-color: 'hsl(var(--huesat) 40%)'
   sidebar-text_-_color: 'hsl(var(--huesat) 60%)'
