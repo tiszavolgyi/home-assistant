@@ -1,5 +1,5 @@
 ###########################
-### Broadlink E=Air Sensor
+### Broadlink E-Air Sensor
 ###########################
 
   - platform: broadlink

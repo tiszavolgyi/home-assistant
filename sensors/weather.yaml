@@ -1,0 +1,6 @@
+###########################
+### Weather Sensor
+###########################
+
+  - platform: yweather
+  - name: Weather
