@@ -46,6 +46,12 @@
 
 #Sensors
 
+ #Weather Sensor
+
+  weather.yweather:
+    friendly_name: Weather Forecast
+
+
  #Bedroom Sensors
 
   sensor.eight_right_bed_temperature: #Eight Mattress Sensor
