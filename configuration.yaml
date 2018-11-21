@@ -154,7 +154,7 @@ proximity:
 
 vacuum:
   - platform: xiaomi_miio
-    host: 192.168.1.68
+    host: !secret xiaomi_vacuum_ip
     token: !secret xiaomi_vacuum_token
 
 
