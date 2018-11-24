@@ -17,7 +17,6 @@ default_view:
     - group.internet_speed
     - group.light
     - vacuum.xiaomi_vacuum_cleaner
-    - switch.vacuum
 
 Living Room:
   view: yes

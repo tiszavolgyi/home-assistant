@@ -6,7 +6,7 @@
 
 dark:
   # Main colors
-  primary-color: '#0D54A7'                                                        # Header
+  primary-color: '#7F848E'                                                        # Header
   accent-color: '#3eafcd'                                                         # Accent color
   dark-primary-color: 'var(--accent-color)'                                       # Hyperlinks
   light-primary-color: 'var(--accent-color)'                                      # Horizontal line in about
