@@ -30,6 +30,7 @@ And thanks to *all* the devs that create the Home Assistant magic
 - Ubiquiti Unifi Controller
 - Wemo Switch
 - Zanzito Device Tracker
+- Xiaomi Mi Robot Vacuum 
 
 
 ## Configuration Best Pratices
