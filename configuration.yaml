@@ -150,6 +150,14 @@ proximity:
     tolerance: 50
     unit_of_measurement: mi
 
+#Xiaomi Vaccum Integration
+
+vacuum:
+  - platform: xiaomi_miio
+    host: !secret xiaomi_vacuum_ip
+    token: !secret xiaomi_vacuum_token
+
+
 #Rachio Controller
 rachio:
   api_key: !secret rachio-token
