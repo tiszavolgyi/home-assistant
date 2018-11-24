@@ -12,7 +12,7 @@
     action:
       - service: frontend.set_theme
         data:
-          name: bluenight
+          name: BlueNight
 
 
   - alias: 'Set default theme for the day'

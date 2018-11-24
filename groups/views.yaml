@@ -25,6 +25,7 @@ Living Room:
     - group.livingroom_avr
     - group.livingroom_scenes
     - group.livingroom_lights
+    - vacuum.xiaomi_vacuum_cleaner
 
 Bedroom:
   view: yes
