@@ -12,22 +12,25 @@ irrigation:
 
 zones_front:
   name: Front Yard
+  icon: mdi:water-pump
   entities:
-  - switch.zone_6
-  - switch.zone_7
-  - switch.zone_8
+  - switch.zone_6_2
+  - switch.zone_7_2
+  - switch.zone_8_2
 
 zones_grass:
   name: Grass
+  icon: mdi:water-pump
   entities:
-  - switch.zone_2
-  - switch.zone_3
-  - switch.zone_5
-  - switch.zone_11
+  - switch.zone_2_2
+  - switch.zone_3_2
+  - switch.zone_5_2
+  - switch.zone_11_2
 
 zones_plants:
   name: Plants - Dripping
+  icon: mdi:water-pump
   entities:
-  - switch.zone_1
-  - switch.zone_4
-  - switch.zone_9
+  - switch.zone_1_2
+  - switch.zone_4_2
+  - switch.zone_9_2
