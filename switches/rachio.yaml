@@ -2,5 +2,5 @@
 ### Rachio Sprinkler Controller
 #################################
 
-  - platform: rachio
-    manual_run_mins: 5
+#  - platform: rachio
+#    manual_run_mins: 5
