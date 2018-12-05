@@ -210,7 +210,7 @@
 
   switch.zone_1_2:
     friendly_name: Back - Plants by the Fence
-  switch.zone_1_2:
+  switch.zone_2_2:
     friendly_name: Back - Grass up left
   switch.zone_3_2:
     friendly_name: Back - Grass up right
