@@ -40,11 +40,11 @@ Bedroom:
 Outdoor:
   view: yes
   entities:
-    - group.irrigation
+    - group.garden_lights
     - group.zones_front
     - group.zones_grass
     - group.zones_plants
-    - group.garden_lights
+
 
 
 all_lights_control:
