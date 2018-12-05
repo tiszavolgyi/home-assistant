@@ -4,13 +4,13 @@
 
 #USCIS Case statuses
 
-uscis_status:
-  view: no
-  name: USCIS Case Statuses
-  icon: mdi:file-document
-  entities:
-    - sensor.uscis
-    - sensor.uscis_2
+# uscis_status:
+#   view: no
+#   name: USCIS Case Statuses
+#   icon: mdi:file-document
+#   entities:
+#     - sensor.uscis
+#     - sensor.uscis_2
 
 
 #Bedroom sensors
