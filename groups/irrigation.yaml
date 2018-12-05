@@ -24,7 +24,6 @@ zones_grass:
   entities:
   - switch.zone_2_2
   - switch.zone_3_2
-  - switch.zone_5_2
   - switch.zone_11_2
 
 zones_plants:
@@ -33,4 +32,6 @@ zones_plants:
   entities:
   - switch.zone_1_2
   - switch.zone_4_2
+  - switch.zone_5_2
   - switch.zone_9_2
+  - switch.zone_10_2
