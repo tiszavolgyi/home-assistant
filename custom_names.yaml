@@ -206,6 +206,16 @@
   sensor.living_room_thermostat_temperature:
     friendly_name: Thermostat Temperature
 
+#Rachio Irrigation Zone names
+
+  switch.zone_1_1:
+    friendly_name: Back - Plants by the Fence
+  switch.zone_1_2:
+    friendly_name: Back - Grass up left
+  switch.zone_1_3:
+    friendly_name: Back - Grass up right 
+
+
 #Other things
   sensor.yr_symbol:
     friendly_name: Weather

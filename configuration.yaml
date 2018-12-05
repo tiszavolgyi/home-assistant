@@ -161,6 +161,8 @@ vacuum:
 #Rachio Controller
 rachio:
   api_key: !secret rachio-token
+  manual_run_mins: 5
+
 
 # Rachio iFrame Module
 panel_iframe:
