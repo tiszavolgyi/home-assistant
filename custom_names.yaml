@@ -208,12 +208,28 @@
 
 #Rachio Irrigation Zone names
 
-  switch.zone_1_1:
+  switch.zone_1_2:
     friendly_name: Back - Plants by the Fence
   switch.zone_1_2:
     friendly_name: Back - Grass up left
-  switch.zone_1_3:
-    friendly_name: Back - Grass up right 
+  switch.zone_3_2:
+    friendly_name: Back - Grass up right
+  switch.zone_4_2:
+    friendly_name: Back - Plants on the slope
+  switch.zone_5_2:
+    friendly_name: Back - Plants on the "Beach"
+  switch.zone_6_2:
+    friendly_name: Front - Front of the kitchen
+  switch.zone_7_2:
+    friendly_name: Front - Next to the garage
+  switch.zone_8_2:
+    friendly_name: Front - Next to the road
+  switch.zone_9_2:
+    friendly_name: Back - Plants in the middle
+  switch.zone_10_2:
+    friendly_name: Back - Plants next to the pathway
+  switch.zone_11_2:
+    friendly_name: Back - Grass up behind the Spa
 
 
 #Other things
