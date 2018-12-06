@@ -12,13 +12,13 @@
     foreign_exchange:
       - name: USD_HUF
         from: USD
-        to: EUR
-      # - name: Bitcoin
-      #   from: BTC
-      #   to: USD
-      # - name: Ethereum
-      #   from: ETC
-      #   to: USD
-      # - name: Ripple
-      #   from: XRP
-      #   to: USD
+        to: HUF
+      - name: Bitcoin
+        from: BTC
+        to: USD
+      - name: Ethereum
+        from: ETC
+        to: USD
+      - name: Ripple
+        from: XRP
+        to: USD
