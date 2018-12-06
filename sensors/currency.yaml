@@ -1,15 +1,15 @@
-- platform: fixer
-  api_key: secret! fixer_api_key
-  target: HUF
+# - platform: fixer
+#   api_key: secret! fixer_api_key
+#   target: HUF
 
-- platform: coinmarketcap
-  currency: ethereum
-
-- platform: coinmarketcap
-  currency: bitcoin
-
-- platform: coinmarketcap
-  currency: litecoin
-
-- platform: coinmarketcap
-  currency: ripple
+# - platform: coinmarketcap
+#   currency: ethereum
+#
+# - platform: coinmarketcap
+#   currency: bitcoin
+#
+# - platform: coinmarketcap
+#   currency: litecoin
+#
+# - platform: coinmarketcap
+#   currency: ripple

@@ -17,7 +17,7 @@
         from: BTC
         to: USD
       - name: Ethereum
-        from: ETC
+        from: ETH
         to: USD
       - name: Ripple
         from: XRP
