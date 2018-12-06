@@ -1,0 +1,10 @@
+######################
+### Currency Info ###
+######################
+
+  - platform: currencylayer
+    api_key: secret! currencylayer_api_key
+    base: USD
+    quote:
+      - EUR
+      - HUF
