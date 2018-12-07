@@ -5,10 +5,12 @@
   - platform: currencylayer
     api_key: secret! currencylayer_api_key
     base: USD
-    quote: EUR
+    quote:
+      - EUR
 
 
 
   - platform: openexchangerates
     api_key: secret! openexchangerates_api_key
-    quote: HUF
+    quote:
+      - HUF
