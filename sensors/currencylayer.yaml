@@ -12,5 +12,4 @@
 
   - platform: openexchangerates
     api_key: secret! openexchangerates_api_key
-    quote:
-      - HUF
+    quote: HUF
