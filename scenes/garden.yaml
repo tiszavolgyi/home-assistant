@@ -10,6 +10,8 @@
         state: on
       switch.garden2:
         state: on
+      switch.air_purifier:
+        state: on
 
 
 ### OFF

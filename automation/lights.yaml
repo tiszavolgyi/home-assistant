@@ -23,6 +23,18 @@
       entity_id: script.night_light
 
 
+### Turn off X-Mas lights at 1 am
+
+  - alias: "Turn off X-Mas lights at 1 am"
+    trigger:
+      - platform: time
+        at: '1:00:00'
+    action:
+      service: switch.turn_off
+      entity_id: switch.air_purifier
+
+
+
 ### Turn on patio light for the dog
 
   - alias: "Turn on patio light for the dog"
