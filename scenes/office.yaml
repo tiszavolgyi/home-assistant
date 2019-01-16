@@ -9,8 +9,8 @@
       light.floor_lamp:
         state: on
         transition: 2
-        brightness: 120
-        xy_color: [ 0.4548, 0.2014 ]
+        brightness: 200
+        xy_color: [ 0.689, 0.309 ]
 
 ### OFF
 
