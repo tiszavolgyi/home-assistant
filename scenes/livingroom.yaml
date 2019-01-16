@@ -66,6 +66,7 @@
 ### OFF
 
   - name: Living Room Off
+    entities:
       switch.living_room_lamp:
         state: off
       light.projector_screen:
