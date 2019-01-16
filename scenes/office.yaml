@@ -15,6 +15,7 @@
 ### OFF
 
   - name: Office Off
+    entities:
       light.floor_lamp:
         state: off
         transition: 5
