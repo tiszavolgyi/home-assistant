@@ -7,11 +7,6 @@
 
   - name: Living Room Reading
     entities:
-      light.floor_lamp:
-        state: on
-        transition: 2
-        brightness: 254
-        xy_color: [ 0.4452, 0.4068 ]
       light.projector_screen:
         state: on
         transition: 2
@@ -22,11 +17,6 @@
 
   - name: Living Room Movie
     entities:
-      light.floor_lamp:
-        state: on
-        transition: 2
-        brightness: 5
-        xy_color: [ 0.5926, 0.3814 ]
       switch.living_room_lamp:
         state: off
       light.projector_screen:
@@ -38,11 +28,6 @@
 
   - name: Living Room Late Night
     entities:
-      light.floor_lamp:
-        state: on
-        transition: 2
-        brightness: 150
-        xy_color: [ 0.4548, 0.2014 ]
       switch.living_room_lamp:
         state: off
       light.projector_screen:
@@ -56,11 +41,6 @@
 
   - name: Living Room Night
     entities:
-      light.floor_lamp:
-        state: on
-        transition: 2
-        brightness: 150
-        xy_color: [ 0.4548, 0.2014 ]
       switch.living_room_lamp:
         state: on
       light.projector_screen:
@@ -69,14 +49,23 @@
         brightness: 120
         xy_color: [ 0.1756, 0.2167 ]
 
+### Bright Light
+
+  - name: Living Room Bright
+    entities:
+      switch.living_room_lamp:
+        state: on
+      light.projector_screen:
+        state: on
+        transition: 5
+        brightness: 254
+        xy_color: [ 0.1756, 0.2167 ]
+
+
 
 ### OFF
 
   - name: Living Room Off
-    entities:
-      light.floor_lamp:
-        state: off
-        transition: 10
       switch.living_room_lamp:
         state: off
       light.projector_screen:

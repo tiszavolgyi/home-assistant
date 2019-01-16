@@ -1,0 +1,20 @@
+######################
+### Office Scenes
+######################
+
+### Night Light
+
+  - name: Office Night
+    entities:
+      light.floor_lamp:
+        state: on
+        transition: 2
+        brightness: 120
+        xy_color: [ 0.4548, 0.2014 ]
+
+### OFF
+
+  - name: Office Off
+      light.floor_lamp:
+        state: off
+        transition: 5

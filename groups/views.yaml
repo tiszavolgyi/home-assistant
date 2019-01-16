@@ -37,6 +37,14 @@ Bedroom:
     - group.vivi_eight_settings
     - group.bedroom_air_sensors
 
+
+Office:
+  view: yes
+  #control: hidden
+  entities:
+    - group.office_lights
+
+
 Outdoor:
   view: yes
   entities:

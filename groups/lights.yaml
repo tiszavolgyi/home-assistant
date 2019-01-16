@@ -25,6 +25,12 @@ bedroom_lights:
     - scene.bedroom__peter_reading
     - scene.bedroom__romantic
 
+office_lights:
+  name: Office Lights
+  icon: mdi:lightbulb
+  entities:
+    - light.floor_lamp
+
 light:
   name: Lights
   entities:
@@ -41,7 +47,6 @@ livingroom_lights:
   name: Livingroom Lights
   icon: mdi:lightbulb
   entities:
-    - light.floor_lamp
     - switch.living_room_lamp
     - light.projector_screen
     - light.stair_lights
@@ -66,4 +71,5 @@ livingroom_scenes:
     - scene.living_room_night
     - scene.living_room_late_night
     - scene.living_room_movie
+    - scene.living_room_bright
     - scene.living_room_off
