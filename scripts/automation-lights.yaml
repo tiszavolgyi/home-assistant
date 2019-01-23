@@ -38,6 +38,36 @@ night_light:
         {% endif %}
       entity_id: scene.bedroom_night
 
+
+
+### Turn ON Lights before Sunset - Morning automations
+
+morning_light:
+  sequence:
+    - service: scene.turn_on
+      entity_id: scene.living_room_night
+    - delay:
+        milliseconds: 100
+    - service: scene.turn_on
+      entity_id: scene.office_night
+    - delay:
+        milliseconds: 100
+    - service: scene.turn_on
+      entity_id: scene.dining_room_night
+    - delay:
+        milliseconds: 100
+    - service: scene.turn_on
+      entity_id: scene.stairs_night
+    - delay:
+        milliseconds: 100
+    - service: scene.turn_on
+      entity_id: scene.patio_night
+    - delay:
+        milliseconds: 100
+    - service: scene.turn_on
+      entity_id: scene.garden_night
+
+
 ### Turn OFF Lights except patio (Malvin the dog)
 
 lights_off:

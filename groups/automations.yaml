@@ -8,10 +8,9 @@ sunset_automations:
   name: Sunset Automations
   icon: mdi:home-automation
   entities:
-    - automation.turn_off_floor_lamp_at_9pm_sunthur
+    - automation.turn_off_floor_lamp_at_9pm_sun_thur
     - automation.turn_on_lights_after_sunset
-    - automation.turn_on_lights_when_anyone_arriving_home_at_night
-    - automation.turn_off_all_lights_at_1030pm
+    - automation.turn_off_all_lights_at_10_30pm
     - automation.turn_off_lights_when_nobody_at_home
     - automation.turn_on_bedroom_lights_when_family_arriving_home_at_night
     - automation.turn_on_lights_when_anyone_arriving_home_at_night
@@ -48,4 +47,3 @@ bedroom_automations:
     - automation.bedroom_air_humidity_low
     - automation.peter_bed_heating_at_night
     - automation.vivi_bed_heating_at_night
-    

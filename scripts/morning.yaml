@@ -14,4 +14,4 @@ good_morning_routine:
         {% if is_state('sun.sun', 'below_horizon') %}
           script.turn_on
         {% endif %}
-      entity_id: script.night_light
+      entity_id: script.morning_light
