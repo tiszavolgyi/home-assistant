@@ -21,9 +21,9 @@ bedroom_lights:
     - light.bedroom_1
     - light.bedroom_2
     - scene.bedroom_night
-    - scene.bedroom__vivi_reading
-    - scene.bedroom__peter_reading
-    - scene.bedroom__romantic
+    - scene.bedroom_vivi_reading
+    - scene.bedroom_peter_reading
+    - scene.bedroom_romantic
 
 office_lights:
   name: Office Lights
