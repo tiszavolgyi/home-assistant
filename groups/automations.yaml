@@ -21,10 +21,8 @@ media_automations:
   icon: mdi:home-automation
   entities:
     - automation.media_player_paused
-    - automation.media_player_paused_late_night
     - automation.media_player_playing
     - automation.media_player_stoped
-    - automation.media_player_stoped_late_night
 
 alexa_routines:
   view: no

@@ -18,7 +18,7 @@ media_player_playing:
 media_player_stoped:
   sequence:
     - service: scene.turn_on
-      entity_id: scene.living_room_late_night
+      entity_id: scene.living_room_night
     - delay:
         milliseconds: 100
     - service: scene.turn_on
