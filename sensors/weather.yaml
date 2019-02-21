@@ -2,16 +2,31 @@
 ### Weather Sensor
 ###########################
 
-  - platform: yweather
+  - platform: darksky
     name: Weather
-    forecast: 1
+    api_key: !secret darksky
+    forecast:
+      - 3
     monitored_conditions:
-      - weather
-      - weather_current
-      - temp_min
-      - temp_max
-      - wind_speed
-      - pressure
-      - visibility
-      - humidity
+      - summary
+      - icon
       - temperature
+      - precip_probability
+      - apparent_temperature
+      - wind_speed
+      - wind_bearing
+      - cloud_cover
+      - humidity
+      - pressure
+      - hourly_summary
+      - daily_summary
+      - temperature_high
+      - temperature_low
+      - precip_intensity_max
+      - uv_index
+      - sunrise_time
+      - sunset_time
+      - nearest_storm_distance
+      - nearest_storm_bearing
+    scan_interval:
+      hours: 1
