@@ -50,6 +50,8 @@ logbook:
 recorder:
   purge_keep_days: 60
 
+#System health API
+system_health:
 
 # Track the sun
 sun:
