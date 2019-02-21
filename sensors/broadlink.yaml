@@ -3,7 +3,7 @@
 ###########################
 
   - platform: broadlink
-    update_interval: 60
+    scan_interval: 60
     host: !secret broadlinkeairip
     mac: !secret broadlinkeairmac
     monitored_conditions:
