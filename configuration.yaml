@@ -109,9 +109,17 @@ mqtt:
 cloud:
   !include alexa/alexa_cloud.yaml
 
+#Speedtest Configuration
+speedtestdotnet:
+  scan_interval:
+    hours: 1
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
 
 #Device Tracker
-
 device_tracker:
   - platform: mqtt_json
     devices:
