@@ -181,9 +181,6 @@ panel_iframe:
     url: "https://app.rach.io"
     icon: mdi:water-pump
 
-# Yahoo Weather platform
-weather:
-  - platform: yweather
 
 # Text to speech
 tts:
