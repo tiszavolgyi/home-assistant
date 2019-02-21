@@ -11,7 +11,6 @@ default_view:
     - group.family
     - group.traveltime
     - camera.patio
-    - weather.yweather
     - group.crimes
     - group.finance
     - group.internet_speed
