@@ -26,6 +26,7 @@ Living Room:
     - group.livingroom_scenes
     - group.livingroom_lights
     - vacuum.xiaomi_vacuum_cleaner
+    - group.fish_tank_power_strip
 
 Bedroom:
   view: yes
