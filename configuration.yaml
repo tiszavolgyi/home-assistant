@@ -172,7 +172,7 @@ vacuum:
 tuya:
   username: secret! jinvoo_username
   password: secret! jinvoo_pass
-  country_code: USA
+  country_code: 1
   platform: jinvoo_smart
 
 #Rachio Controller
