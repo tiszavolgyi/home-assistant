@@ -44,24 +44,21 @@
     friendly_name: Socket 1 - CO2
     icon: mdi:power-plug
 
-switch.03200121dc4f221b7eef_2:
-  friendly_name: Socket 2 - Air
-  icon: mdi:power-plug
+  switch.03200121dc4f221b7eef_2:
+    friendly_name: Socket 2 - Air
+    icon: mdi:power-plug
 
+  switch.03200121dc4f221b7eef_3:
+    friendly_name: Socket 3
+    icon: mdi:power-plug
 
-switch.03200121dc4f221b7eef_3:
-  friendly_name: Socket 3
-  icon: mdi:power-plug
+  switch.03200121dc4f221b7eef_4:
+    friendly_name: Socket 4
+    icon: mdi:power-plug
 
-
-switch.03200121dc4f221b7eef_4:
-  friendly_name: Socket 4
-  icon: mdi:power-plug
-
-
-switch.03200121dc4f221b7eef_5:
-  friendly_name: Socket 5 USB
-  icon: mdi:power-plug
+  switch.03200121dc4f221b7eef_5:
+    friendly_name: Socket 5 USB
+    icon: mdi:power-plug
 
 
 #Scripts
