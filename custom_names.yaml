@@ -264,8 +264,11 @@
     icon: mdi:car
   sensor.chopra_center_to_home:
     icon: mdi:car
-  sensor.exchange_rate:
-    friendly_name: USD Exchange Rate
+  sensor.usd:
+    friendly_name: USD-HUF Exchange Rate
+    icon: mdi:currency-usd
+  sensor.usd_2:
+    friendly_name: USD-EUR Exchange Rate
     icon: mdi:currency-usd
   sensor.ethereum:
     icon: mdi:currency-eth
@@ -273,7 +276,7 @@
     icon: mdi:currency-btc
   sensor.litecoin:
     icon: mdi:coin
-  sensor.ripple:
+  sensor.xrp:
     icon: mdi:coin
 
 #Groups order
