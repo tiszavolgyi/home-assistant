@@ -1,0 +1,52 @@
+##########################
+### Fish Tank Automations
+##########################
+
+
+### CO2 Automations
+
+  - alias: "Turn on CO2"
+    trigger:
+      - platform: time
+        at: '6:45:00'
+    action:
+      service: switch.turn_on
+      entity_id: switch.03200121dc4f221b7eef_1
+
+  - alias: "Turn off CO2"
+    trigger:
+      - platform: time
+        at: '18:30:00'
+    action:
+      service: switch.turn_off
+      entity_id: switch.03200121dc4f221b7eef_1
+
+
+### Light Automations
+
+  - alias: "Turn on lights"
+    trigger:
+      - platform: time
+        at: '7:20:00'
+    action:
+      service: switch.turn_on
+      entity_id: switch.03200121dc4f221b7eef_4
+
+  - alias: "Turn off lights"
+    trigger:
+      - platform: time
+        at: '19:00:00'
+    action:
+      service: switch.turn_off
+      entity_id: switch.03200121dc4f221b7eef_4
+
+### Turn back on things in case of power outage
+
+  - alias: "Fish Tank Power Outage"
+    trigger:
+      - platform: state
+        entity_id: switch.03200121dc4f221b7eef_5
+        is: 'on'
+    action:
+        service: script.turn_on
+        entity_id: script.fish-power-outage

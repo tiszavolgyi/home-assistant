@@ -49,11 +49,11 @@
     icon: mdi:power-plug
 
   switch.03200121dc4f221b7eef_3:
-    friendly_name: Socket 3
+    friendly_name: Socket 3 - Water Filter
     icon: mdi:power-plug
 
   switch.03200121dc4f221b7eef_4:
-    friendly_name: Socket 4
+    friendly_name: Socket 4 - Light
     icon: mdi:power-plug
 
   switch.03200121dc4f221b7eef_5:
@@ -184,13 +184,13 @@
   scene.bedroom_night:
     friendly_name: Bedroom Night
     icon: mdi:weather-night
-  scene.bedroom__vivi_reading:
+  scene.bedroom_vivi_reading:
     friendly_name: Vivi Reading in Bedroom
     icon: mdi:book-open-page-variant
-  scene.bedroom__peter_reading:
+  scene.bedroom_peter_reading:
     friendly_name: Peter Reading in Bedroom
     icon: mdi:book-open-page-variant
-  scene.bedroom__romantic:
+  scene.bedroom_romantic:
     friendly_name: Romantic Light in Bedroom
     icon: mdi:hotel
   scene.bedroom_off:
@@ -265,10 +265,10 @@
   sensor.chopra_center_to_home:
     icon: mdi:car
   sensor.usd:
-    friendly_name: USD-HUF Exchange Rate
+    friendly_name: USD Exchange Rate
     icon: mdi:currency-usd
   sensor.usd_2:
-    friendly_name: USD-EUR Exchange Rate
+    friendly_name: USD Exchange Rate
     icon: mdi:currency-usd
   sensor.ethereum:
     icon: mdi:currency-eth
