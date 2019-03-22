@@ -6,7 +6,7 @@
 fish_power_outage:
   sequence:
     - service_template: >
-        {% if is_state('sun.sun', 'below_horizon') %}
+        {% if now().hour >= 7 and now().hour < 19 %}
           switch.turn_on
         {% else %}
           switch.turn_off
