@@ -6,7 +6,7 @@
 fish_power_outage:
   sequence:
     - service_template: > ### CO2
-        {{ now().hour >= 7 and now().hour < 18 }}
+        { now().hour >= 7 and now().hour < 18 }
           switch.turn_on
         {% else %}
           switch.turn_off
@@ -21,7 +21,7 @@ fish_power_outage:
     - service: switch.turn_on ### Water Filter
       entity_id: switch.03200121dc4f221b7eef_3
     - service_template: > ### Light
-        {{ now().hour >= 7 and now().hour < 19 }}
+        { now().hour >= 7 and now().hour < 19 }
           switch.turn_on
         {% else %}
           switch.turn_off
