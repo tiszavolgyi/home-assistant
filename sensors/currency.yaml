@@ -10,16 +10,16 @@
       - EUR
 
   - platform: coinmarketcap
-    currency_id: BTC
+    currency_id: 1
 
   - platform: coinmarketcap
-    currency_id: bitcoin
+    currency_id: 1027
 
   - platform: coinmarketcap
-    currency_id: litecoin
+    currency_id: 52
 
   - platform: coinmarketcap
-    currency_id: ripple
+    currency_id: 2
 
 
 ### TEMPORARY REMOVED BECAUSE DOES NOT WORK PROPERLY ###
