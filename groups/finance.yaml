@@ -5,10 +5,9 @@
 finance:
   name: Finance
   entities:
-    - sensor.exchange_rate
-    - sensor.ethereum
     - sensor.bitcoin
+    - sensor.ethereum
+    - sensor.xrp
     - sensor.litecoin
-    - sensor.ripple
-    - sensor.ko
-    - sensor.hqcl
+    - sensor.usd
+    - sensor.usd_2
