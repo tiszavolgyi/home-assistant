@@ -3,7 +3,7 @@
 #######################################
 
 
-fish-power-outage:
+fish_power_outage:
   sequence:
     - service_template: > ### CO2
         {{ now().hour >= 7 and now().hour < 18 }}

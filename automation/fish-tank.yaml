@@ -46,7 +46,7 @@
     trigger:
       - platform: state
         entity_id: switch.03200121dc4f221b7eef_5
-        is: 'on'
+        state: 'on'
     action:
         service: script.turn_on
-        entity_id: script.fish-power-outage
+        entity_id: script.fish_power_outage
