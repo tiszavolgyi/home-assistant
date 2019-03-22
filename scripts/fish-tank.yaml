@@ -2,32 +2,34 @@
 # ### Scripts for fish tank automations
 # #######################################
 #
-#
-# fish_power_outage:
-#   sequence:
-#     - service_template: > ### CO2
-# #        {%if now().hour >= 7 and now().hour < 18 %}
-#         {% if is_state('sun.sun', 'below_horizon') %}
-#           switch.turn_on
-#         {% else %}
-#           switch.turn_off
-#         {% endif %}
-#       entity_id: switch.03200121dc4f221b7eef_1
-#     - delay:
-#         seconds: 1
-#     - service: switch.turn_on ### Air Pump
-#       entity_id: switch.03200121dc4f221b7eef_2
-#     - delay:
-#         seconds: 1
-#     - service: switch.turn_on ### Water Filter
-#       entity_id: switch.03200121dc4f221b7eef_3
-#     - service_template: > ### Light
-# #        { %if now().hour >= 7 and now().hour < 19 %}
-#         {% if is_state('sun.sun', 'below_horizon') %}
-#           switch.turn_on
-#         {% else %}
-#           switch.turn_off
-#         {% endif %}
-#       entity_id: switch.03200121dc4f221b7eef_4
-#     - delay:
-#         seconds: 1
+
+fish_power_outage:
+  sequence:
+    - service_template: >
+        {% if is_state('sun.sun', 'below_horizon') %}
+          switch.turn_on
+        {% else %}
+          switch.turn_off
+        {% endif %}
+      entity_id: switch.03200121dc4f221b7eef_1
+    - delay:
+        seconds: 1
+    - service: switch.turn_on
+      entity_id: switch.03200121dc4f221b7eef_2
+    - delay:
+        seconds: 1
+    - service: switch.turn_on
+      entity_id: switch.03200121dc4f221b7eef_3
+    - service_template: >
+        {% if is_state('sun.sun', 'below_horizon') %}
+          switch.turn_on
+        {% else %}
+          switch.turn_off
+        {% endif %}
+      entity_id: switch.03200121dc4f221b7eef_4
+    - delay:
+        seconds: 1
+
+
+#        { %if now().hour >= 7 and now().hour < 19 %}
+#        {%if now().hour >= 7 and now().hour < 18 %}
