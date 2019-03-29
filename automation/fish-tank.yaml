@@ -3,6 +3,42 @@
 ##########################
 
 
+### O2 Automations
+
+  - alias: "Turn on O2 - Daytime"
+    trigger:
+      platform: time_pattern
+      hours: '/2'
+    condition:
+      - condition: template
+        value_template: >
+          {{ now().hour > 7 or now().hour <= 18}}
+    action:
+      - service: switch.turn_on
+        entity_id: switch.03200121dc4f221b7eef_2
+      - delay:
+          minutes: 5
+      - service: switch.turn_off
+        entity_id: switch.03200121dc4f221b7eef_2
+
+  - alias: "Turn on O2 - Night"
+    trigger:
+      platform: time_pattern
+      hours: '/1'
+    condition:
+      - condition: template
+        value_template: >
+          {{ now().hour < 7 or now().hour > 22}}
+    action:
+      - service: switch.turn_on
+        entity_id: switch.03200121dc4f221b7eef_2
+      - delay:
+          minutes: 15
+      - service: switch.turn_off
+        entity_id: switch.03200121dc4f221b7eef_2
+
+
+
 ### CO2 Automations
 
   - alias: "Turn on CO2"
