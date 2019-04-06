@@ -15,11 +15,11 @@
           {{ now().hour > 7 or now().hour <= 18}}
     action:
       - service: switch.turn_on
-        entity_id: switch.03200121dc4f221b7eef_2
+        entity_id: switch.fishtank_air
       - delay:
           minutes: 5
       - service: switch.turn_off
-        entity_id: switch.03200121dc4f221b7eef_2
+        entity_id: switch.fishtank_air
 
   - alias: "Turn on O2 - Night"
     trigger:
@@ -31,11 +31,11 @@
           {{ now().hour < 7 or now().hour > 22}}
     action:
       - service: switch.turn_on
-        entity_id: switch.03200121dc4f221b7eef_2
+        entity_id: switch.fishtank_air
       - delay:
           minutes: 15
       - service: switch.turn_off
-        entity_id: switch.03200121dc4f221b7eef_2
+        entity_id: switch.fishtank_air
 
 
 
@@ -47,7 +47,7 @@
         at: '6:45:00'
     action:
       service: switch.turn_on
-      entity_id: switch.03200121dc4f221b7eef_1
+      entity_id: switch.fishtank_co2
 
   - alias: "Turn off CO2"
     trigger:
@@ -55,7 +55,7 @@
         at: '18:30:00'
     action:
       service: switch.turn_off
-      entity_id: switch.03200121dc4f221b7eef_1
+      entity_id: switch.fishtank_co2
 
 
 ### Light Automations
@@ -66,7 +66,7 @@
         at: '7:20:00'
     action:
       service: switch.turn_on
-      entity_id: switch.03200121dc4f221b7eef_4
+      entity_id: switch.fishtank_light
 
   - alias: "Turn off lights"
     trigger:
@@ -74,15 +74,15 @@
         at: '19:00:00'
     action:
       service: switch.turn_off
-      entity_id: switch.03200121dc4f221b7eef_4
+      entity_id: switch.fishtank_light
 
 ### Turn back on things in case of power outage
-
-  - alias: "Fish Tank Power Outage"
-    trigger:
-      - platform: state
-        entity_id: switch.03200121dc4f221b7eef_5
-        to: 'on'
-    action:
-        service: script.turn_on
-        entity_id: script.fish_power_outage
+  #
+  # - alias: "Fish Tank Power Outage"
+  #   trigger:
+  #     - platform: state
+  #       entity_id: switch.03200121dc4f221b7eef_5
+  #       to: 'on'
+  #   action:
+  #       service: script.turn_on
+  #       entity_id: script.fish_power_outage
