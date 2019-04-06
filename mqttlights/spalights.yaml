@@ -5,12 +5,12 @@
 
 
   - platform: mqtt
-    name: SpaLights
-    state_topic: "stat/SpaLights/POWER"
-    command_topic: "cmnd/SpaLights/POWER"
-    availability_topic: "tele/SpaLights/LWT"
-    brightness_state_topic: "stat/SpaLights/RESULT"
-    brightness_command_topic: "cmnd/SpaLights/Dimmer"
+    name: spalights
+    state_topic: "stat/spalights/POWER"
+    command_topic: "cmnd/spalights/POWER"
+    availability_topic: "tele/spalights/LWT"
+    brightness_state_topic: "stat/spalights/RESULT"
+    brightness_command_topic: "cmnd/spalights/Dimmer"
     brightness_scale: 100
     brightness_value_template: "{{ value_json.Dimmer }}"
     qos: 1
