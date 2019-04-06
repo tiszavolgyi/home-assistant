@@ -1,0 +1,14 @@
+######################
+### Fish Tank Controls
+######################
+
+fish_tank_power_strip:
+  view: no
+  name: Fish Tank Power Strip
+  icon: mdi:power-plug
+  entities:
+    - switch.fishtank_filter
+    - switch.fishtank_air
+    - switch.fishtank_co2
+    - switch.fishtank_light
+    - switch.fishtank_usb
