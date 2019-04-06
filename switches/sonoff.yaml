@@ -15,3 +15,20 @@
     command_topic: "cmnd/gardenlight/power2"
     payload_on: "ON"
     payload_off: "OFF"
+
+
+  - platform: mqtt
+    name: "SpaLights"
+    state_topic: "stat/SpaLights/POWER"
+    command_topic: "cmnd/SpaLights/POWER"
+    availability_topic: "tele/SpaLights/LWT"
+    brightness_state_topic: "stat/SpaLights/RESULT"
+    brightness_command_topic: "cmnd/SpaLights/Dimmer"
+    brightness_scale: 100
+    brightness_value_template: "{{ value_json.Dimmer }}"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    payload_available: "Online"
+    payload_not_available: "Offline"
+    retain: false
