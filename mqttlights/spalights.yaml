@@ -5,7 +5,7 @@
 
 
   - platform: mqtt
-    name: spalights
+    name: spalight-1
     state_topic: "stat/spalights/POWER"
     command_topic: "cmnd/spalights/POWER"
     availability_topic: "tele/spalights/LWT"
@@ -22,7 +22,7 @@
 
 
   - platform: mqtt
-    name: spalight2
+    name: spalight-2
     state_topic: "stat/spalight2/POWER"
     command_topic: "cmnd/spalight2/POWER"
     availability_topic: "tele/spalight2/LWT"
