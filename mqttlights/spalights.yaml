@@ -19,3 +19,20 @@
     payload_available: "Online"
     payload_not_available: "Offline"
     retain: false
+
+
+  - platform: mqtt
+    name: spalight2
+    state_topic: "stat/spalight2/POWER"
+    command_topic: "cmnd/spalight2/POWER"
+    availability_topic: "tele/spalight2/LWT"
+    brightness_state_topic: "stat/spalight2/RESULT"
+    brightness_command_topic: "cmnd/spalight2/Dimmer"
+    brightness_scale: 100
+    brightness_value_template: "{{ value_json.Dimmer }}"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    payload_available: "Online"
+    payload_not_available: "Offline"
+    retain: false
