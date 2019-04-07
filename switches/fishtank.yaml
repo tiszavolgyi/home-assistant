@@ -1,0 +1,41 @@
+################################
+### Fishtank Power Switches
+################################
+
+
+
+  - platform: mqtt
+    name: fishtank_co2
+    state_topic: "cmnd/fishtank/power2"
+    command_topic: "cmnd/fishtank/power2"
+    payload_on: "ON"
+    payload_off: "OFF"
+
+  - platform: mqtt
+    name: fishtank_air
+    state_topic: "cmnd/fishtank/power3"
+    command_topic: "cmnd/fishtank/power3"
+    payload_on: "ON"
+    payload_off: "OFF"
+
+
+  - platform: mqtt
+    name: fishtank_filter
+    state_topic: "cmnd/fishtank/power4"
+    command_topic: "cmnd/fishtank/power4"
+    payload_on: "ON"
+    payload_off: "OFF"
+
+  - platform: mqtt
+    name: fishtank_light
+    state_topic: "cmnd/fishtank/power5"
+    command_topic: "cmnd/fishtank/power5"
+    payload_on: "ON"
+    payload_off: "OFF"
+
+  - platform: mqtt
+    name: fishtank_usb
+    state_topic: "cmnd/fishtank/power1"
+    command_topic: "cmnd/fishtank/power1"
+    payload_on: "ON"
+    payload_off: "OFF"
