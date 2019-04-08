@@ -1,11 +1,34 @@
 views:
   - title: main
-    icon: mdi:home-outline
+    icon: mdi:home-assistant
     cards: !include views/home_screen.yaml
 
 
-
   - title: Livingroom
-    cards:
-      - type: picture-elements
-        image: /local/vacuum_card.jpg
+    cards: !include views/living_room.yaml
+
+
+  - title: Bedroom
+    cards: !include views/bedroom.yaml
+
+  - title: Office
+    cards: !include views/office.yaml
+
+  - title: Outdoor
+    cards: !include views/outdoor.yaml
+
+  - title: Lights
+    icon: mdi:lightbulb
+    cards: !include views/lights.yaml
+
+  - title: Thermostat
+    icon: mdi:thermometer
+    cards: !include views/thermostat.yaml
+
+  - title: Cameras
+    icon: mdi:video
+    cards: !include views/cameras.yaml
+
+  - title: Automations
+    icon: mdi:home-automation
+    cards: !include views/automations.yaml

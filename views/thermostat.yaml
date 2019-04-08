@@ -1,0 +1,8 @@
+###################################
+### Lovelace Thermostat  Cards
+###################################
+
+
+### Nest Thermostat
+  - type: thermostat
+    entity: climate.living_room
