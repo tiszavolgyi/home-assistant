@@ -2,6 +2,15 @@
 ### Lovelace Home Screen Cards
 ###################################
 
+
+
+  - type: entities
+    title: Family Members
+    show_header_toggle: false
+    entities:
+      - !secret peterdevice
+      - !secret vividevice
+
 ### Weather Forecast
   - type: weather-forecast
     entity: weather.dark_sky
