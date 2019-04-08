@@ -150,7 +150,7 @@
 
   - type: map
     aspect_ratio: 16:9
-    default_zoom: 8
+    default_zoom: 12
     entities:
       - !secret peterdevice
       - !secret vividevice
