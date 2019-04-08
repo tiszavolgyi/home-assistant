@@ -22,8 +22,8 @@ frontend:
 
 #Interface design
 
-lovelace:
-  mode: yaml
+# lovelace:
+#   mode: yaml
 
 
 # Enables configuration UI
