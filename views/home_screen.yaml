@@ -1,6 +1,12 @@
+###################################
+### Lovelace Home Screen Cards
+###################################
 
+### Weather Forecast
+  - type: weather-forecast
+    entity: weather.dark_sky
 
-
+### Xiaomi Vacuum Cleaner
   - type: picture-elements
     image: /local/vacuum_card.jpg
     elements:
@@ -97,3 +103,8 @@
         border-color: rgb(34, 154, 210)
         background-color: rgb(54, 65, 78)
         opacity: 0.8
+
+
+### Nest Thermostat
+  - type: thermostat
+    entity: climate.nest

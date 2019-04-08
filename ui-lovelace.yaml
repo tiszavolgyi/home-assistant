@@ -1,7 +1,9 @@
 views:
   - title: main
     icon: mdi:home-outline
-    cards: !include views/xiaomi_vacuum_card.yaml
+    cards: !include views/home_screen.yaml
+
+
 
   - title: Livingroom
     cards:
