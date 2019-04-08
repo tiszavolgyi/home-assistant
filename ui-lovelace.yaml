@@ -1,5 +1,5 @@
 views:
-  - title: main
+  - title: Home 2
     icon: mdi:home-outline
     cards:
       - type: picture-elements
