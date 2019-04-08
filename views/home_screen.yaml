@@ -107,4 +107,4 @@
 
 ### Nest Thermostat
   - type: thermostat
-    entity: climate.nest
+    entity: climate.living_room

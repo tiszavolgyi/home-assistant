@@ -71,6 +71,12 @@ logger:
   default: warning
 
 
+# Weather
+weather:
+  - platform: darksky
+    api_key: !secret darksky
+
+
 # Nest config
 nest:
   client_id: !secret nestclientid
