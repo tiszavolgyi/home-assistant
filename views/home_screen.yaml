@@ -146,6 +146,14 @@
   - type: thermostat
     entity: climate.living_room
 
+### Patio Camera
+
+  - type: picture-glance
+    title: Patio
+    entities: []
+    camera_image: camera.patio
+
+
 ### Locations
 
   - type: map
