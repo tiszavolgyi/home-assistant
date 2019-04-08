@@ -20,10 +20,9 @@ homeassistant:
 frontend:
   themes: !include_dir_merge_named themes
 
-#Interface design
-
-# lovelace:
-#   mode: yaml
+#Interface design - Lovelace from Yaml
+lovelace:
+ mode: yaml
 
 
 # Enables configuration UI
