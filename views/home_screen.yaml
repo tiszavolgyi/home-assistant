@@ -3,13 +3,42 @@
 ###################################
 
 
-
+### Family Members
   - type: entities
     title: Family Members
     show_header_toggle: false
     entities:
       - !secret peterdevice
       - !secret vividevice
+
+### Battery Status
+  - type: entities
+    title: Batteries
+    show_header_toggle: false
+    entities:
+      - sensor.peter_phone_battery
+      - sensor.vivi_phone_battery
+      - sensor.livingroom_wallpanel_battery
+
+### Family Members
+  - type: entities
+    title: Travel Time
+    show_header_toggle: false
+    entities:
+      - sensor.home_to_chopra_center
+      - sensor.chopra_center_to_home
+
+### Finance Report
+  - type: entities
+    title: Finance
+    show_header_toggle: false
+    entities:
+      - sensor.bitcoin
+      - sensor.ethereum
+      - sensor.xrp
+      - sensor.litecoin
+      - sensor.usd
+      - sensor.usd_2
 
 ### Weather Forecast
   - type: weather-forecast
@@ -113,7 +142,16 @@
         background-color: rgb(54, 65, 78)
         opacity: 0.8
 
-
 ### Nest Thermostat
   - type: thermostat
     entity: climate.living_room
+
+### Locations
+
+  - type: map
+    aspect_ratio: 16:9
+    default_zoom: 6
+    entities:
+      - !secret peterdevice
+      - !secret vividevice
+      - zone.home
