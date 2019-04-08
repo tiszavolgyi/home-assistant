@@ -11,34 +11,6 @@
       - !secret peterdevice
       - !secret vividevice
 
-### Battery Status
-  - type: entities
-    title: Batteries
-    show_header_toggle: false
-    entities:
-      - sensor.peter_phone_battery
-      - sensor.vivi_phone_battery
-      - sensor.livingroom_wallpanel_battery
-
-### Family Members
-  - type: entities
-    title: Travel Time
-    show_header_toggle: false
-    entities:
-      - sensor.home_to_chopra_center
-      - sensor.chopra_center_to_home
-
-### Finance Report
-  - type: entities
-    title: Finance
-    show_header_toggle: false
-    entities:
-      - sensor.bitcoin
-      - sensor.ethereum
-      - sensor.xrp
-      - sensor.litecoin
-      - sensor.usd
-      - sensor.usd_2
 
 ### Weather Forecast
   - type: weather-forecast
@@ -147,15 +119,42 @@
     entity: climate.living_room
 
 ### Patio Camera
-
   - type: picture-glance
     title: Patio
     entities: []
     camera_image: camera.patio
 
 
-### Locations
+### Battery Status
+  - type: entities
+    title: Batteries
+    show_header_toggle: false
+    entities:
+      - sensor.peter_phone_battery
+      - sensor.vivi_phone_battery
+      - sensor.livingroom_wallpanel_battery
 
+### Travel Times
+  - type: entities
+    title: Travel Time
+    show_header_toggle: false
+    entities:
+      - sensor.home_to_chopra_center
+      - sensor.chopra_center_to_home
+
+### Finance Report
+  - type: entities
+    title: Finance
+    show_header_toggle: false
+    entities:
+      - sensor.bitcoin
+      - sensor.ethereum
+      - sensor.xrp
+      - sensor.litecoin
+      - sensor.usd
+      - sensor.usd_2
+
+### Locations
   - type: map
     aspect_ratio: 16:9
     default_zoom: 12
