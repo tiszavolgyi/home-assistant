@@ -124,6 +124,30 @@
     entities: []
     camera_image: camera.patio
 
+### Internet speed
+  - type: horizontal-stack
+    cards:
+      - type: custom:mini-graph-card
+        entities:
+          - sensor.speedtest_download
+        line_color: blue
+        line_width: 8
+        font_size: 75
+      - type: custom:mini-graph-card
+        entities:
+          - sensor.speedtest_upload
+        line_color: green
+        line_width: 8
+        font_size: 75
+      - type: custom:mini-graph-card
+        entities:
+          - sensor.speedtest_ping
+        line_color: '#fcc625'
+        line_width: 8
+        font_size: 75
+        show:
+          graph: bar
+
 
 ### Battery Status
   - type: entities

@@ -1,3 +1,12 @@
 ###################################
 ### Lovelace Living room  Cards
 ###################################
+
+
+### Family Members
+  - type: entities
+    title: Family Members
+    show_header_toggle: false
+    entities:
+      - !secret peterdevice
+      - !secret vividevice

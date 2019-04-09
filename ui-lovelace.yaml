@@ -1,3 +1,24 @@
+
+###########################
+### LOVELACE CONFIGURATION
+###########################
+
+
+##############
+### RESOURCES
+##############
+
+
+resources:
+  - url: /local/mini-graph-card-bundle.js?v=0.3.2
+    type: module
+
+
+##############
+### VIEWS
+##############
+
+
 views:
   - title: main
     icon: mdi:home-assistant
