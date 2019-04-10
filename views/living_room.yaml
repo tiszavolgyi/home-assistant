@@ -3,10 +3,15 @@
 ###################################
 
 
-### Family Members
-  - type: entities
-    title: Family Members
-    show_header_toggle: false
+### Fish Tank
+
+  - type: picture-glance
+    title: Fish Tank
     entities:
-      - !secret peterdevice
-      - !secret vividevice
+      - switch.fishtank_filter
+      - switch.fishtank_air
+      - switch.fishtank_co2
+      - switch.fishtank_light
+    image: /local/fish_tank.jpg
+
+    
