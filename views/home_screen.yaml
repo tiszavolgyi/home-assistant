@@ -126,51 +126,34 @@
 
 ### Internet speed
 
-  - type: vertical-stack
-    cards:
-      - type: picture-entity
-        image: /local/internet_speed.jpg
-        entity: group.internet_speed
-        style:
-          top: 10%
-          left: 5%
-          color: rgb(255, 255, 255)
-          transform: translate(0%,-50%)
-          pointer-events: none
-          text-shadow: 1px 1px black
-          font-family: Trebuchet MS
-          font-size: 90%
-          font-weight: bold
-          border-left-style: solid
-          border-color: rgb(34, 154, 210)
-          background-color: rgb(54, 65, 78)
-          opacity: 0.8
 
-      - type: horizontal-stack
-        cards:
-          - type: custom:mini-graph-card
-            name: Download speed
-            entities:
-              - sensor.speedtest_download
-            line_color: blue
-            line_width: 8
-            font_size: 75
-          - type: custom:mini-graph-card
-            name: Upload speed
-            entities:
-              - sensor.speedtest_upload
-            line_color: green
-            line_width: 8
-            font_size: 75
-          - type: custom:mini-graph-card
-            name: Ping
-            entities:
-              - sensor.speedtest_ping
-            line_color: '#fcc625'
-            line_width: 8
-            font_size: 75
-            show:
-              graph: bar
+
+  - type: horizontal-stack
+    title: Internet Connection
+    cards:
+      - type: custom:mini-graph-card
+        name: Download
+        entities:
+          - sensor.speedtest_download
+        line_color: blue
+        line_width: 8
+        font_size: 75
+      - type: custom:mini-graph-card
+        name: Upload
+        entities:
+          - sensor.speedtest_upload
+        line_color: green
+        line_width: 8
+        font_size: 75
+      - type: custom:mini-graph-card
+        name: Ping
+        entities:
+          - sensor.speedtest_ping
+        line_color: '#fcc625'
+        line_width: 8
+        font_size: 75
+        show:
+          graph: bar
 
 
 ### Battery Status
