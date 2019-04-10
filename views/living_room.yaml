@@ -12,6 +12,6 @@
       - switch.fishtank_air
       - switch.fishtank_co2
       - switch.fishtank_light
-    image: /local/fish_tank.jpg
-
-    
+    state_image:
+      "on": /local/fish_tank.jpg
+      "off": /local/fish_tank.jpg
