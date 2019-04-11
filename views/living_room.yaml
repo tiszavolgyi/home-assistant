@@ -6,22 +6,22 @@
 ### AV Remote Control
 
 
-  # - type: horizontal-stack
-  #   cards:
-  #     - type: "custom:button-card"
-  #       entity: script.avr_turn_vulome_up
-  #       icon: mdi:volume-plus
-  #       color: auto
-  #       action: more_info
-  #       default_color: rgb(255, 233, 155)
-  #       color_type: card
-  #     - type: "custom:button-card"
-  #       entity: script.avr_turn_vulome_down
-  #       icon: mdi:volume-minus
-  #       color: auto
-  #       action: more_info
-  #       default_color: rgb(255, 233, 155)
-  #       color_type: card
+  - type: horizontal-stack
+    cards:
+      - type: "custom:button-card"
+        entity: script.avr_turn_vulome_up
+        icon: mdi:volume-plus
+        color: auto
+        action: more_info
+        default_color: rgb(255, 233, 155)
+        color_type: card
+      - type: "custom:button-card"
+        entity: script.avr_turn_vulome_down
+        icon: mdi:volume-minus
+        color: auto
+        action: more_info
+        default_color: rgb(255, 233, 155)
+        color_type: card
   #
   # - type: horizontal-stack
   #   cards:
