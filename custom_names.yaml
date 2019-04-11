@@ -38,29 +38,6 @@
     friendly_name: Projector
     icon: mdi:television
 
-#Tuya Power fish_tank_power_strip
-
-  switch.03200121dc4f221b7eef_1:
-    friendly_name: Socket 1 - CO2
-    icon: mdi:power-plug
-
-  switch.03200121dc4f221b7eef_2:
-    friendly_name: Socket 2 - Air
-    icon: mdi:power-plug
-
-  switch.03200121dc4f221b7eef_3:
-    friendly_name: Socket 3 - Water Filter
-    icon: mdi:power-plug
-
-  switch.03200121dc4f221b7eef_4:
-    friendly_name: Socket 4 - Light
-    icon: mdi:power-plug
-
-  switch.03200121dc4f221b7eef_5:
-    friendly_name: Socket 5 USB
-    icon: mdi:power-plug
-
-
 #Scripts
   script.heat_bed_for_1_hour: #Eight Mattress Heating
     friendly_name: Heat Bed for 1 Hour
