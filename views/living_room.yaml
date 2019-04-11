@@ -22,63 +22,63 @@
         action: more_info
         default_color: rgb(255, 233, 155)
         color_type: card
-
-  - type: horizontal-stack
-    cards:
-      - type: "custom:button-card"
-        entity:script.turn_on_tv
-        icon: mdi:television
-        color: auto
-        action: more_info
-        default_color: rgb(255, 233, 155)
-        color_type: card
-      - type: "custom:button-card"
-        entity: script.turn_off_tv
-        icon: mdi:television-off
-        color: auto
-        action: more_info
-        default_color: rgb(255, 233, 155)
-        color_type: card
-
-
-  - type: horizontal-stack
-    cards:
-      - type: "custom:button-card"
-        entity: switch.harman_kardon_intelstick
-        icon: mdi:youtube
-        color: auto
-        default_color: rgb(255, 233, 155)
-        color_type: card
-        name: Living room PC
-        style:
-          - font-size: 12px
-          - font-weight: bold
-      - type: "custom:button-card"
-        entity: switch.harman_kardon_computer
-        color: auto
-        icon: mdi:desktop-tower-monitor
-        name: Steam Link
-        style:
-          - font-size: 12px
-          - font-weight: bold
-      - type: "custom:button-card"
-        entity: switch.radio
-        color: auto
-        icon: mdi:radio
-        name: Radio
-        style:
-          - font-size: 12px
-          - font-weight: bold
-      - type: "custom:button-card"
-        entity: switch.internet_radio
-        icon: mdi:radio-tower
-        color: auto
-        action: more_info
-        name: Internet Radio
-        style:
-          - font-size: 12px
-          - font-weight: bold
-
+  # 
+  # - type: horizontal-stack
+  #   cards:
+  #     - type: "custom:button-card"
+  #       entity:script.turn_on_tv
+  #       icon: mdi:television
+  #       color: auto
+  #       action: more_info
+  #       default_color: rgb(255, 233, 155)
+  #       color_type: card
+  #     - type: "custom:button-card"
+  #       entity: script.turn_off_tv
+  #       icon: mdi:television-off
+  #       color: auto
+  #       action: more_info
+  #       default_color: rgb(255, 233, 155)
+  #       color_type: card
+  #
+  #
+  # - type: horizontal-stack
+  #   cards:
+  #     - type: "custom:button-card"
+  #       entity: switch.harman_kardon_intelstick
+  #       icon: mdi:youtube
+  #       color: auto
+  #       default_color: rgb(255, 233, 155)
+  #       color_type: card
+  #       name: Living room PC
+  #       style:
+  #         - font-size: 12px
+  #         - font-weight: bold
+  #     - type: "custom:button-card"
+  #       entity: switch.harman_kardon_computer
+  #       color: auto
+  #       icon: mdi:desktop-tower-monitor
+  #       name: Steam Link
+  #       style:
+  #         - font-size: 12px
+  #         - font-weight: bold
+  #     - type: "custom:button-card"
+  #       entity: switch.radio
+  #       color: auto
+  #       icon: mdi:radio
+  #       name: Radio
+  #       style:
+  #         - font-size: 12px
+  #         - font-weight: bold
+  #     - type: "custom:button-card"
+  #       entity: switch.internet_radio
+  #       icon: mdi:radio-tower
+  #       color: auto
+  #       action: more_info
+  #       name: Internet Radio
+  #       style:
+  #         - font-size: 12px
+  #         - font-weight: bold
+  #
 
 
 
