@@ -22,23 +22,23 @@
         action: more_info
         default_color: rgb(255, 233, 155)
         color_type: card
-  #
-  # - type: horizontal-stack
-  #   cards:
-  #     - type: "custom:button-card"
-  #       entity:script.turn_on_tv
-  #       icon: mdi:television
-  #       color: auto
-  #       action: more_info
-  #       default_color: rgb(255, 233, 155)
-  #       color_type: card
-  #     - type: "custom:button-card"
-  #       entity: script.turn_off_tv
-  #       icon: mdi:television-off
-  #       color: auto
-  #       action: more_info
-  #       default_color: rgb(255, 233, 155)
-  #       color_type: card
+  
+  - type: horizontal-stack
+    cards:
+      - type: "custom:button-card"
+        entity:script.turn_on_tv
+        icon: mdi:television
+        color: auto
+        action: more_info
+        default_color: rgb(255, 233, 155)
+        color_type: card
+      - type: "custom:button-card"
+        entity: script.turn_off_tv
+        icon: mdi:television-off
+        color: auto
+        action: more_info
+        default_color: rgb(255, 233, 155)
+        color_type: card
   #
   #
   # - type: horizontal-stack
