@@ -9,6 +9,7 @@
     icon: mdi:air-horn
     state_topic: "stat/fishtank/power2"
     command_topic: "cmnd/fishtank/power2"
+    qos: 1
     payload_on: "ON"
     payload_off: "OFF"
     retain: true
@@ -18,6 +19,7 @@
     icon: mdi:fan
     state_topic: "stat/fishtank/power3"
     command_topic: "cmnd/fishtank/power3"
+    qos: 1
     payload_on: "ON"
     payload_off: "OFF"
     retain: true
@@ -28,6 +30,7 @@
     icon: mdi:air-filter
     state_topic: "stat/fishtank/power4"
     command_topic: "cmnd/fishtank/power4"
+    qos: 1
     payload_on: "ON"
     payload_off: "OFF"
     retain: true
@@ -37,6 +40,7 @@
     icon: mdi:lightbulb
     state_topic: "stat/fishtank/power5"
     command_topic: "cmnd/fishtank/power5"
+    qos: 1
     payload_on: "ON"
     payload_off: "OFF"
     retain: true
@@ -45,6 +49,7 @@
     name: fishtank_usb
     state_topic: "stat/fishtank/power1"
     command_topic: "cmnd/fishtank/power1"
+    qos: 1
     payload_on: "ON"
     payload_off: "OFF"
     retain: true
