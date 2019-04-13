@@ -4,14 +4,17 @@
 
   - platform: mqtt
     name: garden1
-    state_topic: "state/gardenlight/power1"
+    state_topic: "stat/gardenlight/power1"
     command_topic: "cmnd/gardenlight/power1"
     payload_on: "ON"
     payload_off: "OFF"
 
   - platform: mqtt
     name: garden2
-    state_topic: "STATE/gardenlight/POWER2"
+    state_topic: "stat/gardenlight/power2"
     command_topic: "cmnd/gardenlight/power2"
     payload_on: "ON"
     payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    retain: true
