@@ -7,7 +7,7 @@
   - platform: mqtt
     name: fishtank_co2
     icon: mdi:air-horn
-    state_topic: "stat/fishtank/power2"
+    state_topic: "stat/fishtank/POWER2"
     command_topic: "cmnd/fishtank/power2"
     qos: 1
     payload_on: "ON"
@@ -19,39 +19,47 @@
   - platform: mqtt
     name: fishtank_air
     icon: mdi:fan
-    state_topic: "stat/fishtank/power3"
+    state_topic: "stat/fishtank/POWER3"
     command_topic: "cmnd/fishtank/power3"
     qos: 1
     payload_on: "ON"
     payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
     retain: true
 
 
   - platform: mqtt
     name: fishtank_filter
     icon: mdi:air-filter
-    state_topic: "stat/fishtank/power4"
+    state_topic: "stat/fishtank/POWER4"
     command_topic: "cmnd/fishtank/power4"
     qos: 1
     payload_on: "ON"
     payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
     retain: true
 
   - platform: mqtt
     name: fishtank_light
     icon: mdi:lightbulb
-    state_topic: "stat/fishtank/power5"
+    state_topic: "stat/fishtank/POWER5"
     command_topic: "cmnd/fishtank/power5"
     qos: 1
     payload_on: "ON"
     payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
     retain: true
 
   - platform: mqtt
     name: fishtank_usb
-    state_topic: "stat/fishtank/power1"
+    state_topic: "stat/fishtank/POWER1"
     command_topic: "cmnd/fishtank/power1"
     qos: 1
     payload_on: "ON"
     payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
     retain: true
