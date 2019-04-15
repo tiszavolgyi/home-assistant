@@ -48,8 +48,8 @@
             entity: switch.harman_kardon_intelstick
             icon: mdi:youtube
             color: auto
-            #default_color: rgb(255, 233, 155)
-            #color_type: card
+            default_color: rgb(255, 233, 155)
+            color_type: card
             name: Living room PC
             style:
               - font-size: 12px
