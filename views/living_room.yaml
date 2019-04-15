@@ -77,8 +77,31 @@
               - font-size: 12px
               - font-weight: bold
 
+### scenes
 
-
+  - type: glance
+    title: Livingroom Scenes
+    show_state: false
+    column_width: 33%
+    entities:
+      - entity: scene.living_room_reading
+        tap_action: call-service
+        service: scene.living_room_reading
+      - entity: scene.living_room_night
+        tap_action: call-service
+        service: scene.living_room_night
+      - entity: scene.living_room_late_night
+        tap_action: call-service
+        service: scene.living_room_late_night
+      - entity: scene.living_room_movie
+        tap_action: call-service
+        service: scene.living_room_movie
+      - entity: scene.living_room_bright
+        tap_action: call-service
+        service: scene.living_room_bright
+      - entity: scene.living_room_off
+        tap_action: call-service
+        service: scene.living_room_off
 
 ### Fish Tank
   - type: picture-glance
