@@ -40,20 +40,25 @@
               action: call-service
               service: script.turn_on
             entity: script.turn_off_tv
-                                  
+
       - type: horizontal-stack
         cards:
-          - type: "custom:button-card"
-            entity: switch.harman_kardon_intelstick
+          - type: entity-button
+            name: Livingroom PC
             icon: mdi:youtube
-            color: auto
-            color_type: card
-            default_color: rgb(155, 226, 255)
+            entity: switch.harman_kardon_intelstick
 
-            name: Living room PC
-            style:
-              - font-size: 12px
-              - font-weight: bold
+          # - type: "custom:button-card"
+          #   entity: switch.harman_kardon_intelstick
+          #   icon: mdi:youtube
+          #   color: auto
+          #   color_type: card
+          #   default_color: rgb(155, 226, 255)
+          #
+          #   name: Living room PC
+          #   style:
+          #     - font-size: 12px
+          #     - font-weight: bold
           - type: "custom:button-card"
             entity: switch.harman_kardon_computer
             color: auto
