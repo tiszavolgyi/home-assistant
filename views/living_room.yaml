@@ -82,7 +82,7 @@
   - type: glance
     title: Livingroom Scenes
     show_state: false
-    colums: 3
+    columns: 3
     entities:
       - entity: scene.living_room_reading
         tap_action: call-service
