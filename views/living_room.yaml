@@ -18,7 +18,7 @@
             entity: script.avr_turn_vulome_up
           - type: entity-button
             name: Volume Down
-            icon: mdi:volume-plus
+            icon: mdi:volume-minus
             tap_action:
               action: call-service
               service: script.turn_on
