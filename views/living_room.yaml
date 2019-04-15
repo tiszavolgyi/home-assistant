@@ -37,7 +37,7 @@
           - type: "custom:button-card"
             entity: script.turn_off_tv
             icon: mdi:television-off
-            color: color: rgb(66, 134, 244)
+            color: color: rgb(166, 134, 244)
             action: more_info
             color_type: card
             default_color: rgb(255, 233, 155)
