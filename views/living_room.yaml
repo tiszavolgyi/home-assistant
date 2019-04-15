@@ -9,12 +9,18 @@
     cards:
       - type: horizontal-stack
         cards:
-          - type: "custom:button-card"
-            entity: script.avr_turn_vulome_up
+          - type: entity-button
+            name: Volume Up
             icon: mdi:volume-plus
-            color_type: card
-            color: rgb(53, 50, 50)
-            action: more_info            
+            tap_action:
+              action: call-service
+              service: script.avr_turn_vulome_up
+          # - type: "custom:button-card"
+          #   entity: script.avr_turn_vulome_up
+          #   icon: mdi:volume-plus
+          #   color_type: card
+          #   color: rgb(53, 50, 50)
+          #   action: more_info
           - type: "custom:button-card"
             entity: script.avr_turn_vulome_down
             icon: mdi:volume-minus
