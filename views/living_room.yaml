@@ -29,18 +29,18 @@
           - type: "custom:button-card"
             entity: script.turn_on_tv
             icon: mdi:television
-            color: rgb(28, 128, 199)
-            color_off: rgb(28, 128, 199)
+            color: auto
             action: more_info
             default_color: rgb(255, 233, 155)
             color_type: card
           - type: "custom:button-card"
             entity: script.turn_off_tv
             icon: mdi:television-off
-            color: color: rgb(166, 134, 244)
+            color: auto
             action: more_info
-            color_type: card
             default_color: rgb(255, 233, 155)
+            color_type: card
+
 
       - type: horizontal-stack
         cards:
