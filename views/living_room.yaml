@@ -14,7 +14,8 @@
             icon: mdi:volume-plus
             tap_action:
               action: call-service
-              service: script.avr_turn_vulome_up
+              service: script.turn_on
+            entity: script.avr_turn_vulome_up
           # - type: "custom:button-card"
           #   entity: script.avr_turn_vulome_up
           #   icon: mdi:volume-plus
