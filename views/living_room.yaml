@@ -38,8 +38,9 @@
             icon: mdi:television-off
             color: auto
             action: more_info
-            default_color: rgb(255, 233, 155)
             color_type: card
+            default_color: rgb(255, 233, 155)
+
 
 
       - type: horizontal-stack
