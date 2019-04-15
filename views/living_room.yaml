@@ -12,10 +12,9 @@
           - type: "custom:button-card"
             entity: script.avr_turn_vulome_up
             icon: mdi:volume-plus
-            color: auto
-            action: more_info
-            default_color: rgb(255, 233, 155)
             color_type: card
+            color: rgb(53, 50, 50)
+            action: more_info            
           - type: "custom:button-card"
             entity: script.avr_turn_vulome_down
             icon: mdi:volume-minus
@@ -48,8 +47,9 @@
             entity: switch.harman_kardon_intelstick
             icon: mdi:youtube
             color: auto
-            #default_color: rgb(255, 233, 155)
-            #color_type: card
+            color_type: card
+            default_color: rgb(155, 226, 255)
+
             name: Living room PC
             style:
               - font-size: 12px
