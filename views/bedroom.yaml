@@ -27,6 +27,7 @@
 
   - type: picture-elements
     image: /local/bedroom_bed.jpg
+    title: Air Quality
     elements:
       - type: state-badge
         entity: sensor.broadlink_sensor_air_quality
@@ -46,9 +47,12 @@
           top: 27%
           left: 40%
           --ha-label-badge-font-size: 1em
+          --ha-label-badge-font-color: white
       - type: service-button
+        title: Air Humidifier
         service: switch.turn_on
         service_data: switch.air_humidifier
+
         style:
           top: 15%
           left: 92%
