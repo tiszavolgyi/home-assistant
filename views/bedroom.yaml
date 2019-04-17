@@ -1,3 +1,55 @@
 ###################################
 ### Lovelace Bedroom  Cards
 ###################################
+
+
+### Lights and Scenes
+
+  - type: entities
+    title: Lights
+    show_header_toggle: true
+    entities:
+      - type: custom:slider-entity-row
+        entity: light.bedroom_1
+      - type: custom:slider-entity-row
+        entity: light.bedroom_2
+      - type: entities
+        entity: scene.bedroom_night
+      - type: entities
+        entity: scene.bedroom_vivi_reading
+      - type: entities
+        entity: scene.bedroom_peter_reading
+      - type: entities
+        entity: scene.bedroom_romantic
+
+
+### Bedroom Air Sensors
+
+  - type: picture-elements
+    image: /local/bedroom_bed.jpg
+    elements:
+      - type: state-badge
+        entity: sensor.broadlink_sensor_air_quality
+        style:
+          top: 27%
+          left: 10%
+          --ha-label-badge-font-size: 1em
+      - type: state-badge
+        entity: sensor.broadlink_sensor_humidity
+        style:
+          top: 27%
+          left: 25%
+          --ha-label-badge-font-size: 1em
+      - type: state-badge
+        entity: sensor.broadlink_sensor_temperature
+        style:
+          top: 27%
+          left: 40%
+          --ha-label-badge-font-size: 1em
+      - type: service-button
+        service: switch.turn_on
+        service_data: switch.air_humidifier
+        style:
+          top: 15%
+          left: 92%
+          --ha-label-badge-font-size: 1em
