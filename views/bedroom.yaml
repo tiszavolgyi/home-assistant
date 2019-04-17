@@ -38,3 +38,63 @@
         entity: sensor.broadlink_sensor_temperature
       - type: entities
         entity: switch.air_humidifier
+
+
+### Vivi Bed Settings and Stats
+
+  - type: entities
+    title: Vivi's Bed
+    show_header_toggle: false
+    entities:
+      - type: entities
+        entity: binary_sensor.eight_right_bed_presence
+      - type: entities
+        entity: sensor.eight_right_bed_temperature
+      - type: divider
+      - type: section
+        label: Vivi's bed settings
+      - type: entities
+        entity: input_number.eight_right_bed_temperature_threshold
+      - type: entities
+        entity: input_number.eight_right_heat_run_temp
+      - type: entities
+        entity: input_number.eight_right_heat_run_minutes
+      - type: divider
+      - type: section
+        label: Vivi's bed statistics
+      - type: entities
+        entity: sensor.eight_right_sleep_session
+      - type: entities
+        entity: sensor.eight_right_previous_sleep_session
+      - type: entities
+        entity: sensor.eight_right_sleep_stage
+
+
+### Peter Bed Settings and Stats
+
+  - type: entities
+    title: Peter's Bed
+    show_header_toggle: false
+    entities:
+      - type: entities
+        entity: binary_sensor.eight_left_bed_presence
+      - type: entities
+        entity: sensor.eight_left_bed_temperature
+      - type: divider
+      - type: section
+        label: Peter's bed settings
+      - type: entities
+        entity: input_number.eight_left_bed_temperature_threshold
+      - type: entities
+        entity: input_number.eight_left_heat_run_temp
+      - type: entities
+        entity: input_number.eight_left_heat_run_minutes
+      - type: divider
+      - type: section
+        label: Peter's bed statistics
+      - type: entities
+        entity: sensor.eight_left_sleep_session
+      - type: entities
+        entity: sensor.eight_left_previous_sleep_session
+      - type: entities
+        entity: sensor.eight_left_sleep_stage
