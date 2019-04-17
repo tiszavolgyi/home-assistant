@@ -25,35 +25,16 @@
 
 ### Bedroom Air Sensors
 
-  - type: picture-elements
-    image: /local/bedroom_bed.jpg
+  - type: entities
     title: Air Quality
-    elements:
-      - type: state-badge
+    icon: mdi:weather-snowy-rainy
+    show_header_toggle: false
+    entities:
+      - type: entities
         entity: sensor.broadlink_sensor_air_quality
-        style:
-          top: 27%
-          left: 10%
-          --ha-label-badge-font-size: 1em
-      - type: state-badge
+      - type: entities
         entity: sensor.broadlink_sensor_humidity
-        style:
-          top: 27%
-          left: 25%
-          --ha-label-badge-font-size: 1em
-      - type: state-badge
+      - type: entities
         entity: sensor.broadlink_sensor_temperature
-        style:
-          top: 27%
-          left: 40%
-          --ha-label-badge-font-size: 1em
-          --ha-label-badge-font-color: white
-      - type: service-button
-        title: Air Humidifier
-        service: switch.turn_on
-        service_data: switch.air_humidifier
-
-        style:
-          top: 15%
-          left: 92%
-          --ha-label-badge-font-size: 1em
+      - type: entities
+        entity: switch.air_humidifier
