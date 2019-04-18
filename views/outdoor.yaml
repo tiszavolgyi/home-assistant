@@ -54,11 +54,11 @@
         entity: switch.zone_9_2
       - type: entities
         entity: switch.zone_10_2
-      - type: section
-        label: Front Yard - Dripping
-      - type: entities
-        entity: switch.zone_6_2
-      - type: entities
-        entity: switch.zone_7_2
-      - type: entities
-        entity: switch.zone_8_2
+      # - type: section
+      #   label: Front Yard - Dripping
+      # - type: entities
+      #   entity: switch.zone_6_2
+      # - type: entities
+      #   entity: switch.zone_7_2
+      # - type: entities
+      #   entity: switch.zone_8_2
