@@ -46,6 +46,9 @@
         entity: binary_sensor.eight_right_bed_presence
       - type: entities
         entity: sensor.eight_right_bed_temperature
+      - type: entities
+        entity: script.heat_vivi_bed_for_30_min
+        title: Heat Vivi's side for 30 min
       - type: section
         label: Vivi's bed settings
       - type: entities
@@ -71,9 +74,12 @@
     show_header_toggle: false
     entities:
       - type: entities
-        entity: binary_sensor.eight_left_bed_presence
+        entity: binary_sensor.eight_left_bed_presencea
       - type: entities
         entity: sensor.eight_left_bed_temperature
+        title: Heat Peter's side for 30 min
+      - type: entities
+        entity: script.heat_peter_bed_for_30_min
       - type: section
         label: Peter's bed settings
       - type: entities
