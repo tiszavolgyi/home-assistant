@@ -23,22 +23,6 @@
         entity: scene.bedroom_romantic
 
 
-### Bedroom Air Sensors
-
-  - type: entities
-    title: Air Quality
-    show_header_toggle: false
-    entities:
-      - type: entities
-        entity: sensor.broadlink_sensor_air_quality
-      - type: entities
-        entity: sensor.broadlink_sensor_humidity
-      - type: entities
-        entity: sensor.broadlink_sensor_temperature
-      - type: entities
-        entity: switch.air_humidifier
-
-
 ### Bed heating, sleep Status
 
   - type: entities
@@ -110,3 +94,18 @@
         entity: sensor.eight_left_previous_sleep_session
       - type: entities
         entity: sensor.eight_left_sleep_stage
+
+### Bedroom Air Sensors
+
+  - type: entities
+    title: Air Quality
+    show_header_toggle: false
+    entities:
+      - type: entities
+        entity: sensor.broadlink_sensor_air_quality
+      - type: entities
+        entity: sensor.broadlink_sensor_humidity
+      - type: entities
+        entity: sensor.broadlink_sensor_temperature
+      - type: entities
+        entity: switch.air_humidifier
