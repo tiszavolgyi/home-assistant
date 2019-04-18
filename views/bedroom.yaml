@@ -46,7 +46,6 @@
         entity: binary_sensor.eight_right_bed_presence
       - type: entities
         entity: sensor.eight_right_bed_temperature
-      - type: divider
       - type: section
         label: Vivi's bed settings
       - type: entities
@@ -55,7 +54,6 @@
         entity: input_number.eight_right_heat_run_temp
       - type: entities
         entity: input_number.eight_right_heat_run_minutes
-      - type: divider
       - type: section
         label: Vivi's bed statistics
       - type: entities
@@ -76,7 +74,6 @@
         entity: binary_sensor.eight_left_bed_presence
       - type: entities
         entity: sensor.eight_left_bed_temperature
-      - type: divider
       - type: section
         label: Peter's bed settings
       - type: entities
@@ -85,7 +82,6 @@
         entity: input_number.eight_left_heat_run_temp
       - type: entities
         entity: input_number.eight_left_heat_run_minutes
-      - type: divider
       - type: section
         label: Peter's bed statistics
       - type: entities
