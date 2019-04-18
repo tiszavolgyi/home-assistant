@@ -3,36 +3,40 @@
 ###################################
 
 
-### Lights and Scenes
 
-  - type: entities
-    title: Lights
-    show_header_toggle: true
-    entities:
-      - type: custom:slider-entity-row
-        entity: light.bedroom_1
-      - type: custom:slider-entity-row
-        entity: light.bedroom_2
+  - type: vertical-stack
+    cards:
+
+    ### Lights and Scenes
+
       - type: entities
-        entity: scene.bedroom_night
-      - type: entities
-        entity: scene.bedroom_vivi_reading
-      - type: entities
-        entity: scene.bedroom_peter_reading
-      - type: entities
-        entity: scene.bedroom_romantic
+        title: Lights
+        show_header_toggle: true
+        entities:
+          - type: custom:slider-entity-row
+            entity: light.bedroom_1
+          - type: custom:slider-entity-row
+            entity: light.bedroom_2
+          - type: entities
+            entity: scene.bedroom_night
+          - type: entities
+            entity: scene.bedroom_vivi_reading
+          - type: entities
+            entity: scene.bedroom_peter_reading
+          - type: entities
+            entity: scene.bedroom_romantic
 
 
-### Bed heating, sleep Status
+    ### Bed heating, sleep Status
 
-  - type: entities
-    title: Bed heat and Sleep State
-    show_header_toggle: false
-    entities:
       - type: entities
-        entity: input_boolean.sleeping
-      - type: entities
-        entity: script.heat_bed_for_1_hour
+        title: Bed heat and Sleep State
+        show_header_toggle: false
+        entities:
+          - type: entities
+            entity: input_boolean.sleeping
+          - type: entities
+            entity: script.heat_bed_for_1_hour
 
 
 
