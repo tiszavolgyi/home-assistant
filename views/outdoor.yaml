@@ -36,23 +36,25 @@
       - type: section
         label: Grass
       - type: entities
-        entities:
-          - switch.zone_2_2
-          - switch.zone_3_2
-          - switch.zone_11_2
-      - type: section
-        label: Plants - Dripping
+        entity: switch.zone_2_2
       - type: entities
-        entities:
-          - switch.zone_1_2
-          - switch.zone_4_2
-          - switch.zone_5_2
-          - switch.zone_9_2
-          - switch.zone_10_2
-      - type: section
-        label: Front Yard - Dripping
+        entity: switch.zone_3_2
       - type: entities
-        entities:
-          - switch.zone_6_2
-          - switch.zone_7_2
-          - switch.zone_8_2
+        entity: switch.zone_11_2
+
+      # - type: section
+      #   label: Plants - Dripping
+      # - type: entities
+      #   entities:
+      #     - switch.zone_1_2
+      #     - switch.zone_4_2
+      #     - switch.zone_5_2
+      #     - switch.zone_9_2
+      #     - switch.zone_10_2
+      # - type: section
+      #   label: Front Yard - Dripping
+      # - type: entities
+      #   entities:
+      #     - switch.zone_6_2
+      #     - switch.zone_7_2
+      #     - switch.zone_8_2
