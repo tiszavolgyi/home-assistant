@@ -1,3 +1,58 @@
 ###################################
 ### Lovelace  Outdoor Cards
 ###################################
+
+
+### Outdoor Lights
+
+  - type: entities
+    title: Lights
+    show_header_toggle: true
+    entities:
+      - type: section
+        label: Patio
+      - type: custom:slider-entity-row
+        entity: light.patio
+      - type: section
+        label: Pergola
+      - type: custom:slider-entity-row
+        entity: light.spalight_1
+      - type: custom:slider-entity-row
+        entity: light.spalight_2
+      - type: section
+        label: Garden
+      - type: entities
+        entity: switch.garden1
+      - type: entities
+        entity: switch.garden2
+
+
+### Sprinkler system
+
+  - type: entities
+    title: Irrigation
+    show_header_toggle: false
+    entities:
+      - type: section
+        label: Grass
+      - type: entities
+        entities:
+          - switch.zone_2_2
+          - switch.zone_3_2
+          - switch.zone_11_2
+      - type: section
+        label: Plants - Dripping
+      - type: entities
+        entities:
+          - switch.zone_1_2
+          - switch.zone_4_2
+          - switch.zone_5_2
+          - switch.zone_9_2
+          - switch.zone_10_2
+      - type: section
+        label: Front Yard - Dripping
+      - type: entities
+        entities:
+          - switch.zone_6_2
+          - switch.zone_7_2
+          - switch.zone_8_2
