@@ -3,42 +3,17 @@
 ###################################
 
 
-### Lights and Scenes
+
+### Bed heating, sleep Status
 
   - type: entities
-    title: Lights
-    show_header_toggle: true
-    entities:
-      - type: custom:slider-entity-row
-        entity: light.bedroom_1
-      - type: custom:slider-entity-row
-        entity: light.bedroom_2
-      - type: entities
-        entity: scene.bedroom_night
-      - type: entities
-        entity: scene.bedroom_vivi_reading
-      - type: entities
-        entity: scene.bedroom_peter_reading
-      - type: entities
-        entity: scene.bedroom_romantic
-
-
-### Bedroom Air Sensors
-
-  - type: entities
-    title: Air Quality
-    icon: mdi:weather-snowy-rainy
+    title: Bed heat and Sleep State
     show_header_toggle: false
     entities:
       - type: entities
-        entity: sensor.broadlink_sensor_air_quality
+        entity: input_boolean.sleeping
       - type: entities
-        entity: sensor.broadlink_sensor_humidity
-      - type: entities
-        entity: sensor.broadlink_sensor_temperature
-      - type: entities
-        entity: switch.air_humidifier
-
+        entity: script.heat_bed_for_1_hour
 
 ### Vivi Bed Settings and Stats
 
@@ -98,3 +73,40 @@
         entity: sensor.eight_left_previous_sleep_session
       - type: entities
         entity: sensor.eight_left_sleep_stage
+
+
+
+### Lights and Scenes
+
+  - type: entities
+    title: Lights
+    show_header_toggle: true
+    entities:
+      - type: custom:slider-entity-row
+        entity: light.bedroom_1
+      - type: custom:slider-entity-row
+        entity: light.bedroom_2
+      - type: entities
+        entity: scene.bedroom_night
+      - type: entities
+        entity: scene.bedroom_vivi_reading
+      - type: entities
+        entity: scene.bedroom_peter_reading
+      - type: entities
+        entity: scene.bedroom_romantic
+
+
+### Bedroom Air Sensors
+
+  - type: entities
+    title: Air Quality
+    show_header_toggle: false
+    entities:
+      - type: entities
+        entity: sensor.broadlink_sensor_air_quality
+      - type: entities
+        entity: sensor.broadlink_sensor_humidity
+      - type: entities
+        entity: sensor.broadlink_sensor_temperature
+      - type: entities
+        entity: switch.air_humidifier
