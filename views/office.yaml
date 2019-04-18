@@ -1,3 +1,22 @@
 ###################################
 ### Lovelace Office Cards
 ###################################
+
+### Office Light
+
+  - type: picture-entity
+    entity: light.floor_lamp
+    state_image:
+      "on": /local/office_light_on.jpg
+      "off": /local/office_light_off.png
+
+
+### Wake on LAN
+
+  - type: entity-button
+    name: Turn On Computer
+    icon: mdi:desktop
+    # tap_action:
+    #   action: call-service
+    #   service: switch.turn_on
+    entity: switch.tank
