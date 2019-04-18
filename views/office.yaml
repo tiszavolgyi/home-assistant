@@ -6,6 +6,10 @@
 
   - type: picture-entity
     entity: light.floor_lamp
+    tap_action:
+      action: toggle
+    hold_action:
+      action: more-info
     state_image:
       "on": /local/office_light_on.jpg
       "off": /local/office_light_off.png
@@ -15,7 +19,7 @@
 
   - type: entity-button
     name: Turn On Computer
-    icon: mdi:desktop
+    icon: mdi:desktop-tower-monitor
     # tap_action:
     #   action: call-service
     #   service: switch.turn_on
