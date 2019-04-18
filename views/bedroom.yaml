@@ -48,8 +48,8 @@
         entity: sensor.eight_right_bed_temperature
       - type: entities
         entity: script.heat_vivi_bed_for_30_min
-        name: Heat Vivi's side for 30 min
-        icon: mdi:hotel
+        name: Heat Vivi's side for below settings
+        icon: mdi:radiator
       - type: section
         label: Vivi's bed settings
       - type: entities
@@ -80,8 +80,8 @@
         entity: sensor.eight_left_bed_temperature
       - type: entities
         entity: script.heat_peter_bed_for_30_min
-        name: Heat Peter's side for 30 min
-        icon: mdi:hotel
+        name: Heat Peter's side for below settings
+        icon: mdi:radiator
       - type: section
         label: Peter's bed settings
       - type: entities
