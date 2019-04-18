@@ -41,24 +41,24 @@
         entity: switch.zone_3_2
       - type: entities
         entity: switch.zone_11_2
-      - type: section
-        label: Plants - Dripping
-      - type: entities
-      - type: entities
-        entity: switch.zone_1_2
-      - type: entities
-        entity: switch.zone_4_2
-      - type: entities
-        entity: switch.zone_5_2
-      - type: entities
-        entity: switch.zone_9_2
-      - type: entities
-        entity: switch.zone_10_2
       # - type: section
-      #   label: Front Yard - Dripping
+      #   label: Plants - Dripping
       # - type: entities
-      #   entity: switch.zone_6_2
       # - type: entities
-      #   entity: switch.zone_7_2
+      #   entity: switch.zone_1_2
       # - type: entities
-      #   entity: switch.zone_8_2
+      #   entity: switch.zone_4_2
+      # - type: entities
+      #   entity: switch.zone_5_2
+      # - type: entities
+      #   entity: switch.zone_9_2
+      # - type: entities
+      #   entity: switch.zone_10_2
+      - type: section
+        label: Front Yard - Dripping
+      - type: entities
+        entity: switch.zone_6_2
+      - type: entities
+        entity: switch.zone_7_2
+      - type: entities
+        entity: switch.zone_8_2
