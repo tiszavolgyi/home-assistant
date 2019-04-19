@@ -4,21 +4,18 @@
 
 
 ### Living room
-
-  - type: vertical-stack
-    cards:
-
+  - type: entities
+    title: Living Room Lights
+    show_header_toggle: true
+    entities:
       - type: entities
-        title: Lights
-        show_header_toggle: true
-        entities:
-          - type: entities
-            entity: switch.living_room_lamp
-          - type: custom:slider-entity-row
-            entity: light.projector_screen
-          - type: custom:slider-entity-row
-            entity: light.stair_lights
-
+        entity: switch.living_room_lamp
+      - type: custom:slider-entity-row
+        entity: light.projector_screen
+      - type: custom:slider-entity-row
+        entity: light.stair_lights
+      - type: section
+        label: Scenes
       - type: glance
         title: Livingroom Scenes
         show_state: false
@@ -53,7 +50,7 @@
 ### Bedroom
 
   - type: entities
-    title: Lights
+    title: Bedroom Lights
     show_header_toggle: true
     entities:
       - type: custom:slider-entity-row
@@ -73,7 +70,7 @@
 ### Garden
 
   - type: entities
-    title: Lights
+    title: Garden Lights
     show_header_toggle: true
     entities:
       - type: section
@@ -97,7 +94,7 @@
 ### Kitchen
 
   - type: entities
-    title: Lights
+    title: Kitchen Lights
     show_header_toggle: true
     entities:
       - type: custom:slider-entity-row
