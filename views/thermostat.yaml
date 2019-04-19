@@ -22,7 +22,7 @@
           top: 70%
           left: 10%
           color: white
-      - type: state-badge
+      - type: state-label
         entity: sensor.broadlink_sensor_air_quality
         style:
           top: 80%
