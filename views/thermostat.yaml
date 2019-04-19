@@ -61,6 +61,7 @@
           --ha-label-badge-font-size: 1em
       - type: state-icon
         entity: switch.air_humidifier
+        icon: mdi:water-percent
         title: Humidifier Switch
         tap_action:
           action: toggle
@@ -69,3 +70,37 @@
           left: 90%
           color: white
           --ha-label-badge-font-size: 1em
+
+
+### Temperature graphs
+
+  - type: vertical-stack
+    cards:
+      - type: custom:mini-graph-card
+        name: Living Room Temperature
+        entities:
+          - sensor.living_room_thermostat_temperature
+        line_color: blue
+        line_width: 8
+        font_size: 75
+      - type: custom:mini-graph-card
+        name: Bedroom Temperature
+        entities:
+          - sensor.broadlink_sensor_temperature
+        line_color: green
+        line_width: 8
+        font_size: 75
+      - type: custom:mini-graph-card
+        name: Vivi Bed Temperature
+        entities:
+          - sensor.eight_right_bed_temperature
+        line_color: '#fcc625'
+        line_width: 8
+        font_size: 75
+      - type: custom:mini-graph-card
+        name: Peter Bed Temperature
+        entities:
+          - sensor.eight_left_bed_temperature
+        line_color: '#fcc625'
+        line_width: 8
+        font_size: 75
