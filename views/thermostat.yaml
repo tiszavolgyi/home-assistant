@@ -10,11 +10,31 @@
 
 ### Bedroom air sensor
 
-  - type: picture-glance
-    title: Living room
-    entities:
-    - sensor.broadlink_sensor_air_quality
-    - sensor.broadlink_sensor_humidity
-    - sensor.broadlink_sensor_temperature
-    - switch.air_humidifier
+  - type: picture-elements
+    title: Bedroom Air Sensors
     image: /local/bedroom_bed.jpg
+    elements:
+      - type: state-badge
+        entity: sensor.broadlink_sensor_air_quality
+        style:
+          top: 27%
+          left: 10%
+          --ha-label-badge-font-size: 1em
+      - type: state-badge
+        entity: sensor.broadlink_sensor_humidity
+        style:
+          top: 27%
+          left: 25%
+          --ha-label-badge-font-size: 1em
+      - type: state-badge
+        entity: sensor.broadlink_sensor_temperature
+        style:
+          top: 27%
+          left: 40%
+          --ha-label-badge-font-size: 1em
+      - type: state-label
+        entity: switch.air_humidifier
+        style:
+          top: 15%
+          left: 92%
+          --ha-label-badge-font-size: 1em
