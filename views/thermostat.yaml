@@ -25,7 +25,7 @@
       - type: state-label
         entity: sensor.broadlink_sensor_air_quality
         style:
-          top: 92%
+          top: 95%
           left: 10%
           color: white
           --ha-label-badge-font-size: 1em
@@ -40,7 +40,7 @@
       - type: state-label
         entity: sensor.broadlink_sensor_humidity
         style:
-          top: 92%
+          top: 95%
           left: 30%
           color: white
           --ha-label-badge-font-size: 1em
@@ -55,14 +55,15 @@
       - type: state-label
         entity: sensor.broadlink_sensor_temperature
         style:
-          top: 92%
+          top: 95%
           left: 50%
           color: white
           --ha-label-badge-font-size: 1em
       - type: state-icon
         entity: switch.air_humidifier
-        icon: water-percent
-        name: Humidifier Switch
+        title: Humidifier Switch
+        tap_action:
+          action: toggle
         style:
           top: 90%
           left: 90%
