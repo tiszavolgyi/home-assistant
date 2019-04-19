@@ -6,7 +6,6 @@
 ### Living room
 
   - type: custom:vertical-stack-in-card
-    title: Living Room Lights
     cards:
       - type: entities
         title: Living Room Lights
