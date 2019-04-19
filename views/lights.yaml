@@ -5,7 +5,7 @@
 
 ### Living room
 
-  - type: vertical-slack
+  - type: vertical-stack
     cards:
 
       - type: entities
