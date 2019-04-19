@@ -6,3 +6,15 @@
 ### Nest Thermostat
   - type: thermostat
     entity: climate.living_room
+
+
+### Bedroom air sensor
+
+  - type: picture-glance
+    title: Living room
+    entities:
+    - sensor.broadlink_sensor_air_quality
+    - sensor.broadlink_sensor_humidity
+    - sensor.broadlink_sensor_temperature
+    - switch.air_humidifier
+    image: /local/bedroom_bed.jpg
