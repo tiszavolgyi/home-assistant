@@ -1,3 +1,106 @@
 ###################################
 ### Lovelace Lights Cards
 ###################################
+
+
+### Living room
+
+  - type: vertical-slack
+    cards:
+
+      - type: entities
+        title: Lights
+        show_header_toggle: true
+        entities:
+          - type: entities
+            entity: switch.living_room_lamp
+          - type: custom:slider-entity-row
+            entity: light.projector_screen
+          - type: custom:slider-entity-row
+            entity: light.stair_lights
+
+      - type: glance
+        title: Livingroom Scenes
+        show_state: false
+        columns: 3
+        entities:
+          - entity: scene.living_room_reading
+            name: Reading
+            tap_action: call-service
+            service: scene.living_room_reading
+          - entity: scene.living_room_night
+            name: Night Light
+            tap_action: call-service
+            service: scene.living_room_night
+          - entity: scene.living_room_late_night
+            name: Late Night
+            tap_action: call-service
+            service: scene.living_room_late_night
+          - entity: scene.living_room_movie
+            name: Movie Time
+            tap_action: call-service
+            service: scene.living_room_movie
+          - entity: scene.living_room_bright
+            name: Bright Light
+            tap_action: call-service
+            service: scene.living_room_bright
+          - entity: scene.living_room_off
+            name: Turn Off Lights
+            tap_action: call-service
+            service: scene.living_room_off
+
+
+### Bedroom
+
+  - type: entities
+    title: Lights
+    show_header_toggle: true
+    entities:
+      - type: custom:slider-entity-row
+        entity: light.bedroom_1
+      - type: custom:slider-entity-row
+        entity: light.bedroom_2
+      - type: entities
+        entity: scene.bedroom_night
+      - type: entities
+        entity: scene.bedroom_vivi_reading
+      - type: entities
+        entity: scene.bedroom_peter_reading
+      - type: entities
+        entity: scene.bedroom_romantic
+
+
+### Garden
+
+  - type: entities
+    title: Lights
+    show_header_toggle: true
+    entities:
+      - type: section
+        label: Patio
+      - type: custom:slider-entity-row
+        entity: light.patio
+      - type: section
+        label: Pergola
+      - type: custom:slider-entity-row
+        entity: light.spalight_1
+      - type: custom:slider-entity-row
+        entity: light.spalight_2
+      - type: section
+        label: Garden
+      - type: entities
+        entity: switch.garden1
+      - type: entities
+        entity: switch.garden2
+
+
+### Kitchen
+
+  - type: entities
+    title: Lights
+    show_header_toggle: true
+    entities:
+      - type: custom:slider-entity-row
+        entity: light.kitchen
+      - type: custom:slider-entity-row
+        entity: light.hue_bloom_1
