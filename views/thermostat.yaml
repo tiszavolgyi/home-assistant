@@ -14,33 +14,33 @@
     title: Bedroom Air Sensors
     image: /local/bedroom_bed.jpg
     elements:
-      - type: state-icon
+      - type: icon
         icon: mdi:fan
         entity: sensor.broadlink_sensor_air_quality
         tap_action: more-info
         style:
-          top: 70%
+          top: 88%
           left: 10%
           color: white
       - type: state-label
         entity: sensor.broadlink_sensor_air_quality
         style:
-          top: 80%
+          top: 92%
           left: 10%
           color: white
           --ha-label-badge-font-size: 1em
-      - type: state-icon
+      - type: icon
         icon: mdi:water-percent
         entity: sensor.broadlink_sensor_humidity
         tap_action: more-info
         style:
-          top: 70%
+          top: 88%
           left: 30%
           color: white
       - type: state-label
         entity: sensor.broadlink_sensor_humidity
         style:
-          top: 80%
+          top: 92%
           left: 30%
           color: white
           --ha-label-badge-font-size: 1em
@@ -49,20 +49,22 @@
         entity: sensor.broadlink_sensor_temperature
         tap_action: more-info
         style:
-          top: 70%
+          top: 88%
           left: 50%
           color: white
       - type: state-label
         entity: sensor.broadlink_sensor_temperature
         style:
-          top: 80%
+          top: 92%
           left: 50%
           color: white
           --ha-label-badge-font-size: 1em
       - type: state-icon
         entity: switch.air_humidifier
+        icon: water-percent
+        name: Humidifier Switch
         style:
-          top: 80%
-          left: 80%
+          top: 90%
+          left: 90%
           color: white
           --ha-label-badge-font-size: 1em
