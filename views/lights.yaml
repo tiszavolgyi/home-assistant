@@ -4,47 +4,52 @@
 
 
 ### Living room
-  - type: entities
+
+  - type: custom:vertical-stack-in-card
     title: Living Room Lights
-    show_header_toggle: true
-    entities:
+    cards:
       - type: entities
-        entity: switch.living_room_lamp
-      - type: custom:slider-entity-row
-        entity: light.projector_screen
-      - type: custom:slider-entity-row
-        entity: light.stair_lights
-      - type: section
-        label: Scenes
-      # - type: glance
-      #   title: Livingroom Scenes
-      #   show_state: false
-      #   columns: 3
-      #   entities:
-      #     - entity: scene.living_room_reading
-      #       name: Reading
-      #       tap_action: call-service
-      #       service: scene.living_room_reading
-      #     - entity: scene.living_room_night
-      #       name: Night Light
-      #       tap_action: call-service
-      #       service: scene.living_room_night
-      #     - entity: scene.living_room_late_night
-      #       name: Late Night
-      #       tap_action: call-service
-      #       service: scene.living_room_late_night
-      #     - entity: scene.living_room_movie
-      #       name: Movie Time
-      #       tap_action: call-service
-      #       service: scene.living_room_movie
-      #     - entity: scene.living_room_bright
-      #       name: Bright Light
-      #       tap_action: call-service
-      #       service: scene.living_room_bright
-      #     - entity: scene.living_room_off
-      #       name: Turn Off Lights
-      #       tap_action: call-service
-      #       service: scene.living_room_off
+        title: Living Room Lights
+        show_header_toggle: true
+        entities:
+          - type: entities
+            entity: switch.living_room_lamp
+          - type: custom:slider-entity-row
+            entity: light.projector_screen
+          - type: custom:slider-entity-row
+            entity: light.stair_lights
+          - type: section
+            label: Scenes
+
+      - type: glance
+        title: Livingroom Scenes
+        show_state: false
+        columns: 3
+        entities:
+          - entity: scene.living_room_reading
+            name: Reading
+            tap_action: call-service
+            service: scene.living_room_reading
+          - entity: scene.living_room_night
+            name: Night Light
+            tap_action: call-service
+            service: scene.living_room_night
+          - entity: scene.living_room_late_night
+            name: Late Night
+            tap_action: call-service
+            service: scene.living_room_late_night
+          - entity: scene.living_room_movie
+            name: Movie Time
+            tap_action: call-service
+            service: scene.living_room_movie
+          - entity: scene.living_room_bright
+            name: Bright Light
+            tap_action: call-service
+            service: scene.living_room_bright
+          - entity: scene.living_room_off
+            name: Turn Off Lights
+            tap_action: call-service
+            service: scene.living_room_off
 
 
 ### Bedroom

@@ -16,6 +16,9 @@ resources:
     type: module
   - url: /local/slider-entity-row.js
     type: module
+  - url: /local/vertical-stack-in-card.js
+    type: module
+
 
 
 ##############
