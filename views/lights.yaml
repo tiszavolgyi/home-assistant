@@ -16,35 +16,35 @@
         entity: light.stair_lights
       - type: section
         label: Scenes
-      - type: glance
-        title: Livingroom Scenes
-        show_state: false
-        columns: 3
-        entities:
-          - entity: scene.living_room_reading
-            name: Reading
-            tap_action: call-service
-            service: scene.living_room_reading
-          - entity: scene.living_room_night
-            name: Night Light
-            tap_action: call-service
-            service: scene.living_room_night
-          - entity: scene.living_room_late_night
-            name: Late Night
-            tap_action: call-service
-            service: scene.living_room_late_night
-          - entity: scene.living_room_movie
-            name: Movie Time
-            tap_action: call-service
-            service: scene.living_room_movie
-          - entity: scene.living_room_bright
-            name: Bright Light
-            tap_action: call-service
-            service: scene.living_room_bright
-          - entity: scene.living_room_off
-            name: Turn Off Lights
-            tap_action: call-service
-            service: scene.living_room_off
+      # - type: glance
+      #   title: Livingroom Scenes
+      #   show_state: false
+      #   columns: 3
+      #   entities:
+      #     - entity: scene.living_room_reading
+      #       name: Reading
+      #       tap_action: call-service
+      #       service: scene.living_room_reading
+      #     - entity: scene.living_room_night
+      #       name: Night Light
+      #       tap_action: call-service
+      #       service: scene.living_room_night
+      #     - entity: scene.living_room_late_night
+      #       name: Late Night
+      #       tap_action: call-service
+      #       service: scene.living_room_late_night
+      #     - entity: scene.living_room_movie
+      #       name: Movie Time
+      #       tap_action: call-service
+      #       service: scene.living_room_movie
+      #     - entity: scene.living_room_bright
+      #       name: Bright Light
+      #       tap_action: call-service
+      #       service: scene.living_room_bright
+      #     - entity: scene.living_room_off
+      #       name: Turn Off Lights
+      #       tap_action: call-service
+      #       service: scene.living_room_off
 
 
 ### Bedroom
