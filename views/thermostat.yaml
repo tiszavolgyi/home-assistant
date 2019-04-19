@@ -14,18 +14,18 @@
     title: Bedroom Air Sensors
     image: /local/bedroom_bed.jpg
     elements:
-      - type: icon
+      - type: state-icon
         icon: mdi:fan
         entity: sensor.broadlink_sensor_air_quality
         tap_action: more-info
         style:
-          top: 82%
+          top: 70%
           left: 10%
           color: white
       - type: state-badge
         entity: sensor.broadlink_sensor_air_quality
         style:
-          top: 90%
+          top: 80%
           left: 10%
           color: white
           --ha-label-badge-font-size: 1em
