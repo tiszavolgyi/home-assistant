@@ -30,23 +30,39 @@
           color: white
           --ha-label-badge-font-size: 1em
       - type: state-icon
+        icon: mdi:water-percent
+        entity: sensor.broadlink_sensor_humidity
+        tap_action: more-info
+        style:
+          top: 70%
+          left: 30%
+          color: white
+      - type: state-label
         entity: sensor.broadlink_sensor_humidity
         style:
-          top: 27%
-          left: 25%
+          top: 80%
+          left: 30%
           color: white
           --ha-label-badge-font-size: 1em
-      - type: state-badge
+      - type: icon
+        icon: mdi:thermometer
+        entity: sensor.broadlink_sensor_temperature
+        tap_action: more-info
+        style:
+          top: 70%
+          left: 50%
+          color: white
+      - type: state-label
         entity: sensor.broadlink_sensor_temperature
         style:
-          top: 27%
-          left: 40%
+          top: 80%
+          left: 50%
           color: white
           --ha-label-badge-font-size: 1em
-      - type: state-label
+      - type: state-icon
         entity: switch.air_humidifier
         style:
-          top: 15%
-          left: 92%
+          top: 80%
+          left: 80%
           color: white
           --ha-label-badge-font-size: 1em
