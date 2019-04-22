@@ -61,6 +61,12 @@ system_health:
 # Track the sun
 sun:
 
+#August lock
+august:
+  login_method: phone
+  username: !secret august_user
+  password: !secret august_pass
+
 #Wemo config
 wemo:
   static:
