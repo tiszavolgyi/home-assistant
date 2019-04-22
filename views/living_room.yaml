@@ -24,6 +24,39 @@
               service: script.turn_on
             entity: script.avr_turn_vulome_down
 
+
+      - type: horizontal-stack
+        cards:
+          - type: entity-button
+            name: Living room PC
+            icon: mdi:youtube
+            tap_action:
+              action: call-service
+              service: switch.turn_on
+            entity: switch.harman_kardon_intelstick
+          - type: entity-button
+            name: Steam Link
+            icon: mdi:desktop-tower-monitor
+            tap_action:
+              action: call-service
+              service: switch.turn_on
+            entity: switch.harman_kardon_computer
+          - type: entity-button
+            name: Radio
+            icon: mdi:radio
+            tap_action:
+              action: call-service
+              service: switch.turn_on
+            entity: switch.radio
+          - type: entity-button
+            name: Internet Radio
+            icon: mdi:radio-tower
+            tap_action:
+              action: call-service
+              service: switch.turn_on
+            entity: switch.internet_radio
+
+
       - type: horizontal-stack
         cards:
           - type: entity-button
@@ -41,40 +74,6 @@
               service: script.turn_on
             entity: script.turn_off_tv
 
-      - type: horizontal-stack
-        cards:
-          - type: entity-button
-            name: Living room PC
-            icon: mdi:youtube
-            tap_action:
-              action: call-service
-              service: switch.turn_on
-            entity: switch.harman_kardon_intelstick
-          - type: "custom:button-card"
-            entity: switch.harman_kardon_computer
-            color: auto
-            icon: mdi:desktop-tower-monitor
-            name: Steam Link
-            style:
-              - font-size: 12px
-              - font-weight: bold
-          - type: "custom:button-card"
-            entity: switch.radio
-            color: auto
-            icon: mdi:radio
-            name: Radio
-            style:
-              - font-size: 12px
-              - font-weight: bold
-          - type: "custom:button-card"
-            entity: switch.internet_radio
-            icon: mdi:radio-tower
-            color: auto
-            action: more_info
-            name: Internet Radio
-            style:
-              - font-size: 12px
-              - font-weight: bold
 
 ### scenes
 
