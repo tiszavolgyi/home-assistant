@@ -16,6 +16,15 @@
   - type: weather-forecast
     entity: weather.dark_sky
 
+###Front door
+  - type: entities
+    title: Front Door
+    show_header_toggle: false
+    entities:
+      - type: entities
+        entity: lock.front_door
+
+
 ### Xiaomi Vacuum Cleaner
   - type: picture-elements
     image: /local/vacuum_card.jpg
@@ -131,7 +140,7 @@
     cards:
       - type: markdown
         content: >
-          ## Internet Connection        
+          ## Internet Connection
       - type: horizontal-stack
         title: Internet Connection
         cards:
