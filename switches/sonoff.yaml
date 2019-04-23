@@ -5,7 +5,7 @@
   - platform: mqtt
     name: garden1
     command_topic: "cmnd/garden/POWER1"
-    state_topic: "stat/gardenlight/POWER1"
+    state_topic: "stat/garden/POWER1"
     qos: 1
     payload_on: "ON"
     payload_off: "OFF"
@@ -17,7 +17,7 @@
   - platform: mqtt
     name: garden2
     command_topic: "cmnd/garden/POWER2"
-    state_topic: "stat/gardenlight/POWER2"
+    state_topic: "stat/garden/POWER2"
     qos: 1
     payload_on: "ON"
     payload_off: "OFF"
