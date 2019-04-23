@@ -8,11 +8,11 @@
   - alias: "Turn on O2 - Daytime"
     trigger:
       platform: time_pattern
-      hours: '/2'
+      hours: '/1'
     condition:
       - condition: template
         value_template: >
-          {{ now().hour > 7 or now().hour <= 18}}
+          {{ now().hour > 7 or now().hour <= 20}}
     action:
       - service: switch.turn_on
         entity_id: switch.fishtank_air
@@ -28,7 +28,7 @@
     condition:
       - condition: template
         value_template: >
-          {{ now().hour < 7 or now().hour > 22}}
+          {{ now().hour < 7 or now().hour > 21}}
     action:
       - service: switch.turn_on
         entity_id: switch.fishtank_air
@@ -63,7 +63,7 @@
   - alias: "Turn on lights"
     trigger:
       - platform: time
-        at: '7:20:00'
+        at: '8:20:00'
     action:
       service: switch.turn_on
       entity_id: switch.fishtank_light
@@ -71,7 +71,7 @@
   - alias: "Turn off lights"
     trigger:
       - platform: time
-        at: '19:00:00'
+        at: '18:00:00'
     action:
       service: switch.turn_off
       entity_id: switch.fishtank_light
