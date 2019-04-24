@@ -34,7 +34,7 @@
   - type: picture-entity
     title: Garden 1
     entity: camera.garage-door
-    camera_image: camera.garage-door
+    camera_image: camera.garage_door
     show_info: true
     tap_action: dialog
 
