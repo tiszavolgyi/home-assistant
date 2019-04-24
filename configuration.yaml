@@ -191,13 +191,6 @@ vacuum:
 #   password: !secret tuya_pass
 #   country_code: 1
 
-camera:
-  - platform: mjpeg
-    mjpeg_url: !secret camera_garden1_url
-    name: Garden1
-    username: !secret bi_username
-    password: !secret bi_password
-    authentication: basic
 
 #Rachio Controller
 rachio:
@@ -232,3 +225,4 @@ binary_sensor: !include_dir_merge_list binary_sensors
 alexa: !include alexa/alexa.yaml
 intent_script: !include alexa/intent_scripts.yaml
 script: !include_dir_merge_named scripts
+camera: !include cameras/cameras.yaml
