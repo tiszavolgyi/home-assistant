@@ -1,0 +1,11 @@
+###########################################################
+### Security Cameras
+###########################################################
+
+
+  - platform: mjpeg
+    mjpeg_url: !secret camera_garden1_url
+    name: Garden1
+    username: !secret bi_username
+    password: !secret bi_password
+    authentication: basic

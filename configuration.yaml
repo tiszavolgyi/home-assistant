@@ -224,3 +224,4 @@ binary_sensor: !include_dir_merge_list binary_sensors
 alexa: !include alexa/alexa.yaml
 intent_script: !include alexa/intent_scripts.yaml
 script: !include_dir_merge_named scripts
+camera: !include_dir_merge_named cameras

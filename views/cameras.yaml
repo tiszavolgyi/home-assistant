@@ -1,3 +1,13 @@
 ###################################
 ### Lovelace Camera Cards
 ###################################
+
+  - title: Cameras
+    icon: mdi:camcorder
+    cards:
+      - type: picture-entity
+        title: Garden 1
+        entity: camera.garden1
+        camera_image: camera.garden1
+        show_info: true
+        tap_action: dialog
