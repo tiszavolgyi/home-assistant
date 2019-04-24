@@ -2,6 +2,8 @@
 ### Lovelace Camera Cards
 ###################################
 
+
+### Garden 1
   - type: picture-entity
     title: Garden 1
     entity: camera.garden1
@@ -10,7 +12,34 @@
     tap_action: dialog
 
 
+### Garden 2
+  - type: picture-entity
+    title: Garden 2
+    entity: camera.garden2
+    camera_image: camera.garden2
+    show_info: true
+    tap_action: dialog
 
+
+### Garage
+  - type: picture-entity
+    title: Garden 1
+    entity: camera.garage
+    camera_image: camera.garage
+    show_info: true
+    tap_action: dialog
+
+
+### Garage Door
+  - type: picture-entity
+    title: Garden 1
+    entity: camera.garage-door
+    camera_image: camera.garage-door
+    show_info: true
+    tap_action: dialog
+
+
+### Patio
   - type: picture-entity
     title: Patio
     entity: camera.patio
