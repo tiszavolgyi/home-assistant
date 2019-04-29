@@ -28,52 +28,55 @@
                 entity_id: script.avr_turn_vulome_down
             entity: script.avr_turn_vulome_down
 
-
-      - type: horizontal-stack
-        cards:
-          - type: entity-button
-            name: Living room PC
-            icon: mdi:youtube
-            tap_action:
-              action: call-service
-              service: switch.turn_on
-              service_data:
-                entity_id: switch.harman_kardon_intelstick
-            entity: switch.harman_kardon_intelstick
-          - type: entity-button
-            name: Steam Link
-            icon: mdi:desktop-tower-monitor
-            tap_action:
-              action: call-service
-              service: switch.turn_on
-              service_data:
-                entity_id: switch.harman_kardon_computer
-            entity: switch.harman_kardon_computer
-          - type: entity-button
-            name: Radio
-            icon: mdi:radio
-            tap_action:
-              action: call-service
-              service: switch.turn_on
-              service_data:
-                entity_id: switch.radio
-            entity: switch.radio
-          - type: entity-button
-            name: Internet Radio
-            icon: mdi:radio-tower
-            tap_action:
-              action: call-service
-              service: switch.turn_on
-              service_data:
-                entity_id: switch.internet_radio
-            entity: switch.internet_radio
+      #
+      # - type: horizontal-stack
+      #   cards:
+      #     - type: entity-button
+      #       name: Living room PC
+      #       icon: mdi:youtube
+      #       tap_action:
+      #         action: call-service
+      #         service: switch.turn_on
+      #         service_data:
+      #           entity_id: switch.harman_kardon_intelstick
+      #       entity: switch.harman_kardon_intelstick
+      #     - type: entity-button
+      #       name: Steam Link
+      #       icon: mdi:desktop-tower-monitor
+      #       tap_action:
+      #         action: call-service
+      #         service: switch.turn_on
+      #         service_data:
+      #           entity_id: switch.harman_kardon_computer
+      #       entity: switch.harman_kardon_computer
+      #     - type: entity-button
+      #       name: Radio
+      #       icon: mdi:radio
+      #       tap_action:
+      #         action: call-service
+      #         service: switch.turn_on
+      #         service_data:
+      #           entity_id: switch.radio
+      #       entity: switch.radio
+      #     - type: entity-button
+      #       name: Internet Radio
+      #       icon: mdi:radio-tower
+      #       tap_action:
+      #         action: call-service
+      #         service: switch.turn_on
+      #         service_data:
+      #           entity_id: switch.internet_radio
+      #       entity: switch.internet_radio
 
       - type: entities
-        title: Projector and Screen
         show_header_toggle: false
         entities:
           - switch.projector
           - switch.projector_screen
+          - switch.harman_kardon_intelstick
+          - switch.harman_kardon_computer
+          - switch.radio
+          - switch.internet_radio
 
 
       - type: horizontal-stack
