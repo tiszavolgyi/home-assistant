@@ -1,0 +1,73 @@
+###########################
+### Cameras Motion Sensors
+###########################
+
+
+### Garden 1
+  - platform: mqtt
+    name: "Camera Motion - Garden 1"
+    state_topic: blue_iris/binary_sensor/CamGarden1_motion/state
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: motion
+
+
+### Garden 2
+  - platform: mqtt
+    name: "Camera Motion - Garden 2"
+    state_topic: blue_iris/binary_sensor/CamGarden2_motion/state
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: motion
+
+
+### Garage
+  - platform: mqtt
+    name: "Camera Motion - Garage"
+    state_topic: blue_iris/binary_sensor/CamGarage_motion/state
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: motion
+
+
+###Garage Door
+  - platform: mqtt
+    name: "Camera Motion - Garage Door"
+    state_topic: blue_iris/binary_sensor/CamGarageDoor_motion/state
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: motion
+
+
+###Down Gate
+  - platform: mqtt
+    name: "Camera Motion - Down Gate"
+    state_topic: blue_iris/binary_sensor/CamDownGate_motion/state
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: motion
+
+
+###Up Gate
+  - platform: mqtt
+    name: "Camera Motion - Up Gate"
+    state_topic: blue_iris/binary_sensor/CamUpGate_motion/state
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: motion
+
+###Patio
+  - platform: mqtt
+    name: "Camera Motion - Patio"
+    state_topic: blue_iris/binary_sensor/CamPatio_motion/state
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: motion
+
+###Front Door
+  - platform: mqtt
+    name: "Camera Motion - Front Door"
+    state_topic: blue_iris/binary_sensor/CamFrontDoor_motion/state
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: motion

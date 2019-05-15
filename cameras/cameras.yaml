@@ -46,3 +46,28 @@
     username: !secret bi_username
     password: !secret bi_password
     authentication: basic
+
+
+###Up Gate
+  - platform: mjpeg
+    mjpeg_url: !secret camera_up_gate_url
+    name: Up Gate
+    username: !secret bi_username
+    password: !secret bi_password
+    authentication: basic
+
+###Patio
+  - platform: mjpeg
+    mjpeg_url: !secret camera_patio_url
+    name: Patio2
+    username: !secret bi_username
+    password: !secret bi_password
+    authentication: basic
+
+###Front Door
+  - platform: mjpeg
+    mjpeg_url: !secret camera_front_door_url
+    name: Front Door
+    username: !secret bi_username
+    password: !secret bi_password
+    authentication: basic

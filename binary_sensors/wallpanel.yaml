@@ -3,9 +3,9 @@
 ###https://github.com/WallPanel-Project/wallpanel-android
 ###########################################################
 
-- platform: mqtt
-  state_topic: "wallpanel/mywallpanel/sensor/motion"
-  name: "Motion"
-  payload_on: '{"value":true}'
-  payload_off: '{"value":false}'
-  device_class: motion
+  - platform: mqtt
+    state_topic: "wallpanel/mywallpanel/sensor/motion"
+    name: "Motion"
+    payload_on: '{"value":true}'
+    payload_off: '{"value":false}'
+    device_class: motion
