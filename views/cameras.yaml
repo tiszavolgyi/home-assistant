@@ -46,3 +46,11 @@
     camera_image: camera.patio
     show_info: true
     tap_action: dialog
+
+### Down Gate
+  - type: picture-entity
+    title: Down Gate
+    entity: camera.downgate
+    camera_image: camera.downgate
+    show_info: true
+    tap_action: dialog

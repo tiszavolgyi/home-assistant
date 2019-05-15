@@ -37,3 +37,12 @@
     username: !secret bi_username
     password: !secret bi_password
     authentication: basic
+
+
+###Down Gate
+  - platform: mjpeg
+    mjpeg_url: !secret camera_down_gate_url
+    name: Down Gate
+    username: !secret bi_username
+    password: !secret bi_password
+    authentication: basic
