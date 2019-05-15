@@ -208,7 +208,7 @@ panel_iframe:
 
 # Text to speech
 tts:
-  platform: google
+  platform: google_translate
   cache: true
   cache_dir: !secret tts_cache_dir
   time_memory: 43200
