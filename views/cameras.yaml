@@ -50,7 +50,7 @@
 ### Down Gate
   - type: picture-entity
     title: Down Gate
-    entity: camera.downgate
-    camera_image: camera.downgate
+    entity: camera.down_gate
+    camera_image: camera.down_gate
     show_info: true
     tap_action: dialog
