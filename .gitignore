@@ -21,3 +21,4 @@ entity_registry.yaml
 .cloud/*
 .idea/*
 .storage/*
+.august.conf
