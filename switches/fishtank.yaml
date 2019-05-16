@@ -63,3 +63,54 @@
     state_on: "ON"
     state_off: "OFF"
     retain: true
+
+
+### Power strip 2
+
+  - platform: mqtt
+    name: fishtank_uv_filter
+    icon: mdi:alpha-u-box
+    state_topic: "stat/fishtank2/POWER1"
+    command_topic: "cmnd/fishtank2/power1"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    retain: true
+
+  - platform: mqtt
+    name: fishtank_heater
+    icon: mdi:oil-temperature
+    state_topic: "stat/fishtank2/POWER2"
+    command_topic: "cmnd/fishtank2/power2"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    retain: true
+
+  - platform: mqtt
+    name: fishtank_color_light
+    icon: mdi:lightbulb
+    state_topic: "stat/fishtank2/POWER3"
+    command_topic: "cmnd/fishtank2/power3"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    retain: true
+
+  - platform: mqtt
+    name: fishtank_power_strip
+    icon: mdi:power-plug
+    state_topic: "stat/fishtank2/POWER4"
+    command_topic: "cmnd/fishtank2/power4"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    retain: true

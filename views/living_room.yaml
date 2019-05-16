@@ -151,8 +151,12 @@
   - type: picture-glance
     title: Fish Tank
     entities:
+      - switch.fishtank_power_strip
+      - switch.fishtank_heater
+      - switch.fishtank_uv_filter
       - switch.fishtank_filter
       - switch.fishtank_air
       - switch.fishtank_co2
       - switch.fishtank_light
+      - switch.fishtank_color_light
     image: /local/fish_tank.jpg
