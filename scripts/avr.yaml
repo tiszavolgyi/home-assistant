@@ -5,65 +5,74 @@
 
 avr_turn_off:
   sequence:
-    - service: !secret broadlink_rm_livingroom_packet
+    - service: broadlink.send
       data:
+        host: !secret broadlink_rm_livingroom_ip
         packet:
 #AVR button, but it is turning on the device if it is alreadz off          - "JgBYAAABKZITERQRFBETERQRExITERQ2ExEUERMRFBETNxM2EzYTERQRFBETERQRExITERQ1FDYTNhM2FDUUNhM2FDYTEhISEwAFwwABKEkUAAxKAAEoSRQADQU="
           - "JgBYAAABKJIUERMRFBEUERMRFBEUERM2ExEUERQRExEUNhM2FDUUERM2FDUUNRQ2EzYUERMRFDUUERQRExEUERQREzYUNRQREwAFwwABKUgUAAxKAAEoSRQADQU="
 
 avr_turn_on:
   sequence:
-    - service: !secret broadlink_rm_livingroom_packet
+    - service: broadlink.send
       data:
+        host: !secret broadlink_rm_livingroom_ip
         packet:
           - "JgBUAAABKI8XEBQRFBEUEBQRFBETERQ1FBEUERQQFBEUNRQ1FDYUEBQRFBETERQRFBAUERQ1FDUUNhQ1FDUUNRQ2FDUUERQQEwAC8AoAAsoAAShJEgANBQAAAAA="
 
 
 avr_avr_button:
   sequence:
-    - service: !secret broadlink_rm_livingroom_packet
+    - service: broadlink.send
       data:
+        host: !secret broadlink_rm_livingroom_ip
         packet:
           - "JgBYAAABKZITERQRFBETERQRExITERQ2ExEUERMRFBETNxM2EzYTERQRFBETERQRExITERQ1FDYTNhM2FDUUNhM2FDYTEhISEwAFwwABKEkUAAxKAAEoSRQADQU="
 
 avr_turn_on_cable:
   sequence:
-    - service: !secret broadlink_rm_livingroom_packet
+    - service: broadlink.send
       data:
+        host: !secret broadlink_rm_livingroom_ip
         packet:
           - "JgBYAAABKJIUERQQFBEUERQQFBEUERQ1FBAUERQRFBAUNRU1FDUUERQQFBEUERQQFDUVNBUQFDUVNRQ1FDUUNRUQFBEUNRQREgAFxAABKUgTAAxLAAEpSBMADQU="
 
 avr_turn_on_radio:
   sequence:
-    - service: !secret broadlink_rm_livingroom_packet
+    - service: broadlink.send
       data:
+        host: !secret broadlink_rm_livingroom_ip
         packet:
           - "JgBYAAABKZEUERQRExEUERQQFBEUERQ1FBETERQRFBAUNhQ1FDUUERQ1FBEUEBQRFBEUEBQRFDUUERQ1FDUUNRQ2FDUUNRQREgAFxQABKEgUAAxKAAEpSBQADQU="
 
 avr_turn_on_computer:
   sequence:
-    - service: !secret broadlink_rm_livingroom_packet
+    - service: broadlink.send
       data:
+        host: !secret broadlink_rm_livingroom_ip
         packet:
           - "JgBYAAABKJIUEBQRFBEUEBQRFBETERQ1FBEUERQQFBEUNRQ1FDYUEBQ2EzYUEBQRFDUUNhMRFDUUERQRFDUUNRQRFBETNhQQEwAFxAABKUgSAAxMAAEoSRMADQU="
 
 avr_turn_on_netradio:
   sequence:
-    - service: !secret broadlink_rm_livingroom_packet
+    - service: broadlink.send
       data:
+        host: !secret broadlink_rm_livingroom_ip
         packet:
           - "JgBYAAABKJIUERQQFBEUEBQRFBEUEBQ1FRAUERQQFBEUNRQ2FDUUEBQ2FBAUNRUQFDUUNhQQFDYUEBQ1FBEUNRQRFBEUNRQREgAFxAABKUgTAAxLAAEoSRIADQU="
 
 avr_turn_vulome_up:
   sequence:
-    - service: !secret broadlink_rm_livingroom_packet
+    - service: broadlink.send
       data:
+        host: !secret broadlink_rm_livingroom_ip
         packet:
           - "JgBQAAABKJIUERQRExEUERQQFBEUERQ1FBETERQRFBAUNRU1FDUUERQ1FDUUNRQRFBEUEBQ1FTUUERMRFBEUNRQ1FDUUERQREgAFxAABKUgTAA0FAAAAAAAAAAA="
 
 avr_turn_vulome_down:
   sequence:
-    - service: !secret broadlink_rm_livingroom_packet
+    - service: broadlink.send
       data:
+        host: !secret broadlink_rm_livingroom_ip
         packet:
           - "JgBQAAABKZIUEBQRFBETERQRFBETERQ1FBEUERMRFBEUNRQ1FDYUEBQRFBETERQ1FBEUERQ1FDUUNRQ2FDUUERM2FDUUERQQEwAFxAABKEkRAA0FAAAAAAAAAAA="
