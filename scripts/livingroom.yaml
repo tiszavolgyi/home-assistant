@@ -8,19 +8,16 @@ turn_on_tv:
   sequence:
     - service: input_boolean.turn_off
       entity_id: input_boolean.projector_on
-    - service: script.turn_on
-      entity_id:
-        - script.avr_turn_on_cable
+    - service: switch.turn_on
+      entity_id: switch.harman_kardon_intelstick
     - delay:
-        milliseconds: 200
-    - service: script.turn_on
-      entity_id:
-        - script.projector_turn_on
+        milliseconds: 100
+    - service: switch.turn_on
+      entity_id: switch.projector
     - delay:
-        milliseconds: 200
-    - service: script.turn_on
-      entity_id:
-        - script.projector_screen_down
+        milliseconds: 100
+    - service: switch.turn_on
+      entity_id: switch.projector_screen
     - delay:
         seconds: 30
     - service: switch.turn_off

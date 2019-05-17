@@ -75,14 +75,3 @@
     action:
       service: switch.turn_off
       entity_id: switch.fishtank_light
-
-### Turn back on things in case of power outage
-  #
-  # - alias: "Fish Tank Power Outage"
-  #   trigger:
-  #     - platform: state
-  #       entity_id: switch.03200121dc4f221b7eef_5
-  #       to: 'on'
-  #   action:
-  #       service: script.turn_on
-  #       entity_id: script.fish_power_outage
