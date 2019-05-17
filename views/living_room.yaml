@@ -110,28 +110,58 @@
     entities:
       - entity: scene.living_room_reading
         name: Reading
-        tap_action: call-service
-        service: scene.living_room_reading
+        tap_action:
+          action: call-service
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.living_room_reading
+        hold_action:
+          action: more-info
       - entity: scene.living_room_night
         name: Night Light
-        tap_action: call-service
-        service: scene.living_room_night
+        tap_action:
+          action: call-service
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.living_room_night
+        hold_action:
+          action: more-info
       - entity: scene.living_room_late_night
         name: Late Night
-        tap_action: call-service
-        service: scene.living_room_late_night
+        tap_action:
+          action: call-service
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.living_room_late_night
+        hold_action:
+          action: more-info
       - entity: scene.living_room_movie
         name: Movie Time
-        tap_action: call-service
-        service: scene.living_room_movie
+        tap_action:
+          action: call-service
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.living_room_movie
+        hold_action:
+          action: more-info
       - entity: scene.living_room_bright
         name: Bright Light
-        tap_action: call-service
-        service: scene.living_room_bright
+        tap_action:
+          action: call-service
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.living_room_bright
+        hold_action:
+          action: more-info
       - entity: scene.living_room_off
         name: Turn Off Lights
-        tap_action: call-service
-        service: scene.living_room_off
+        tap_action:
+          action: call-service
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.living_room_off
+        hold_action:
+          action: more-info
 
 
 ### Lights
