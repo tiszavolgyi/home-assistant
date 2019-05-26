@@ -39,15 +39,6 @@
     tap_action: dialog
 
 
-### Patio
-  - type: picture-entity
-    title: Patio
-    entity: camera.patio
-    camera_image: camera.patio
-    show_info: true
-    tap_action: dialog
-
-
 ### Down Gate
   - type: picture-entity
     title: Down Gate
@@ -69,8 +60,8 @@
 ###Patio
   - type: picture-entity
     title: Patio
-    entity: camera.patio2
-    camera_image: camera.patio2
+    entity: camera.patio
+    camera_image: camera.patio
     show_info: true
     tap_action: dialog
 

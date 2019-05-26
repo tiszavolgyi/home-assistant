@@ -59,7 +59,7 @@
 ###Patio
   - platform: mjpeg
     mjpeg_url: !secret camera_patio_url
-    name: Patio2
+    name: Patio
     username: !secret bi_username
     password: !secret bi_password
     authentication: basic
