@@ -185,16 +185,6 @@
     friendly_name: Nest Emergency Heat
   binary_sensor.living_room_thermostat_online:
     friendly_name: Nest Online
-  binary_sensor.patio_camera_motion_detected:
-    friendly_name: Patio Camera Motion Detected
-  binary_sensor.patio_camera_online:
-    friendly_name: Patio Camera Online
-  binary_sensor.patio_camera_person_detected:
-    friendly_name: Patio Camera Person Detected
-  binary_sensor.patio_camera_sound_detected:
-    friendly_name: Patio Camera Sound Detected
-  camera.patio:
-    friendly_name: Nest Camera
   sensor.living_room_thermostat_humidity:
     friendly_name: House Humidity
   sensor.living_room_thermostat_hvac_state:
