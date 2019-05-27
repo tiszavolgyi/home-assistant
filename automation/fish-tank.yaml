@@ -63,7 +63,7 @@
 
 ### Light Automations
 
-  - alias: "Turn on lights"
+  - alias: "Turn on Fishtank lights"
     initial_state: 'true'
     trigger:
       - platform: time
@@ -72,7 +72,7 @@
       service: switch.turn_on
       entity_id: switch.fishtank_light
 
-  - alias: "Turn off lights"
+  - alias: "Turn off Fishtank lights"
     initial_state: 'true'
     trigger:
       - platform: time

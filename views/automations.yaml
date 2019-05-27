@@ -1,3 +1,90 @@
 ###################################
 ### Lovelace Automations Cards
 ###################################
+
+
+#Sunset automations
+
+  - type: entities
+    title: Sunset Automations
+    show_header_toggle: true
+    entities:
+      - type: entities
+        entity: automation.turn_off_floor_lamp_at_9pm_sun_thur
+      - type: entities
+        entity: automation.turn_on_lights_after_sunset
+      - type: entities
+        entity: automation.turn_off_all_lights_at_10_30pm
+      - type: entities
+        entity: automation.turn_off_lights_when_nobody_at_home
+      - type: entities
+        entity: automation.turn_on_bedroom_lights_when_family_arriving_home_at_night
+      - type: entities
+        entity: automation.turn_on_lights_when_anyone_arriving_home_at_night
+
+
+#Media Automations
+
+  - type: entities
+    title: Media Automations
+    show_header_toggle: true
+    entities:
+      - type: entities
+        entity: automation.media_player_paused
+      - type: entities
+        entity: automation.media_player_playing
+      - type: entities
+        entity: automation.media_player_stoped
+
+
+# Alexa Routines
+
+  - type: entities
+    title: Alexa Routines
+    show_header_toggle: true
+    entities:
+      - type: entities
+        entity: input_boolean.projector_on
+      - type: entities
+        entity: input_boolean.projector_off
+      - type: entities
+        entity: input_boolean.good_night
+      - type: entities
+        entity: input_boolean.good_morning
+      - type: entities
+        entity: input_boolean.bedtime_soon
+
+
+# Bedroom Automations
+
+  - type: entities
+    title: Bedroom Automations
+    show_header_toggle: true
+    entities:
+      - type: entities
+        entity: automation.bedroom_air_humidity_high
+      - type: entities
+        entity: automation.bedroom_air_humidity_low
+      - type: entities
+        entity: automation.peter_bed_heating_at_night
+      - type: entities
+        entity: automation.vivi_bed_heating_at_night
+
+# Fishtank Automations
+
+  - type: entities
+    title: Fishtank Automations
+    show_header_toggle: true
+    entities:
+      - type: entities
+        entity: automation.turn_on_o2_daytime
+      - type: entities
+        entity: automation.turn_on_o2_night
+      - type: entities
+        entity: automation.turn_on_co2
+      - type: entities
+        entity: automation.turn_off_co2
+      - type: entities
+        entity: automation.turn_on_fishtank_lights
+      - type: entities
+        entity: automation.turn_off_fishtank_lights
