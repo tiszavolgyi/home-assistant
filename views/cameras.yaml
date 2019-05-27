@@ -4,13 +4,16 @@
 
 
 ### Garden 1
-  - type: picture-entity
+  # - type: picture-entity
+  #   title: Garden 1
+  #   entity: camera.garden1
+  #   camera_image: camera.garden1
+  #   show_info: true
+  #   tap_action: dialog
+  - type: picture-glance
     title: Garden 1
-    entity: camera.garden1
+    entities: []
     camera_image: camera.garden1
-    show_info: true
-    tap_action: dialog
-
 
 ### Garden 2
   - type: picture-entity
