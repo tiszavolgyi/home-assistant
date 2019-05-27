@@ -53,6 +53,7 @@
       entity_id: switch.fishtank_co2
 
   - alias: "Turn off CO2"
+    initial_state: 'true'
     trigger:
       - platform: time
         at: '18:30:00'
