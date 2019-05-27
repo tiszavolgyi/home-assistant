@@ -4,75 +4,55 @@
 
 
 ### Garden 1
-  # - type: picture-entity
-  #   title: Garden 1
-  #   entity: camera.garden1
-  #   camera_image: camera.garden1
-  #   show_info: true
-  #   tap_action: dialog
   - type: picture-glance
     title: Garden 1
     entities: []
     camera_image: camera.garden1
 
 ### Garden 2
-  - type: picture-entity
+  - type: picture-glance
     title: Garden 2
-    entity: camera.garden2
+    entities: []
     camera_image: camera.garden2
-    show_info: true
-    tap_action: dialog
 
 
 ### Garage
-  - type: picture-entity
-    title: Garden 1
-    entity: camera.garage
+  - type: picture-glance
+    title: Garage
+    entities: []
     camera_image: camera.garage
-    show_info: true
-    tap_action: dialog
 
 
 ### Garage Door
-  - type: picture-entity
-    title: Garden 1
-    entity: camera.garage_door
+  - type: picture-glance
+    title: Garage Door
+    entities: []
     camera_image: camera.garage_door
-    show_info: true
-    tap_action: dialog
 
 
 ### Down Gate
-  - type: picture-entity
+  - type: picture-glance
     title: Down Gate
-    entity: camera.down_gate
+    entities: []
     camera_image: camera.down_gate
-    show_info: true
-    tap_action: dialog
 
 
 ###Up Gate
-  - type: picture-entity
+  - type: picture-glance
     title: Up Gate
-    entity: camera.up_gate
+    entities: []
     camera_image: camera.up_gate
-    show_info: true
-    tap_action: dialog
 
 
 ###Patio
-  - type: picture-entity
+  - type: picture-glance
     title: Patio
-    entity: camera.patio
+    entities: []
     camera_image: camera.patio
-    show_info: true
-    tap_action: dialog
 
 
 ###Front Door
-  - type: picture-entity
+  - type: picture-glance
     title: Front Door
-    entity: camera.front_door
-    camera_image: camera.front_door
-    show_info: true
-    tap_action: dialog
+    entities: []
+    camera_image: camera.fron_door
