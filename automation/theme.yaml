@@ -5,7 +5,7 @@
 
 
   - alias: 'Set BlueNight theme for the night'
-    initial_state: True
+    initial_state: 'true'
     trigger:
       - platform: sun
         event: sunset
@@ -16,7 +16,7 @@
 
 
   - alias: 'Set default theme for the day'
-    initial_state: True
+    initial_state: 'true'
     trigger:
       - platform: sun
         event: sunrise

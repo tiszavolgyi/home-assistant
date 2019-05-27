@@ -6,6 +6,7 @@
 ### O2 Automations
 
   - alias: "Turn on O2 - Daytime"
+    initial_state: 'true'
     trigger:
       platform: time_pattern
       hours: '/1'
@@ -22,6 +23,7 @@
         entity_id: switch.fishtank_air
 
   - alias: "Turn on O2 - Night"
+    initial_state: 'true'
     trigger:
       platform: time_pattern
       hours: '/1'
@@ -42,6 +44,7 @@
 ### CO2 Automations
 
   - alias: "Turn on CO2"
+    initial_state: 'true'
     trigger:
       - platform: time
         at: '6:45:00'
@@ -61,6 +64,7 @@
 ### Light Automations
 
   - alias: "Turn on lights"
+    initial_state: 'true'
     trigger:
       - platform: time
         at: '8:20:00'
@@ -69,6 +73,7 @@
       entity_id: switch.fishtank_light
 
   - alias: "Turn off lights"
+    initial_state: 'true'
     trigger:
       - platform: time
         at: '18:00:00'

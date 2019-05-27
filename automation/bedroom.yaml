@@ -5,6 +5,7 @@
 
 # Turn on air humidifier if air humidity is low
   - alias: "Bedroom Air Humidity Low"
+    initial_state: 'true'
     trigger:
       - platform: numeric_state
         entity_id: sensor.broadlink_sensor_humidity
@@ -26,6 +27,7 @@
 
 # Turn off air humidifier if air humidity is high
   - alias: "Bedroom Air Humidity High"
+    initial_state: 'true'
     trigger:
       - platform: numeric_state
         entity_id: sensor.broadlink_sensor_humidity
@@ -43,6 +45,7 @@
 
 # Heat left bed side if occupied and bed becomes cold
   - alias: "Peter Bed Heating at Night"
+    initial_state: 'true'
     trigger:
       - platform: template
         value_template: '{% if (states.sensor.eight_left_bed_temperature.state|float) < (states.input_number.eight_left_bed_temperature_threshold.state|float)%}true{%endif%}'
@@ -56,6 +59,7 @@
 
 # Heat right bed side if occupied and bed becomes cold
   - alias: "Vivi Bed Heating at Night"
+    initial_state: 'true'
     trigger:
       - platform: template
         value_template: '{% if (states.sensor.eight_left_bed_temperature.state|float) < (states.input_number.eight_left_bed_temperature_threshold.state|float)%}true{%endif%}'

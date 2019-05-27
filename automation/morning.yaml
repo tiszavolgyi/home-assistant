@@ -4,6 +4,7 @@
 #########################################################
 
   - alias: "Good Morning Automation"
+    initial_state: 'true'
     trigger:
       - platform: state
         entity_id: input_boolean.good_morning
@@ -14,6 +15,7 @@
 
 
   - alias: "Sleeping Input Boolean"
+    initial_state: 'true'
     trigger:
       - platform: time
         at: '6:00:00'

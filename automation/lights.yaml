@@ -10,6 +10,7 @@
 ### Turn on lights after sunset
 
   - alias: "Turn on lights after sunset"
+    initial_state: 'true'
     trigger:
       - platform: sun
         event: sunset
@@ -25,19 +26,21 @@
 
 ### Turn off X-Mas lights at 1 am
 
-  - alias: "Turn off X-Mas lights at 1 am"
-    trigger:
-      - platform: time
-        at: '1:00:00'
-    action:
-      service: switch.turn_off
-      entity_id: switch.air_purifier
+  # - alias: "Turn off X-Mas lights at 1 am"
+  #   initial_state: 'true'
+  #   trigger:
+  #     - platform: time
+  #       at: '1:00:00'
+  #   action:
+  #     service: switch.turn_off
+  #     entity_id: switch.air_purifier
 
 
 
 ### Turn on patio light for the dog
 
   - alias: "Turn on patio light for the dog"
+    initial_state: 'true'
     trigger:
       - platform: sun
         event: sunset
@@ -49,6 +52,7 @@
 ### Turn on lights when anyone arriving home at night
 
   - alias: "Turn on lights when anyone arriving home at night"
+    initial_state: 'true'
     trigger:
       - platform: state
         entity_id: group.household
@@ -66,6 +70,7 @@
 ### Turn on bedroom lights when family arriving home at night
 
   - alias: "Turn on bedroom lights when family arriving home at night"
+    initial_state: 'true'
     trigger:
       - platform: state
         entity_id: group.family
@@ -83,6 +88,7 @@
 ### Turn OFF Living Room Floor Lamp after 9PM Sun-Thur
 
   - alias: "Turn off Floor lamp at 9PM Sun-Thur"
+    initial_state: 'true'
     trigger:
       - platform: time
         at: '21:00:00'
@@ -112,6 +118,7 @@
 ### Turn off lights when nobody at home
 
   - alias: "Turn off lights when nobody at home"
+    initial_state: 'true'
     trigger:
       - platform: state
         entity_id: group.household

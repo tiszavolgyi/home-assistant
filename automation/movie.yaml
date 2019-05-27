@@ -5,6 +5,7 @@
 #########################################################
 
   - alias: "Turn ON Livingroom Projector"
+    initial_state: 'true'
     trigger:
       - platform: state
         entity_id: input_boolean.projector_on
@@ -15,6 +16,7 @@
 
 
   - alias: "Turn OFF Livingroom Projector"
+    initial_state: 'true'
     trigger:
       - platform: state
         entity_id: input_boolean.projector_off
@@ -25,6 +27,7 @@
 
 
   - alias: "Media player playing"
+    initial_state: 'true'
     trigger:
       - platform: state
         entity_id:
@@ -40,6 +43,7 @@
         entity_id: script.media_player_playing
 
   - alias: "Media player paused"
+    initial_state: 'true'
     trigger:
       - platform: state
         entity_id:
@@ -55,6 +59,7 @@
         entity_id: script.media_player_stoped
 
   - alias: "Media player stoped"
+    initial_state: 'true'
     trigger:
       - platform: state
         entity_id:

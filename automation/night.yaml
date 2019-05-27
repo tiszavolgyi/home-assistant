@@ -7,6 +7,7 @@
 # Turn off various things when we are going to sleep
 
   - alias: "Good Night Turn Off Everything"
+    initial_state: 'true'
     trigger:
       - platform: state
         entity_id: input_boolean.good_night
@@ -20,6 +21,7 @@
 # to heat up the bed and do some other automations.
 
   - alias: "Bedtime soon"
+    initial_state: 'true'
     trigger:
       - platform: state
         entity_id: input_boolean.bedtime_soon
