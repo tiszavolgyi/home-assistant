@@ -44,7 +44,6 @@
     trigger:
       - platform: sun
         event: sunset
-        offset: "-00:1:00"
     action:
       service: scene.turn_on
       entity_id: scene.patio_night
@@ -110,7 +109,7 @@
     initial_state: 'off'
     trigger:
       - platform: time
-        at: '22:30:00'
+        at: '23:00:00'
     action:
         service: script.turn_on
         entity_id: script.good_night_off

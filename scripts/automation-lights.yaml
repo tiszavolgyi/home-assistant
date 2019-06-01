@@ -10,7 +10,12 @@ night_light:
       entity_id: scene.living_room_night
     - delay:
         milliseconds: 100
-    - service: scene.turn_on
+    - service_template: >
+        {% if is_state('group.family', 'home') %}
+          scene.turn_on
+        {% else %}
+          scene.turn_off
+        {% endif %}
       entity_id: scene.office_night
     - delay:
         milliseconds: 100
