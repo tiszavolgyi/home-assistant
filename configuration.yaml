@@ -53,6 +53,7 @@ logbook:
 
 #Recorded data purge intervall
 recorder:
+  db_url: !secret homeassistant_db
   purge_keep_days: 60
 
 #System health API
