@@ -57,6 +57,8 @@
       - type: section
         label: Vivi's bed settings
       - type: entities
+        entity: automation.vivi_bed_heating_at_night
+      - type: entities
         entity: input_number.eight_right_bed_temperature_threshold
       - type: entities
         entity: input_number.eight_right_heat_run_temp
@@ -88,6 +90,8 @@
         icon: mdi:radiator
       - type: section
         label: Peter's bed settings
+      - type: entities
+        entity: automation.peter_bed_heating_at_night
       - type: entities
         entity: input_number.eight_left_bed_temperature_threshold
       - type: entities
