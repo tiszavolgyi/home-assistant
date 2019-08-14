@@ -25,6 +25,9 @@ heat_peter_bed_for_30_min:
   sequence:
 #    - condition: template
 #      value_template: '{% if (states.sensor.eight_left_bed_temperature.state|float) < (states.input_number.eight_left_bed_temperature_threshold.state|float)%}true{%endif%}'
+    - condition: state
+      entity_id: automation.peter_bed_heating_at_night
+      state: 'on'
     - service: eight_sleep.heat_set
       data_template:
         entity_id: sensor.eight_left_bed_state
@@ -36,6 +39,9 @@ heat_vivi_bed_for_30_min:
   sequence:
 #    - condition: template
 #      value_template: '{% if (states.sensor.eight_right_bed_temperature.state|float) < (states.input_number.eight_right_bed_temperature_threshold.state|float)%}true{%endif%}'
+    - condition: state
+      entity_id: automation.vivi_bed_heating_at_night
+      state: 'on'
     - service: eight_sleep.heat_set
       data_template:
         entity_id: sensor.eight_right_bed_state
