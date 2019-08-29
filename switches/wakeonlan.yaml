@@ -5,7 +5,7 @@
   - platform: wake_on_lan
     mac_address: !secret tankmac
     name: Tank
-    broadcast_address: !secret tankip
+    broadcast_address: !secret broadcastip
 #    host: !secret tankip
 
   # - platform: wake_on_lan / NOT SUPPORTED
