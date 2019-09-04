@@ -96,6 +96,12 @@ hue:
       allow_unreachable: true
       allow_hue_groups: true
 
+# ZHA - Zigbee ZWave integration
+zha:
+  usb_path: /dev/ttyUSB0
+  database_path: /home/homeassistant/.homeassistant/zigbee.db
+
+
 # Eight Smart Mattress
 eight_sleep:
   username: !secret eightuser
