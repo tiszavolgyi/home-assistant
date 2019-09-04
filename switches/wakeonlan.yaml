@@ -2,14 +2,11 @@
 ### Wake On Lan Switch
 ################################
 
+
   - platform: wake_on_lan
     mac_address: !secret tankmac
     name: Tank
+    host: !secret tankip
     broadcast_address: !secret broadcastip
-#    host: !secret tankip
-
-  # - platform: wake_on_lan / NOT SUPPORTED
-  #   mac_address: !secret stickmac
-  #   name: TV Intel Stick
-  #   #host: !secret tankip
-  #   broadcast_address: !secret stickip
+    turn_off:
+      service: shell_command.tank_poweroff

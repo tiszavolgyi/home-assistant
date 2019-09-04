@@ -101,6 +101,9 @@ zha:
   usb_path: /dev/ttyUSB0
   database_path: /home/homeassistant/.homeassistant/zigbee.db
 
+zwave:
+  usb_path: /dev/ttyUSB1
+
 
 # Eight Smart Mattress
 eight_sleep:
@@ -208,7 +211,6 @@ panel_iframe:
     url: "https://app.rach.io"
     icon: mdi:water-pump
 
-
 # Text to speech
 tts:
   platform: google_translate
@@ -216,12 +218,16 @@ tts:
   cache_dir: !secret tts_cache_dir
   time_memory: 43200
 
+# Shell Commands
+shell_command:
+  tank_poweroff: !secret tank_poweroff
+
 input_boolean: !include_dir_merge_named input_boolean
 input_number: !include_dir_merge_named input_numbers
-switch: !include_dir_merge_list  switches
+switch: !include_dir_merge_list switches
 light: !include_dir_merge_list  mqttlights
-group: !include_dir_merge_named  groups
-scene: !include_dir_merge_list  scenes
+group: !include_dir_merge_named groups
+scene: !include_dir_merge_list scenes
 automation: !include_dir_merge_list automation
 sensor: !include_dir_merge_list sensors
 binary_sensor: !include_dir_merge_list binary_sensors
