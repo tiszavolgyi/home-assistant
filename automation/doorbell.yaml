@@ -1,0 +1,43 @@
+
+########################################################
+### Doorbell Automations
+#########################################################
+
+---
+# Turns off the doorbell chime after 10pm.
+# Turns it on again in the morning @ 7am.
+
+  - alias: "Doorbell off after 8pm"
+    trigger:
+      platform: time
+      at: "22:00:00"
+    action:
+      service: switch.turn_off
+      entity_id: switch.doorbell_chime_active
+
+  - alias: "Doorbell on after 7am"
+    trigger:
+      platform: time
+      at: "07:00:00"
+    action:
+      service: switch.turn_on
+      entity_id: switch.doorbell_chime_active
+
+
+
+
+---
+# This automation triggers when the doorbell button is pushed
+# and sends out a notification to our Phones.
+
+  - alias: "Doorbell Notifications"
+    trigger:
+      platform: state
+      entity_id: binary_sensor.doorbell_button
+      to: 'on'
+    action:
+      - service: mqtt.publish
+        data:
+          topic: 'zanzito/TiszaPhone/notification'
+          payload: Ding dong! Someone is at the door!
+          retain: true
