@@ -61,7 +61,12 @@ garden_lights:
     - light.spalight_1
     - light.spalight_2
 
-
+spa_lights:
+  name: Spa Lights
+  icon: mdi:lightbulb
+  entities:
+    - light.spalight_1
+    - light.spalight_2
 
 
 #####################

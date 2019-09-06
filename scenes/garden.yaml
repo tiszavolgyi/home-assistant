@@ -22,3 +22,12 @@
         state: off
       switch.garden2:
         state: off
+
+
+### Spa Light - Mood light
+
+  - name: Spa Time
+    entities:
+      light.spalight_2:
+        state: on
+        brightness: 50
