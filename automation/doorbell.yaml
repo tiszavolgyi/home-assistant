@@ -3,7 +3,7 @@
 ### Doorbell Automations
 #########################################################
 
----
+
 # Turns off the doorbell chime after 10pm.
 # Turns it on again in the morning @ 7am.
 
@@ -24,9 +24,6 @@
       entity_id: switch.doorbell_chime_active
 
 
-
-
----
 # This automation triggers when the doorbell button is pushed
 # and sends out a notification to our Phones.
 
