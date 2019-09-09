@@ -36,6 +36,6 @@
       - service: mqtt.publish
         data:
           topic: 'zanzito/TiszaPhone/notification'
-          payload: Ding dong! Someone is at the door!
+          payload: Someone is at the door!
           qos: 1
           retain: 0
