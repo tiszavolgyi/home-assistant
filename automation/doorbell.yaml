@@ -37,4 +37,5 @@
         data:
           topic: 'zanzito/TiszaPhone/notification'
           payload: Ding dong! Someone is at the door!
-          retain: false
+          qos: 1
+          retain: 0
