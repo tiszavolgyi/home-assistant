@@ -15,10 +15,20 @@
       - platform: sun
         event: sunset
         offset: "-00:1:00"
-    # condition:
-    #   - condition: state
-    #     entity_id: group.household
-    #     state: 'home'
+     condition:
+       - condition: state
+         entity_id: group.household
+         state: 'home'
+    action:
+      service: script.turn_on
+      entity_id: script.night_light
+
+  - alias: "Turn on lights for Pet Sitter"
+    initial_state: 'false'
+    trigger:
+      - platform: sun
+        event: sunset
+        offset: "-00:1:00"
     action:
       service: script.turn_on
       entity_id: script.night_light

@@ -14,6 +14,8 @@
       - type: entities
         entity: automation.turn_on_lights_after_sunset
       - type: entities
+        entity: automation.turn_on_lights_for_pet_sitter
+      - type: entities
         entity: automation.turn_off_all_lights_at_10_30pm
       - type: entities
         entity: automation.turn_off_lights_when_nobody_at_home
