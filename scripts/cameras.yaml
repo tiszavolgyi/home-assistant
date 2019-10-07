@@ -1,0 +1,36 @@
+#######################################
+### Scripts working with cameras
+#######################################
+
+
+### Making photos from the front door, used in doorbell automation
+
+front_door_gif:
+  alias: Front Door Gif
+  sequence:
+  - data:
+      entity_id: camera.front_door
+      filename: /home/homeassistant/.homeassistant/www/tmp/frontdoor1.png
+    service: camera.snapshot
+  - delay:
+      milliseconds: 100
+  - data:
+      entity_id: camera.front_door
+      filename: /home/homeassistant/.homeassistant/www/tmp/frontdoor2.png
+    service: camera.snapshot
+  - delay:
+      milliseconds: 100
+  - data:
+      entity_id: camera.front_door
+      filename: /home/homeassistant/.homeassistant/www/tmp/frontdoor3.png
+    service: camera.snapshot
+  - delay:
+      milliseconds: 100
+  - service: shell_command.snapshot_frontdoor_gif
+  - delay: '00:00:03'
+  - service: mqtt.publish
+    data:
+      topic: 'zanzito/TiszaPhone/photonotification'
+      payload: /home/homeassistant/.homeassistant/www/tmp/a.gif
+      qos: 1
+      retain: 0
