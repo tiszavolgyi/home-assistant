@@ -2,6 +2,7 @@ secrets.yaml
 deps/*
 www/peter.jpg
 www/vivi.jpg
+www/tmp/*
 tts/*
 .HA_VERSION
 .uuid
