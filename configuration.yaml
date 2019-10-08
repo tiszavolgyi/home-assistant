@@ -224,7 +224,7 @@ shell_command:
   tank_poweroff: !secret tank_poweroff
 
 shell_command:
-  snapshot_frontdoor_gif: /home/homeassistant/.homeassistant/bash-scripts/doorbellgif.sh
+  snapshot_frontdoor_gif: convert -loop 0 -delay 100 /home/homeassistant/.homeassistant/www/tmp/frontdoor1.png /home/homeassistant/.homeassistant/www/tmp/frontdoor2.png /home/homeassistant/.homeassistant/www/tmp/frontdoor3.png /home/homeassistant/.homeassistant/www/tmp/a.gif
 
 input_boolean: !include_dir_merge_named input_boolean
 input_number: !include_dir_merge_named input_numbers
