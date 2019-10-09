@@ -1,0 +1,15 @@
+###############################################################
+### Automations to handle the HTML5 Push Notification Buttons
+###############################################################
+
+
+  - alias: HTML5 push notification Open Door Button Clicked
+    trigger:
+      platform: event
+      event_type: html5_notification.clicked
+      event_data:
+       action: open_door
+    action:
+      service: lock.unlock
+      data:
+        entity_id: lock.front_door

@@ -47,3 +47,7 @@ front_door_gif:
           - 100
           - 400
         renotify: 0
+        timestamp: '%m%d%H%M'
+        actions:
+          - action: "open_door"
+            title: "Open the Door"
