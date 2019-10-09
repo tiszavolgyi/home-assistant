@@ -28,15 +28,22 @@ front_door_gif:
       milliseconds: 100
   - service: shell_command.snapshot_frontdoor_gif
   - delay: '00:00:03'
-  - service: mqtt.publish
+  # - service: mqtt.publish
+  #   data:
+  #     topic: 'zanzito/TiszaPhone/photonotification'
+  #     payload: /home/homeassistant/.homeassistant/www/tmp/a.gif
+  #     qos: 1
+  #     retain: 0
+  - service: notify.html5_push_notifications
     data:
-      topic: 'zanzito/TiszaPhone/photonotification'
-      payload: /home/homeassistant/.homeassistant/www/tmp/a.gif
-      qos: 1
-      retain: 0
-  - service: mqtt.publish
-    data:
-      topic: 'zanzito/TiszaPhone/notification'
-      payload: Someone is at the door
-      qos: 1
-      retain: 0
+      title: 'Front Door'
+      message: 'There is someone at the door!'
+      data:
+        tag: alert
+        url: 'https://ha.tiszavolgyi.com'
+        image: "https://ha.tiszavolgyi.com/local/tmp/a.gif"
+        vibrate:
+          - 300
+          - 100
+          - 400
+        renotify: 0
