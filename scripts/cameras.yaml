@@ -31,6 +31,12 @@ front_door_gif:
   - service: mqtt.publish
     data:
       topic: 'zanzito/TiszaPhone/photonotification'
-      payload: /home/homeassistant/.homeassistant/www/tmp/frontdoor1.png
+      payload: /home/homeassistant/.homeassistant/www/tmp/a.gif
+      qos: 1
+      retain: 0
+  - service: mqtt.publish
+    data:
+      topic: 'zanzito/TiszaPhone/notification'
+      payload: Someone is at the door
       qos: 1
       retain: 0
