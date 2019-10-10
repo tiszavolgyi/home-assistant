@@ -4,6 +4,8 @@
 
 
 ### Making photos from the front door, used in doorbell automation
+### I removed sending the gif, because animated images are not currently usable
+### with the Notifications API, and converted to a single frame...
 
 front_door_gif:
   alias: Front Door Gif
@@ -27,13 +29,7 @@ front_door_gif:
   - delay:
       milliseconds: 100
   - service: shell_command.snapshot_frontdoor_gif
-  - delay: '00:00:03'
-  # - service: mqtt.publish
-  #   data:
-  #     topic: 'zanzito/TiszaPhone/photonotification'
-  #     payload: /home/homeassistant/.homeassistant/www/tmp/a.gif
-  #     qos: 1
-  #     retain: 0
+  # - delay: '00:00:03'
   - service: notify.html5_push_notifications
     data:
       title: 'Front Door'
@@ -41,7 +37,7 @@ front_door_gif:
       data:
         tag: alert
         url: 'https://ha.tiszavolgyi.com'
-        image: "https://ha.tiszavolgyi.com/local/tmp/a.gif"
+#        image: "https://ha.tiszavolgyi.com/local/tmp/frontdoor1.png"
         vibrate:
           - 300
           - 100
