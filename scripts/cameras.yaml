@@ -37,7 +37,7 @@ front_door_gif:
       data:
         tag: alert
         url: 'https://ha.tiszavolgyi.com'
-#        image: "https://ha.tiszavolgyi.com/local/tmp/frontdoor1.png"
+        image: "https://ha.tiszavolgyi.com/local/tmp/frontdoor1.png"
         vibrate:
           - 300
           - 100
