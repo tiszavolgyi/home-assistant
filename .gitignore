@@ -6,6 +6,7 @@ www/tmp/*
 tts/*
 .HA_VERSION
 .uuid
+html5_push_registrations.conf
 backup_nest.conf
 home-assistant.db
 home-assistant_v2.db
