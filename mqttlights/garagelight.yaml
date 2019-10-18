@@ -1,0 +1,15 @@
+####################################
+### Garage MQTT Light Switch
+####################################
+
+  - platform: mqtt
+    name: garage-light
+    state_topic: "stat/garagelight/POWER"
+    command_topic: "cmnd/garagelight/POWER"
+    availability_topic: "tele/garagelight/LWT"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    payload_available: "Online"
+    payload_not_available: "Offline"
+    retain: false

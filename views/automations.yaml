@@ -6,7 +6,7 @@
 #Sunset automations
 
   - type: entities
-    title: Sunset Automations
+    title: Sunset and Light Automations
     show_header_toggle: true
     entities:
       - type: entities
@@ -25,6 +25,8 @@
         entity: automation.turn_on_lights_when_anyone_arriving_home_at_night
       - type: entities
         entity: automation.turn_on_patio_light_for_the_dog
+      - type: entities
+        entity: automation.turn_on_garage_lights_on_movement
 
 #Media Automations
 

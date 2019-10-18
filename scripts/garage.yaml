@@ -1,0 +1,12 @@
+#######################################
+### Scripts for morning automations
+#######################################
+
+garage_light:
+  sequence:
+    - service: light.turn_on
+      entity_id: light.garage_light
+    - delay:
+        minutes: 3
+    - service: light.turn_off
+      entity_id: light.garage_light
