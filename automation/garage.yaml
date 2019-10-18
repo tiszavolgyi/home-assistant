@@ -1,0 +1,19 @@
+##########################
+### Garage Automations
+##########################
+
+  - alias: "Turn on Garage lights on movement"
+    initial_state: 'true'
+    trigger:
+      - platform: state
+        entity_id:
+          - binary_sensor.camera_motion_garage
+        from: 'off'
+        to: 'on'
+    condition:
+      - condition: state
+        entity_id: sun.sun
+        state: 'below_horizon'
+    action:
+        service: script.turn_on
+        entity_id: script.garage_light
