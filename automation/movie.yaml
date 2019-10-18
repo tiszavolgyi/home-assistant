@@ -31,8 +31,7 @@
     trigger:
       - platform: state
         entity_id:
-          - media_player.plex_web_chrome
-          - media_player.plex_plex_8d7zd5x5gejd5uj4i2z53ssa
+          - media_player.plex_videoton
         to: 'playing'
     condition:
       - condition: state
@@ -47,8 +46,7 @@
     trigger:
       - platform: state
         entity_id:
-          - media_player.plex_web_chrome
-          - media_player.plex_plex_8d7zd5x5gejd5uj4i2z53ssa
+          -  media_player.plex_videoton
         to: 'paused'
     condition:
       - condition: state
@@ -63,8 +61,7 @@
     trigger:
       - platform: state
         entity_id:
-          - media_player.plex_web_chrome
-          - media_player.plex_plex_8d7zd5x5gejd5uj4i2z53ssa
+          -  media_player.plex_videoton
         to: 'idle'
     condition:
       - condition: state
