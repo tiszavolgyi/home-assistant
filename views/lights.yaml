@@ -124,7 +124,6 @@
       - type: entities
         entity: switch.garden2
 
-
 ### Kitchen
 
   - type: entities
@@ -135,3 +134,13 @@
         entity: light.kitchen
       - type: custom:slider-entity-row
         entity: light.hue_bloom_1
+
+
+### Bedroom
+
+  - type: entities
+    title: Garage Lights
+    show_header_toggle: true
+    entities:
+      - type: entities
+        entity: light.garage_light
