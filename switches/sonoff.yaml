@@ -24,3 +24,15 @@
     state_on: "ON"
     state_off: "OFF"
     retain: true
+
+
+  - platform: mqtt
+    name: garden3
+    command_topic: "cmnd/gardenlight/POWER3"
+    state_topic: "stat/gardenlight/POWER3"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    retain: true

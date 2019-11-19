@@ -10,7 +10,7 @@
         state: on
       switch.garden2:
         state: on
-      switch.air_purifier:
+      switch.garden3:
         state: on
 
 
@@ -22,7 +22,8 @@
         state: off
       switch.garden2:
         state: off
-
+      switch.garden3:
+        state: off
 
 ### Spa Light - Mood light
 

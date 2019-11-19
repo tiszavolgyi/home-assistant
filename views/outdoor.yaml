@@ -25,7 +25,8 @@
         entity: switch.garden1
       - type: entities
         entity: switch.garden2
-
+      - type: entities
+        entity: switch.garden3
 
 ### Sprinkler system
 

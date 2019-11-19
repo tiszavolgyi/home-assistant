@@ -58,6 +58,7 @@ garden_lights:
     - light.patio
     - switch.garden1
     - switch.garden2
+    - switch.garden3
     - light.spalight_1
     - light.spalight_2
 
