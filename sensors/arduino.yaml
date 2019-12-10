@@ -34,6 +34,7 @@
 - platform: mqtt
   state_topic: "arduino/temperature"
   name: "Growing Tent Temperature"
+  unit_of_measurement: '°C'
   device_class: temperature
   expire_after: 100
   force_update: true
@@ -44,6 +45,7 @@
 - platform: mqtt
   state_topic: "arduino/humidity"
   name: "Growing Tent Humidity"
+  unit_of_measurement: '%'
   device_class: humidity
   expire_after: 100
   force_update: true
