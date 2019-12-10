@@ -35,7 +35,6 @@
   state_topic: "arduino/temperature"
   name: "Growing Tent Temperature"
   device_class: temperature
-  icon: mdi:sprout
   expire_after: 100
   force_update: true
 
@@ -43,9 +42,8 @@
 # Growing Tent Humidity
 
 - platform: mqtt
-  state_topic: "arduino/Humidity"
+  state_topic: "arduino/humidity"
   name: "Growing Tent Humidity"
   device_class: humidity
-  icon: mdi:sprout
   expire_after: 100
   force_update: true
