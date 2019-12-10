@@ -10,42 +10,42 @@
 # Growing Tent Soil Moisture Plant 1
 
 - platform: mqtt
-    state_topic: "arduino/soil1"
-    name: "Plant 1 Soil Moisture"
-    unit_of_measurement: 'MU'
-    icon: mdi:sprout
-    expire_after: 100
-    force_update: true
+  state_topic: "arduino/soil1"
+  name: "Plant 1 Soil Moisture"
+  unit_of_measurement: 'MU'
+  icon: mdi:sprout
+  expire_after: 100
+  force_update: true
 
 
 # Growing Tent Soil Moisture Plant 2
 
 - platform: mqtt
-    state_topic: "arduino/soil2"
-    name: "Plant 2 Soil Moisture"
-    unit_of_measurement: 'MU'
-    icon: mdi:sprout
-    expire_after: 100
-    force_update: true
+  state_topic: "arduino/soil2"
+  name: "Plant 2 Soil Moisture"
+  unit_of_measurement: 'MU'
+  icon: mdi:sprout
+  expire_after: 100
+  force_update: true
 
 
 # Growing Tent Temperature
 
 - platform: mqtt
-    state_topic: "arduino/temperature"
-    name: "Growing Tent Temperature"
-    device_class: temperature
-    icon: mdi:sprout
-    expire_after: 100
-    force_update: true
+  state_topic: "arduino/temperature"
+  name: "Growing Tent Temperature"
+  device_class: temperature
+  icon: mdi:sprout
+  expire_after: 100
+  force_update: true
 
 
 # Growing Tent Humidity
 
 - platform: mqtt
-    state_topic: "arduino/Humidity"
-    name: "Growing Tent Humidity"
-    device_class: humidity
-    icon: mdi:sprout
-    expire_after: 100
-    force_update: true
+  state_topic: "arduino/Humidity"
+  name: "Growing Tent Humidity"
+  device_class: humidity
+  icon: mdi:sprout
+  expire_after: 100
+  force_update: true
