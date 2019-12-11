@@ -66,33 +66,47 @@
 
 ### Growing Tent Monitoring
 
-  - type: vertical-stack
-    cards:
-      - type: custom:mini-graph-card
-        name: Plant 1 Soil Moisture
-        entities:
-          - sensor.plant_1_soil_moisture
-        line_color: blue
-        line_width: 8
-        font_size: 75
-      - type: custom:mini-graph-card
-        name: Plant 2 Soil Moisture
-        entities:
-          - sensor.plant_2_soil_moisture
-        line_color: blue
-        line_width: 8
-        font_size: 75
-      - type: custom:mini-graph-card
-        name: Growing Tent Temperature
-        entities:
-          - sensor.growing_tent_temperature
-        line_color: '#ebb734'
-        line_width: 8
-        font_size: 75
-      - type: custom:mini-graph-card
-        name: Growing Tent Humidity
-        entities:
-          - sensor.growing_tent_humidity
-        line_color: '#34dbeb'
-        line_width: 8
-        font_size: 75
+  - type: entities
+    title: Growing Tent
+    show_header_toggle: false
+    entities:
+      - type: entities
+        entity: sensor.plant_1_soil_moisture
+      - type: entities
+        entity: sensor.plant_2_soil_moisture
+      - type: entities
+        entity: sensor.growing_tent_temperature
+      - type: entities
+        entity: sensor.growing_tent_humidity
+
+
+  # - type: vertical-stack
+  #   cards:
+  #     - type: custom:mini-graph-card
+  #       name: Plant 1 Soil Moisture
+  #       entities:
+  #         - sensor.plant_1_soil_moisture
+  #       line_color: blue
+  #       line_width: 8
+  #       font_size: 75
+  #     - type: custom:mini-graph-card
+  #       name: Plant 2 Soil Moisture
+  #       entities:
+  #         - sensor.plant_2_soil_moisture
+  #       line_color: blue
+  #       line_width: 8
+  #       font_size: 75
+  #     - type: custom:mini-graph-card
+  #       name: Growing Tent Temperature
+  #       entities:
+  #         - sensor.growing_tent_temperature
+  #       line_color: '#ebb734'
+  #       line_width: 8
+  #       font_size: 75
+  #     - type: custom:mini-graph-card
+  #       name: Growing Tent Humidity
+  #       entities:
+  #         - sensor.growing_tent_humidity
+  #       line_color: '#34dbeb'
+  #       line_width: 8
+  #       font_size: 75
