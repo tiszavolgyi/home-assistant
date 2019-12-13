@@ -72,6 +72,7 @@ august:
 wemo:
   static:
     - !secret wemo_mini_ip
+    - !secret wemo_mini2_ip
 
 # Home Assistant log
 logger:
