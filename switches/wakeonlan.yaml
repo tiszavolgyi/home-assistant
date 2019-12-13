@@ -4,7 +4,7 @@
 
 
   - platform: wake_on_lan
-    mac_address: !secret tankmac
+    mac: !secret tankmac
     name: Tank
     host: !secret tankip
     broadcast_address: !secret broadcastip

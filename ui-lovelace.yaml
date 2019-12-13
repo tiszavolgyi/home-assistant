@@ -10,7 +10,7 @@
 
 
 resources:
-  - url: /local/mini-graph-card-bundle.js?v=0.8.2
+  - url: /local/mini-graph-card-bundle.js?v=0.9.0
     type: module
   - url: /local/button-card.js
     type: module
