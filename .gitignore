@@ -24,6 +24,7 @@ entity_registry.yaml
 .idea/*
 .storage/*
 .august.conf
+.pip_progress
 zigbee.db
 OZW_Log.txt
 options.xml
