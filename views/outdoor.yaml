@@ -79,33 +79,6 @@
       - type: entities
         entity: sensor.growing_tent_humidity
 
-  - type: vertical-stack
-    cards:
-      - type: sensor
-        entity: sensor.plant_1_soil_moisture
-        name: Plant 1 Soil Moisture
-        detail: 2
-        graph: line
-        hours_to_show: 72
-      - type: sensor
-        entity: sensor.plant_2_soil_moisture
-        name: Plant 2 Soil Moisture
-        detail: 2
-        graph: line
-        hours_to_show: 72
-      - type: sensor
-        entity: sensor.growing_tent_temperature
-        name: Growing Tent Temperature
-        detail: 2
-        graph: line
-        hours_to_show: 72
-      - type: sensor
-        entity: sensor.growing_tent_humidity
-        name: Growing Tent Humidity
-        detail: 2
-        graph: line
-        hours_to_show: 72
-
 
 
   # - type: vertical-stack
