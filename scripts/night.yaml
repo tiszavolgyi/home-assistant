@@ -30,11 +30,7 @@ good_night_off:
     - service: scene.turn_on
       entity_id: scene.patio_off
     - delay:
-        milliseconds: 200
-    - service: scene.turn_on
-      entity_id: scene.kitchen_off
-    - delay:
-        milliseconds: 200
+        milliseconds: 100
     - service: scene.turn_on
       entity_id: scene.garden_off
     - delay:
@@ -51,10 +47,14 @@ good_night_off:
       entity_id: scene.kitchen_off
     - delay:
         milliseconds: 200
+    - service: switch.turn_off
+      entity_id: switch.air_purifier
+    - delay:
+        milliseconds: 100
     - service: scene.turn_on
       entity_id: scene.office_off
     - delay:
-        milliseconds: 200
+        milliseconds: 100
     - service: script.turn_on
       entity_id: script.heat_peter_bed_for_30_min
     - service: script.turn_on
