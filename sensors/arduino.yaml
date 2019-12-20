@@ -14,7 +14,7 @@
   name: "Plant 1 Soil Moisture"
   unit_of_measurement: 'MU'
   icon: mdi:sprout
-  expire_after: 100
+  expire_after: 300
   force_update: true
 
 
@@ -25,7 +25,7 @@
   name: "Plant 2 Soil Moisture"
   unit_of_measurement: 'MU'
   icon: mdi:sprout
-  expire_after: 100
+  expire_after: 300
   force_update: true
 
 
@@ -36,7 +36,7 @@
   name: "Growing Tent Temperature"
   unit_of_measurement: '°C'
   device_class: temperature
-  expire_after: 100
+  expire_after: 300
   force_update: true
 
 
@@ -47,5 +47,5 @@
   name: "Growing Tent Humidity"
   unit_of_measurement: '%'
   device_class: humidity
-  expire_after: 100
+  expire_after: 300
   force_update: true
