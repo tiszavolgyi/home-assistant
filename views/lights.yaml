@@ -125,6 +125,8 @@
         entity: switch.garden2
       - type: entities
         entity: switch.garden3
+
+
 ### Kitchen
 
   - type: entities
@@ -136,6 +138,16 @@
       - type: custom:slider-entity-row
         entity: light.hue_bloom_1
 
+### Office
+
+  - type: entities
+    title: Office Lights
+    show_header_toggle: true
+    entities:
+      - type: entities
+        entity: light.office
+
+
 
 ### Bedroom
 
@@ -145,3 +157,5 @@
     entities:
       - type: entities
         entity: light.garage_light
+      - type: entities
+        entity: switch.air_purifier
