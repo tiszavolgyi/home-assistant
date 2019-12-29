@@ -5,15 +5,30 @@
   - alias: "Turn on Garage lights on movement"
     initial_state: 'true'
     trigger:
-      - platform: state
-        entity_id:
-          - binary_sensor.camera_motion_garage
-        from: 'off'
-        to: 'on'
+      platform: state
+      entity_id: binary_sensor.camera_motion_garage
+      to: 'on'
+    condition:
+      condition: state
+      entity_id: sun.sun
+      state: 'below_horizon'
+    action:
+        service: light.turn_on
+        entity_id: light.garage_light
+
+
+  - alias: "Turn off Garage lights when no movement"
+    initial_state: 'true'
+    trigger:
+      platform: state
+      entity_id: binary_sensor.camera_motion_garage
+      to: 'off'
+      for:
+          minutes: 10
     condition:
       - condition: state
         entity_id: sun.sun
         state: 'below_horizon'
     action:
-        service: script.turn_on
-        entity_id: script.garage_light
+        service: light.turn_off
+        entity_id: light.garage_light
