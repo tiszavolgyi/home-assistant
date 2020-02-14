@@ -62,6 +62,9 @@ system_health:
 # Track the sun
 sun:
 
+# Mobil app
+mobile_app:
+
 #August lock
 august:
   login_method: phone
@@ -77,7 +80,6 @@ wemo:
 # Home Assistant log
 logger:
   default: warning
-
 
 # Weather
 weather:
