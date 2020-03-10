@@ -9,15 +9,15 @@
     title: Sunset and Light Automations
     show_header_toggle: true
     entities:
-      - entity: automation.turn_off_floor_lamp_at_9pm_sun_thur
-      - entity: automation.turn_on_lights_after_sunset
-      - entity: automation.turn_on_lights_for_pet_sitter
-      - entity: automation.turn_off_all_lights_at_10_30pm
-      - entity: automation.turn_off_lights_when_nobody_at_home
-      - entity: automation.turn_on_bedroom_lights_when_family_arriving_home_at_night
-      - entity: automation.turn_on_lights_when_anyone_arriving_home_at_night
-      - entity: automation.turn_on_patio_light_for_the_dog
-      - entity: automation.turn_on_garage_lights_on_movement
+      - automation.turn_off_floor_lamp_at_9pm_sun_thur
+      - automation.turn_on_lights_after_sunset
+      - automation.turn_on_lights_for_pet_sitter
+      - automation.turn_off_all_lights_at_10_30pm
+      - automation.turn_off_lights_when_nobody_at_home
+      - automation.turn_on_bedroom_lights_when_family_arriving_home_at_night
+      - automation.turn_on_lights_when_anyone_arriving_home_at_night
+      - automation.turn_on_patio_light_for_the_dog
+      - automation.turn_on_garage_lights_on_movement
 
 #Media Automations
 
@@ -25,9 +25,9 @@
     title: Media Automations
     show_header_toggle: true
     entities:
-      - entity: automation.media_player_paused
-      - entity: automation.media_player_playing
-      - entity: automation.media_player_stoped
+      - automation.media_player_paused
+      - automation.media_player_playing
+      - automation.media_player_stoped
 
 
 # Alexa Routines
@@ -36,11 +36,11 @@
     title: Alexa Routines
     show_header_toggle: true
     entities:
-      - entity: input_boolean.projector_on
-      - entity: input_boolean.projector_off
-      - entity: input_boolean.good_night
-      - entity: input_boolean.good_morning
-      - entity: input_boolean.bedtime_soon
+      - input_boolean.projector_on
+      - input_boolean.projector_off
+      - input_boolean.good_night
+      - input_boolean.good_morning
+      - input_boolean.bedtime_soon
 
 
 # Bedroom Automations
@@ -49,10 +49,10 @@
     title: Bedroom Automations
     show_header_toggle: true
     entities:
-      - entity: automation.bedroom_air_humidity_high
-      - entity: automation.bedroom_air_humidity_low
-      - entity: automation.peter_bed_heating_at_night
-      - entity: automation.vivi_bed_heating_at_night
+      - automation.bedroom_air_humidity_high
+      - automation.bedroom_air_humidity_low
+      - automation.peter_bed_heating_at_night
+      - automation.vivi_bed_heating_at_night
 
 # Fishtank Automations
 

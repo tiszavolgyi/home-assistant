@@ -17,14 +17,10 @@
             entity: light.bedroom_1
           - type: custom:slider-entity-row
             entity: light.bedroom_2
-          - type: entities
-            entity: scene.bedroom_night
-          - type: entities
-            entity: scene.bedroom_vivi_reading
-          - type: entities
-            entity: scene.bedroom_peter_reading
-          - type: entities
-            entity: scene.bedroom_romantic
+          - scene.bedroom_night
+          - scene.bedroom_vivi_reading
+          - scene.bedroom_peter_reading
+          - scene.bedroom_romantic
 
 
     ### Bed heating, sleep Status
@@ -33,10 +29,8 @@
         title: Bed heat and Sleep State
         show_header_toggle: false
         entities:
-          - type: entities
-            entity: input_boolean.sleeping
-          - type: entities
-            entity: script.heat_bed_for_1_hour
+          - input_boolean.sleeping
+          - script.heat_bed_for_1_hour
 
 
 
@@ -46,32 +40,22 @@
     title: Vivi's Bed
     show_header_toggle: false
     entities:
-      - type: entities
-        entity: binary_sensor.eight_right_bed_presence
-      - type: entities
-        entity: sensor.eight_right_bed_temperature
-      - type: entities
-        entity: script.heat_vivi_bed_for_30_min
+      - binary_sensor.eight_right_bed_presence
+      - sensor.eight_right_bed_temperature
+      - entity: script.heat_vivi_bed_for_30_min
         name: Heat Vivi's side for below settings
         icon: mdi:radiator
       - type: section
         label: Vivi's bed settings
-      - type: entities
-        entity: automation.vivi_bed_heating_at_night
-      - type: entities
-        entity: input_number.eight_right_bed_temperature_threshold
-      - type: entities
-        entity: input_number.eight_right_heat_run_temp
-      - type: entities
-        entity: input_number.eight_right_heat_run_minutes
+      - automation.vivi_bed_heating_at_night
+      - input_number.eight_right_bed_temperature_threshold
+      - input_number.eight_right_heat_run_temp
+      - input_number.eight_right_heat_run_minutes
       - type: section
         label: Vivi's bed statistics
-      - type: entities
-        entity: sensor.eight_right_sleep_session
-      - type: entities
-        entity: sensor.eight_right_previous_sleep_session
-      - type: entities
-        entity: sensor.eight_right_sleep_stage
+      - sensor.eight_right_sleep_session
+      - sensor.eight_right_previous_sleep_session
+      - sensor.eight_right_sleep_stage
 
 
 ### Peter Bed Settings and Stats
@@ -80,32 +64,22 @@
     title: Peter's Bed
     show_header_toggle: false
     entities:
-      - type: entities
-        entity: binary_sensor.eight_left_bed_presence
-      - type: entities
-        entity: sensor.eight_left_bed_temperature
-      - type: entities
-        entity: script.heat_peter_bed_for_30_min
+      - binary_sensor.eight_left_bed_presence
+      - sensor.eight_left_bed_temperature
+      - entity: script.heat_peter_bed_for_30_min
         name: Heat Peter's side for below settings
         icon: mdi:radiator
       - type: section
         label: Peter's bed settings
-      - type: entities
-        entity: automation.peter_bed_heating_at_night
-      - type: entities
-        entity: input_number.eight_left_bed_temperature_threshold
-      - type: entities
-        entity: input_number.eight_left_heat_run_temp
-      - type: entities
-        entity: input_number.eight_left_heat_run_minutes
+      - automation.peter_bed_heating_at_night
+      - input_number.eight_left_bed_temperature_threshold
+      - input_number.eight_left_heat_run_temp
+      - input_number.eight_left_heat_run_minutes
       - type: section
         label: Peter's bed statistics
-      - type: entities
-        entity: sensor.eight_left_sleep_session
-      - type: entities
-        entity: sensor.eight_left_previous_sleep_session
-      - type: entities
-        entity: sensor.eight_left_sleep_stage
+      - sensor.eight_left_sleep_session
+      - sensor.eight_left_previous_sleep_session
+      - sensor.eight_left_sleep_stage
 
 ### Bedroom Air Sensors
 
@@ -113,11 +87,7 @@
     title: Air Quality
     show_header_toggle: false
     entities:
-      - type: entities
-        entity: sensor.broadlink_sensor_air_quality
-      - type: entities
-        entity: sensor.broadlink_sensor_humidity
-      - type: entities
-        entity: sensor.broadlink_sensor_temperature
-      - type: entities
-        entity: switch.air_humidifier
+      - sensor.broadlink_sensor_air_quality
+      - sensor.broadlink_sensor_humidity
+      - sensor.broadlink_sensor_temperature
+      - switch.air_humidifier

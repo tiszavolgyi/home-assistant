@@ -21,12 +21,9 @@
         entity: light.spalight_2
       - type: section
         label: Garden
-      - type: entities
-        entity: switch.garden1
-      - type: entities
-        entity: switch.garden2
-      - type: entities
-        entity: switch.garden3
+      - switch.garden1
+      - switch.garden2
+      - switch.garden3
 
 ### Sprinkler system
 
@@ -36,32 +33,21 @@
     entities:
       - type: section
         label: Grass
-      - type: entities
-        entity: switch.zone_2_2
-      - type: entities
-        entity: switch.zone_3_2
-      - type: entities
-        entity: switch.zone_11_2
+      - switch.zone_2_2
+      - switch.zone_3_2
+      - switch.zone_11_2
       - type: section
         label: Plants - Dripping
-      - type: entities
-        entity: switch.zone_1_2
-      - type: entities
-        entity: switch.zone_4_2
-      - type: entities
-        entity: switch.zone_5_2
-      - type: entities
-        entity: switch.zone_9_2
-      - type: entities
-        entity: switch.zone_10_2
+      - switch.zone_1_2
+      - switch.zone_4_2
+      - switch.zone_5_2
+      - switch.zone_9_2
+      - switch.zone_10_2
       - type: section
         label: Front Yard - Dripping
-      - type: entities
-        entity: switch.zone_6_2
-      - type: entities
-        entity: switch.zone_7_2
-      - type: entities
-        entity: switch.zone_8_2
+      - switch.zone_6_2
+      - switch.zone_7_2
+      - switch.zone_8_2
 
 
 ### Growing Tent Monitoring
@@ -70,14 +56,10 @@
     title: Growing Tent
     show_header_toggle: false
     entities:
-      - type: entities
-        entity: sensor.plant_1_soil_moisture
-      - type: entities
-        entity: sensor.plant_2_soil_moisture
-      - type: entities
-        entity: sensor.growing_tent_temperature
-      - type: entities
-        entity: sensor.growing_tent_humidity
+      - sensor.plant_1_soil_moisture
+      - sensor.plant_2_soil_moisture
+      - sensor.growing_tent_temperature
+      - sensor.growing_tent_humidity
 
 
 

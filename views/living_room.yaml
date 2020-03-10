@@ -170,12 +170,9 @@
     title: Lights
     show_header_toggle: true
     entities:
-      - type: entities
-        entity: switch.living_room_lamp
-      - type: custom:slider-entity-row
-        entity: light.projector_screen
-      - type: custom:slider-entity-row
-        entity: light.stair_lights
+      - switch.living_room_lamp
+      - light.projector_screen
+      - light.stair_lights
 
 ### Fish Tank
   - type: picture-glance

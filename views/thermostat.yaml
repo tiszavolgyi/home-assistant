@@ -79,28 +79,28 @@
       - type: custom:mini-graph-card
         name: Living Room Temperature
         entities:
-          - sensor.living_room_thermostat_temperature
+          - entity: sensor.living_room_thermostat_temperature
         line_color: blue
         line_width: 8
         font_size: 75
       - type: custom:mini-graph-card
         name: Bedroom Temperature
         entities:
-          - sensor.broadlink_sensor_temperature
+          - entity: sensor.broadlink_sensor_temperature
         line_color: green
         line_width: 8
         font_size: 75
       - type: custom:mini-graph-card
         name: Vivi Bed Temperature
         entities:
-          - sensor.eight_right_bed_temperature
+          - entity: sensor.eight_right_bed_temperature
         line_color: '#fcc625'
         line_width: 8
         font_size: 75
       - type: custom:mini-graph-card
         name: Peter Bed Temperature
         entities:
-          - sensor.eight_left_bed_temperature
+          - entity: sensor.eight_left_bed_temperature
         line_color: '#fcc625'
         line_width: 8
         font_size: 75
@@ -113,14 +113,14 @@
       - type: custom:mini-graph-card
         name: Living Room Humidity
         entities:
-          - sensor.living_room_thermostat_humidity
+          - entity: sensor.living_room_thermostat_humidity
         line_color: blue
         line_width: 8
         font_size: 75
       - type: custom:mini-graph-card
         name: Bedroom Humidity
         entities:
-          - sensor.broadlink_sensor_humidity
+          - entity: sensor.broadlink_sensor_humidity
         line_color: green
         line_width: 8
         font_size: 75

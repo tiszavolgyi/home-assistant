@@ -11,12 +11,9 @@
         title: Living Room Lights
         show_header_toggle: true
         entities:
-          - type: entities
-            entity: switch.living_room_lamp
-          - type: custom:slider-entity-row
-            entity: light.projector_screen
-          - type: custom:slider-entity-row
-            entity: light.stair_lights
+          - switch.living_room_lamp
+          - light.projector_screen
+          - light.stair_lights
           - type: section
             label: Scenes
 
@@ -87,18 +84,12 @@
     title: Bedroom Lights
     show_header_toggle: true
     entities:
-      - type: custom:slider-entity-row
-        entity: light.bedroom_1
-      - type: custom:slider-entity-row
-        entity: light.bedroom_2
-      - type: entities
-        entity: scene.bedroom_night
-      - type: entities
-        entity: scene.bedroom_vivi_reading
-      - type: entities
-        entity: scene.bedroom_peter_reading
-      - type: entities
-        entity: scene.bedroom_romantic
+      - light.bedroom_1
+      - light.bedroom_2
+      -  scene.bedroom_night
+      - scene.bedroom_vivi_reading
+      - scene.bedroom_peter_reading
+      - scene.bedroom_romantic
 
 
 ### Garden
@@ -119,12 +110,9 @@
         entity: light.spalight_2
       - type: section
         label: Garden
-      - type: entities
-        entity: switch.garden1
-      - type: entities
-        entity: switch.garden2
-      - type: entities
-        entity: switch.garden3
+      - switch.garden1
+      - switch.garden2
+      - switch.garden3
 
 
 ### Kitchen
@@ -144,8 +132,7 @@
     title: Office Lights
     show_header_toggle: true
     entities:
-      - type: entities
-        entity: light.office
+      - light.office
 
 
 
@@ -155,7 +142,5 @@
     title: Garage Lights
     show_header_toggle: true
     entities:
-      - type: entities
-        entity: light.garage_light
-      - type: entities
-        entity: switch.air_purifier
+      - light.garage_light
+      - switch.air_purifier
