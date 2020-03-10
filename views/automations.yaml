@@ -25,12 +25,9 @@
     title: Media Automations
     show_header_toggle: true
     entities:
-      - type: entities
-        entity: automation.media_player_paused
-      - type: entities
-        entity: automation.media_player_playing
-      - type: entities
-        entity: automation.media_player_stoped
+      - entity: automation.media_player_paused
+      - entity: automation.media_player_playing
+      - entity: automation.media_player_stoped
 
 
 # Alexa Routines
@@ -39,16 +36,11 @@
     title: Alexa Routines
     show_header_toggle: true
     entities:
-      - type: entities
-        entity: input_boolean.projector_on
-      - type: entities
-        entity: input_boolean.projector_off
-      - type: entities
-        entity: input_boolean.good_night
-      - type: entities
-        entity: input_boolean.good_morning
-      - type: entities
-        entity: input_boolean.bedtime_soon
+      - entity: input_boolean.projector_on
+      - entity: input_boolean.projector_off
+      - entity: input_boolean.good_night
+      - entity: input_boolean.good_morning
+      - entity: input_boolean.bedtime_soon
 
 
 # Bedroom Automations
@@ -57,14 +49,10 @@
     title: Bedroom Automations
     show_header_toggle: true
     entities:
-      - type: entities
-        entity: automation.bedroom_air_humidity_high
-      - type: entities
-        entity: automation.bedroom_air_humidity_low
-      - type: entities
-        entity: automation.peter_bed_heating_at_night
-      - type: entities
-        entity: automation.vivi_bed_heating_at_night
+      - entity: automation.bedroom_air_humidity_high
+      - entity: automation.bedroom_air_humidity_low
+      - entity: automation.peter_bed_heating_at_night
+      - entity: automation.vivi_bed_heating_at_night
 
 # Fishtank Automations
 
@@ -72,15 +60,9 @@
     title: Fishtank Automations
     show_header_toggle: true
     entities:
-      - type: entities
-        entity: automation.turn_on_o2_daytime
-      - type: entities
-        entity: automation.turn_on_o2_night
-      - type: entities
-        entity: automation.turn_on_co2
-      - type: entities
-        entity: automation.turn_off_co2
-      - type: entities
-        entity: automation.turn_on_fishtank_lights
-      - type: entities
-        entity: automation.turn_off_fishtank_lights
+      - automation.turn_on_o2_daytime
+      - automation.turn_on_o2_night
+      - automation.turn_on_co2
+      - automation.turn_off_co2
+      - automation.turn_on_fishtank_lights
+      - automation.turn_off_fishtank_lights
