@@ -9,24 +9,15 @@
     title: Sunset and Light Automations
     show_header_toggle: true
     entities:
-      - type: entities
-        entity: automation.turn_off_floor_lamp_at_9pm_sun_thur
-      - type: entities
-        entity: automation.turn_on_lights_after_sunset
-      - type: entities
-        entity: automation.turn_on_lights_for_pet_sitter
-      - type: entities
-        entity: automation.turn_off_all_lights_at_10_30pm
-      - type: entities
-        entity: automation.turn_off_lights_when_nobody_at_home
-      - type: entities
-        entity: automation.turn_on_bedroom_lights_when_family_arriving_home_at_night
-      - type: entities
-        entity: automation.turn_on_lights_when_anyone_arriving_home_at_night
-      - type: entities
-        entity: automation.turn_on_patio_light_for_the_dog
-      - type: entities
-        entity: automation.turn_on_garage_lights_on_movement
+      - entity: automation.turn_off_floor_lamp_at_9pm_sun_thur
+      - entity: automation.turn_on_lights_after_sunset
+      - entity: automation.turn_on_lights_for_pet_sitter
+      - entity: automation.turn_off_all_lights_at_10_30pm
+      - entity: automation.turn_off_lights_when_nobody_at_home
+      - entity: automation.turn_on_bedroom_lights_when_family_arriving_home_at_night
+      - entity: automation.turn_on_lights_when_anyone_arriving_home_at_night
+      - entity: automation.turn_on_patio_light_for_the_dog
+      - entity: automation.turn_on_garage_lights_on_movement
 
 #Media Automations
 
