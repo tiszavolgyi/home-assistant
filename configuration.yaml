@@ -166,25 +166,23 @@ device_tracker:
 
 
 zone:
-  name: Home
-  latitude: !secret latitude
-  longitude: !secret longitude
-  radius: 300
-  icon: mdi:home
+  - name: Home
+    latitude: !secret latitude
+    longitude: !secret longitude
+    radius: 300
+    icon: mdi:home
 
-zone 2:
-  name: Chopra
-  latitude: !secret worklatitude
-  longitude: !secret worklongitude
-  radius: 500
-  icon: mdi:auto-fix
+  - name: Chopra
+    latitude: !secret worklatitude
+    longitude: !secret worklongitude
+    radius: 500
+    icon: mdi:auto-fix
 
-zone 3:
-  name: Dog Park
-  latitude: !secret dogparklatitude
-  longitude: !secret dogparklongitude
-  radius: 500
-  icon: mdi:bone
+  - name: Dog Park
+    latitude: !secret dogparklatitude
+    longitude: !secret dogparklongitude
+    radius: 500
+    icon: mdi:bone
 
 # Monitor the proximity of devices to a particular zone and the direction of travel.
 
