@@ -129,38 +129,32 @@
 
 ### Internet speed
 
-
-  - type: vertical-stack
+  - type: horizontal-stack
+    title: Internet Connection
     cards:
-      - type: markdown
-        content: >
-          ## Internet Connection
-      - type: horizontal-stack
-        title: Internet Connection
-        cards:
-          - type: custom:mini-graph-card
-            name: Download
-            entities:
-              - entity: sensor.speedtest_download
-            line_color: blue
-            line_width: 8
-            font_size: 75
-          - type: custom:mini-graph-card
-            name: Upload
-            entities:
-              - entity: sensor.speedtest_upload
-            line_color: green
-            line_width: 8
-            font_size: 75
-          - type: custom:mini-graph-card
-            name: Ping
-            entities:
-              - entity: sensor.speedtest_ping
-            line_color: '#fcc625'
-            line_width: 8
-            font_size: 75
-            show:
-              graph: bar
+      - type: custom:mini-graph-card
+        name: Download
+        entities:
+          - sensor.speedtest_download
+        line_color: blue
+        line_width: 8
+        font_size: 75
+      - type: custom:mini-graph-card
+        name: Upload
+        entities:
+          - sensor.speedtest_upload
+        line_color: green
+        line_width: 8
+        font_size: 75
+      - type: custom:mini-graph-card
+        name: Ping
+        entities:
+          - sensor.speedtest_ping
+        line_color: '#fcc625'
+        line_width: 8
+        font_size: 75
+        show:
+          graph: bar
 
 
 ### Battery Status
