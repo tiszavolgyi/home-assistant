@@ -194,3 +194,63 @@
       - !secret peterdevice
       - !secret vividevice
       - zone.home
+
+
+
+
+### Corona Virus Report
+
+  - type: horizontal-stack
+    title: COVID-19 Status USA
+    cards:
+      - type: custom:mini-graph-card
+        name: Cases
+        entities:
+          - sensor.us_coronavirus_confirmed
+        line_color: blue
+        line_width: 8
+        font_size: 75
+      - type: custom:mini-graph-card
+        name: Current
+        entities:
+          - sensor.us_coronavirus_current
+        line_color: green
+        line_width: 8
+        font_size: 75
+      - type: custom:mini-graph-card
+        name: Deaths
+        entities:
+          - sensor.us_coronavirus_deaths
+        line_color: '#fcc625'
+        line_width: 8
+        font_size: 75
+        show:
+          graph: bar
+
+
+  - type: horizontal-stack
+    title: COVID-19 Status Hungary
+    cards:
+      - type: custom:mini-graph-card
+        name: Cases
+        entities:
+          - sensor.hungary_coronavirus_confirmed
+        line_color: blue
+        line_width: 8
+        font_size: 75
+      - type: custom:mini-graph-card
+        name: Current
+        entities:
+          - sensor.hungary_coronavirus_current
+        line_color: green
+        line_width: 8
+        font_size: 75
+      - type: custom:mini-graph-card
+        name: Deaths
+        entities:
+          - sensor.hungary_coronavirus_deaths
+        line_color: '#fcc625'
+        line_width: 8
+        font_size: 75
+        show:
+          graph: bar
