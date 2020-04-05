@@ -201,6 +201,14 @@ vacuum:
     host: !secret xiaomi_vacuum_ip
     token: !secret xiaomi_vacuum_token
 
+#SolarEdge Solar Panel Monitoring
+
+solaredge:
+  api_key: !secret solaredge-api
+  site_id: !secret solaredge-siteid
+  name: Solar Panels
+
+
 # #Jinvoo Smart devices
 #
 # tuya:
