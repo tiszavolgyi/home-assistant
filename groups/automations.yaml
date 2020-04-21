@@ -4,7 +4,6 @@
 
 
 sunset_automations:
-  view: no
   name: Sunset Automations
   icon: mdi:home-automation
   entities:
@@ -16,7 +15,6 @@ sunset_automations:
     - automation.turn_on_lights_when_anyone_arriving_home_at_night
 
 media_automations:
-  view: no
   name: Movie Time Automations
   icon: mdi:home-automation
   entities:
@@ -25,7 +23,6 @@ media_automations:
     - automation.media_player_stoped
 
 alexa_routines:
-  view: no
   name: Alexa Routine Switches
   icon: mdi:home-automation
   entities:
@@ -37,7 +34,6 @@ alexa_routines:
 
 
 bedroom_automations:
-  view: no
   name: Bedroom Automations
   icon: mdi:hotel
   entities:

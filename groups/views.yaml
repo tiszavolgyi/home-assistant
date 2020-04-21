@@ -3,7 +3,6 @@
 ##############
 
 default_view:
-  view: yes
   icon: mdi:home-assistant
   entities:
     #- group.uscis_status
@@ -19,7 +18,6 @@ default_view:
     - vacuum.xiaomi_vacuum_cleaner
 
 Living Room:
-  view: yes
   #control: hidden
   entities:
     - group.livingroom_avr
@@ -29,7 +27,6 @@ Living Room:
     - group.fish_tank_power_strip
 
 Bedroom:
-  view: yes
   #control: hidden
   entities:
     - group.bedroom_lights
@@ -40,14 +37,12 @@ Bedroom:
 
 
 Office:
-  view: yes
   #control: hidden
   entities:
     - group.office_lights
 
 
 Outdoor:
-  view: yes
   entities:
     - group.garden_lights
     - group.zones_front
@@ -57,7 +52,6 @@ Outdoor:
 
 
 all_lights_control:
-    view: yes
     icon: mdi:lightbulb
     #control: hidden
     entities:
@@ -66,14 +60,12 @@ all_lights_control:
       - group.bedroom_lights
 
 cameras:
-    view: yes
     icon: mdi:video
     entities:
       - camera.patio
       - group.patio_camera
 
 thermostate_view:
-    view: yes
     icon: mdi:thermometer
     entities:
       - group.thermostate
@@ -83,31 +75,9 @@ thermostate_view:
 
 
 automations_view:
-    view: yes
     icon: mdi:home-automation
     entities:
       - group.sunset_automations
       - group.media_automations
       - group.alexa_routines
       - group.bedroom_automations
-
-
-# upstaires_master:
-#   view: no
-#   name: Upstairs Master
-#   entities:
-#     - media_player.plex_13a54f98a5523bde_com_plexapp_android
-#
-# kitchen:
-#   view: yes
-#   name: Kitchen
-#   entities:
-#     - light.counter_top_1
-#     - light.counter_top_2
-#
-# bedroom:
-#   view: yes
-#   name: Bedroom
-#   entities:
-#     - light.bedroom_1
-#     - light.bedroom_2

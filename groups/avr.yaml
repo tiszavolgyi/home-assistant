@@ -3,7 +3,6 @@
 #######################
 
 livingroom_avr:
-  view: no
   name: Livingroom Audio Video
   icon: mdi:youtube-tv
   entities:

@@ -3,7 +3,6 @@
 ######################
 
 fish_tank_power_strip:
-  view: no
   name: Fish Tank Power Strip
   icon: mdi:power-plug
   entities:

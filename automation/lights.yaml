@@ -34,7 +34,7 @@
       entity_id: script.night_light
 
 
-### Turn on X-Mas lights at 1 am
+### Turn off X-Mas lights at 1 am
 
   - alias: "Turn off X-Mas lights at 1 am"
     initial_state: 'true'

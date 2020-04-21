@@ -7,7 +7,6 @@
 ######################
 
 counter_top_lights:
-  view: no
   name: Counter Top Lights
   icon: mdi:lightbulb
   entities:

@@ -5,7 +5,6 @@
 #Bedroom sensors
 
 bedroom_air_sensors:
-  view: no
   name: Bedroom Air Sensors
   icon: mdi:weather-snowy-rainy
   entities:
@@ -18,7 +17,6 @@ bedroom_air_sensors:
 
 
 vivi_bed_sensors:
-  view: no
   name: Vivi Bed Sensors
   icon: mdi:hotel
   entities:
@@ -31,7 +29,6 @@ vivi_bed_sensors:
 
 
 peter_bed_sensors:
-  view: no
   name: Peter Bed Sensors
   icon: mdi:hotel
   entities:
@@ -43,7 +40,6 @@ peter_bed_sensors:
     - binary_sensor.eight_left_bed_presence
 
 masterbedroom_bed:
-  view: no
   name: Bed
   icon: mdi:hotel
   entities:
@@ -61,7 +57,6 @@ masterbedroom_bed:
     - binary_sensor.eight_left_bed_presence
 
 peter_eight_settings:
-  view: no
   name: "Peter Bed Settings"
   entities:
     - binary_sensor.eight_left_bed_presence
@@ -72,7 +67,6 @@ peter_eight_settings:
 
 
 vivi_eight_settings:
-  view: no
   name: "Vivi Bed Settings"
   entities:
     - binary_sensor.eight_right_bed_presence

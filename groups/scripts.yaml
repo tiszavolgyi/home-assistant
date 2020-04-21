@@ -4,7 +4,6 @@
 #
 #
 # audio_video_remotes:
-#   view: no
 #   name: Audio-Video Remotes
 #   icon: mdi:video
 #   entities:
