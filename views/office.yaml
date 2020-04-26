@@ -26,57 +26,67 @@
     entity: switch.tank
 
 
-  - type: gauge
-    entity: sensor.canon_mx920_series_black_bk
-    min: 0
-    max: 100
-    name: Printer Black Ink
-    unit: '%'
-    severity:
-      green: 25
-      yellow: 15
-      red: 0
+### Printer Ink Gauges
 
-  - type: gauge
-    entity: sensor.canon_mx920_series_black_pgbk
-    min: 0
-    max: 100
-    name: Printer Black Ink
-    unit: '%'
-    severity:
-      green: 25
-      yellow: 15
-      red: 0
+  - type: vertical-stack
+    title: Printer Ink Status
+    cards:
+      - type: horizontal-stack
+        cards:
+          - type: gauge
+            entity: sensor.canon_mx920_series_black_bk
+            min: 0
+            max: 100
+            name: Black Ink
+            unit: '%'
+            severity:
+              green: 25
+              yellow: 15
+              red: 0
 
-  - type: gauge
-    entity: sensor.canon_mx920_series_cyan
-    min: 0
-    max: 100
-    name: Printer Double Black Ink
-    unit: '%'
-    severity:
-      green: 25
-      yellow: 15
-      red: 0
+          - type: gauge
+            entity: sensor.canon_mx920_series_black_pgbk
+            min: 0
+            max: 100
+            name: Black Ink Double
+            unit: '%'
+            severity:
+              green: 25
+              yellow: 15
+              red: 0
 
-  - type: gauge
-    entity: sensor.canon_mx920_series_magenta
-    min: 0
-    max: 100
-    name: Printer Magenta Ink
-    unit: '%'
-    severity:
-      green: 25
-      yellow: 15
-      red: 0
+      - type: horizontal-stack
+        title: Internet Connection
+        cards:
+          - type: gauge
+            entity: sensor.canon_mx920_series_cyan
+            min: 0
+            max: 100
+            name: Cyan Ink
+            unit: '%'
+            severity:
+              green: 25
+              yellow: 15
+              red: 0
 
-  - type: gauge
-    entity: sensor.canon_mx920_series_yellow
-    min: 0
-    max: 100
-    name: Printer Yellow Ink
-    unit: '%'
-    severity:
-      green: 25
-      yellow: 15
-      red: 0
+          - type: gauge
+            entity: sensor.canon_mx920_series_magenta
+            min: 0
+            max: 100
+            name: Magenta Ink
+            unit: '%'
+            severity:
+              green: 25
+              yellow: 15
+              red: 0
+
+          - type: gauge
+            entity: sensor.canon_mx920_series_yellow
+            min: 0
+            max: 100
+            name: Yellow Ink
+            unit: '%'
+            severity:
+              green: 25
+              yellow: 15
+              red: 0
