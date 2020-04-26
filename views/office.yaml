@@ -56,7 +56,6 @@
               red: 0
 
       - type: horizontal-stack
-        title: Internet Connection
         cards:
           - type: gauge
             entity: sensor.canon_mx920_series_cyan
