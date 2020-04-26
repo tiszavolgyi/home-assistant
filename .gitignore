@@ -31,3 +31,4 @@ options.xml
 pyozw.sqlite
 zwcfg_0xc463fe55.xml
 zwscene.xml
+tensorflow/*

@@ -150,6 +150,17 @@ notify:
     vapid_email: !secret vapid_email
 
 
+
+# Tensorflow
+image_processing:
+  - platform: tensorflow
+    source:
+      - entity_id: camera.front_door
+      - entity_id: camera.garage_door
+    model:
+      graph: /home/homeassistant/.homeassistant/tensorflow/frozen_inference_graph.pb
+
+
 #Cloud Integration
 cloud:
   !include alexa/alexa_cloud.yaml
