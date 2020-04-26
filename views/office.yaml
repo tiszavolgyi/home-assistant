@@ -24,3 +24,59 @@
     #   action: call-service
     #   service: switch.turn_on
     entity: switch.tank
+
+
+  - type: gauge
+    entity: sensor.canon_mx920_series_black_bk
+    min: 0
+    max: 100
+    name: Printer Black Ink
+    unit: '%'
+    severity:
+      green: 25
+      yellow: 15
+      red: 0
+
+  - type: gauge
+    entity: sensor.canon_mx920_series_black_pgbk
+    min: 0
+    max: 100
+    name: Printer Black Ink
+    unit: '%'
+    severity:
+      green: 25
+      yellow: 15
+      red: 0
+
+  - type: gauge
+    entity: sensor.canon_mx920_series_cyan
+    min: 0
+    max: 100
+    name: Printer Double Black Ink
+    unit: '%'
+    severity:
+      green: 25
+      yellow: 15
+      red: 0
+
+  - type: gauge
+    entity: sensor.canon_mx920_series_magenta
+    min: 0
+    max: 100
+    name: Printer Magenta Ink
+    unit: '%'
+    severity:
+      green: 25
+      yellow: 15
+      red: 0
+
+  - type: gauge
+    entity: sensor.canon_mx920_series_yellow
+    min: 0
+    max: 100
+    name: Printer Yellow Ink
+    unit: '%'
+    severity:
+      green: 25
+      yellow: 15
+      red: 0
