@@ -257,8 +257,6 @@
     order: 3
   group.cameras:
     order: 5
-  group.crimes:
-    order: 6
   group.internet_speed:
     order: 7
   group.finance:

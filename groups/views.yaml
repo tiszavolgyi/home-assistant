@@ -10,7 +10,6 @@ default_view:
     - group.family
     - group.traveltime
     - camera.patio
-    - group.crimes
     - group.finance
     - group.weather_forecast
     - group.internet_speed

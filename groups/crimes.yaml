@@ -1,8 +1,0 @@
-####################################
-### Group for the crime report
-####################################
-
-crimes:
-  name: Crime Reports
-  entities:
-    - sensor.neighborhood_incidents
