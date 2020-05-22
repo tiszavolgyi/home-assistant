@@ -126,10 +126,10 @@ eight_sleep:
   partner: true
 
 #Media players config
-media_player:
-    - platform: plex
-      show_all_controls: true
-      use_episode_art: true
+# media_player:
+#     - platform: plex
+#       show_all_controls: true
+#       use_episode_art: true
 
 #Presence detection
 mqtt:
