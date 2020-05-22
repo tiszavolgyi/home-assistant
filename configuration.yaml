@@ -12,6 +12,8 @@ homeassistant:
   time_zone: !secret timezone
   # Customize the name of the devices
   customize: !include custom_names.yaml
+  internal_url: !secret hass_base_url
+  external_url: !secret hass_base_url
 
 # Show links to resources in log and frontend
 #introduction:
@@ -41,8 +43,8 @@ http:
   # Uncomment this to add a password (recommended!)
   #api_password: !secret http_password
   # Uncomment this if you are using SSL or running in Docker etc
-  internal_url: !secret hass_base_url
-  external_url: !secret hass_base_url
+  #internal_url: !secret hass_base_url
+  #external_url: !secret hass_base_url
   #ssl_certificate: !secret ssl_certificate
   #ssl_key: !secret ssl_key
 
