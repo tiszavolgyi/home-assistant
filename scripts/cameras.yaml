@@ -10,40 +10,40 @@
 front_door_gif:
   alias: Front Door Gif
   sequence:
-  - data:
-      entity_id: camera.front_door
-      filename: /home/homeassistant/.homeassistant/www/tmp/frontdoor1.png
-    service: camera.snapshot
-  - delay:
-      milliseconds: 100
-  - data:
-      entity_id: camera.front_door
-      filename: /home/homeassistant/.homeassistant/www/tmp/frontdoor2.png
-    service: camera.snapshot
-  - delay:
-      milliseconds: 100
-  - data:
-      entity_id: camera.front_door
-      filename: /home/homeassistant/.homeassistant/www/tmp/frontdoor3.png
-    service: camera.snapshot
-  - delay:
-      milliseconds: 100
-  - service: shell_command.snapshot_frontdoor_gif
-  # - delay: '00:00:03'
-  - service: notify.html5_push_notifications
-    data:
-      title: 'Front Door'
-      message: 'There is someone at the door!'
+    - service: camera.snapshot
       data:
-        tag: alert
-        url: 'https://ha.tiszavolgyi.com'
-        image: "https://ha.tiszavolgyi.com/local/tmp/frontdoor1.png"
-        vibrate:
-          - 300
-          - 100
-          - 400
-        renotify: 0
-        timestamp: '%m%d%H%M'
-        actions:
-          - action: "open_door"
-            title: "Open the Door"
+        entity_id: camera.front_door
+        filename: /home/homeassistant/.homeassistant/www/tmp/frontdoor1.png
+  # - delay:
+  #     milliseconds: 100
+  # - data:
+  #     entity_id: camera.front_door
+  #     filename: /home/homeassistant/.homeassistant/www/tmp/frontdoor2.png
+  #   service: camera.snapshot
+  # - delay:
+  #     milliseconds: 100
+  # - data:
+  #     entity_id: camera.front_door
+  #     filename: /home/homeassistant/.homeassistant/www/tmp/frontdoor3.png
+  #   service: camera.snapshot
+  # - delay:
+  #     milliseconds: 100
+  # - service: shell_command.snapshot_frontdoor_gif
+  # - delay: '00:00:03'
+    - service: notify.html5_push_notifications
+      data:
+        title: 'Front Door'
+        message: 'There is someone at the door!'
+        data:
+          tag: alert
+          url: 'https://ha.tiszavolgyi.com'
+          image: "https://ha.tiszavolgyi.com/local/tmp/frontdoor1.png"
+          vibrate:
+            - 300
+            - 100
+            - 400
+          renotify: 0
+          timestamp: '%m%d%H%M'
+          actions:
+            - action: "open_door"
+              title: "Open the Door"

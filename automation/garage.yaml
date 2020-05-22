@@ -13,8 +13,8 @@
       entity_id: sun.sun
       state: 'below_horizon'
     action:
-        service: light.turn_on
-        entity_id: light.garage_light
+      service: light.turn_on
+      entity_id: light.garage_light
 
 
   - alias: "Turn off Garage lights when no movement"
@@ -30,5 +30,5 @@
         entity_id: sun.sun
         state: 'below_horizon'
     action:
-        service: light.turn_off
-        entity_id: light.garage_light
+      service: light.turn_off
+      entity_id: light.garage_light

@@ -41,7 +41,8 @@ http:
   # Uncomment this to add a password (recommended!)
   #api_password: !secret http_password
   # Uncomment this if you are using SSL or running in Docker etc
-  base_url: !secret hass_base_url
+  internal_url: !secret hass_base_url
+  external_url: !secret hass_base_url
   #ssl_certificate: !secret ssl_certificate
   #ssl_key: !secret ssl_key
 
@@ -154,6 +155,7 @@ notify:
 # Tensorflow
 image_processing:
   - platform: tensorflow
+    scan_interval: 3600
     source:
       - entity_id: camera.front_door
       - entity_id: camera.garage_door

@@ -1,0 +1,25 @@
+########################################################
+### Camera and image processing related automations
+### Image processing is with Tensorflow, see config.yaml
+#########################################################
+
+
+  - alias: Front Door Camera Scan
+    initial_state: 'true'
+    trigger:
+      platform: state
+      entity_id: binary_sensor.camera_motion_front_door
+      to: 'on'
+    action:
+      - service: image_processing.scan
+        entity_id: camera.front_door
+
+  - alias: Garage Door Camera Scan
+    initial_state: 'true'
+    trigger:
+      platform: state
+      entity_id: binary_sensor.camera_motion_garage_door
+      to: 'on'
+    action:
+      - service: image_processing.scan
+        entity_id: camera.garage_door
