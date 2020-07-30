@@ -29,3 +29,18 @@
     action:
         service: script.turn_on
         entity_id: script.heat_bed_for_1_hour
+
+
+# Office Shade Down at Sunset
+
+  - alias: "Office Shade Down at Sunset"
+    initial_state: 'true'
+    trigger:
+      - platform: sun
+        event: sunset
+        offset: "00:10:00"
+    mode: queued
+    action:
+        domain: cover
+        entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_switch_2
+        type: close
