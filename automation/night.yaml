@@ -41,13 +41,13 @@
         offset: "00:10:00"
     mode: queued
     action:
-      - service: cover.springs_window_fashions_graber_csz1_cellular_shade_switch_2
+      - service: cover.set_cover_position
         data:
-          entity_id: cover.demo
+          entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_switch_2
           tilt_position: 0
 
 
-# Office Shade Down at Sunset
+# Bedroom Shade Down at Sunset
 
   - alias: "Bedroom Shade Down at Sunset"
     initial_state: 'true'
@@ -57,7 +57,7 @@
         offset: "00:10:00"
     mode: queued
     action:
-      - service: cover.springs_window_fashions_graber_csz1_cellular_shade_switch
+      - service: cover.set_cover_position
         data:
-          entity_id: cover.demo
+          entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_switch
           tilt_position: 0
