@@ -12,8 +12,8 @@ homeassistant:
   time_zone: !secret timezone
   # Customize the name of the devices
   customize: !include custom_names.yaml
-  #internal_url: !secret hass_base_url
-  #external_url: !secret hass_base_url
+  internal_url: !secret hass_base_url
+  external_url: !secret hass_base_url
 
 # Show links to resources in log and frontend
 #introduction:
