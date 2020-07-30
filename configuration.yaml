@@ -104,12 +104,12 @@ nest:
   client_id: !secret nestclientid
   client_secret: !secret nestclientsecret
 
-# Philips Hue Lights
-hue:
-  bridges:
-    - host: !secret hueip
-      allow_unreachable: true
-      allow_hue_groups: true
+# Philips Hue Lights - REMOVED BECAUSED DEPRECIATED IN VERSION 0.115
+# hue:
+#   bridges:
+#     - host: !secret hueip
+#       allow_unreachable: true
+#       allow_hue_groups: true
 
 # ZHA - Zigbee ZWave integration
 zha:
