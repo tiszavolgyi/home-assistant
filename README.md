@@ -15,6 +15,9 @@ And thanks to *all* the devs that create the Home Assistant magic
 
 ## Devices
 
+- Alexa Devices
+- Augus Door Lock
+- Bali ZWave Shades
 - Broadlink RM Pro
 - Broadlink RM Pro +
 - Broadlink E-Air Sensor
@@ -27,10 +30,12 @@ And thanks to *all* the devs that create the Home Assistant magic
 - Rachio Smart Sprinkler Controller
 - Nest Thermostat
 - Nest Protect
+- Nortek HUSBZB-1 ZWave, ZigBee Hub
+- Sonoff switches, plugs and relays
 - Ubiquiti Unifi Controller
-- Wemo Switch
+- Wemo Switches
 - Zanzito Device Tracker
-- Xiaomi Mi Robot Vacuum 
+- Xiaomi Mi Robot Vacuum
 
 
 ## Configuration Best Pratices
