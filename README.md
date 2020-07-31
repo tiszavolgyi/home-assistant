@@ -38,6 +38,15 @@ And thanks to *all* the devs that create the Home Assistant magic
 - Xiaomi Mi Robot Vacuum
 
 
+## Plugins
+
+- button-card.js - https://github.com/custom-cards/button-card
+- mini-graph-card-bundle.js - https://github.com/kalkih/mini-graph-card
+- slider-entity-row.js - https://github.com/thomasloven/lovelace-slider-entity-row
+- vertical-stack-in-card.js - https://github.com/ofekashery/vertical-stack-in-card
+
+
+
 ## Configuration Best Pratices
 
 ### More than one entity
