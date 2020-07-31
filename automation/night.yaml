@@ -43,7 +43,7 @@
     action:
       - service: cover.set_cover_position
         data:
-          entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_switch_2
+          entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_level_2
           tilt_position: 0
 
 
@@ -59,5 +59,5 @@
     action:
       - service: cover.set_cover_position
         data:
-          entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_switch
+          entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_level
           tilt_position: 0
