@@ -44,7 +44,7 @@
       - service: cover.set_cover_position
         data:
           entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_level_2
-          tilt_position: 0
+          position: 0
 
 
 # Bedroom Shade Down at Sunset
@@ -60,4 +60,4 @@
       - service: cover.set_cover_position
         data:
           entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_level
-          tilt_position: 0
+          position: 0
