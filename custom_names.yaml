@@ -223,8 +223,6 @@
 
 
 #Other things
-  sensor.yr_symbol:
-    friendly_name: Weather
   sun.sun:
     friendly_name: Sun
   sensor.home_to_chopra_center:
