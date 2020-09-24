@@ -8,8 +8,8 @@
     title: Family Members
     show_header_toggle: false
     entities:
-      - !secret peterdevice
-      - !secret vividevice
+      - person.peter
+      - person.peter
 
 
 ### Weather Forecast
