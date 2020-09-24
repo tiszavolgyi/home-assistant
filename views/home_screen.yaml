@@ -162,8 +162,10 @@
     title: Batteries
     show_header_toggle: false
     entities:
-      - sensor.peter_phone_battery
-      - sensor.vivi_phone_battery
+      - sensor.pixel_3_battery_level
+      - sensor.pixel_4_battery_level
+      - sensor.charge_4_battery
+      - sensor.front_door_battery
       - sensor.livingroom_wallpanel_battery
 
 ### Travel Times
