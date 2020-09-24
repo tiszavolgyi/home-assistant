@@ -2,55 +2,55 @@
 ### Phone battery statuses
 ##########################
 
-- platform: template
-  sensors:
-    peter_phone_battery:
-      unit_of_measurement: '%'
-#      entity_id: device_tracker.tiszaphone
-      value_template: '{{states.device_tracker.tiszaphone.attributes.battery}}'
-      icon_template: >-
-        {% if states('sensor.peter_phone_battery') != "unknown" %}
-          {% set battery_level = states('sensor.peter_phone_battery')|int (-1)%}
-          {% if battery_level == -1 %}
-            mdi:battery-unknown
-          {% else %}
-            {% set battery_round = (battery_level|int / 10)|int * 10 %}
-            {% if battery_round >= 100 %}
-              mdi:battery
-            {% elif battery_round > 0 %}
-              mdi:battery-{{ battery_round }}
-            {% else %}
-              mdi:battery-alert
-            {% endif %}
-          {% endif %}
-        {% else %}
-          mdi:battery-alert
-        {% endif %}
-      friendly_name: 'Peter Phone Battery'
-
-    vivi_phone_battery:
-#      entity_id: device_tracker.viviphone
-      value_template: '{{states.device_tracker.viviphone.attributes.battery}}'
-      icon_template: >-
-        {% if states('sensor.vivi_phone_battery') != "unknown" %}
-          {% set battery_level = states('sensor.vivi_phone_battery')|int (-1)%}
-          {% if battery_level == -1 %}
-            mdi:battery-unknown
-          {% else %}
-            {% set battery_round = (battery_level|int / 10)|int * 10 %}
-            {% if battery_round >= 100 %}
-              mdi:battery
-            {% elif battery_round > 0 %}
-              mdi:battery-{{ battery_round }}
-            {% else %}
-              mdi:battery-alert
-            {% endif %}
-          {% endif %}
-        {% else %}
-          mdi:battery-alert
-        {% endif %}
-      unit_of_measurement: '%'
-      friendly_name: 'Vivi Phone Battery'
+# - platform: template
+#   sensors:
+#     peter_phone_battery:
+#       unit_of_measurement: '%'
+# #      entity_id: device_tracker.pixel_4
+#       value_template: '{{states.device_tracker.pixel_4.attributes.battery}}'
+#       icon_template: >-
+#         {% if states('sensor.peter_phone_battery') != "unknown" %}
+#           {% set battery_level = states('sensor.peter_phone_battery')|int (-1)%}
+#           {% if battery_level == -1 %}
+#             mdi:battery-unknown
+#           {% else %}
+#             {% set battery_round = (battery_level|int / 10)|int * 10 %}
+#             {% if battery_round >= 100 %}
+#               mdi:battery
+#             {% elif battery_round > 0 %}
+#               mdi:battery-{{ battery_round }}
+#             {% else %}
+#               mdi:battery-alert
+#             {% endif %}
+#           {% endif %}
+#         {% else %}
+#           mdi:battery-alert
+#         {% endif %}
+#       friendly_name: 'Peter Phone Battery'
+#
+#     vivi_phone_battery:
+# #      entity_id: device_tracker.pixel_3
+#       value_template: '{{states.device_tracker.pixel_3.attributes.battery}}'
+#       icon_template: >-
+#         {% if states('sensor.vivi_phone_battery') != "unknown" %}
+#           {% set battery_level = states('sensor.vivi_phone_battery')|int (-1)%}
+#           {% if battery_level == -1 %}
+#             mdi:battery-unknown
+#           {% else %}
+#             {% set battery_round = (battery_level|int / 10)|int * 10 %}
+#             {% if battery_round >= 100 %}
+#               mdi:battery
+#             {% elif battery_round > 0 %}
+#               mdi:battery-{{ battery_round }}
+#             {% else %}
+#               mdi:battery-alert
+#             {% endif %}
+#           {% endif %}
+#         {% else %}
+#           mdi:battery-alert
+#         {% endif %}
+#       unit_of_measurement: '%'
+#       friendly_name: 'Vivi Phone Battery'
 
 
     livingroom_wallpanel_battery:

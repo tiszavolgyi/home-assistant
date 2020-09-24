@@ -203,8 +203,8 @@ zone:
 proximity:
   home:
     devices:
-      - device_tracker.viviphone
-      - device_tracker.tiszaphone
+      - device_tracker.pixel_3
+      - device_tracker.pixel_4
     tolerance: 50
     unit_of_measurement: mi
 
