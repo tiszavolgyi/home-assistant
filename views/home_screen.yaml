@@ -9,7 +9,7 @@
     show_header_toggle: false
     entities:
       - person.peter
-      - person.peter
+      - person.vivi
 
 
 ### Weather Forecast
