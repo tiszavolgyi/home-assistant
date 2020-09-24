@@ -14,7 +14,7 @@
   - platform: broadlink
     mac: !secret broadlink_rm_livingroom_mac
     switches:
-      - name: harman_kardon_computer:
+      - name: harman_kardon_computer
         #friendly_name: "Harman Kardon Server" //// moved to custom names
         command_on: JgBYAAABKJIUEBQRFBEUEBQRFBETERQ1FBEUERQQFBEUNRQ1FDYUEBQ2EzYUEBQRFDUUNhMRFDUUERQRFDUUNRQRFBETNhQQEwAFxAABKUgSAAxMAAEoSRMADQU=
         command_off: JgBYAAABKJIUERMRFBEUERMRFBEUERM2ExEUERQRExEUNhM2FDUUERM2FDUUNRQ2EzYUERMRFDUUERQRExEUERQREzYUNRQREwAFwwABKUgUAAxKAAEoSRQADQU=
@@ -23,7 +23,7 @@
   - platform: broadlink
     mac: !secret broadlink_rm_livingroom_mac
     switches:
-      - name: projector:
+      - name: projector
         #friendly_name: "Projector" //// moved to custom names
         command_on: JgBQAAABJ5IUERM2ExIUEBQ1FDYUEBQRFDUUEBQ2FDUUEBQRFDUUNRQRFDUUEBQRFBAVEBQRFBAUNRQRFDUUNRQ1FDUVNRQ1FAAFHQABKEkTAA0FAAAAAAAAAAA=
         command_off: JgBQAAABJpQTEhM2ERMTEhM2EzYTEhMREjcTEhM2EjcSExETEjgROBETEjcSOBE4ERMTNhITERQROBETExIRExI4ERMSNxI3EgAFHwABJUsRAA0FAAAAAAAAAAA=
@@ -32,7 +32,7 @@
   - platform: broadlink
     mac: !secret broadlink_rm_livingroom_mac
     switches:
-      - name: projector_screen:
+      - name: projector_screen
         #friendly_name: "Projector Screen" //// moved to custom names
         command_on: sgBQAQcTBxMIEggSCBIIEwcSCBMHExQGCBIIEggSCBIIEwcSCRIHEwgSFAYIEggSCBIIEhUGFAYUBhQGCBIIEggTBxIVBhQGFQesEhUGBxMUBggSCBIHExUGFAUIEwcTFQUUBggSFQUIExQGBxMUBgcTFAYUBggSFQUIExQGFAUWBRQGCBIIEggSCBMHEgkSBxMHEwgSCBIIEhUGBxMHEwcTBxMIEggSCBIIEwcTFAUJEgcTBxMIEhUFFQUVBhQFCRIHEwcTCBIUBhUFFQetEhUFCBIVBgcSCBMHExUFFAYIEggSFQYUBgcSFQYHExQGCBIVBQgTFAYUBgcTFAYHExQGFQUVBhQGBxIIEwcTCBIIEggSCBIIEwcTCBIHExUFCBIIEggSCBMHEwcTCBIHEwgTFAUIEggTBxMHEhUGFQUVBRUFCBIIEwcTBxMUBhUFFQAF3AAAAAAAAAAA=
         command_off: sgBEAQcTCBIHExUGBxMHEggTBxMHEwgRCRIHEwgSCBIIEggTFAYHExQGFAYUBggSCBIIEhUGBxIVBhQGFAisEhUFCBIUBwcSCBMHExQGFAYIEggSFQYTBggSFQYHExQGBxMUBgcTFAcUBQgSFQUIExQGFAYVBRQGBxMIEggSCBMHEggSCBMHEwcTCBIHExUGBxIIEggSCBMHEwgSCBIHEwgSCBIIEggSFQYHEhUGFAYUBgcTCBIIEhUGBxIVBRUFFQisEhUFCBIVBgcSCBMHExQGFAYIEgcTFQUVBQgSFQUIExQGBxMUBgcTFAYVBQgSFQUIExQFFQYUBhQGBxMIEgcTCBMHEggSCBIIEwcSCBMHExUGBxIIEggTBxMHEwcTBxMHEwcTCBIIEggTFAYHEhUGFAYVBQcTCBIHExUGBxIVBRUFFQAF3AAAAAA=
@@ -41,7 +41,7 @@
   - platform: broadlink
     mac: !secret broadlink_rm_livingroom_mac
     switches:
-      - name: radio:
+      - name: radio
         #friendly_name: "Harman Kardon Radio" //// moved to custom names
         command_on: JgBYAAABKZEUERQRExEUERQQFBEUERQ1FBETERQRFBAUNhQ1FDUUERQ1FBEUEBQRFBEUEBQRFDUUERQ1FDUUNRQ2FDUUNRQREgAFxQABKEgUAAxKAAEpSBQADQU=
         command_off: JgBYAAABKJIUERMRFBEUERMRFBEUERM2ExEUERQRExEUNhM2FDUUERM2FDUUNRQ2EzYUERMRFDUUERQRExEUERQREzYUNRQREwAFwwABKUgUAAxKAAEoSRQADQU=
@@ -50,7 +50,7 @@
   - platform: broadlink
     mac: !secret broadlink_rm_livingroom_mac
     switches:
-      - name: internet_radio:
+      - name: internet_radio
         #friendly_name: "Harman Kardon Internet Radio" //// moved to custom names
         command_on: JgBYAAABKJIUERQQFBEUEBQRFBEUEBQ1FRAUERQQFBEUNRQ2FDUUEBQ2FBAUNRUQFDUUNhQQFDYUEBQ1FBEUNRQRFBEUNRQREgAFxAABKUgTAAxLAAEoSRIADQU=
         command_off: JgBYAAABKJIUERMRFBEUERMRFBEUERM2ExEUERQRExEUNhM2FDUUERM2FDUUNRQ2EzYUERMRFDUUERQRExEUERQREzYUNRQREwAFwwABKUgUAAxKAAEoSRQADQU=
