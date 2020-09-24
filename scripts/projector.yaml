@@ -5,17 +5,16 @@
 
 projector_turn_on:
   sequence:
-    - service: broadlink.send
+    - service: remote.send_command
       data:
-        host: !secret broadlink_rm_livingroom_ip
-        packet:
-          - "JgBQAAABJ5IUERM2ExIUEBQ1FDYUEBQRFDUUEBQ2FDUUEBQRFDUUNRQRFDUUEBQRFBAVEBQRFBAUNRQRFDUUNRQ1FDUVNRQ1FAAFHQABKEkTAA0FAAAAAAAAAAA="
+        entity_id: remote.livingroom_remote_remote
+        command: b64:JgBQAAABJ5IUERM2ExIUEBQ1FDYUEBQRFDUUEBQ2FDUUEBQRFDUUNRQRFDUUEBQRFBAVEBQRFBAUNRQRFDUUNRQ1FDUVNRQ1FAAFHQABKEkTAA0FAAAAAAAAAAA=
 
 projector_turn_off:
   sequence:
-    - service: broadlink.send
+    - service: remote.send_command
       data:
-        host: !secret broadlink_rm_livingroom_ip
-        packet:
-          - "JgBQAAABJpQTEhM2ERMTEhM2EzYTEhMREjcTEhM2EjcSExETEjgROBETEjcSOBE4ERMTNhITERQROBETExIRExI4ERMSNxI3EgAFHwABJUsRAA0FAAAAAAAAAAA="
-          - "JgBQAAABJpQTEhM2ERMTEhM2EzYTEhMREjcTEhM2EjcSExETEjgROBETEjcSOBE4ERMTNhITERQROBETExIRExI4ERMSNxI3EgAFHwABJUsRAA0FAAAAAAAAAAA="
+        entity_id: remote.livingroom_remote_remote
+        command:
+          - b64:JgBQAAABJpQTEhM2ERMTEhM2EzYTEhMREjcTEhM2EjcSExETEjgROBETEjcSOBE4ERMTNhITERQROBETExIRExI4ERMSNxI3EgAFHwABJUsRAA0FAAAAAAAAAAA=
+          - b64:JgBQAAABJpQTEhM2ERMTEhM2EzYTEhMREjcTEhM2EjcSExETEjgROBETEjcSOBE4ERMTNhITERQROBETExIRExI4ERMSNxI3EgAFHwABJUsRAA0FAAAAAAAAAAA=
