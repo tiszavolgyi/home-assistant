@@ -179,16 +179,6 @@ speedtestdotnet:
     - upload
 
 
-#Device Tracker
-device_tracker:
-  - platform: mqtt_json
-    devices:
-      TiszaPhone: zanzito/TiszaPhone/location
-  - platform: mqtt_json
-    devices:
-      ViviPhone: zanzito/ViviPhone/location
-
-
 zone:
   - name: Home
     latitude: !secret latitude
