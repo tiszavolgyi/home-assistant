@@ -1,0 +1,13 @@
+- id: '1596153204341'
+  alias: Shade down
+  description: ''
+  trigger:
+  - event: sunset
+    platform: sun
+  condition: []
+  action:
+  - device_id: 60670dff122b4b689fdb5358b57ade92
+    domain: cover
+    entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_switch
+    type: close
+  mode: single

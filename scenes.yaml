@@ -1,0 +1,21 @@
+- id: '1589391257753'
+  name: test
+  entities:
+    light.bedroom_1:
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Night Stand - P
+      max_mireds: 500
+      min_mireds: 153
+      state: 'off'
+      supported_features: 63
+    light.bedroom_2:
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Night Stand - V
+      max_mireds: 500
+      min_mireds: 153
+      state: 'off'
+      supported_features: 63
