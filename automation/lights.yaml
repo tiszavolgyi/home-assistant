@@ -37,7 +37,7 @@
 ### Turn off X-Mas lights at 1 am
 
   - alias: "Turn off X-Mas lights at 1 am"
-    initial_state: 'true'
+    initial_state: 'false'
     trigger:
       - platform: time
         at: '1:00:00'
