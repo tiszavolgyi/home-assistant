@@ -2,15 +2,16 @@
 ### Currency Info ###
 ######################
 
+  - platform: currencylayer
+    api_key: !secret currencylayer_api_key
+    base: USD
+    quote:
+      - HUF
+      - EUR
+
 # MOVED TO COINFIG - COINBASE
-# 
-  # - platform: currencylayer
-  #   api_key: !secret currencylayer_api_key
-  #   base: USD
-  #   quote:
-  #     - HUF
-  #     - EUR
-  #
+ 
+
   # - platform: coinmarketcap
   #   currency_id: 1
   #
