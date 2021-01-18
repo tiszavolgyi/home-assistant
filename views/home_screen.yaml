@@ -168,14 +168,6 @@
       - sensor.front_door_battery
       - sensor.vacuum_battery
 
-### Travel Times
-  - type: entities
-    title: Travel Time
-    show_header_toggle: false
-    entities:
-      - sensor.home_to_chopra_center
-      - sensor.chopra_center_to_home
-
 ### Finance Report
   - type: entities
     title: Finance
