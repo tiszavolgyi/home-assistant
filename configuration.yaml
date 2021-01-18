@@ -110,7 +110,7 @@ nest:
   # "Project ID" in the Device Access Console
   project_id: !secret nestprojectid
   # Provide the full path exactly as shown under "Subscription name" in Google Cloud Console
-  subscriber_id: nestsubscriberid
+  subscriber_id: !secret nestsubscriberid
 
 
 # Philips Hue Lights - REMOVED BECAUSED DEPRECIATED IN VERSION 0.115
