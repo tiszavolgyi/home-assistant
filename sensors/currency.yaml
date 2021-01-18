@@ -2,24 +2,26 @@
 ### Currency Info ###
 ######################
 
-  - platform: currencylayer
-    api_key: !secret currencylayer_api_key
-    base: USD
-    quote:
-      - HUF
-      - EUR
-
-  - platform: coinmarketcap
-    currency_id: 1
-
-  - platform: coinmarketcap
-    currency_id: 1027
-
-  - platform: coinmarketcap
-    currency_id: 52
-
-  - platform: coinmarketcap
-    currency_id: 2
+# MOVED TO COINFIG - COINBASE
+# 
+  # - platform: currencylayer
+  #   api_key: !secret currencylayer_api_key
+  #   base: USD
+  #   quote:
+  #     - HUF
+  #     - EUR
+  #
+  # - platform: coinmarketcap
+  #   currency_id: 1
+  #
+  # - platform: coinmarketcap
+  #   currency_id: 1027
+  #
+  # - platform: coinmarketcap
+  #   currency_id: 52
+  #
+  # - platform: coinmarketcap
+  #   currency_id: 2
 
 
 ### TEMPORARY REMOVED BECAUSE DOES NOT WORK PROPERLY ###

@@ -243,6 +243,17 @@ tts:
   cache_dir: !secret tts_cache_dir
   time_memory: 43200
 
+# Coinbase crypto currencies
+coinbase:
+  api_key: !secret coinbaseapikey
+  api_secret: !secret coinbaseapisecret
+  exchange_rate_currencies:
+    - BTC
+    - ETH
+    - LTC
+    - XRP
+
+
 # Shell Commands
 shell_command:
   tank_poweroff: !secret tank_poweroff
