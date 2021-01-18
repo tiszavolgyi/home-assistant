@@ -173,10 +173,10 @@
     title: Finance
     show_header_toggle: false
     entities:
-      - sensor.bitcoin
-      - sensor.ethereum
-      - sensor.xrp
-      - sensor.litecoin
+      - sensor.btc_exchange_rate
+      - sensor.eth_exchange_rate
+      - sensor.xrp_exchange_rate
+      - sensor.ltc_exchange_rate
       - sensor.usd
       - sensor.usd_2
 
