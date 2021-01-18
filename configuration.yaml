@@ -99,26 +99,14 @@ weather:
     api_key: !secret darksky
 
 
-# Nest config
-#nest:   --- OLD NEST CONFIG
-  #client_id: !secret nestclientid   --- OLD NEST CONFIG
-  #client_secret: !secret nestclientsecret   --- OLD NEST CONFIG
 
 nest:
   client_id: !secret nestapiclientid
   client_secret: !secret nestapiclientsecret
-  # "Project ID" in the Device Access Console
   project_id: !secret nestprojectid
-  # Provide the full path exactly as shown under "Subscription name" in Google Cloud Console
   subscriber_id: !secret nestsubscriberid
 
 
-# Philips Hue Lights - REMOVED BECAUSED DEPRECIATED IN VERSION 0.115
-# hue:
-#   bridges:
-#     - host: !secret hueip
-#       allow_unreachable: true
-#       allow_hue_groups: true
 
 # ZHA - Zigbee ZWave integration
 zha:
@@ -136,11 +124,6 @@ eight_sleep:
   password: !secret eightpass
   partner: true
 
-#Media players config
-# media_player:
-#     - platform: plex
-#       show_all_controls: true
-#       use_episode_art: true
 
 #Presence detection
 mqtt:
