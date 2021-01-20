@@ -83,22 +83,22 @@
       entity_id: switch.fishtank_uv_filter
 
 
-### Light Automations
-
-  - alias: "Turn on Fishtank lights"
-    initial_state: 'true'
-    trigger:
-      - platform: time
-        at: '10:10:00'
-    action:
-      service: switch.turn_on
-      entity_id: switch.fishtank_light
-
-  - alias: "Turn off Fishtank lights"
-    initial_state: 'true'
-    trigger:
-      - platform: time
-        at: '18:00:00'
-    action:
-      service: switch.turn_off
-      entity_id: switch.fishtank_light
+# ### Light Automations
+#
+#   - alias: "Turn on Fishtank lights"
+#     initial_state: 'true'
+#     trigger:
+#       - platform: time
+#         at: '10:10:00'
+#     action:
+#       service: switch.turn_on
+#       entity_id: switch.fishtank_light
+#
+#   - alias: "Turn off Fishtank lights"
+#     initial_state: 'true'
+#     trigger:
+#       - platform: time
+#         at: '18:00:00'
+#     action:
+#       service: switch.turn_off
+#       entity_id: switch.fishtank_light
