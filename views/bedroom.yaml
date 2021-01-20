@@ -85,6 +85,7 @@
 ### Shade controller
 
   - type: entities
+    title: Window Shades
     entities:
       - zwave.springs_window_fashions_graber_csz1_cellular_shade
       - cover.springs_window_fashions_graber_csz1_cellular_shade_level
@@ -92,11 +93,11 @@
 
 ### Bedroom Air Sensors
 
-  - type: entities
-    title: Air Quality
-    show_header_toggle: false
-    entities:
-      - sensor.broadlink_sensor_air_quality
-      - sensor.broadlink_sensor_humidity
-      - sensor.broadlink_sensor_temperature
-      - switch.air_humidifier
+  # - type: entities
+  #   title: Air Quality
+  #   show_header_toggle: false
+  #   entities:
+  #     - sensor.broadlink_sensor_air_quality
+  #     - sensor.broadlink_sensor_humidity
+  #     - sensor.broadlink_sensor_temperature
+  #     - switch.air_humidifier

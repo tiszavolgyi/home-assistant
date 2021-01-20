@@ -178,6 +178,7 @@
 ### Shade controller
 
   - type: entities
+    title: Window Shades
     entities:
       - zwave.springs_window_fashions_graber_csz1_cellular_shade_3
       - cover.springs_window_fashions_graber_csz1_cellular_shade_level_3
