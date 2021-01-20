@@ -64,5 +64,5 @@
       - automation.turn_on_o2_night
       - automation.turn_on_co2
       - automation.turn_off_co2
-      - automation.turn_on_fishtank_lights
-      - automation.turn_off_fishtank_lights
+      # - automation.turn_on_fishtank_lights
+      # - automation.turn_off_fishtank_lights
