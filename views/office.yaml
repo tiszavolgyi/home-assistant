@@ -25,6 +25,13 @@
     #   service: switch.turn_on
     entity: switch.tank
 
+### Shade controller
+
+  - type: entities
+    entities:
+      - zwave.springs_window_fashions_graber_csz1_cellular_shade_2
+      - cover.springs_window_fashions_graber_csz1_cellular_shade_level_2
+
 
 ### Printer Ink Gauges
 
