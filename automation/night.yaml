@@ -38,7 +38,7 @@
     trigger:
       - platform: sun
         event: sunset
-        offset: "00:10:00"
+        offset: "00:30:00"
     mode: queued
     action:
       - service: cover.set_cover_position
@@ -54,7 +54,7 @@
     trigger:
       - platform: sun
         event: sunset
-        offset: "00:10:00"
+        offset: "00:30:00"
     mode: queued
     action:
       - service: cover.set_cover_position
