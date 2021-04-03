@@ -7,7 +7,7 @@ finance:
   entities:
     - sensor.btc_exchange_rate
     - sensor.eth_exchange_rate
-    - sensor.xrp_exchange_rate
+    ### - sensor.xrp_exchange_rate ### - XRP Not Supported anzmore on Coinbase
     - sensor.ltc_exchange_rate
     - sensor.usd
     - sensor.usd_2

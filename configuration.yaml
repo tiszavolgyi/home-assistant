@@ -251,7 +251,7 @@ coinbase:
     - BTC
     - ETH
     - LTC
-    - XRP
+    ### - XRP --- Not Supported anzmore on Coinbase
 
 
 # Shell Commands
