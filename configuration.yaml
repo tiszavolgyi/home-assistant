@@ -77,11 +77,11 @@ sun:
 # Mobil app
 mobile_app:
 
-#August lock
-august:
-  login_method: phone
-  username: !secret august_user
-  password: !secret august_pass
+# #August lock ---  Depreciated in 03/2021
+# august:
+#   login_method: phone
+#   username: !secret august_user
+#   password: !secret august_pass
 
 #Wemo config
 wemo:
@@ -223,10 +223,10 @@ solaredge:
 #   country_code: 1
 
 
-#Rachio Controller
-rachio:
-  api_key: !secret rachio-token
-  manual_run_mins: 5
+# #Rachio Controller  ---  Depreciated in 03/2021
+# rachio:
+#   api_key: !secret rachio-token
+#   manual_run_mins: 5
 
 
 # Rachio iFrame Module
