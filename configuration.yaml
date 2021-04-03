@@ -202,10 +202,10 @@ proximity:
 
 #Xiaomi Vaccum Integration
 
-vacuum:
-  - platform: xiaomi_miio
-    host: !secret xiaomi_vacuum_ip
-    token: !secret xiaomi_vacuum_token
+# vacuum:   --- Depreciated in 03/2021
+#   - platform: xiaomi_miio
+#     host: !secret xiaomi_vacuum_ip
+#     token: !secret xiaomi_vacuum_token
 
 #SolarEdge Solar Panel Monitoring
 
