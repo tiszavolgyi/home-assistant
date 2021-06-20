@@ -85,8 +85,6 @@ lights_off:
       entity_id: scene.office_off
     - delay:
         milliseconds: 100
-    - service: scene.turn_on
-      entity_id: scene.dining_room_off
     - delay:
         milliseconds: 100
     - service: scene.turn_on
@@ -101,5 +99,3 @@ lights_off:
       entity_id: scene.bedroom_off
     - delay:
         milliseconds: 100
-    - service: scene.turn_on
-      entity_id: scene.garden_off
