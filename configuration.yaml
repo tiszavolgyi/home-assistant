@@ -40,6 +40,9 @@ lovelace:
 config:
 
 http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - ::1
   # Uncomment this to add a password (recommended!)
   #api_password: !secret http_password
   # Uncomment this if you are using SSL or running in Docker etc
