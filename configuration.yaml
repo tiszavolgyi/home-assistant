@@ -125,7 +125,6 @@ zwave:
 eight_sleep:
   username: !secret eightuser
   password: !secret eightpass
-  partner: true
 
 
 #Presence detection
