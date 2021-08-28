@@ -117,7 +117,7 @@ zha:
   database_path: /home/homeassistant/.homeassistant/zigbee.db
 
 zwave:
-  usb_path: /dev/ttyUSB0
+  usb_path: /dev/ttyUSB1
   network_key: !secret zwave_network_key
 
 
