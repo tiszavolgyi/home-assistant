@@ -47,7 +47,7 @@
     initial_state: 'true'
     trigger:
       - platform: time
-        at: '10:00:00'
+        at: '9:20:00'
     action:
       service: switch.turn_on
       entity_id: switch.fishtank_co2
