@@ -149,14 +149,14 @@ notify:
 
 
 # Tensorflow
-image_processing:
-  - platform: tensorflow
-    scan_interval: 3600
-    source:
-      - entity_id: camera.front_door
-      - entity_id: camera.garage_door
-    model:
-      graph: /home/homeassistant/.homeassistant/tensorflow/models/efficientdet_d0_coco17_tpu-32
+# image_processing:
+#   - platform: tensorflow
+#     scan_interval: 3600
+#     source:
+#       - entity_id: camera.front_door
+#       - entity_id: camera.garage_door
+#     model:
+#       graph: /home/homeassistant/.homeassistant/tensorflow/models/efficientdet_d0_coco17_tpu-32
 
 
 #Cloud Integration
