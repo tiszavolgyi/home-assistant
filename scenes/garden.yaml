@@ -24,6 +24,8 @@
         state: off
       switch.garden3:
         state: off
+      group.spa_lights:
+        state: off
 
 ### Spa Light - Mood light
 
