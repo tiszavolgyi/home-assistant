@@ -1,60 +1,3 @@
-- id: '1596153204341'
-  alias: Shade down
-  description: ''
-  trigger:
-  - event: sunset
-    platform: sun
-  condition: []
-  action:
-  - device_id: 60670dff122b4b689fdb5358b57ade92
-    domain: cover
-    entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_switch
-    type: close
-  mode: single
-- id: '1628445810206'
-  alias: TEMP - Turn on fish tank ligh
-  description: Fish tank light stopped working while we are on holiday, this is just
-    a temporary solution.
-  trigger:
-  - platform: time
-    at: '10:00'
-  condition: []
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id:
-      - switch.fishtank_color_light
-      - switch.fishtank_light
-  mode: single
-- id: '1628445867560'
-  alias: TEMP - Turn off fish tank ligh
-  description: Fish tank light stopped working while we are on holiday, this is just
-    a temporary solution.
-  trigger:
-  - platform: time
-    at: '18:00'
-  condition: []
-  action:
-  - service: switch.turn_off
-    target:
-      entity_id:
-      - switch.fishtank_color_light
-      - switch.fishtank_light
-  mode: single
-- id: '1629201216000'
-  alias: Temp fish
-  description: ''
-  trigger:
-  - platform: time
-    at: '9:00'
-  condition: []
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id:
-      - switch.fishtank_color_light
-      - switch.fishtank_light
-  mode: single
 - id: '1640705223252'
   alias: Livingroom Shade Down
   description: Livingroom shade down when dark and cold
@@ -72,4 +15,46 @@
     domain: cover
     entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_switch_3
     type: close
+  mode: single
+- id: '1640799254299'
+  alias: Livingroom Shade Up
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunrise
+    offset: '0'
+  condition: []
+  action:
+  - device_id: a34bd909df8d48d18822c3868da4ad1b
+    domain: cover
+    entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_switch_3
+    type: open
+  mode: single
+- id: '1640799316743'
+  alias: Office Shade Up 30%
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunrise
+    offset: '0'
+  condition: []
+  action:
+  - device_id: 08d91c0aa95641f8a67ec945831bcbd1
+    domain: cover
+    entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_level_2
+    type: set_position
+    position: 30
+  mode: single
+- id: '1640799427257'
+  alias: Office Shade Up
+  description: ''
+  trigger:
+  - platform: time
+    at: '11:00:00'
+  condition: []
+  action:
+  - device_id: 08d91c0aa95641f8a67ec945831bcbd1
+    domain: cover
+    entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_switch_2
+    type: open
   mode: single
