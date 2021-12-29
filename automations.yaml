@@ -11,3 +11,65 @@
     entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_switch
     type: close
   mode: single
+- id: '1628445810206'
+  alias: TEMP - Turn on fish tank ligh
+  description: Fish tank light stopped working while we are on holiday, this is just
+    a temporary solution.
+  trigger:
+  - platform: time
+    at: '10:00'
+  condition: []
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id:
+      - switch.fishtank_color_light
+      - switch.fishtank_light
+  mode: single
+- id: '1628445867560'
+  alias: TEMP - Turn off fish tank ligh
+  description: Fish tank light stopped working while we are on holiday, this is just
+    a temporary solution.
+  trigger:
+  - platform: time
+    at: '18:00'
+  condition: []
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id:
+      - switch.fishtank_color_light
+      - switch.fishtank_light
+  mode: single
+- id: '1629201216000'
+  alias: Temp fish
+  description: ''
+  trigger:
+  - platform: time
+    at: '9:00'
+  condition: []
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id:
+      - switch.fishtank_color_light
+      - switch.fishtank_light
+  mode: single
+- id: '1640705223252'
+  alias: Livingroom Shade Down
+  description: Livingroom shade down when dark and cold
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: +00:30:00
+  condition:
+  - condition: numeric_state
+    entity_id: weather.dark_sky
+    attribute: temperature
+    below: '14'
+  action:
+  - device_id: a34bd909df8d48d18822c3868da4ad1b
+    domain: cover
+    entity_id: cover.springs_window_fashions_graber_csz1_cellular_shade_switch_3
+    type: close
+  mode: single
