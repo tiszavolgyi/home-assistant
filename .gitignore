@@ -35,3 +35,5 @@ tensorflow/*
 fitbit.conf
 bekap-zigbee.db
 blueprints/*
+home-assistant.log.1
+home-assistant.log.fault
