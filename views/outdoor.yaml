@@ -56,10 +56,12 @@
     title: Cold Smoker
     show_header_toggle: false
     entities:
-      - sensor.cold_smoker_temperature
+      - entity: sensor.cold_smoker_temperature
         name: Temperature
-      - sensor.cold_smoker_smoke_amount
-      - sensor.cold_smoker_humidity
+      - entity: sensor.cold_smoker_smoke_amount
+        name: Smoke Amount
+      - entity: sensor.cold_smoker_humidity
+        name: Humidity
 
 
 
