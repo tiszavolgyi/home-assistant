@@ -50,16 +50,15 @@
       - switch.zone_8_2
 
 
-### Growing Tent Monitoring
+### Cold Smoker Monitoring
 
   - type: entities
     title: Growing Tent
     show_header_toggle: false
     entities:
-      - sensor.plant_1_soil_moisture
-      - sensor.plant_2_soil_moisture
-      - sensor.growing_tent_temperature
-      - sensor.growing_tent_humidity
+      - sensor.cold_smoker_temperature
+      - sensor.cold_smoker_smoke_amount
+      - sensor.cold_smoker_humidity
 
 
 
