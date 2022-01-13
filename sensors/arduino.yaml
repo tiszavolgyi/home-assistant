@@ -55,7 +55,7 @@
 
 - platform: mqtt
   state_topic: "arduino/smoke"
-  unit_of_measurement: '#'
+  unit_of_measurement: 'ppm'
   name: "Cold Smoker Smoke Amount"
   expire_after: 300
   force_update: true

@@ -3,45 +3,45 @@
 #########################################################
 
 
-# Turn on air humidifier if air humidity is low
-  - alias: "Bedroom Air Humidity Low"
-    initial_state: 'true'
-    trigger:
-      - platform: numeric_state
-        entity_id: sensor.broadlink_sensor_humidity
-        below: 40
-    condition:
-      - condition: state
-        entity_id: group.household
-        state: 'home'
-      - condition: time
-        after: '20:00:00'
-        before: '22:00:00'
-      - condition: state
-        entity_id: input_boolean.sleeping
-        state: 'off'
-    action:
-        service: switch.turn_on
-        entity_id: switch.air_humidifier
+# # Turn on air humidifier if air humidity is low
+#   - alias: "Bedroom Air Humidity Low"
+#     initial_state: 'true'
+#     trigger:
+#       - platform: numeric_state
+#         entity_id: sensor.broadlink_sensor_humidity
+#         below: 40
+#     condition:
+#       - condition: state
+#         entity_id: group.household
+#         state: 'home'
+#       - condition: time
+#         after: '20:00:00'
+#         before: '22:00:00'
+#       - condition: state
+#         entity_id: input_boolean.sleeping
+#         state: 'off'
+#     action:
+#         service: switch.turn_on
+#         entity_id: switch.air_humidifier
 
 
 # Turn off air humidifier if air humidity is high
-  - alias: "Bedroom Air Humidity High"
-    initial_state: 'true'
-    trigger:
-      - platform: numeric_state
-        entity_id: sensor.broadlink_sensor_humidity
-        above: 45
-    condition:
-      - condition: state
-        entity_id: group.household
-        state: 'home'
-      - condition: state
-        entity_id: switch.air_humidifier
-        state: 'on'
-    action:
-        service: switch.turn_off
-        entity_id: switch.air_humidifier
+  # - alias: "Bedroom Air Humidity High"
+  #   initial_state: 'true'
+  #   trigger:
+  #     - platform: numeric_state
+  #       entity_id: sensor.broadlink_sensor_humidity
+  #       above: 45
+  #   condition:
+  #     - condition: state
+  #       entity_id: group.household
+  #       state: 'home'
+  #     - condition: state
+  #       entity_id: switch.air_humidifier
+  #       state: 'on'
+  #   action:
+  #       service: switch.turn_off
+  #       entity_id: switch.air_humidifier
 
 # Heat left bed side if occupied and bed becomes cold
   - alias: "Peter Bed Heating at Night"

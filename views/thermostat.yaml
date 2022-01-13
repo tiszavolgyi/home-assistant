@@ -59,17 +59,17 @@
           left: 50%
           color: white
           --ha-label-badge-font-size: 1em
-      - type: state-icon
-        entity: switch.air_humidifier
-        icon: mdi:water-percent
-        title: Humidifier Switch
-        tap_action:
-          action: toggle
-        style:
-          top: 90%
-          left: 90%
-          color: white
-          --ha-label-badge-font-size: 1em
+      # - type: state-icon
+      #   entity: switch.air_humidifier
+      #   icon: mdi:water-percent
+      #   title: Humidifier Switch
+      #   tap_action:
+      #     action: toggle
+      #   style:
+      #     top: 90%
+      #     left: 90%
+      #     color: white
+      #     --ha-label-badge-font-size: 1em
 
 
 ### Temperature graphs
