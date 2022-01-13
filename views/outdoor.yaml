@@ -62,6 +62,7 @@
         name: Smoke Amount
       - entity: sensor.cold_smoker_humidity
         name: Humidity
+      - entity: switch.cold_smoker_fan
 
 
 
