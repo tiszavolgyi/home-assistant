@@ -63,6 +63,9 @@
       - entity: sensor.cold_smoker_humidity
         name: Humidity
       - entity: switch.cold_smoker_fan
+      - entity: switch.air_purifier
+        name: Smoke Generator
+
 
 
 
