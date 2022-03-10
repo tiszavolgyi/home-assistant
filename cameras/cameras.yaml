@@ -2,72 +2,72 @@
 ### Security Cameras
 ###########################################################
 
-
-### Garden 1
-  - platform: mjpeg
-    mjpeg_url: !secret camera_garden1_url
-    name: Garden1
-    username: !secret bi_username
-    password: !secret bi_password
-    authentication: basic
-
-
-### Garden 2
-  - platform: mjpeg
-    mjpeg_url: !secret camera_garden2_url
-    name: Garden2
-    username: !secret bi_username
-    password: !secret bi_password
-    authentication: basic
-
-
-### Garage
-  - platform: mjpeg
-    mjpeg_url: !secret camera_garage_url
-    name: Garage
-    username: !secret bi_username
-    password: !secret bi_password
-    authentication: basic
-
-
-###Garage Door
-  - platform: mjpeg
-    mjpeg_url: !secret camera_garage_door_url
-    name: Garage Door
-    username: !secret bi_username
-    password: !secret bi_password
-    authentication: basic
-
-
-###Down Gate
-  - platform: mjpeg
-    mjpeg_url: !secret camera_down_gate_url
-    name: Down Gate
-    username: !secret bi_username
-    password: !secret bi_password
-    authentication: basic
-
-
-###Up Gate
-  - platform: mjpeg
-    mjpeg_url: !secret camera_up_gate_url
-    name: Up Gate
-    username: !secret bi_username
-    password: !secret bi_password
-    authentication: basic
-
-###Patio
-  - platform: mjpeg
-    mjpeg_url: !secret camera_patio_url
-    name: Patio
-    username: !secret bi_username
-    password: !secret bi_password
-    authentication: basic
-
-###Front Door
-  - platform: mjpeg
-    mjpeg_url: !secret camera_front_door_url
-    name: Front Door
-    username: !secret bi_username
-    password: !secret bi_password
-    authentication: basic
+###### MJPEG DEPRECIATED ######
+# ### Garden 1
+#   - platform: mjpeg
+#     mjpeg_url: !secret camera_garden1_url
+#     name: Garden1
+#     username: !secret bi_username
+#     password: !secret bi_password
+#     authentication: basic
+#
+#
+# ### Garden 2
+#   - platform: mjpeg
+#     mjpeg_url: !secret camera_garden2_url
+#     name: Garden2
+#     username: !secret bi_username
+#     password: !secret bi_password
+#     authentication: basic
+#
+#
+# ### Garage
+#   - platform: mjpeg
+#     mjpeg_url: !secret camera_garage_url
+#     name: Garage
+#     username: !secret bi_username
+#     password: !secret bi_password
+#     authentication: basic
+#
+#
+# ###Garage Door
+#   - platform: mjpeg
+#     mjpeg_url: !secret camera_garage_door_url
+#     name: Garage Door
+#     username: !secret bi_username
+#     password: !secret bi_password
+#     authentication: basic
+#
+#
+# ###Down Gate
+#   - platform: mjpeg
+#     mjpeg_url: !secret camera_down_gate_url
+#     name: Down Gate
+#     username: !secret bi_username
+#     password: !secret bi_password
+#     authentication: basic
+#
+#
+# ###Up Gate
+#   - platform: mjpeg
+#     mjpeg_url: !secret camera_up_gate_url
+#     name: Up Gate
+#     username: !secret bi_username
+#     password: !secret bi_password
+#     authentication: basic
+#
+# ###Patio
+#   - platform: mjpeg
+#     mjpeg_url: !secret camera_patio_url
+#     name: Patio
+#     username: !secret bi_username
+#     password: !secret bi_password
+#     authentication: basic
+#
+# ###Front Door
+#   - platform: mjpeg
+#     mjpeg_url: !secret camera_front_door_url
+#     name: Front Door
+#     username: !secret bi_username
+#     password: !secret bi_password
+#     authentication: basic
